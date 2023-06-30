@@ -1,0 +1,186 @@
+{
+  "bar": [
+    {
+      "address": "Geißstraße 3",
+      "id": 0,
+      "name": "Mata Hari"
+    },
+    {
+      "address": "Torstraße 20",
+      "id": 1,
+      "name": "Oblomow"
+    },
+    {
+      "address": "Theodor-Heuss-Straße 4",
+      "id": 2,
+      "name": "Ribingurumu"
+    },
+    {
+      "address": "Marienstraße 28",
+      "id": 3,
+      "name": "Biddy Earlys Irish Pub"
+    },
+    {
+      "address": "Theodor-Heuss-Straße 10",
+      "id": 4,
+      "name": "SAUSALITOS"
+    },
+    {
+      "address": "Königstraße 22",
+      "id": 5,
+      "name": "Tequila Bar - The Club"
+    },
+    {
+      "address": "Friedrichstraße 27",
+      "id": 6,
+      "name": "Palast der Republik"
+    }
+  ],
+  "cinema": [
+    {
+      "address": "Bolzstraße 4",
+      "id": 0,
+      "name": "EM - innenstadt.kinos"
+    },
+    {
+      "address": "Tübinger Straße 6",
+      "id": 1,
+      "name": "Delphi Arthaus Kino"
+    },
+    {
+      "address": "Robert-Bosch-Platz 1",
+      "id": 2,
+      "name": "CinemaxX Stuttgart Liederhalle"
+    }
+  ],
+  "library": [
+    {
+      "address": "Mailänder Platz 1",
+      "id": 0,
+      "name": "Stadtbibliothek am Mailänder Platz"
+    }
+  ],
+  "museum": [
+    {
+      "address": "Kleiner Schloßplatz 1",
+      "id": 0,
+      "name": "Kunstmuseum Stuttgart"
+    },
+    {
+      "address": "Mailänder Platz 27",
+      "id": 1,
+      "name": "Museum der Illusionen Stuttgart"
+    },
+    {
+      "address": "Schlachthofstraße 2A",
+      "id": 2,
+      "name": "SchweineMuseum Stuttgart"
+    },
+    {
+      "address": "Konrad-Adenauer-Straße 30-32",
+      "id": 3,
+      "name": "Staatsgalerie Stuttgart"
+    },
+    {
+      "address": "Hegelpl. 4",
+      "id": 4,
+      "name": "Linden-Museum Stuttgart"
+    },
+    {
+      "address": "Schillerpl. 6",
+      "id": 5,
+      "name": "Landesmuseum Württemberg"
+    },
+    {
+      "address": "Konrad-Adenauer-Straße 16",
+      "id": 6,
+      "name": "Haus der Geschichte Baden-Württemberg"
+    },
+    {
+      "address": "Rosenstein 1",
+      "id": 7,
+      "name": "Naturkundemuseum Stuttgart, Schloss Rosenstein"
+    },
+    {
+      "address": "Rosenstein 1-3",
+      "id": 8,
+      "name": "Naturkundemuseum Stuttgart, Museum am Löwentor"
+    },
+    {
+      "address": "Mercedesstraße 100",
+      "id": 9,
+      "name": "Mercedes-Benz Museum"
+    },
+    {
+      "address": "Willy-Brandt-Straße 25",
+      "id": 10,
+      "name": "Planetarium Stuttgart"
+    }
+  ],
+  "restaurant": [
+    {
+      "address": "Mailänder Platz 7",
+      "id": 0,
+      "name": "L'Osteria Stuttgart Mailänder Platz"
+    },
+    {
+      "address": "Mailänder Platz 7",
+      "id": 1,
+      "name": "Frittenwerk"
+    },
+    {
+      "address": "Bolzstraße 10",
+      "id": 2,
+      "name": "Frittenwerk Stuttgart Bolzstraße"
+    },
+    {
+      "address": "Marienstraße 3B",
+      "id": 3,
+      "name": "HANS IM GLÜCK"
+    },
+    {
+      "address": "Mailänder Platz 7",
+      "id": 4,
+      "name": "HANS IM GLÜCK"
+    },
+    {
+      "address": "Königstraße 26",
+      "id": 5,
+      "name": "Hotalo"
+    }
+  ],
+  "view": [
+    {
+      "address": "Mailänder Platz 1",
+      "id": 0,
+      "name": "Dachterrasse Stadtbibliothek"
+    },
+    {
+      "address": "Schloßplatz nan",
+      "id": 1,
+      "name": "Schlossplatz Stuttgart"
+    },
+    {
+      "address": "Thomastraße 99",
+      "id": 2,
+      "name": "Killesbergturm"
+    },
+    {
+      "address": "Jahnstraße 120",
+      "id": 3,
+      "name": "Fernsehturm Stuttgart"
+    },
+    {
+      "address": "Solitude 1",
+      "id": 4,
+      "name": "Schloss Solitude"
+    }
+  ],
+  "zoo": [
+    {
+      "address": "Wilhelma 13",
+      "id": 0,
+      "name": "Wilhelma"
+    }
+  ]
+}

@@ -5,10 +5,32 @@ import flask
 import json
 from collections import defaultdict
 import random
+import json
 
+
+KNOWLEDGE_BASE = {}
+
+def query_knowledge_base(belief_states):
+    # returns all names of entities that fit the type of object_type
+    object_type = belief_states['object_type']
+    if object_type in KNOWLEDGE_BASE:
+        entities = KNOWLEDGE_BASE[object_type]
+        names = [entity['name'] for entity in entities]
+        return names
+    else:
+        return []
+
+    
+
+
+with open('./knowledge_base_data.json') as json_file:
+    KNOWLEDGE_BASE = json.load(json_file)
 
 import os
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+
+
+
 
 app = Flask(__name__)
 CORS(app)
@@ -60,7 +82,10 @@ def compare(key1, key2):
     else:
         return -1  
 
+
+
 def predictor(context):
+    # Context is a list of past utterances. Contains both User and System utterances in chronological order
     context_formated = []
     for idx, i in enumerate(context):
         if idx % 2 == 0:
@@ -69,7 +94,12 @@ def predictor(context):
             context_formated.append(f'system : {i}')
             
     sampled_results = sample(context_formated[-1:])
+    # the sample function is imported from soloist/server.py
+    # The sampled results contains both belief states and response (most of the time action_query_knowledge_base)
+    # the parse function separates the belief states from the response
     belief_states, response = parse(sampled_results)
+    # The parse function also corrects the shit from the model
+    # e.g object_type=restaurantsystem gets corrected to object_type=restaurant
 
     return response, belief_states
 
@@ -88,10 +118,15 @@ def generate_queue():
     rgo_queue.task_done()
     return jsonify(output)
 
+
+
+
+
 def generate_for_queue(in_queue, out_queue):
     memory = []
     while True:
         _, in_request = in_queue.get()
+        # obs is an array of past utterances
         obs = in_request['msg']
         response, belief_states = predictor(obs)    
         # try:
@@ -103,12 +138,15 @@ def generate_for_queue(in_queue, out_queue):
             for s,v in belief_states.items():
                 t.append(f'{s} = {v}')
             memory.append(' ; '.join(t))
+
         print(memory)
         
         
         followup = ''
         if response == 'action_query_knowledge_base':
             followup = 'Sure thing, query to the kb!'
+            response = '\n'.join(query_knowledge_base(belief_states))
+
         if response == 'bot_challenge':
             followup = 'Yes, I am a bot!'
             memory = []
