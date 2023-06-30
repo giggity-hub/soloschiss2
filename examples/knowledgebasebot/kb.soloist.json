@@ -1,0 +1,426 @@
+[
+  {
+    "history": [
+      "user : see you later"
+    ],
+    "belief": "belief : ",
+    "kb": "",
+    "reply": "system : good bye"
+  },
+  {
+    "history": [
+      "user : hello"
+    ],
+    "belief": "belief : ",
+    "kb": "",
+    "reply": "system : What can I do for you?"
+  },
+  {
+    "history": [
+      "user : Are there any cinemas in town?"
+    ],
+    "belief": "belief : object_type = cinema",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : can you show me some restaurant options"
+    ],
+    "belief": "belief : object_type = restaurant",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : are you a human?"
+    ],
+    "belief": "belief : ",
+    "kb": "",
+    "reply": "system : bot_challenge"
+  },
+  {
+    "history": [
+      "user : Is there a zoo in Stuttgart?"
+    ],
+    "belief": "belief : object_type = zoo",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : "
+    ],
+    "belief": "belief : ",
+    "kb": "",
+    "reply": "system : good bye"
+  },
+  {
+    "history": [
+      "user : hi"
+    ],
+    "belief": "belief : ",
+    "kb": "",
+    "reply": "system : What can I do for you?"
+  },
+  {
+    "history": [
+      "user : hey"
+    ],
+    "belief": "belief : ",
+    "kb": "",
+    "reply": "system : What can I do for you?"
+  },
+  {
+    "history": [
+      "user : Which cinemas can you recommend?"
+    ],
+    "belief": "belief : object_type = cinema",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : I'd like to watch a movie at the cinema"
+    ],
+    "belief": "belief : object_type = cinema",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : Where should i go to get a nice view?"
+    ],
+    "belief": "belief : object_type = view",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : "
+    ],
+    "belief": "belief : ",
+    "kb": "",
+    "reply": "system : What can I do for you?"
+  },
+  {
+    "history": [
+      "user : Recommend a museum"
+    ],
+    "belief": "belief : object_type = museum",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : hey there"
+    ],
+    "belief": "belief : ",
+    "kb": "",
+    "reply": "system : What can I do for you?"
+  },
+  {
+    "history": [
+      "user : What bars can you recommend?"
+    ],
+    "belief": "belief : object_type = bar",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : I would like to visit a bar"
+    ],
+    "belief": "belief : object_type = bar",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : Show me a great view"
+    ],
+    "belief": "belief : object_type = view",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : List some museums for me"
+    ],
+    "belief": "belief : object_type = museum",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : I want to go to a museum"
+    ],
+    "belief": "belief : object_type = museum",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : From where do i have the best view"
+    ],
+    "belief": "belief : object_type = view",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : I want to go somewhere with a view over the city"
+    ],
+    "belief": "belief : object_type = view",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : I'm in the mood to go to a bar"
+    ],
+    "belief": "belief : object_type = bar",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : Can you show my a cinema?"
+    ],
+    "belief": "belief : object_type = cinema",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : I want to have a drink at a bar"
+    ],
+    "belief": "belief : object_type = bar",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : Tell me about the museums in Stuttgart"
+    ],
+    "belief": "belief : object_type = museum",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : Show me some libraries"
+    ],
+    "belief": "belief : object_type = library",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : What restaurants can you recommend?"
+    ],
+    "belief": "belief : object_type = restaurant",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : Do you know a good bar around here?"
+    ],
+    "belief": "belief : object_type = bar",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : see you around"
+    ],
+    "belief": "belief : ",
+    "kb": "",
+    "reply": "system : good bye"
+  },
+  {
+    "history": [
+      "user : good morning"
+    ],
+    "belief": "belief : ",
+    "kb": "",
+    "reply": "system : What can I do for you?"
+  },
+  {
+    "history": [
+      "user : Let's get wasted at the pub"
+    ],
+    "belief": "belief : object_type = bar",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : Are there any good libraries"
+    ],
+    "belief": "belief : object_type = library",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : Recommend a zoo for me please"
+    ],
+    "belief": "belief : object_type = zoo",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : list some restaurants"
+    ],
+    "belief": "belief : object_type = restaurant",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : can you name some restaurants please?"
+    ],
+    "belief": "belief : object_type = restaurant",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : List some places with a great view"
+    ],
+    "belief": "belief : object_type = view",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : Show me a list of restaurants"
+    ],
+    "belief": "belief : object_type = restaurant",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : Where are the nicest views around here?"
+    ],
+    "belief": "belief : object_type = view",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : I wan't to go to the cinema"
+    ],
+    "belief": "belief : object_type = cinema",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : Which museums are there?"
+    ],
+    "belief": "belief : object_type = museum",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : Can you show me some bars?"
+    ],
+    "belief": "belief : object_type = bar",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : am I talking to a human?"
+    ],
+    "belief": "belief : ",
+    "kb": "",
+    "reply": "system : bot_challenge"
+  },
+  {
+    "history": [
+      "user : bye"
+    ],
+    "belief": "belief : ",
+    "kb": "",
+    "reply": "system : good bye"
+  },
+  {
+    "history": [
+      "user : Recommend me amazing views"
+    ],
+    "belief": "belief : object_type = view",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : am I talking to a bot?"
+    ],
+    "belief": "belief : ",
+    "kb": "",
+    "reply": "system : bot_challenge"
+  },
+  {
+    "history": [
+      "user : I want to go to a zoo"
+    ],
+    "belief": "belief : object_type = zoo",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : are you a bot?"
+    ],
+    "belief": "belief : ",
+    "kb": "",
+    "reply": "system : bot_challenge"
+  },
+  {
+    "history": [
+      "user : goodbye"
+    ],
+    "belief": "belief : ",
+    "kb": "",
+    "reply": "system : good bye"
+  },
+  {
+    "history": [
+      "user : "
+    ],
+    "belief": "belief : ",
+    "kb": "",
+    "reply": "system : bot_challenge"
+  },
+  {
+    "history": [
+      "user : good evening"
+    ],
+    "belief": "belief : ",
+    "kb": "",
+    "reply": "system : What can I do for you?"
+  },
+  {
+    "history": [
+      "user : I want to visit a library"
+    ],
+    "belief": "belief : object_type = library",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  },
+  {
+    "history": [
+      "user : Can you recommend some museums for me please?"
+    ],
+    "belief": "belief : object_type = museum",
+    "kb": "",
+    "reply": "system : action_query_knowledge_base"
+  }
+]

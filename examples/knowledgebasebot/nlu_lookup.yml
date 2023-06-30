@@ -1,0 +1,50 @@
+nlu:
+- examples: |
+    - Mata Hari
+    - Oblomow
+    - Ribingurumu
+    - Biddy Earlys Irish Pub
+    - SAUSALITOS
+    - Tequila Bar - The Club
+    - Palast der Republik
+  lookup: Bar
+- examples: |
+    - EM - innenstadt.kinos
+    - Delphi Arthaus Kino
+    - CinemaxX Stuttgart Liederhalle
+  lookup: Cinema
+- examples: |
+    - Stadtbibliothek am Mailänder Platz
+  lookup: Library
+- examples: |
+    - Kunstmuseum Stuttgart
+    - Museum der Illusionen Stuttgart
+    - SchweineMuseum Stuttgart
+    - Staatsgalerie Stuttgart
+    - Linden-Museum Stuttgart
+    - Landesmuseum Württemberg
+    - Haus der Geschichte Baden-Württemberg
+    - Naturkundemuseum Stuttgart, Schloss Rosenstein
+    - Naturkundemuseum Stuttgart, Museum am Löwentor
+    - Mercedes-Benz Museum
+    - Planetarium Stuttgart
+  lookup: Museum
+- examples: |
+    - L'Osteria Stuttgart Mailänder Platz
+    - Frittenwerk
+    - Frittenwerk Stuttgart Bolzstraße
+    - HANS IM GLÜCK
+    - HANS IM GLÜCK
+    - Hotalo
+  lookup: Restaurant
+- examples: |
+    - Dachterrasse Stadtbibliothek
+    - Schlossplatz Stuttgart
+    - Killesbergturm
+    - Fernsehturm Stuttgart
+    - Schloss Solitude
+  lookup: View
+- examples: |
+    - Wilhelma
+  lookup: Zoo
+version: '3.1'
