@@ -53,3 +53,13 @@ axios({
 ### Frontend
 - cd soloist/html
 - npm run serve
+
+
+# Training Data
+Training Data is in `examples/knowledgebasebot/rasa_nlu.yml`
+Here is an example query for an attribute with our domain. The attributes which you can be seen in `examples/knowledgebasebot/data.csv`
+```
+what is the [Housenumber]{"entity": "attribute"} of the [Willhelma]{"entity": "mention"}?
+```
+For more examples on a different domain check the [rasa kbbot tutorial](https://github.com/RasaHQ/rasa/blob/main/examples/knowledgebasebot/data/nlu.yml)
+For further reference check the [rasa training data](https://rasa.com/docs/rasa/nlu-training-data/) documentation
