@@ -1,0 +1,36 @@
+﻿0,Hi there!,
+1,Hello! How can I assist you today?,
+2,I'm looking for a nice restaurant in the area.,object_type = restaurant
+3,action_list_entity_names_of_type,
+4,Could you give me some more details about the third restaurant on the list?,mention_id = 3 ; attribute = website
+5,action_query_attribute,
+0,Good afternoon!,
+1,Good afternoon! How can I help you today?,
+2,I'm in the mood for some nice food. Any recommendations?,object_type = restaurant
+3,action_list_entity_names_of_type,
+4,Can you tell me more about the first venue on the list?,mention_id = 3 ; attribute = website
+5,action_query_attribute,
+6,Where is that venue located?,attribute = address
+7,action_query_attribute,
+0,Hey!,
+1,Hi! How may I assist you today?,
+2,I'm looking for a good restaurant nearby.,object_type = restaurant
+3,action_list_entity_names_of_type,
+4,Can you provide more information about the second restaurant on the list?,mention_id = 2 ; attribute = website
+5,action_query_attribute,
+6,What type of cuisine does that restaurant serve?,attribute = cuisine
+7,action_query_attribute,
+0,Hi there!,
+1,Hello! How can I assist you today?,
+2,I'm interested in visiting a museum.,object_type = museum
+3,action_list_entity_names_of_type,
+4,Where is the fourth museum located?,mention_id = 4 ; attribute = address
+5,action_query_attribute,
+6,What are the visiting hours for that museum?,attribute = hours
+7,action_query_attribute,
+0,Hello!,
+1,Hi! What kind of place would you like to visit?,
+2,I like going to museums. Any suggestions?,object_type = museum
+3,action_list_entity_names_of_type,
+4,Where do I find the first museum?,mention_id = 1 ; attribute = address
+5,action_query_attribute,
