@@ -12,6 +12,8 @@ KNOWLEDGE_BASE = {}
 
 def query_knowledge_base(belief_states):
     # returns all names of entities that fit the type of object_type
+
+
     object_type = belief_states['object_type']
     if object_type in KNOWLEDGE_BASE:
         entities = KNOWLEDGE_BASE[object_type]
@@ -170,4 +172,4 @@ if __name__ == "__main__":
     worker.setDaemon(True)
     worker.start()
 
-    app.run(host='0.0.0.0',port=8081)
+    app.run(host='0.0.0.0',port=8085)

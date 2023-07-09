@@ -61,6 +61,21 @@ nlu:
       - From where do i have the best [view]{"entity": "object_type", "value": "view"}
       - Where are the nicest [views]{"entity": "object_type", "value": "view"} around here?
       - Where should i go to get a nice [view]{"entity": "object_type", "value": "view"}?
+      - What is the [address]{"entity": "attribute", "value": "address"} of the [Kunstmuseum Stuttgart]{"entity": "object_type", "value": "museum"}?
+      - What's the [location]{"entity": "attribute", "value": "address"} of [Oblomow]{"entity": "object_type", "value": "bar"}?
+      - Do you know [Wilhelma]{"entity": "object_type", "value": "zoo"}'s [address]{"entity": "attribute", "value": "address"}?
+      - [Where]{"entity": "attribute", "value": "address"} is [Delphi Arthaus Kino]{"entity": "object_type", "value": "cinema"}?
+      - Where is [Killesbergturm]{"entity": "object_type", "value": "view"} [located]{"entity": "attribute", "value": "address"}?
+      - Where is [Mata Hari]{"entity": "object_type", "value": "bar"} [located]{"entity": "attribute", "value": "address"}?
+      - Where is [Schloss Solitude]{"entity": "object_type", "value": "view"} [located]{"entity": "attribute", "value": "address"}?
+      - [Where]{"entity": "attribute", "value": "address"} is a [museum]{"entity": "object_type", "value": "museum"}?
+      - I am hungry and need a [restaurant]{"entity": "object_type", "value": "bar"}.
+      - Do you know some [restaurants]{"entity": "object_type", "value": "restaurant"} in Stuttgart?
+      - What is the [address]{"entity": "attribute", "value": "address"} of the [Mercedes-Benz Museum]{"entity": "museum"}?
+      - Could you give me the [address]{"entity": "attribute", "value": "address"} of the [SchweineMuseum Stuttgart]{"entity": "museum"}
+      - I want to read a book at the local [library]{"entity": "object_type", "value": "library"}.
+      - Is there any [pub]{"entity": "object_type", "value": "bar"} in Stuttgart?
+      - I need a great [view]{"entity": "object_type", "value": "view"} of Stuttgart for my social media.
 
 - examples: |
     - Mata Hari
