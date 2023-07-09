@@ -1,35 +1,35 @@
-Type1;Type2;Name;Latitude;Longitude;City;PLZ;Street;Housenumber;Phone Number;Link;Open on Monday;Open on Tuesday;Open on Wednesday;Open on Thursday;Open on Friday;Open on Saturday
-Museum;Art;Kunstmuseum Stuttgart;48.77826624168077;9.177776384958323;Stuttgart;70173;Kleiner Schloßplatz;1;0711 21619600;https://www.kunstmuseum-stuttgart.de/;;;;;;
-Museum;Art;Museum der Illusionen Stuttgart;48.790064709312055;9.183634057691181;Stuttgart;70173;Mailänder Platz;27;0711 56618546;http://stuttgart.museumderillusionen.de/;;;;;;
-Museum;Pig;SchweineMuseum Stuttgart;48.78580747126274;9.219963110938334;Stuttgart;70188;Schlachthofstraße;2A;0711 66419600;https://www.schweinemuseum.de/;;;;;;
-Museum;Art;Staatsgalerie Stuttgart;48.78012308313448;9.186571537213778;Stuttgart;70173;Konrad-Adenauer-Straße;30-32;0711 470400;https://www.staatsgalerie.de/;;;;;;
-Museum;None;Linden-Museum Stuttgart;48.78276187304238;9.16999938648916;Stuttgart;70174;Hegelpl.;4;0711 20223;https://www.lindenmuseum.de/;;;;;;
-Museum;History;Landesmuseum Württemberg;48.77737690130994;9.179602555445964;Stuttgart;70173;Schillerpl.;6;0711 89535111;https://www.landesmuseum-stuttgart.de/;;;;;;
-Museum;History;Haus der Geschichte Baden-Württemberg;48.77898208634371;9.185759891315376;Stuttgart;70173;Konrad-Adenauer-Straße;16;0711 2123989;https://www.hdgbw.de/;;;;;;
-Museum;Animals;Naturkundemuseum Stuttgart, Schloss Rosenstein;48.8003660352146;9.205714369258516;Stuttgart;70191;Rosenstein;1;0711 89360;http://www.naturkundemuseum-bw.de/;;;;;;
-Museum;Prehistoric;Naturkundemuseum Stuttgart, Museum am Löwentor;48.80502694159829;9.190295417342556;Stuttgart;70191;Rosenstein;1-3;0711 89360;http://www.naturkundemuseum-bw.de/;;;;;;
-Museum;Technology;Mercedes-Benz Museum;48.78836907246162;9.233563012135624;Stuttgart;70372;Mercedesstraße;100;0711 1730000;https://www.mercedes-benz.com/museum;;;;;;
-Restaurant;Italian;L'Osteria Stuttgart Mailänder Platz;48.7906598701017;9.18372136879872;Stuttgart;70173;Mailänder Platz;7;0711 22007707;https://losteria.net/de/restaurants/restaurant/stuttgart-mailaender-platz/;;;;;;
-Restaurant;Imbiss;Frittenwerk;48.79077762289602;9.182208767080533;Stuttgart;70173;Mailänder Platz;7;0211 26009227;https://www.frittenwerk.com/stuttgart-milaneo.php;;;;;;
-Restaurant;Imbiss;Frittenwerk Stuttgart Bolzstraße;48.780268365247274;9.177784769590303;Stuttgart;70173;Bolzstraße;10;0711 88799969;https://frittenwerk.com/stuttgart-bolzstrasse.php;;;;;;
-Restaurant;Burger;HANS IM GLÜCK;48.7732037684159;9.173238632323041;Stuttgart;70178;Marienstraße;3B;0711 25274604;https://hansimglueck-burgergrill.de/burger-restaurant/stuttgart-marienstrasse/;;;;;;
-Restaurant;Burger;HANS IM GLÜCK;48.79071410366084;9.182572634742888;Stuttgart;70173;Mailänder Platz;7;0711 25254395;https://hansimglueck-burgergrill.de/burger-restaurant/stuttgart-milaneo/;;;;;;
-Restaurant;Asia;Hotalo;48.77967425777022;9.178423252133268;Stuttgart;70173;Königstraße;26;0176 66856614;https://www.koenigsbau-passagen.de/gastronomie/hotalo/?location=p534-13;;;;;;
-Bar;None;Mata Hari;48.773716834598524;9.177824469826191;Stuttgart;70173;Geißstraße;3;0711 50421479;http://www.facebook.com/matahari0711;;;;;;
-Bar;None;Oblomow;48.772807022333346;9.177167299695972;Stuttgart;70173;Torstraße;20;01577 1532031;https://m.facebook.com/oblomow.stuttgart/?locale2=de_DE;;;;;;
-Bar;None;Ribingurumu;48.77799288524263;9.174456326032322;Stuttgart;70174;Theodor-Heuss-Straße;4;None;https://www.instagram.com/ribingurumustgt/;;;;;;
-Bar;Irish;Biddy Earlys Irish Pub;48.773021485541854;9.172325534519414;Stuttgart;70178;Marienstraße;28;0711 6159853;http://www.biddyearlys.com/;;;;;;
-Bar;None;SAUSALITOS;48.77729685314314;9.173694206456192;Stuttgart;70173;Theodor-Heuss-Straße;10;0711 25394920;https://www.sausalitos.de/standorte?location=41;;;;;;
-Bar;Club;Tequila Bar - The Club;48.779803543696076;9.179144482004737;Stuttgart;70173;Königstraße;22;01590 4392552;https://tequilabar-stuttgart.com/;;;;;;
-Bar;Outdoor;Palast der Republik;48.7805113873448;9.177349581183861;Stuttgart;70174;Friedrichstraße;27;None;None;;;;;;
-Cinema;None;EM - innenstadt.kinos;48.77970743017888;9.178927013748364;Stuttgart;70173;Bolzstraße;4;0711 2290440;https://www.innenstadtkinos.de/;;;;;;
-Cinema;None;Delphi Arthaus Kino;48.7729812470016;9.174562990757474;Stuttgart;70178;Tübinger Straße;6;0711 292495;http://www.arthaus-kino.de/;;;;;;
-Cinema;None;CinemaxX Stuttgart Liederhalle;48.77979667622954;9.16828984645429;Stuttgart;70174;Robert-Bosch-Platz;1;040 80806969;https://www.cinemaxx.de/kinoprogramm/stuttgart-liederhalle;;;;;;
-Library;None;Stadtbibliothek am Mailänder Platz;48.79018397281733;9.182787774057635;Stuttgart;70173;Mailänder Platz;1;0711 21691100;https://stadtbibliothek-stuttgart.de/;;;;;;
-View;None;Dachterrasse Stadtbibliothek;48.79018397281733;9.182787774057635;Stuttgart;70173;Mailänder Platz;1;0711 21691100;https://stadtbibliothek-stuttgart.de/;;;;;;
-View;None;Schlossplatz Stuttgart;48.77859009722878;9.179840479247627;Stuttgart;70173;Schloßplatz;None;0711 22280;https://www.stuttgart-tourist.de/en/a-schlossplatz-stuttgart-palace-square;;;;;;
-View;Tower;Killesbergturm;48.80528926313547;9.171247780308127;Stuttgart;70192;Thomastraße;99;None;http://www.killesbergturm.de/;;;;;;
-View;Tower;Fernsehturm Stuttgart;48.755735042363646;9.190068512663624;Stuttgart;70597;Jahnstraße;120;0711 232597;http://www.fernsehturm-stuttgart.de/;;;;;;
-View;Palace;Schloss Solitude;48.78676808657135;9.084244695030696;Stuttgart;70197;Solitude;1;0711 3514772;http://www.schloss-solitude.de/;;;;;;
-Museum;;Planetarium Stuttgart;48.78329525006345;9.186854229638612;Stuttgart;70173;Willy-Brandt-Straße;25;0711 21689015;http://www.planetarium-stuttgart.de/;;;;;;
-Zoo;None;Wilhelma;48.80409266280568;9.207990076688459;Stuttgart;70376;Wilhelma;13;0711 54020;http://www.wilhelma.de/;;;;;;
+object_type,kind,name,address,Phone Number,Link
+Museum,Art,Kunstmuseum,Kleiner Schloßplatz 1,0711 21619600,https://www.kunstmuseum-stuttgart.de/
+Museum,Art,Museum der Illusionen,Mailänder Platz 27,0711 56618546,http://stuttgart.museumderillusionen.de/
+Museum,Pig,SchweineMuseum,Schlachthofstraße 2A,0711 66419600,https://www.schweinemuseum.de/
+Museum,Art,Staatsgalerie,Konrad-Adenauer-Straße 30-32,0711 470400,https://www.staatsgalerie.de/
+Museum,None,Linden-Museum,Hegelpl. 4,0711 20223,https://www.lindenmuseum.de/
+Museum,History,Landesmuseum,Schillerpl. 6,0711 89535111,https://www.landesmuseum-stuttgart.de/
+Museum,History,Haus der Geschichte,Konrad-Adenauer-Straße 16,0711 2123989,https://www.hdgbw.de/
+Museum,Animals,Naturkundemuseum,Rosenstein 1,0711 89360,http://www.naturkundemuseum-bw.de/
+Museum,Technology,Mercedes-Benz Museum,Mercedesstraße 100,0711 1730000,https://www.mercedes-benz.com/museum
+Museum,Italian,L'Osteria,Mailänder Platz 7,0711 22007707,https://losteria.net/de/restaurants/restaurant/stuttgart-mailaender-platz/
+Restaurant,Imbiss,Frittenwerk,Mailänder Platz 7,0211 26009227,https://www.frittenwerk.com/stuttgart-milaneo.php
+Restaurant,Burger,HANS IM GLÜCK,Marienstraße 3B,0711 25274604,https://hansimglueck-burgergrill.de/burger-restaurant/stuttgart-marienstrasse/
+Restaurant,Asia,Hotalo,Königstraße 26,0176 66856614,https://www.koenigsbau-passagen.de/gastronomie/hotalo/?location=p534-13
+Restaurant,None,Mata Hari,Geißstraße 3,0711 50421479,http://www.facebook.com/matahari0711
+Restaurant,None,Oblomow,Torstraße 20,01577 1532031,https://m.facebook.com/oblomow.stuttgart/?locale2=de_DE
+Restaurant,None,Ribingurumu,Theodor-Heuss-Straße 4,None,https://www.instagram.com/ribingurumustgt/
+Bar,Irish,Irish Pub,Marienstraße 28,0711 6159853,http://www.biddyearlys.com/
+Bar,None,SAUSALITOS,Theodor-Heuss-Straße 10,0711 25394920,https://www.sausalitos.de/standorte?location=41
+Bar,Club,Tequila Bar,Königstraße 22,01590 4392552,https://tequilabar-stuttgart.com/
+Bar,Outdoor,Palast der Republik,Friedrichstraße 27,None,None
+Bar,None,EM - innenstadt.kinos,Bolzstraße 4,0711 2290440,https://www.innenstadtkinos.de/
+Bar,None,Delphi Arthaus Kino,Tübinger Straße 6,0711 292495,http://www.arthaus-kino.de/
+Bar,None,CinemaxX,Robert-Bosch-Platz 1,040 80806969,https://www.cinemaxx.de/kinoprogramm/stuttgart-liederhalle
+Cinema,None,Stadtbibliothek,Mailänder Platz 1,0711 21691100,https://stadtbibliothek-stuttgart.de/
+Cinema,None,Dachterrasse Stadtbibliothek,Mailänder Platz 1,0711 21691100,https://stadtbibliothek-stuttgart.de/
+Cinema,None,Schlossplatz,Schloßplatz,0711 22280,https://www.stuttgart-tourist.de/en/a-schlossplatz-stuttgart-palace-square
+Library,Tower,Killesbergturm,Thomastraße 99,None,http://www.killesbergturm.de/
+View,Tower,Fernsehturm,Jahnstraße 120,0711 232597,http://www.fernsehturm-stuttgart.de/
+View,Palace,Schloss Solitude,Solitude 1,0711 3514772,http://www.schloss-solitude.de/
+View,,Planetarium,Willy-Brandt-Straße 25,0711 21689015,http://www.planetarium-stuttgart.de/
+View,None,Wilhelma,Wilhelma 13,0711 54020,http://www.wilhelma.de/
+View,,,,,
+Museum,,,,,
+Zoo,,,,,
