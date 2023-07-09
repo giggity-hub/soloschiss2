@@ -11,6 +11,17 @@ class Actions():
     def query_attribute(self, belief_state_dict, selection: Selection):
         attribute = belief_state_dict['attribute']
         return selection.entity[attribute]
+    
+    
+    
+
+
+
+
+
+
+
+
 
     def do(self, action_name, belief_state_dict, selection: Selection):
         action_func = self.__getattribute__(action_name)
@@ -20,6 +31,7 @@ class Actions():
         action_regexp = 'action_[a-z_]+'
         found_actions = re.findall(action_regexp, string)
 
+        print(f'found actions {found_actions}')
         if len(found_actions) == 0:
             return None
         

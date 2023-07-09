@@ -41,7 +41,7 @@ class Chat():
    
 
 
-
+            
             predicted_action = self.actions.find_action(system_response)
             if predicted_action:
                 output = self.actions.do(predicted_action, belief_state_dict, self.selection)

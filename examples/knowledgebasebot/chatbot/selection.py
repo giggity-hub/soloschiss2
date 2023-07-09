@@ -15,6 +15,10 @@ class Selection():
             mention_name = belief_state_dict['mention_name']
             self.entity = self.df[self.df['name'] == mention_name]
 
+        # if 'mention_it' in belief_state_dict:
+        #     pass
+
+
         if 'object_type' in belief_state_dict:
             object_type = belief_state_dict['object_type']
             
