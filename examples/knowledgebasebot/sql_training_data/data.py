@@ -10,11 +10,7 @@ def d(user, belief, system):
 data = [
     # Wants to visit a museum about something
     parametrize
-    {
-        "user" : "I would like to go to a museum",
-        "belief" : "df = domains['museum']",
-        "system" : "What kind of museums are you interested in?"
-    },
+
     parametrize({
         "user": "One about %(about)s please",
         "belief": "df = df.query('about == \"%(about)s\"') ; names = df['name'].tolist()",

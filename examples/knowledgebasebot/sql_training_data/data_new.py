@@ -34,8 +34,16 @@ ask_for_restaurant_with_cuisine = parametrize({
     })
 
 ask_for_museum = parametrize({
-    
-})
+    "user" : "%(user)s",
+    "belief" : "df = domains['museum'] ; about = df['about'].unique()",
+    "system" : "I know museums about the following topics {about}"
+    },
+    {
+        "user": [
+            "I would like to go to a museum",
+            "What kind of museums do you know of?"
+        ]
+    })
 
 data = [
     *parametrize_all(ask_for_museum_about, {
