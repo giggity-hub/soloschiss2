@@ -1,4 +1,10 @@
 # It's not SQL, it's pandas but i didn't rename the folder
+
+### Parametrization
+The generate multiple training sentences quickly you can parametrize some
+```python
+```
+
 ### How it works
 - Inside the belief state you can write python code separated by semicolons
 - The code will be evaluated from left to right, so if you have a variable that depends on another make sure the order is correct
@@ -6,6 +12,14 @@
 - the variable 'df' will always be the currently selected domain dataframe
     - When a user mentions or queries a domain make sure to set the domain variable again (even if it didn't change in the dialogue)
 - The variable 'row' will be the last accessed row. Also make sure to set this whenever a user aks anything so that future queries can use it
+
+
+### Cheat sheet
+```python
+# Get a "recommendation" aka random row
+row = df.sample().iloc[0]
+
+```
 
 ### best practice
 - Try to use as many different column values as possible so that the model learns what to focus on

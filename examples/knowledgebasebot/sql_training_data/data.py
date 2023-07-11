@@ -1,37 +1,41 @@
+from parametrize import parametrize, parametrize_all
+
+def d(user, belief, system):
+    return {
+        "user": user,
+        "system": system,
+        "belief": belief,
+    }
+
 data = [
-    [
-        {
-            "user" : "I would like to go to a museum",
-            "belief" : "df = domains['museum']",
-            "system" : "What kind of museums are you interested in?"
-        },
-        {
-            "user": "One about art please",
-            "belief": "df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
-            "system": "Here are some museums about art {names}"
-        },
-        {
-            "user": "Which of those have a discount for students?",
-            "belief": "names = df.query('student_discount == True')",
-            "system": "These art museums all offer a discount for students {names}"
-        },
-        {
-            "user": "Very well. I would like to go to the Gugelhupf museum. What is the address?",
-            "belief": "row = df.query('name == \"Gugelhupf\"').iloc[0] ; address = row['address']",
-            "system": "You can find the Gugelhupf museum at {address}"
-        }
-    ],
-    [
-        {
-            "user" : "Hello",
-            "belief" : "",
-            "system" : "Hello. What can i do for you?"
-        },
-        {
-            "user" : "I would like to visit a history museum",
-            "belief" : "df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
-            "system" : "These are museums about history {names}"
-        },
+    # Wants to visit a museum about something
+    parametrize
+    {
+        "user" : "I would like to go to a museum",
+        "belief" : "df = domains['museum']",
+        "system" : "What kind of museums are you interested in?"
+    },
+    parametrize({
+        "user": "One about %(about)s please",
+        "belief": "df = df.query('about == \"%(about)s\"') ; names = df['name'].tolist()",
+        "system": "Here are some museums about %(about)s {names}"
+    }, {'about': ['history', 'art', 'war', 'tanks', 'music', 'culture', 'ethnology']}),
+    {
+        "user": "Which of those have a discount for students?",
+        "belief": "names = df.query('student_discount == True')",
+        "system": "These art museums all offer a discount for students {names}"
+    },
+    parametrize({
+        "user": "Very well. I would like to go to the %(name)s museum. What is the address?",
+        "belief": "row = df.query('name == \"%(name)s\"').iloc[0] ; address = row['address']",
+        "system": "You can find the Gugelhupf museum at {address}"
+    }, {"name": ['Gugelhupf', 'Staatsgallerie', 'Heimatland', 'Koerperwelten']}),
+
+    {
+        "user" : "I would like to visit a history museum",
+        "belief" : "df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
+        "system" : "These are museums about history {names}"
+    },
         {
             "user": "Nevermind, i'd rather go to a museum about tanks",
             "belief": "df = domains['museum'].query('about == \"tanks\"') ; names = df['name'].tolist()",

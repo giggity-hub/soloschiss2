@@ -1,0 +1,458 @@
+[
+    {
+        "history": [
+            "user : I would like to see a museum about art"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about art {names}"
+    },
+    {
+        "history": [
+            "user : I would like to see a museum about history"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about history {names}"
+    },
+    {
+        "history": [
+            "user : I would like to see a museum about war"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"war\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about war {names}"
+    },
+    {
+        "history": [
+            "user : I would like to see a museum about cars"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"cars\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about cars {names}"
+    },
+    {
+        "history": [
+            "user : I want to go to a museum about art"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about art {names}"
+    },
+    {
+        "history": [
+            "user : I want to go to a museum about history"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about history {names}"
+    },
+    {
+        "history": [
+            "user : I want to go to a museum about war"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"war\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about war {names}"
+    },
+    {
+        "history": [
+            "user : I want to go to a museum about cars"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"cars\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about cars {names}"
+    },
+    {
+        "history": [
+            "user : I'd like to visit a art museum"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about art {names}"
+    },
+    {
+        "history": [
+            "user : I'd like to visit a history museum"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about history {names}"
+    },
+    {
+        "history": [
+            "user : I'd like to visit a war museum"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"war\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about war {names}"
+    },
+    {
+        "history": [
+            "user : I'd like to visit a cars museum"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"cars\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about cars {names}"
+    },
+    {
+        "history": [
+            "user : Please recommend some art museums for me"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about art {names}"
+    },
+    {
+        "history": [
+            "user : Please recommend some history museums for me"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about history {names}"
+    },
+    {
+        "history": [
+            "user : Please recommend some war museums for me"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"war\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about war {names}"
+    },
+    {
+        "history": [
+            "user : Please recommend some cars museums for me"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"cars\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about cars {names}"
+    },
+    {
+        "history": [
+            "user : are there any good museums about art in Stuttgart"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about art {names}"
+    },
+    {
+        "history": [
+            "user : are there any good museums about history in Stuttgart"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about history {names}"
+    },
+    {
+        "history": [
+            "user : are there any good museums about war in Stuttgart"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"war\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about war {names}"
+    },
+    {
+        "history": [
+            "user : are there any good museums about cars in Stuttgart"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"cars\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about cars {names}"
+    },
+    {
+        "history": [
+            "user : Show me a list of museums with the topic art"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about art {names}"
+    },
+    {
+        "history": [
+            "user : Show me a list of museums with the topic history"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about history {names}"
+    },
+    {
+        "history": [
+            "user : Show me a list of museums with the topic war"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"war\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about war {names}"
+    },
+    {
+        "history": [
+            "user : Show me a list of museums with the topic cars"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"cars\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about cars {names}"
+    },
+    {
+        "history": [
+            "user : Recommend some art museums for me"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about art {names}"
+    },
+    {
+        "history": [
+            "user : Recommend some history museums for me"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about history {names}"
+    },
+    {
+        "history": [
+            "user : Recommend some war museums for me"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"war\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about war {names}"
+    },
+    {
+        "history": [
+            "user : Recommend some cars museums for me"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"cars\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about cars {names}"
+    },
+    {
+        "history": [
+            "user : What museums are in Stuttgart, that are about art"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about art {names}"
+    },
+    {
+        "history": [
+            "user : What museums are in Stuttgart, that are about history"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about history {names}"
+    },
+    {
+        "history": [
+            "user : What museums are in Stuttgart, that are about war"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"war\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about war {names}"
+    },
+    {
+        "history": [
+            "user : What museums are in Stuttgart, that are about cars"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"cars\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about cars {names}"
+    },
+    {
+        "history": [
+            "user : Do you know of any good art museums here?"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about art {names}"
+    },
+    {
+        "history": [
+            "user : Do you know of any good history museums here?"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about history {names}"
+    },
+    {
+        "history": [
+            "user : Do you know of any good war museums here?"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"war\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about war {names}"
+    },
+    {
+        "history": [
+            "user : Do you know of any good cars museums here?"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"cars\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some museums about cars {names}"
+    },
+    {
+        "history": [
+            "user : I would like to eat some mexican food"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"mexican\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are restaurants that serve mexican food {names}"
+    },
+    {
+        "history": [
+            "user : I would like to eat some indian food"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"indian\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are restaurants that serve indian food {names}"
+    },
+    {
+        "history": [
+            "user : I would like to eat some german food"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"german\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are restaurants that serve german food {names}"
+    },
+    {
+        "history": [
+            "user : I would like to eat some swedish food"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"swedish\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are restaurants that serve swedish food {names}"
+    },
+    {
+        "history": [
+            "user : I would like to eat some chinese food"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"chinese\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are restaurants that serve chinese food {names}"
+    },
+    {
+        "history": [
+            "user : I would like to eat some american food"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"american\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are restaurants that serve american food {names}"
+    },
+    {
+        "history": [
+            "user : I would like to eat some italian food"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"italian\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are restaurants that serve italian food {names}"
+    },
+    {
+        "history": [
+            "user : I could really go for some mexican food right now"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"mexican\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are restaurants that serve mexican food {names}"
+    },
+    {
+        "history": [
+            "user : I could really go for some indian food right now"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"indian\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are restaurants that serve indian food {names}"
+    },
+    {
+        "history": [
+            "user : I could really go for some german food right now"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"german\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are restaurants that serve german food {names}"
+    },
+    {
+        "history": [
+            "user : I could really go for some swedish food right now"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"swedish\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are restaurants that serve swedish food {names}"
+    },
+    {
+        "history": [
+            "user : I could really go for some chinese food right now"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"chinese\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are restaurants that serve chinese food {names}"
+    },
+    {
+        "history": [
+            "user : I could really go for some american food right now"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"american\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are restaurants that serve american food {names}"
+    },
+    {
+        "history": [
+            "user : I could really go for some italian food right now"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"italian\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are restaurants that serve italian food {names}"
+    },
+    {
+        "history": [
+            "user : Do you know some places that serve mexican food?"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"mexican\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are restaurants that serve mexican food {names}"
+    },
+    {
+        "history": [
+            "user : Do you know some places that serve indian food?"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"indian\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are restaurants that serve indian food {names}"
+    },
+    {
+        "history": [
+            "user : Do you know some places that serve german food?"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"german\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are restaurants that serve german food {names}"
+    },
+    {
+        "history": [
+            "user : Do you know some places that serve swedish food?"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"swedish\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are restaurants that serve swedish food {names}"
+    },
+    {
+        "history": [
+            "user : Do you know some places that serve chinese food?"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"chinese\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are restaurants that serve chinese food {names}"
+    },
+    {
+        "history": [
+            "user : Do you know some places that serve american food?"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"american\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are restaurants that serve american food {names}"
+    },
+    {
+        "history": [
+            "user : Do you know some places that serve italian food?"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"italian\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are restaurants that serve italian food {names}"
+    }
+]
