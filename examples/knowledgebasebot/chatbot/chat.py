@@ -1,7 +1,22 @@
 import pandas as pd
 from selection import Selection
-from actions import Actions
+# from actions import Actions
 from soloist_parser import parse_soloist_output
+import re
+
+
+def find_action(self, string):
+    action_regexp = 'action_[a-z_]+'
+    found_actions = re.findall(action_regexp, string)
+
+    print(f'found actions {found_actions}')
+    if len(found_actions) == 0:
+        return None
+    
+    action_name = found_actions[0].replace('action_', '')
+    return action_name
+
+
 
 
 def load_knowledgebase_df():
@@ -12,44 +27,45 @@ def load_knowledgebase_df():
 
 class Chat():
     def __init__(self) -> None:
-        self.actions = Actions()
-        self.selection = Selection()
-        self.kb = load_knowledgebase_df()
+        # self.actions = Actions()
+        # self.selection = Selection()
+        # self.kb = load_knowledgebase_df()
         self.history = [] 
+
+    
+
 
 
     def start(self):
+        domains = {}
+        df = None
+        row = None
+
         while True:
             # Get Model Output for User Input
             user_in = input()
             user_in_prefixed = f'user : {user_in}'
-            raw_output = sample(self.history[-1:])[0]
-
-            # Parse the Raw output of the model
-            belief_state_dict, system_response = parse_soloist_output(raw_output)
-
-            # update the selection
-            self.selection.update(belief_state_dict, self.kb)
-
-            # Update the History
             self.history.append(user_in_prefixed)
+
+            raw_output = sample([user_in_prefixed])[0]
+
+            split_at = raw_output.find('system : ')
+            system_response = raw_output[split_at:]
+            belief_string = raw_output[:split_at]
+
+            res = "I sorry i did not understand that"
+            try:
+                for code in belief_string.split(";"):
+                    exec(code.strip())
+                res = eval("f'" + belief_string.strip() + "'")
+            except:
+                pass
+    
+
             self.history.append(system_response)
 
-            # Some Debugging Infos
-            # print(f'belief_state_string : {belief_state_string}')
-            print(f'belief_state_dict : {belief_state_dict}')
-   
-
-
-            
-            predicted_action = self.actions.find_action(system_response)
-            if predicted_action:
-                output = self.actions.do(predicted_action, belief_state_dict, self.selection)
-            else:
-                output = system_response
-
-            print(output)
-
+            print(raw_output)
+            print(res)
 
 if __name__ == "__main__":
     import sys

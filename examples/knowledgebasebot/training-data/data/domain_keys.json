@@ -1,0 +1,27 @@
+[
+    {
+        "user": "What can i talk to you about?",
+        "belief": "domain_keys = domains.keys()",
+        "system": "I can talk to you about cool things to do in and around Stuttgart, like {templates.list(domain_keys}"
+    },
+    {
+        "user": "What can you tell me about Stuttgart?",
+        "belief": "domain_keys = domains.keys()",
+        "system": "I can tell you something about these domains {templates.list(domain_keys)}"
+    },
+    {
+        "user": "What domains can you inform me about?",
+        "belief": "domain_keys = domains.keys()",
+        "system": "I can inform you about the following domains {templates.list(domain_keys)}"
+    },
+    {
+        "user": "What is there to do in Stuttgart?",
+        "belief": "domain_keys = domains.keys()",
+        "system": "In Stuttgart there are lots of things to do. These are the topics i can tell you about {templates.list(domain_keys)}"
+    },
+    {
+        "user": "What is your purpose?",
+        "belief": "domain_keys = domains.keys()",
+        "system": "My purpose is to give you information about things in Stuttgart, like {templates.list(domain_keys)}"
+    }
+]

@@ -17,6 +17,3 @@ def parse_soloist_output(raw_output):
     key_value_strings = belief_state_string.split(';')
     key_value_tuples = map(_parse_key_value_string, key_value_strings)
     return (dict(key_value_tuples), system_response, )
-
-
-

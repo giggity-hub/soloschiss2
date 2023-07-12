@@ -1,0 +1,32 @@
+[
+    {
+        "user": "Call the phone number of the Hatori please",
+        "belief": "row = df.query('name == \"Hatori\"') ; phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "system": "Calling {phone_number} ..."
+    },
+    {
+        "user": "I want to make a call to the last restaurant",
+        "belief": "row = df.iloc[-1] ; phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "system": "Calling {phone_number} ..."
+    },
+    {
+        "user": "Call them",
+        "belief": "phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "system": "Calling {phone_number} ..."
+    },
+    {
+        "user": "Give it a call",
+        "belief": "phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "system": "Calling {phone_number} ..."
+    },
+    {
+        "user": "Connect us via telephone please",
+        "belief": "phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "system": "Calling {phone_number} ..."
+    },
+    {
+        "user": "Can you ring them up?",
+        "belief": "phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "system": "Calling {phone_number} ..."
+    }
+]
