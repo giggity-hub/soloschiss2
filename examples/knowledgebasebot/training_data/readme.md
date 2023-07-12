@@ -1,5 +1,8 @@
 # Stuttbard
 
+## Generating training Data
+To generate the training data run `python3 -m create_data.py`. Make sure to run it as a module because fuck python imports. The script evaluates all python files and writes the result of the main methods into a json file with the same name. After that all json files are bundled into a single one. The complete training data will be in `./data.json`
+
 ## Training Data
 There are two methods of creating training data. Either with a json file or a python file.
 ### With python File
