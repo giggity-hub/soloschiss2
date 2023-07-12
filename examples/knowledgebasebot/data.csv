@@ -1,20 +1,6 @@
 object_type,kind,name,address,Phone Number,Link
-Museum,Art,Kunstmuseum,Kleiner Schloßplatz 1,0711 21619600,https://www.kunstmuseum-stuttgart.de/
-Museum,Art,Museum der Illusionen,Mailänder Platz 27,0711 56618546,http://stuttgart.museumderillusionen.de/
-Museum,Pig,SchweineMuseum,Schlachthofstraße 2A,0711 66419600,https://www.schweinemuseum.de/
-Museum,Art,Staatsgalerie,Konrad-Adenauer-Straße 30-32,0711 470400,https://www.staatsgalerie.de/
-Museum,None,Linden-Museum,Hegelpl. 4,0711 20223,https://www.lindenmuseum.de/
-Museum,History,Landesmuseum,Schillerpl. 6,0711 89535111,https://www.landesmuseum-stuttgart.de/
-Museum,History,Haus der Geschichte,Konrad-Adenauer-Straße 16,0711 2123989,https://www.hdgbw.de/
-Museum,Animals,Naturkundemuseum,Rosenstein 1,0711 89360,http://www.naturkundemuseum-bw.de/
-Museum,Technology,Mercedes-Benz Museum,Mercedesstraße 100,0711 1730000,https://www.mercedes-benz.com/museum
-Museum,Italian,L'Osteria,Mailänder Platz 7,0711 22007707,https://losteria.net/de/restaurants/restaurant/stuttgart-mailaender-platz/
-Restaurant,Imbiss,Frittenwerk,Mailänder Platz 7,0211 26009227,https://www.frittenwerk.com/stuttgart-milaneo.php
-Restaurant,Burger,HANS IM GLÜCK,Marienstraße 3B,0711 25274604,https://hansimglueck-burgergrill.de/burger-restaurant/stuttgart-marienstrasse/
-Restaurant,Asia,Hotalo,Königstraße 26,0176 66856614,https://www.koenigsbau-passagen.de/gastronomie/hotalo/?location=p534-13
-Restaurant,None,Mata Hari,Geißstraße 3,0711 50421479,http://www.facebook.com/matahari0711
-Restaurant,None,Oblomow,Torstraße 20,01577 1532031,https://m.facebook.com/oblomow.stuttgart/?locale2=de_DE
-Restaurant,None,Ribingurumu,Theodor-Heuss-Straße 4,None,https://www.instagram.com/ribingurumustgt/
+
+
 Bar,Irish,Irish Pub,Marienstraße 28,0711 6159853,http://www.biddyearlys.com/
 Bar,None,SAUSALITOS,Theodor-Heuss-Straße 10,0711 25394920,https://www.sausalitos.de/standorte?location=41
 Bar,Club,Tequila Bar,Königstraße 22,01590 4392552,https://tequilabar-stuttgart.com/
