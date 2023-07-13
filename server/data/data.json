@@ -1,0 +1,426 @@
+[
+    {
+        "history": [
+            "user : How about the third of them?"
+        ],
+        "belief": "belief : row = df.iloc[%(index_int)s] ; response = repeat_response(row)",
+        "kb": "",
+        "reply": "system : {response}"
+    },
+    {
+        "history": [
+            "user : I want to eat Italian"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"Italian\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some Italian restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : I like burgers and polish food"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"burgers\" | cuisine == \"polish\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Then you should like these restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : I want to eat polish food"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"polish\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some polish restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : and what about the Kunstmuseum?"
+        ],
+        "belief": "belief : row = df.query('name == \"Kunstmuseum\"').iloc[0] ; response = repeat_response(row)",
+        "kb": "",
+        "reply": "system : {response}"
+    },
+    {
+        "history": [
+            "user : Where can i get some fries food?"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"fries\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : You can get fries food at these restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Take me to their url"
+        ],
+        "belief": "belief : url = row['website'] ; actions.open_website(url)",
+        "kb": "",
+        "reply": "system : Opening {url} in the browser ..."
+    },
+    {
+        "history": [
+            "user : How is that for the Mata Hari?"
+        ],
+        "belief": "belief : row = df.query('name == \"Mata Hari\"').iloc[0] ; response = repeat_response(row)",
+        "kb": "",
+        "reply": "system : {response}"
+    },
+    {
+        "history": [
+            "user : List polish restaurants"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"polish\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here is a list of polish restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : I want to eat some food"
+        ],
+        "belief": "belief : df = domains['restaurant'] ; cuisines = df['cuisine'].unique()",
+        "kb": "",
+        "reply": "system : What type of food do you want to eat? {templates.list(cuisines)}"
+    },
+    {
+        "history": [
+            "user : What domains can you inform me about?"
+        ],
+        "belief": "belief : domain_keys = domains.keys()",
+        "kb": "",
+        "reply": "system : I can inform you about the following domains {templates.list(domain_keys)}"
+    },
+    {
+        "history": [
+            "user : Where can i grab something to eat?"
+        ],
+        "belief": "belief : df = domains['restaurant'] ; cuisines = df['cuisine'].unique()",
+        "kb": "",
+        "reply": "system : What cuisines are you interested in? {templates.list(cuisines)}"
+    },
+    {
+        "history": [
+            "user : "
+        ],
+        "belief": "belief : ",
+        "kb": "",
+        "reply": "system : My name is Stuttbard. What can i do for you?"
+    },
+    {
+        "history": [
+            "user : I want food that is  asian or Italian"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"asian\" | cuisine == \"Italian\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Then you should like these restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Does that also hold for the first one?"
+        ],
+        "belief": "belief : row = df.iloc[%(index_int)s] ; response = repeat_response(row)",
+        "kb": "",
+        "reply": "system : {response}"
+    },
+    {
+        "history": [
+            "user : I want to eat polish"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"polish\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some polish restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : What about the Staatsgalerie?"
+        ],
+        "belief": "belief : row = df.query('name == \"Staatsgalerie\"').iloc[0] ; response = repeat_response(row)",
+        "kb": "",
+        "reply": "system : {response}"
+    },
+    {
+        "history": [
+            "user : I'd like to get a burgers meal"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"burgers\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These restaurants serve burgers meals {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : give me indian restaurants"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"indian\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are indian restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : What can i talk to you about?"
+        ],
+        "belief": "belief : domain_keys = domains.keys()",
+        "kb": "",
+        "reply": "system : I can talk to you about cool things to do in and around Stuttgart, like {templates.list(domain_keys}"
+    },
+    {
+        "history": [
+            "user : I want to make a call to the last museum"
+        ],
+        "belief": "belief : row = df.iloc[%(index_int)s] ; phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "kb": "",
+        "reply": "system : Calling {phone_number} ..."
+    },
+    {
+        "history": [
+            "user : Hello there"
+        ],
+        "belief": "belief : ",
+        "kb": "",
+        "reply": "system : Hello to you"
+    },
+    {
+        "history": [
+            "user : and the fourth one?"
+        ],
+        "belief": "belief : row = df.iloc[%(index_int)s] ; response = repeat_response(row)",
+        "kb": "",
+        "reply": "system : {response}"
+    },
+    {
+        "history": [
+            "user : Can you show me the website?"
+        ],
+        "belief": "belief : url = row['website'] ; actions.open_website(url)",
+        "kb": "",
+        "reply": "system : Opening {url} in the browser ..."
+    },
+    {
+        "history": [
+            "user : "
+        ],
+        "belief": "belief : ",
+        "kb": "",
+        "reply": "system : Hello I am Stuttbard. How can i help you?"
+    },
+    {
+        "history": [
+            "user : Call the phone number of the HANS IM GL\u00dcCK please"
+        ],
+        "belief": "belief : phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "kb": "",
+        "reply": "system : Calling {phone_number} ..."
+    },
+    {
+        "history": [
+            "user : What can you tell me about Stuttgart?"
+        ],
+        "belief": "belief : domain_keys = domains.keys()",
+        "kb": "",
+        "reply": "system : I can tell you something about these domains {templates.list(domain_keys)}"
+    },
+    {
+        "history": [
+            "user : I'd like to get a fries meal"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"fries\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These restaurants serve fries meals {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Are there any restaurants you know of?"
+        ],
+        "belief": "belief : df = domains['restaurant'] ; cuisines = df['cuisine'].unique()",
+        "kb": "",
+        "reply": "system : Yes! I know restaurants that serve the following cuisines {templates.list(cuisines)}"
+    },
+    {
+        "history": [
+            "user : Open their website"
+        ],
+        "belief": "belief : url = row['website'] ; actions.open_website(url)",
+        "kb": "",
+        "reply": "system : Opening {url} in the browser ..."
+    },
+    {
+        "history": [
+            "user : give me asian restaurants"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"asian\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are asian restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Where can i get some indian food?"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"indian\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : You can get indian food at these restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : What is there to do in Stuttgart?"
+        ],
+        "belief": "belief : domain_keys = domains.keys()",
+        "kb": "",
+        "reply": "system : In Stuttgart there are lots of things to do. These are the topics i can tell you about {templates.list(domain_keys)}"
+    },
+    {
+        "history": [
+            "user : Do you know any restaurants?"
+        ],
+        "belief": "belief : df = domains['restaurant'] ; cuisines = df['cuisine'].unique()",
+        "kb": "",
+        "reply": "system : Sure. Which cuisines should the restaurant serve? {templates.list(cuisines)}"
+    },
+    {
+        "history": [
+            "user : Connect me with the second via phone"
+        ],
+        "belief": "belief : row = df.iloc[%(index_int)s] ; phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "kb": "",
+        "reply": "system : Calling {phone_number} ..."
+    },
+    {
+        "history": [
+            "user : Hi"
+        ],
+        "belief": "belief : ",
+        "kb": "",
+        "reply": "system : Hello"
+    },
+    {
+        "history": [
+            "user : Hello"
+        ],
+        "belief": "belief : ",
+        "kb": "",
+        "reply": "system : Hello"
+    },
+    {
+        "history": [
+            "user : I want to eat asian food"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"asian\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some asian restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Give the Landesmuseum a call"
+        ],
+        "belief": "belief : phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "kb": "",
+        "reply": "system : Calling {phone_number} ..."
+    },
+    {
+        "history": [
+            "user : Call them"
+        ],
+        "belief": "belief : phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "kb": "",
+        "reply": "system : Calling {phone_number} ..."
+    },
+    {
+        "history": [
+            "user : I want to go to a restaurant"
+        ],
+        "belief": "belief : df = domains['restaurant'] ; cuisines = df['cuisine'].unique()",
+        "kb": "",
+        "reply": "system : What kind of restaurants do you like? {templates.list(cuisines)}"
+    },
+    {
+        "history": [
+            "user : Ring up the Hotalo"
+        ],
+        "belief": "belief : phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "kb": "",
+        "reply": "system : Calling {phone_number} ..."
+    },
+    {
+        "history": [
+            "user : Please call their telephone number"
+        ],
+        "belief": "belief : phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "kb": "",
+        "reply": "system : Calling {phone_number} ..."
+    },
+    {
+        "history": [
+            "user : Do you know any restaurants that are either fries or burgers"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"fries\" | cuisine == \"burgers\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are restaurants that fit your description {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Do you know any restaurants that are either asian or indian"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"asian\" | cuisine == \"indian\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are restaurants that fit your description {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : What is your purpose?"
+        ],
+        "belief": "belief : domain_keys = domains.keys()",
+        "kb": "",
+        "reply": "system : My purpose is to give you information about things in Stuttgart, like {templates.list(domain_keys)}"
+    },
+    {
+        "history": [
+            "user : "
+        ],
+        "belief": "belief : ",
+        "kb": "",
+        "reply": "system : I am Stuttbard. How can i assist you?"
+    },
+    {
+        "history": [
+            "user : Call the fifth restaurant"
+        ],
+        "belief": "belief : row = df.iloc[%(index_int)s] ; phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "kb": "",
+        "reply": "system : Calling {phone_number} ..."
+    },
+    {
+        "history": [
+            "user : I'd like to eat something"
+        ],
+        "belief": "belief : df = domains['restaurant'] ; cuisines = df['cuisine'].unique()",
+        "kb": "",
+        "reply": "system : What kind of food would you like to eat? {templates.list(cuisines)}"
+    },
+    {
+        "history": [
+            "user : Give them a call"
+        ],
+        "belief": "belief : phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "kb": "",
+        "reply": "system : Calling {phone_number} ..."
+    },
+    {
+        "history": [
+            "user : List indian restaurants"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"indian\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here is a list of indian restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : I want food that is  indian or polish"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"indian\" | cuisine == \"polish\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Then you should like these restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : I like Italian and fries food"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"Italian\" | cuisine == \"fries\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Then you should like these restaurants {templates.list(names)}"
+    }
+]
