@@ -1,0 +1,19 @@
+version: '3'
+services:
+  myapp:
+    stop_signal: SIGINT
+    ports:
+      - "8000:8000"
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+      
+    volumes:
+      - ./models:/app/models
+      - ./data:/app/data
+
+    working_dir: /app
+    image: myapp_image
+    stdin_open: true 
+    tty: true

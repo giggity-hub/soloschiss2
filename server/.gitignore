@@ -1,0 +1,5 @@
+gtg_pretrained.tar.gz
+models/*
+
+examples/knowledgebasebot/knowledgebase_model/*
+examples/knowledgebasebot/knowledgebase_model
