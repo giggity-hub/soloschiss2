@@ -1,0 +1,10 @@
+cuisine;str
+name;str
+address;str
+phone_number;str
+area;str
+price;str
+rating;float
+vegan_options;bool
+dishes;str
+url;str

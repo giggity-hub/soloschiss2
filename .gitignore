@@ -144,3 +144,5 @@ soloist/gtg_pretrained
 examples/knowledgebasebot/knowledgebase_model
 soloist/html/node_modules
 soloist/runs
+
+/models

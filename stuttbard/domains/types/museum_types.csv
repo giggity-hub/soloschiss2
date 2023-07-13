@@ -1,0 +1,6 @@
+col;type
+about;str
+name;str
+address;str
+phone_number;str
+url;str

@@ -1,0 +1,62 @@
+[
+    {
+        "user": "Call them",
+        "belief": "phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "system": "Calling {phone_number} ..."
+    },
+    {
+        "user": "Please call their telephone number",
+        "belief": "phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "system": "Calling {phone_number} ..."
+    },
+    {
+        "user": "Give them a call",
+        "belief": "phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "system": "Calling {phone_number} ..."
+    },
+    {
+        "user": "Call the phone number of the HANS IM GL\u00dcCK please",
+        "belief": "phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "system": "Calling {phone_number} ..."
+    },
+    {
+        "user": "Give the Landesmuseum a call",
+        "belief": "phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "system": "Calling {phone_number} ..."
+    },
+    {
+        "user": "Ring up the Hotalo",
+        "belief": "phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "system": "Calling {phone_number} ..."
+    },
+    {
+        "user": "I want to make a call to the last museum",
+        "belief": "row = df.iloc[%(index_int)s] ; phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "system": "Calling {phone_number} ..."
+    },
+    {
+        "user": "Connect me with the second via phone",
+        "belief": "row = df.iloc[%(index_int)s] ; phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "system": "Calling {phone_number} ..."
+    },
+    {
+        "user": "Call the fifth restaurant",
+        "belief": "row = df.iloc[%(index_int)s] ; phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "system": "Calling {phone_number} ..."
+    },
+    {
+        "user": "Can you show me the website?",
+        "belief": "url = row['website'] ; actions.open_website(url)",
+        "system": "Opening {url} in the browser ..."
+    },
+    {
+        "user": "Take me to their url",
+        "belief": "url = row['website'] ; actions.open_website(url)",
+        "system": "Opening {url} in the browser ..."
+    },
+    {
+        "user": "Open their website",
+        "belief": "url = row['website'] ; actions.open_website(url)",
+        "system": "Opening {url} in the browser ..."
+    }
+]

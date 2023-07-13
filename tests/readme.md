@@ -1,0 +1,1 @@
+run `python3 -m pytest ./tests -v` in the root folder
