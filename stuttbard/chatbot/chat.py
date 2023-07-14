@@ -1,45 +1,18 @@
-import pandas as pd
-from selection import Selection
-# from actions import Actions
-from soloist_parser import parse_soloist_output
 import re
+from stuttbard.domains.dataframes import load
+from argparse import Namespace
 
-
-def find_action(self, string):
-    action_regexp = 'action_[a-z_]+'
-    found_actions = re.findall(action_regexp, string)
-
-    print(f'found actions {found_actions}')
-    if len(found_actions) == 0:
-        return None
-    
-    action_name = found_actions[0].replace('action_', '')
-    return action_name
-
-
-
-
-def load_knowledgebase_df():
-    kb_df = pd.read_csv('data.csv')
-    # make entire dataset lowercase
-    kb_df = kb_df.apply(lambda x: x.astype(str).str.lower())
-    return kb_df
+domains = load()
 
 class Chat():
     def __init__(self) -> None:
-        # self.actions = Actions()
-        # self.selection = Selection()
-        # self.kb = load_knowledgebase_df()
         self.history = [] 
-
-    
 
 
 
     def start(self):
-        domains = {}
-        df = None
-        row = None
+        domains = load()
+        
 
         while True:
             # Get Model Output for User Input
@@ -67,14 +40,35 @@ class Chat():
             print(raw_output)
             print(res)
 
+def do_shit(belief_string, system_response, prev={'df': 'sheesh'}):
+    ns = Namespace(**prev)
+
+    # print(domains)
+    res = "Sorry i nix understando"
+    code_blocks = belief_string.split(";")
+    code_blocks = [cb.strip() for cb in code_blocks]
+
+
+    try:
+        for cb in code_blocks:
+            exec(cb)
+        print(ns.df)
+        eval_string = system_response.strip()
+        print(eval_string)
+        res = eval('f"' + eval_string + '"')
+    except Exception as e:
+        print(e)
+        print("Oh boiiii something really bad happened")
+    
+    return res, locals()
+
+
 if __name__ == "__main__":
-    import sys
-    sys.path.insert(0, '../..')
-
-    from soloist.server import *
-    args.model_name_or_path = 'knowledgebase_model'
-    # this is the main method from the soloist server
-    main()
-
-    chat = Chat()
-    chat.start()
+    
+    # print(domains)
+    # print("sheeeeeeesh")
+    x, y = do_shit("ns.df = domains['restaurant']", "give me your wallet {ns.df['name'].iloc[0]}")
+    print(x)
+    # print(df)
+    # chat = Chat()
+    # chat.start()
