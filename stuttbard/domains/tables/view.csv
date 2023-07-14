@@ -1,0 +1,5 @@
+type,name,longitude,latitude,gmaps_id,street,address,public
+Tower,Fernsehturm,,,,,Jahnstraße 120,0711 232597
+Palace,Schloss Solitude,,,,,Solitude 1,0711 3514772
+Planetarium,Willy-Brandt-Straße 25,,,,,0711 21689015,http://www.planetarium-stuttgart.de/
+None,Wilhelma,,,,,Wilhelma 13,0711 54020
