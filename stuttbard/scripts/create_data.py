@@ -18,7 +18,24 @@ OUT_DIR = parent_dir
 class format_dictizzly_bizzl(dict):
     def __missing__(self, key):
         return "%(" + key + ")s"
+
+def get_samples(samplers_dict):
+    format_dict = {key : sampler.sample() for (key, sampler) in samplers_dict.items()}
+
+    res = {}
+    for key, value in format_dict.items():
+        if "," in key:
+            sub_keys = key.split(',')
+            sub_keys = [sub_key.strip() for sub_key in sub_keys]
+            sub_key_sub_val_pairs = zip(sub_keys, value)
+            sub_keys_dict = dict(sub_key_sub_val_pairs)
+            res = {**res, **sub_keys_dict}
+
+        else:
+            res[key] = value
     
+    return res
+
 
 def parametrize(config):
     n_repetitions = config['n_repetitions'] if 'n_repetitions' in config else 1
@@ -32,20 +49,9 @@ def parametrize(config):
                 "belief": belief,
                 "system": d[1]
             }
-
             if 'samplers' in config:
-                samplers = config['samplers']
-                format_dict = {key : sampler.sample() for (key, sampler) in samplers.items()}
-
-                new_moped = {}
-                for key, value in format_dict.items():
-                    if type(value) == list or type(value) == tuple:
-                        sub_keys = key.split(',')
-                        new_moped = {**new_moped, **dict(zip(sub_keys, value))}
-                    else:
-                        new_moped[key] = value
-                
-                new_moped = format_dictizzly_bizzl(new_moped)
+                format_dict = get_samples(config['samplers'])
+                new_moped = format_dictizzly_bizzl(format_dict)
                 sample = {key : value % new_moped for (key, value) in sample.items()}
 
             res.append(sample)
