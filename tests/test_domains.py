@@ -4,7 +4,7 @@ from stuttbard.domains.sampler import create_sampler
 
 def test_load():
     domains = load()
-    assert sorted(domains.keys()) == sorted(['museum', 'restaurant'])
+    assert sorted(domains.keys()) == sorted(['museum', 'restaurant', 'view'])
 
 domains = load()
 
