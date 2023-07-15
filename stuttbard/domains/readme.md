@@ -1,13 +1,14 @@
-# Tips
+# Domain Specific Columns
+### Museum
+- about
+- about_specifc
+- for_children
 
-# Domains
-All Domains should have the following fields
-- name
-- gmaps_id
+### Restaurant
+- cuisine
 
 
-
-### Automatically inferred fields
+### Places Fields
 The following fields will be automatically inferred
 - area (from the zip_code)
 - zip_code
@@ -16,3 +17,6 @@ The following fields will be automatically inferred
 - longitude
 - address (from street, zip_code and house_number)
 - id
+- phone number
+- url
+- rating
