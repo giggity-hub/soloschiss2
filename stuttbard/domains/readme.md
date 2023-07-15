@@ -1,5 +1,4 @@
 # Tips
-Do not edit the csv files in your code editor. use a table editor like excel or libre office
 
 # Domains
 All Domains should have the following fields
