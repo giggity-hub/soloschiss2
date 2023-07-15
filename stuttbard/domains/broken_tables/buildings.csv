@@ -1,1 +1,12 @@
-build
+type;lookup_name;model_name;year_build_start_string;year_build_end_string;year_build_start_int;year_build_end_int;plus_code;
+historic;Staatstheater Stuttgart;Staatstheater;1909;1912;1909;1912;Q5HM+VP Stuttgart;
+historic;Neues Schloss Stuttgart;Neues Schloss;1746;1807;1746;1807;Q5HJ+5P Stuttgart;
+historic;Schloss Solitude;Schloss Solitude;1763;1769;1763;1769;Q3PM+QP Stuttgart;
+historic;Altes Schloss;Altes Schloss;1200 to 1800;1200 to 1800;None;None;Q5GH+RR Stuttgart;
+historic;Königsbau Passagen Stuttgart;Königsbau Passagen;1855;1859;1855;1859;Q5HH+Q5 Stuttgart;
+historic;Grabkapelle auf dem Württemberg;Grabkapelle auf dem Württemberg;1820;1824;1820;1824;Q7J9+RC Stuttgart;
+historic;Johanneskirche | Evangelische Kirchengemeinde Stuttgart-West;Johanneskirche;1865;1876;1865;1876;Q5F7+8R Stuttgart;
+historic;Chinesischer Garten Stuttgart;Chinesischer Garten;1993;1993;1993;1993;Q5PG+V9 Stuttgart;
+contemporary;Mercedes-Benz Museum;Mercedes-Benz Museum;2003;2006;2003;2006;Q6QM+8F Stuttgart;
+contemporary;Kunstmuseum Stuttgart;Kunstmuseum;2005;2005;2005;2005;Q5HH+82 Stuttgart;
+contemporary;Stadtbibliothek am Mailänder Platz;Stadtbibliothek am Mailänder Platz;2008;2008;2011;2011;Q5QM+X6 Stuttgart;
