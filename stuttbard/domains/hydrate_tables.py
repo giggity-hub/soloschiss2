@@ -533,28 +533,35 @@ def print_json_entry(details_dict):
 def main():
     # this way you get the dir name of the file regardless from where it is called
     current_dir = os.path.dirname(__file__)
-    # 1.) iterate over all files in the scraping_results folder
+    # directory filled with the json files obtained from google places api
     scraping_results_dir = os.path.join(current_dir, "scraping_results")
-    tables_dir = os.path.join(current_dir, "tables")
     scraping_files = [file for file in os.listdir(scraping_results_dir)]
+    # directory of already existing csv tables that should be extended by json data from scraping_results 
+    # directory
+    tables_dir = os.path.join(current_dir, "tables")
 
     for scraping_file in scraping_files:
-        # 2.) read the json file to a python dict
         try:
             json_dict = read_json_file(os.path.join(scraping_results_dir, scraping_file))
             old_csv_file_path = os.path.join(tables_dir, scraping_file.replace("json", "csv"))
-            table = pd.read_csv(old_csv_file_path, delimiter=";") 
-                # for every name (key) in the json
-                # 3.) get a dict with the attributes we are interested in
-                # 4.) write the dict to a list
-            #TODO: adapt the columns to the specific domain.
-            # table = extract_table(scraped_data_dict=json_dict, columns=[])
-            table = extend_table(table, json_dict, columns=[])
-            # 5.) create a pandas df with the list of objects and write save it as a csv file
+            if os.path.isfile(old_csv_file_path):
+                # if there is already a csv table we want to extend it by the data of the corresponding 
+                # json file
+                table = pd.read_csv(old_csv_file_path, delimiter=";") 
+                #TODO: adapt the columns to the specific domain.
+                table = extend_table(table, json_dict, columns=[])
+            else:
+                # if there is no csv table corresponding to the json file, we create a new one, 
+                # based on the json data
+                #TODO: adapt the columns to the specific domain.
+                table = extract_table(scraped_data_dict=json_dict, columns=[])
+
             results_dir = os.path.join(current_dir, "extracted_tables")
             csv_file_path = os.path.join(results_dir, scraping_file.replace("json", "csv"))
-            table.to_csv(csv_file_path, sep=";")
-        except:
+            table.to_csv(csv_file_path, sep=";", index=False)
+       
+        except Exception as error:
+            print(error)
             continue
 
 if __name__ == "__main__":
