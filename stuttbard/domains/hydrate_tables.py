@@ -1,3 +1,17 @@
+"""
+    This script is used to fill csv tables or edit csv tables, based on the json file obatained 
+    from google places api.
+
+    In order to add another attribute (i.e. column) to your csv table, you have to define an 
+    extract function that extracts the values for the column. 
+    Additional, you have to add an entry of the form "<colum_name>: <extract_function_name>" to
+    the extractor dict.
+
+    Note: You are not allowed to add an entry of the form "name: <extract_function_name>", because
+    there is already a column called "name" reserved. This "name" column holds the keys to look up
+    specific entries in the json file.
+"""
+
 import json
 import pandas as pd
 
@@ -85,7 +99,7 @@ def extract_phone_number(details_dict):
     return result
 
 
-def extract_name(details_dict):
+def extract_long_name(details_dict):
     """
     Returns the human-readable name for the place specified in details_dict. 
     """
@@ -181,7 +195,7 @@ extractor = {
     "location_lat": extract_location_lat,
     "location_lng": extract_location_lng,
 
-    "name": extract_name,
+    "long_name": extract_long_name,
     "phone_number": extract_phone_number,
     "website": extract_website,
     "url": extract_url,
@@ -198,6 +212,10 @@ def add_col(table, scraped_data_dict, col_name):
     """
     Adds a single column to the table based on data extracted from scraped_data_dict.
     The attribute to fill in the new column is specified by the col_name.
+    
+    Note: Can not be used on an empty table. The table must at least contain a "name" column with
+    the name values corresponding to the keys of the scraped_data_dict.
+
     Parameters
     ----------
     table : pandas DataFrame
@@ -205,22 +223,192 @@ def add_col(table, scraped_data_dict, col_name):
     scraped_data_dict : dict
         The dict obtained by reading a json file obtained from google places api.
     col_name : string
-        The string that specifies the attribute to extract from the json data..
+        The string that specifies the attribute to extract from the json data.
+    
+    Returns
     ----------
+    table : pandas DataFrame
+        The DataFrame with a new column filled with data from scraped_data_dict.
     """
     def get_extracted_value(row):
-        print(row)
         name = row['name']
         details_dict = scraped_data_dict[name]
         try:
-            # in case a certain attribute can not be extracted for a certain location we will fill "None"
+            # in case a certain attribute can not be extracted from a details_dict we will fill "None"
             col_val = extractor[col_name](details_dict)
         except:
             col_val = "None"
         return col_val
-
+    
     table[col_name] = table.apply(get_extracted_value, axis=1 )
     return table
+
+
+def remove_columns(table, col_names=[]):
+    """
+    Removes the columns specified by col_names from the table.
+
+    Parameters
+    ----------
+    table : pandas DataFrame
+        The DataFrame obtained by reading a csv file with pandas.
+    col_name : list of strings
+        The list of strings holds column names of those columns that should be deleted from the table. 
+
+    Returns
+    ----------
+    table : pandas DataFrame
+        The DataFrame with the deleted columns.
+    """
+    if len(col_names) != 0:
+        table = table.drop(col_names, axis=1)
+    return table
+
+
+def get_table(scraped_data_dict, columns=[]):
+    """
+    Creates a pandas DataFrame based on the values obtained from the scraped_data_dict dict.
+    This function should do the same as the extract_table(...) function, but the order of the rows
+    in the tables can be different.
+    
+    Note: The "name" column holds the key values for the scraped_data_dict. The "long_name"
+    column holds the detailed names for the places.
+
+    Parameters
+    ----------
+    scraped_data_dict : dict
+        The dict obtained by reading a json file obtained from google places api.
+
+    columns : list of strings
+        The name of the colums we want to extract from the scraped_data_dict. 
+        These should correspond to a subset of keys from extarctor dict.
+        If columns is a empty list all possible columns defined by the above extractor dict,
+        will be extracted.
+    
+    Returns
+    ----------
+    table : pandas DataFrame
+        The DataFrame filled with values from the scraped_data_dict.
+    """
+    lookup_names = list(scraped_data_dict.keys())
+    data_dict = {}
+    if len(columns) == 0:
+        columns = list(extractor.keys())
+    
+    assert(not "name" in columns)
+    for col_name in columns:
+        column = []
+        for lookup_name in lookup_names:
+            details_dict = scraped_data_dict[lookup_name]
+            try:
+                column.append(extractor[col_name](details_dict))
+            except:
+                column.append("None")
+        data_dict[col_name] = column
+    
+    # the lookup_names column in the dataframe can be later used to lookup the json file scraped_data_dict
+    # in order to obtain specific details_dict
+    data_dict["name"] = lookup_names
+
+    dataframe = pd.DataFrame.from_dict(data_dict)
+    # TODO: add some sorting of the dataframe according to the values of one column.
+    # This ensures we always get the same table back and don't have the rows in abitrary order everytime
+    # we call this function.
+
+    return dataframe
+
+
+def extract_table(scraped_data_dict, columns=[]):
+    """
+    Creates a pandas DataFrame based on the values obtained from the scraped_data_dict dict.
+    
+    Note: Does the same thing as the get_table(...) function, but relies on the add_col(...) function.
+    Therefore if add_col works this function will probably also work. However, the order of rows can 
+    be different. 
+
+    Note: The returned table has a column called "name" filled with the keys for the scrapped_data_dict.
+    These are different from the values in the column called "long_name" that holds the detailed name of
+    a place.
+
+    Parameters
+    ----------
+    scraped_data_dict : dict
+        The dict obtained by reading a json file obtained from google places api.
+
+    columns : list of strings
+        The name of the colums we want to extract from the scraped_data_dict. 
+        These should correspond to a subset of keys from extarctor dict.
+        If columns is a empty list all possible columns defined by the above extractor dict,
+        will be extracted.
+    
+    Returns
+    ----------
+    table : pandas DataFrame
+        The DataFrame filled with values from the scraped_data_dict.
+    """
+    # Creates a table with one column called "names". The names are the keys to entries in the json dict.
+    # This is required for the add_col function.
+    table = pd.DataFrame({"name": list(scraped_data_dict.keys())})
+
+    if len(columns) == 0:
+        columns = list(extractor.keys())
+    assert(not "name" in columns)
+
+    for column_name in columns:
+        table = add_col(table, scraped_data_dict, column_name)
+
+    # TODO: add some sorting of the table so we get everytime the same table when this function is called.    
+    return table
+    
+
+def update_columns(old_table, scraped_data_dict, col_names=[]):
+    """
+    Updates the values from the columns specified by col_names in the table with the new data coming
+    from scraped_data_dict. If one of the column names given in col_names is not a column in the
+    table already, the column can also not be updated and thus will be ignored. 
+
+    Parameters
+    ----------
+    table : pandas DataFrame
+        The DataFrame obtained by reading a csv file with pandas.
+    scraped_data_dict : dict
+        The dict obtained by reading a json file obtained from google places api.
+    col_name : list of strings
+        The list of strings specifies columns to update with new values from scraped_data_dict. 
+
+    Returns
+    ----------
+    table : pandas DataFrame
+        The DataFrame with updated values in the specified columns.
+    """
+    new_dataframe = get_table(scraped_data_dict)
+    # TODO: add code here
+    pass
+
+
+def test_table_extraction(path):
+    """
+    Can be used to test if the table extraction from a google places api json file to a pandas DataFrame works.
+    
+    Parameters
+    ----------
+    path : string
+        The string defines the path to a json file obtained by the google places api.
+
+    """
+    jdata = read_json_file(jpath)
+    
+    table_a = extract_table(scraped_data_dict=jdata)
+    table_b = get_table(scraped_data_dict=jdata)
+    # check_like will make it ignore the order the rows and colums in the dataframe
+    pd.testing.assert_frame_equal(table_a, table_b, check_like=True)
+
+    # try here different subsets of keys from the extractor dict (see above in code) as columns
+    table_a = extract_table(scraped_data_dict=jdata, columns=["city"])
+    table_b = get_table(scraped_data_dict=jdata, columns=["city"])
+    pd.testing.assert_frame_equal(table_a, table_b, check_like=True)
+
+    return True
 
 
 def test_json_structure(json_dict):
@@ -237,6 +425,8 @@ def test_json_structure(json_dict):
     assert("website" in json_dict.keys())
     assert("rating" in json_dict.keys())
     assert("wheelchair_accessible_entrance" in json_dict.keys())
+
+    # TODO: finish the tests for the json structure
 
 
 def read_json_file(path):
@@ -260,11 +450,11 @@ def print_json_entry(details_dict):
     Prints all information from a single entity of the json file based on the defined extractor methods.
     The json file is a dict that has the "name" of certain locations as a key and details_dict 
     as corresponding value.
+
     Parameters
     ----------
     details_dict : dict
         The dict obtained by specifying a "name" as key to the data dict obtained from readina a json file.
-    ----------
     """
     city = extract_city(details_dict)
     area = extract_area(details_dict)
@@ -274,7 +464,7 @@ def print_json_entry(details_dict):
     location_lat = extract_location_lat(details_dict)
     location_lng = extract_location_lng(details_dict)
     phone_number = extract_phone_number(details_dict)
-    name = extract_name(details_dict)
+    name = extract_long_name(details_dict)
 
     place_id = extract_place_id(details_dict)
     plus_code = extract_plus_code(details_dict)
@@ -294,7 +484,7 @@ def print_json_entry(details_dict):
     print("location_lng:", location_lng)
 
     print("phone_number:", phone_number)
-    print("name:", name)
+    print("long_name:", name)
 
     print("place_id:", place_id)
     print("plus_code:", plus_code)
@@ -318,6 +508,10 @@ def print_json_entry(details_dict):
 jpath = "stuttbard/domains/scraping_results/museum.json"
 cpath = "stuttbard/domains/tables/museum3.csv"
 
+test_table_extraction(path=jpath)
+
+
+"""
 table = pd.read_csv(cpath, delimiter=";")
 jdata = read_json_file(jpath)
 
@@ -327,8 +521,13 @@ table = add_col(table, jdata, 'postal_code')
 table = add_col(table, jdata, 'street')
 table = add_col(table, jdata, 'house_number')
 table = add_col(table, jdata, 'area')
+table = add_col(table, jdata, 'location_lat')
+table = add_col(table, jdata, 'location_lng')
+table = add_col(table, jdata, 'price_level')
 table = add_col(table, jdata, 'phone_number')
 table = add_col(table, jdata, 'website')
 table = add_col(table, jdata, 'rating')
 table = add_col(table, jdata, 'wheelchair_accessible_entrance')
-table.to_csv(cpath, sep=";")  
+#table.to_csv(cpath, sep=";")  
+
+"""
