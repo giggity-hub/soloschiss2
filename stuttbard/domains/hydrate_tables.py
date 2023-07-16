@@ -332,3 +332,17 @@ table = add_col(table, jdata, 'website')
 table = add_col(table, jdata, 'rating')
 table = add_col(table, jdata, 'wheelchair_accessible_entrance')
 table.to_csv(cpath, sep=";")  
+
+
+def main():
+    # this way you get the dir name of the file regardless from where it is called
+    current_dir = os.path.dirname(__file__)
+    # 1.) iterate over all files in the scraping_results folder
+        # 2.) read the json file to a python dict
+            # for every name (key) in the json
+            # 3.) get a dict with the attributes we are interested in
+            # 4.) write the dict to a list
+        # 5.) create a pandas df with the list of objects and write save it as a csv file
+
+if __name__ == "__main__":
+    main()
