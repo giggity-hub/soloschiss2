@@ -319,6 +319,45 @@ def get_table(scraped_data_dict, columns=[]):
     return dataframe
 
 
+def extend_table(table, scraped_data_dict, columns=[]):
+    """
+    Takes a table as input and extends with columns filled by data from the scrapped_data_dict.
+    The columns that should be extracted from scrapped_data_dict and added to the table
+    are specified by the columns list. If columns is empty all available data in the 
+    scrapped_data_dict is added.
+
+    Note: The table requires a column called "name" filled with the keys for the scrapped_data_dict.
+
+    Parameters
+    ----------
+    table : pandas DataFrame
+        The original DataFrame that should be extended by this method.
+
+    scraped_data_dict : dict
+        The dict obtained by reading a json file obtained from google places api.
+
+    columns : list of strings
+        The name of the colums we want to extract from the scraped_data_dict. 
+        These should correspond to a subset of keys from extarctor dict.
+        If columns is a empty list all possible columns defined by the above extractor dict,
+        will be extracted.
+    
+    Returns
+    ----------
+    extended_table : pandas DataFrame
+        The DataFrame extended by new columns with values from the scraped_data_dict.
+    """
+    if len(columns) == 0:
+        columns = list(extractor.keys())
+    assert(not "name" in columns)
+
+    for column_name in columns:
+        # the add_col(...) function requires the table to have the "name" column
+        table = add_col(table, scraped_data_dict, column_name)
+
+    return table
+
+
 def extract_table(scraped_data_dict, columns=[]):
     """
     Creates a pandas DataFrame based on the values obtained from the scraped_data_dict dict.
@@ -350,17 +389,11 @@ def extract_table(scraped_data_dict, columns=[]):
     # Creates a table with one column called "names". The names are the keys to entries in the json dict.
     # This is required for the add_col function.
     table = pd.DataFrame({"name": list(scraped_data_dict.keys())})
-
-    if len(columns) == 0:
-        columns = list(extractor.keys())
-    assert(not "name" in columns)
-
-    for column_name in columns:
-        table = add_col(table, scraped_data_dict, column_name)
-
+    extend_table(table, scraped_data_dict, columns=[])
+    
     # TODO: add some sorting of the table so we get everytime the same table when this function is called.    
     return table
-    
+
 
 def update_columns(old_table, scraped_data_dict, col_names=[]):
     """
@@ -500,22 +533,29 @@ def print_json_entry(details_dict):
 def main():
     # this way you get the dir name of the file regardless from where it is called
     current_dir = os.path.dirname(__file__)
-    print(current_dir)
     # 1.) iterate over all files in the scraping_results folder
     scraping_results_dir = os.path.join(current_dir, "scraping_results")
-    scraping_file_paths = [os.path.join(scraping_results_dir, file) for file in os.listdir(scraping_results_dir)]
-    for scraping_file_path in scraping_file_paths:
+    tables_dir = os.path.join(current_dir, "tables")
+    scraping_files = [file for file in os.listdir(scraping_results_dir)]
+
+    for scraping_file in scraping_files:
         # 2.) read the json file to a python dict
-        print(scraping_file_path)
-        json_dict = read_json_file(scraping_file_path) 
-            # for every name (key) in the json
-            # 3.) get a dict with the attributes we are interested in
-            # 4.) write the dict to a list
-        #TODO: adapt the columns to the specific domain.
-        table = extract_table(scraped_data_dict=json_dict, columns=[])
-        # 5.) create a pandas df with the list of objects and write save it as a csv file
-        csv_file_path = os.path.join(scraping_results_dir, os.path.split(scraping_file_path)[1].replace("json", "csv"))
-        table.to_csv(csv_file_path, sep=";")
+        try:
+            json_dict = read_json_file(os.path.join(scraping_results_dir, scraping_file))
+            old_csv_file_path = os.path.join(tables_dir, scraping_file.replace("json", "csv"))
+            table = pd.read_csv(old_csv_file_path, delimiter=";") 
+                # for every name (key) in the json
+                # 3.) get a dict with the attributes we are interested in
+                # 4.) write the dict to a list
+            #TODO: adapt the columns to the specific domain.
+            # table = extract_table(scraped_data_dict=json_dict, columns=[])
+            table = extend_table(table, json_dict, columns=[])
+            # 5.) create a pandas df with the list of objects and write save it as a csv file
+            results_dir = os.path.join(current_dir, "extracted_tables")
+            csv_file_path = os.path.join(results_dir, scraping_file.replace("json", "csv"))
+            table.to_csv(csv_file_path, sep=";")
+        except:
+            continue
 
 if __name__ == "__main__":
     main()

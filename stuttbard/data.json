@@ -1,235 +1,19 @@
 [
     {
         "history": [
-            "user : I want to eat some food"
+            "user : Provide me some links to websites about cosmology museums."
         ],
-        "belief": "belief : df = domains['restaurant'] ; cuisines = df['cuisine'].unique()",
+        "belief": "belief : df = domains['museum'].query('about == \"cosmology\"') ; url = df['url'].tolist()",
         "kb": "",
-        "reply": "system : What type of food do you want to eat? {templates.list(cuisines)}"
+        "reply": "system : This is a list of urls to websites about  cosmology museums: {templates.list(url)}"
     },
     {
         "history": [
-            "user : List fries restaurants"
+            "user : Could you provide me links to museums about art."
         ],
-        "belief": "belief : df = domains['restaurant'].query('cuisine == \"fries\"') ; names = df['name'].tolist()",
+        "belief": "belief : df = domains['museum'].query('about == \"art\"') ; url = df['url'].tolist()",
         "kb": "",
-        "reply": "system : Here is a list of fries restaurants {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Give me some ethnology museums"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"ethnology\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : Here is a list of ethnology museums {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Where can i grab something to eat?"
-        ],
-        "belief": "belief : df = domains['restaurant'] ; cuisines = df['cuisine'].unique()",
-        "kb": "",
-        "reply": "system : What cuisines are you interested in? {templates.list(cuisines)}"
-    },
-    {
-        "history": [
-            "user : What do you know about society museums in Stuttgart"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"society\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : Here are examples of society museums around Stuttgart: {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Hi"
-        ],
-        "belief": "belief : ",
-        "kb": "",
-        "reply": "system : Hello"
-    },
-    {
-        "history": [
-            "user : List me some society museums in Stuttgart"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"society\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : The list of society museums includes: {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : "
-        ],
-        "belief": "belief : ",
-        "kb": "",
-        "reply": "system : Hello I am Stuttbard. How can i help you?"
-    },
-    {
-        "history": [
-            "user : I want food that is  asian or fries"
-        ],
-        "belief": "belief : df = domains['restaurant'].query('cuisine == \"asian\" | cuisine == \"fries\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : Then you should like these restaurants {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Guide me to websites about technology museums."
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"technology\"') ; url = df['url'].tolist()",
-        "kb": "",
-        "reply": "system : These are links to technology museums: {templates.list(url)}"
-    },
-    {
-        "history": [
-            "user : I like Italian and indian food"
-        ],
-        "belief": "belief : df = domains['restaurant'].query('cuisine == \"Italian\" | cuisine == \"indian\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : Then you should like these restaurants {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Can you give me urls to any museums about ethnology?"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"ethnology\"') ; url = df['url'].tolist()",
-        "kb": "",
-        "reply": "system : Here are urls to the websites of ethnology museums: {templates.list(url)}"
-    },
-    {
-        "history": [
-            "user : Give them a call"
-        ],
-        "belief": "belief : phone_number = row['phone_number'] ; actions.call(phone_number)",
-        "kb": "",
-        "reply": "system : Calling {phone_number} ..."
-    },
-    {
-        "history": [
-            "user : I'd like to go to a technology museum"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"technology\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : These are technology museums in Stuttgart {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : I'd like to eat something"
-        ],
-        "belief": "belief : df = domains['restaurant'] ; cuisines = df['cuisine'].unique()",
-        "kb": "",
-        "reply": "system : What kind of food would you like to eat? {templates.list(cuisines)}"
-    },
-    {
-        "history": [
-            "user : What domains can you inform me about?"
-        ],
-        "belief": "belief : domain_keys = domains.keys()",
-        "kb": "",
-        "reply": "system : I can inform you about the following domains {templates.list(domain_keys)}"
-    },
-    {
-        "history": [
-            "user : Could you provide me links to museums about technology."
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"technology\"') ; url = df['url'].tolist()",
-        "kb": "",
-        "reply": "system : I know of these websites about technology museums in Stuttgart: {templates.list(url)}"
-    },
-    {
-        "history": [
-            "user : Show we what you know about museums around Stuttgart?"
-        ],
-        "belief": "belief : df = domains['museum'] ; topic = df['about'].unique()",
-        "kb": "",
-        "reply": "system : The museums in Stuttgart are about: {templates.list(topic)}"
-    },
-    {
-        "history": [
-            "user : List Italian restaurants"
-        ],
-        "belief": "belief : df = domains['restaurant'].query('cuisine == \"Italian\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : Here is a list of Italian restaurants {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Take me to their url"
-        ],
-        "belief": "belief : url = row['website'] ; actions.open_website(url)",
-        "kb": "",
-        "reply": "system : Opening {url} in the browser ..."
-    },
-    {
-        "history": [
-            "user : Can you show me the website?"
-        ],
-        "belief": "belief : url = row['website'] ; actions.open_website(url)",
-        "kb": "",
-        "reply": "system : Opening {url} in the browser ..."
-    },
-    {
-        "history": [
-            "user : "
-        ],
-        "belief": "belief : ",
-        "kb": "",
-        "reply": "system : I am Stuttbard. How can i assist you?"
-    },
-    {
-        "history": [
-            "user : Are there any ethnology museums in Stuttgart?"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"ethnology\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : The list of ethnology museums includes: {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : What museums are located in Stuttgart?"
-        ],
-        "belief": "belief : df = domains['museum'] ; topic = df['about'].unique()",
-        "kb": "",
-        "reply": "system : The list of themes museums in Stuttgart have includes: {templates.list(cuisines)}"
-    },
-    {
-        "history": [
-            "user : Give the HANS IM GL\u00dcCK a call"
-        ],
-        "belief": "belief : phone_number = row['phone_number'] ; actions.call(phone_number)",
-        "kb": "",
-        "reply": "system : Calling {phone_number} ..."
-    },
-    {
-        "history": [
-            "user : Ring up the Schillerh\u00f6he"
-        ],
-        "belief": "belief : phone_number = row['phone_number'] ; actions.call(phone_number)",
-        "kb": "",
-        "reply": "system : Calling {phone_number} ..."
-    },
-    {
-        "history": [
-            "user : Could you provide me links to museums about society."
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"society\"') ; url = df['url'].tolist()",
-        "kb": "",
-        "reply": "system : I know of these websites about society museums in Stuttgart: {templates.list(url)}"
-    },
-    {
-        "history": [
-            "user : Could you show me some cosmology museums around Stuttgart"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"cosmology\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : These are cosmology museums around Stuttgart: {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Provide me some links to websites about history museums."
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"history\"') ; url = df['url'].tolist()",
-        "kb": "",
-        "reply": "system : This is a list of urls to websites about  history museums: {templates.list(url)}"
+        "reply": "system : I know of these websites about art museums in Stuttgart: {templates.list(url)}"
     },
     {
         "history": [
@@ -241,131 +25,19 @@
     },
     {
         "history": [
-            "user : I want to eat Italian"
-        ],
-        "belief": "belief : df = domains['restaurant'].query('cuisine == \"Italian\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : Here are some Italian restaurants {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Please call their telephone number"
-        ],
-        "belief": "belief : phone_number = row['phone_number'] ; actions.call(phone_number)",
-        "kb": "",
-        "reply": "system : Calling {phone_number} ..."
-    },
-    {
-        "history": [
-            "user : I want to eat burgers food"
-        ],
-        "belief": "belief : df = domains['restaurant'].query('cuisine == \"burgers\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : Here are some burgers restaurants {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Are you aware of any pigs museums in Stuttgart?"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"pigs\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : According to my database the list of pigs museums includes: {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : I want to visit a society museum"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"society\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : Here are some society museums {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : I want to go to a technology museum"
+            "user : What do you know about technology museums in Stuttgart"
         ],
         "belief": "belief : df = domains['museum'].query('about == \"technology\"') ; names = df['name'].tolist()",
         "kb": "",
-        "reply": "system : Here are some technology museums {templates.list(names)}"
+        "reply": "system : Here are examples of technology museums around Stuttgart: {templates.list(names)}"
     },
     {
         "history": [
-            "user : Where can i get some indian food?"
+            "user : Where can i get some fries food?"
         ],
-        "belief": "belief : df = domains['restaurant'].query('cuisine == \"indian\"') ; names = df['name'].tolist()",
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"fries\"') ; names = df['name'].tolist()",
         "kb": "",
-        "reply": "system : You can get indian food at these restaurants {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : I want to make a call to the second restaurant"
-        ],
-        "belief": "belief : row = df.iloc[1] ; phone_number = row['phone_number'] ; actions.call(phone_number)",
-        "kb": "",
-        "reply": "system : Calling {phone_number} ..."
-    },
-    {
-        "history": [
-            "user : I'd like to go to a museum"
-        ],
-        "belief": "belief : df = domains['museum'] ; topic = df['about'].unique()",
-        "kb": "",
-        "reply": "system : What type of museums would you want to visit? {templates.list(topic)}"
-    },
-    {
-        "history": [
-            "user : "
-        ],
-        "belief": "belief : ",
-        "kb": "",
-        "reply": "system : My name is Stuttbard. What can i do for you?"
-    },
-    {
-        "history": [
-            "user : I want to visit a museum."
-        ],
-        "belief": "belief : df = domains['museum'] ; topic = df['about'].unique()",
-        "kb": "",
-        "reply": "system : What topic should the museum be about? {templates.list(topic)}"
-    },
-    {
-        "history": [
-            "user : Direct me to the web pages of museums about ethnology."
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"ethnology\"') ; url = df['url'].tolist()",
-        "kb": "",
-        "reply": "system : This list contains urls to websites about ethnology museums: {templates.list(url)}"
-    },
-    {
-        "history": [
-            "user : I'd like to get a asian meal"
-        ],
-        "belief": "belief : df = domains['restaurant'].query('cuisine == \"asian\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : These restaurants serve asian meals {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Could you suggest me some art museums"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : Sure. Here is a list of art museums {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : List me some pigs museums in Stuttgart"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"pigs\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : The list of pigs museums includes: {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Could you show me some art museums around Stuttgart"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : These are art museums around Stuttgart: {templates.list(names)}"
+        "reply": "system : You can get fries food at these restaurants {templates.list(names)}"
     },
     {
         "history": [
@@ -377,203 +49,35 @@
     },
     {
         "history": [
-            "user : Do you know any restaurants that are either indian or polish"
+            "user : Direct me to the web pages of museums about pigs."
         ],
-        "belief": "belief : df = domains['restaurant'].query('cuisine == \"indian\" | cuisine == \"polish\"') ; names = df['name'].tolist()",
+        "belief": "belief : df = domains['museum'].query('about == \"pigs\"') ; url = df['url'].tolist()",
         "kb": "",
-        "reply": "system : Here are restaurants that fit your description {templates.list(names)}"
+        "reply": "system : This list contains urls to websites about pigs museums: {templates.list(url)}"
     },
     {
         "history": [
-            "user : List me some technology museums"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"technology\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : The list of technology museums includes: {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : I want to know what types of museums you could show me in Stuttgart?"
-        ],
-        "belief": "belief : df = domains['museum'] ; topic = df['about'].unique()",
-        "kb": "",
-        "reply": "system : Sure. Stuttgart has these types of museums: {templates.list(cuisines)}"
-    },
-    {
-        "history": [
-            "user : Are there any technology museums located in Stuttgart?"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"technology\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : The list of technology museums around Stuttgart contains: {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Provide me some links to websites about art museums."
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"art\"') ; url = df['url'].tolist()",
-        "kb": "",
-        "reply": "system : This is a list of urls to websites about  art museums: {templates.list(url)}"
-    },
-    {
-        "history": [
-            "user : Do you know any ethnology museums located in Stuttgart?"
+            "user : I want to go to a ethnology museum"
         ],
         "belief": "belief : df = domains['museum'].query('about == \"ethnology\"') ; names = df['name'].tolist()",
         "kb": "",
-        "reply": "system : We have these ethnology museums around Stuttgart, among others: {templates.list(names)}"
+        "reply": "system : Here are some ethnology museums {templates.list(names)}"
     },
     {
         "history": [
-            "user : give me asian restaurants"
-        ],
-        "belief": "belief : df = domains['restaurant'].query('cuisine == \"asian\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : Here are asian restaurants {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Show me some pigs museum in Stuttgart?"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"pigs\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : Here are a few pigs museums {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Could you suggest me some technology museums"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"technology\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : Sure. Here is a list of technology museums {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Guide me to websites about society museums."
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"society\"') ; url = df['url'].tolist()",
-        "kb": "",
-        "reply": "system : These are links to society museums: {templates.list(url)}"
-    },
-    {
-        "history": [
-            "user : Call them"
-        ],
-        "belief": "belief : phone_number = row['phone_number'] ; actions.call(phone_number)",
-        "kb": "",
-        "reply": "system : Calling {phone_number} ..."
-    },
-    {
-        "history": [
-            "user : I like burgers and asian food"
-        ],
-        "belief": "belief : df = domains['restaurant'].query('cuisine == \"burgers\" | cuisine == \"asian\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : Then you should like these restaurants {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : What can i talk to you about?"
+            "user : What domains can you inform me about?"
         ],
         "belief": "belief : domain_keys = domains.keys()",
         "kb": "",
-        "reply": "system : I can talk to you about cool things to do in and around Stuttgart, like {templates.list(domain_keys}"
+        "reply": "system : I can inform you about the following domains {templates.list(domain_keys)}"
     },
     {
         "history": [
-            "user : Connect me with the first via phone"
-        ],
-        "belief": "belief : row = df.iloc[0] ; phone_number = row['phone_number'] ; actions.call(phone_number)",
-        "kb": "",
-        "reply": "system : Calling {phone_number} ..."
-    },
-    {
-        "history": [
-            "user : Open their website"
-        ],
-        "belief": "belief : url = row['website'] ; actions.open_website(url)",
-        "kb": "",
-        "reply": "system : Opening {url} in the browser ..."
-    },
-    {
-        "history": [
-            "user : What is there to do in Stuttgart?"
-        ],
-        "belief": "belief : domain_keys = domains.keys()",
-        "kb": "",
-        "reply": "system : In Stuttgart there are lots of things to do. These are the topics i can tell you about {templates.list(domain_keys)}"
-    },
-    {
-        "history": [
-            "user : Direct me to the web pages of museums about technology."
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"technology\"') ; url = df['url'].tolist()",
-        "kb": "",
-        "reply": "system : This list contains urls to websites about technology museums: {templates.list(url)}"
-    },
-    {
-        "history": [
-            "user : I'd like to go to a art museum"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : These are art museums in Stuttgart {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : I want to eat fries food"
-        ],
-        "belief": "belief : df = domains['restaurant'].query('cuisine == \"fries\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : Here are some fries restaurants {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Are there any restaurants you know of?"
-        ],
-        "belief": "belief : df = domains['restaurant'] ; cuisines = df['cuisine'].unique()",
-        "kb": "",
-        "reply": "system : Yes! I know restaurants that serve the following cuisines {templates.list(cuisines)}"
-    },
-    {
-        "history": [
-            "user : Are there any pigs museums located in Stuttgart?"
+            "user : I'd like to go to a pigs museum"
         ],
         "belief": "belief : df = domains['museum'].query('about == \"pigs\"') ; names = df['name'].tolist()",
         "kb": "",
-        "reply": "system : The list of pigs museums around Stuttgart contains: {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Are you aware of any history museums in Stuttgart?"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : According to my database the list of history museums includes: {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Has Stuttgart cosmology museums?"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"cosmology\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : The list of cosmology museums around Stuttgart contains: {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Show me some cosmology museum in Stuttgart?"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"cosmology\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : Here are a few cosmology museums {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : give me polish restaurants"
-        ],
-        "belief": "belief : df = domains['restaurant'].query('cuisine == \"polish\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : Here are polish restaurants {templates.list(names)}"
+        "reply": "system : These are pigs museums in Stuttgart {templates.list(names)}"
     },
     {
         "history": [
@@ -585,203 +89,19 @@
     },
     {
         "history": [
-            "user : I want to go to a restaurant"
-        ],
-        "belief": "belief : df = domains['restaurant'] ; cuisines = df['cuisine'].unique()",
-        "kb": "",
-        "reply": "system : What kind of restaurants do you like? {templates.list(cuisines)}"
-    },
-    {
-        "history": [
-            "user : Call the phone number of the Mata Hari please"
-        ],
-        "belief": "belief : phone_number = row['phone_number'] ; actions.call(phone_number)",
-        "kb": "",
-        "reply": "system : Calling {phone_number} ..."
-    },
-    {
-        "history": [
-            "user : I want to visit a ethnology museum"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"ethnology\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : Here are some ethnology museums {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Do you know any history museums located in Stuttgart?"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : We have these history museums around Stuttgart, among others: {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : I want to go to a society museum"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"society\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : Here are some society museums {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Hello there"
-        ],
-        "belief": "belief : ",
-        "kb": "",
-        "reply": "system : Hello to you"
-    },
-    {
-        "history": [
-            "user : Call the last view"
-        ],
-        "belief": "belief : row = df.iloc[-1] ; phone_number = row['phone_number'] ; actions.call(phone_number)",
-        "kb": "",
-        "reply": "system : Calling {phone_number} ..."
-    },
-    {
-        "history": [
-            "user : Has Stuttgart society museums?"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"society\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : The list of society museums around Stuttgart contains: {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : What topics do the museums in Stuttgart have?"
-        ],
-        "belief": "belief : df = domains['museum'] ; topic = df['about'].unique()",
-        "kb": "",
-        "reply": "system : Stuttgart contains museums about these topics: {templates.list(cuisines)}"
-    },
-    {
-        "history": [
-            "user : Give me some history museums R2D2"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : These are a few history museums in Stuttgart {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : What is your purpose?"
-        ],
-        "belief": "belief : domain_keys = domains.keys()",
-        "kb": "",
-        "reply": "system : My purpose is to give you information about things in Stuttgart, like {templates.list(domain_keys)}"
-    },
-    {
-        "history": [
-            "user : Where can i get some indian food?"
-        ],
-        "belief": "belief : df = domains['restaurant'].query('cuisine == \"indian\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : You can get indian food at these restaurants {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Give me some cosmology museums"
+            "user : Are there any cosmology museums in Stuttgart?"
         ],
         "belief": "belief : df = domains['museum'].query('about == \"cosmology\"') ; names = df['name'].tolist()",
         "kb": "",
-        "reply": "system : Here is a list of cosmology museums {templates.list(names)}"
+        "reply": "system : The list of cosmology museums includes: {templates.list(names)}"
     },
     {
         "history": [
-            "user : Do you know any restaurants that are either asian or burgers"
+            "user : Can you give me urls to any museums about pigs?"
         ],
-        "belief": "belief : df = domains['restaurant'].query('cuisine == \"asian\" | cuisine == \"burgers\"') ; names = df['name'].tolist()",
+        "belief": "belief : df = domains['museum'].query('about == \"pigs\"') ; url = df['url'].tolist()",
         "kb": "",
-        "reply": "system : Here are restaurants that fit your description {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Show me links to homepages of museums about society."
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"society\"') ; url = df['url'].tolist()",
-        "kb": "",
-        "reply": "system : This list contains links to websites about society museums: {templates.list(url)}"
-    },
-    {
-        "history": [
-            "user : Are there any history museums in Stuttgart?"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : The list of history museums includes: {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : What do you know about history museums in Stuttgart"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : Here are examples of history museums around Stuttgart: {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : Show me links to homepages of museums about cosmology."
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"cosmology\"') ; url = df['url'].tolist()",
-        "kb": "",
-        "reply": "system : This list contains links to websites about cosmology museums: {templates.list(url)}"
-    },
-    {
-        "history": [
-            "user : List me some ethnology museums"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"ethnology\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : The list of ethnology museums includes: {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : I want to eat burgers"
-        ],
-        "belief": "belief : df = domains['restaurant'].query('cuisine == \"burgers\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : Here are some burgers restaurants {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : I want food that is  indian or burgers"
-        ],
-        "belief": "belief : df = domains['restaurant'].query('cuisine == \"indian\" | cuisine == \"burgers\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : Then you should like these restaurants {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : What can you tell me about Stuttgart?"
-        ],
-        "belief": "belief : domain_keys = domains.keys()",
-        "kb": "",
-        "reply": "system : I can tell you something about these domains {templates.list(domain_keys)}"
-    },
-    {
-        "history": [
-            "user : Give me some art museums R2D2"
-        ],
-        "belief": "belief : df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
-        "kb": "",
-        "reply": "system : These are a few art museums in Stuttgart {templates.list(names)}"
-    },
-    {
-        "history": [
-            "user : I would like to know more about museums"
-        ],
-        "belief": "belief : df = domains['museum'] ; topic = df['about'].unique()",
-        "kb": "",
-        "reply": "system : This is a list about the topics of museums in Stuttgart: {templates.list(topic)}"
-    },
-    {
-        "history": [
-            "user : What do you know about museums?"
-        ],
-        "belief": "belief : df = domains['museum'] ; topic = df['about'].unique()",
-        "kb": "",
-        "reply": "system : These are themes of museums in Stuttgart: {templates.list(topic)}"
+        "reply": "system : Here are urls to the websites of pigs museums: {templates.list(url)}"
     },
     {
         "history": [
@@ -793,10 +113,690 @@
     },
     {
         "history": [
+            "user : I want to eat some food"
+        ],
+        "belief": "belief : df = domains['restaurant'] ; cuisines = df['cuisine'].unique()",
+        "kb": "",
+        "reply": "system : What type of food do you want to eat? {templates.list(cuisines)}"
+    },
+    {
+        "history": [
             "user : Hello"
         ],
         "belief": "belief : ",
         "kb": "",
         "reply": "system : Hello"
+    },
+    {
+        "history": [
+            "user : Connect me with the second via phone"
+        ],
+        "belief": "belief : row = df.iloc[1] ; phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "kb": "",
+        "reply": "system : Calling {phone_number} ..."
+    },
+    {
+        "history": [
+            "user : List fries restaurants"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"fries\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here is a list of fries restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : I want to visit a museum."
+        ],
+        "belief": "belief : df = domains['museum'] ; topic = df['about'].unique()",
+        "kb": "",
+        "reply": "system : What topic should the museum be about? {templates.list(topic)}"
+    },
+    {
+        "history": [
+            "user : Where can i grab something to eat?"
+        ],
+        "belief": "belief : df = domains['restaurant'] ; cuisines = df['cuisine'].unique()",
+        "kb": "",
+        "reply": "system : What cuisines are you interested in? {templates.list(cuisines)}"
+    },
+    {
+        "history": [
+            "user : Are there any ethnology museums located in Stuttgart?"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"ethnology\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : The list of ethnology museums around Stuttgart contains: {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : I want to eat polish food"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"polish\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some polish restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Give me some history museums"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here is a list of history museums {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : What topics do the museums in Stuttgart have?"
+        ],
+        "belief": "belief : df = domains['museum'] ; topic = df['about'].unique()",
+        "kb": "",
+        "reply": "system : Stuttgart contains museums about these topics: {templates.list(cuisines)}"
+    },
+    {
+        "history": [
+            "user : Could you provide me links to museums about ethnology."
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"ethnology\"') ; url = df['url'].tolist()",
+        "kb": "",
+        "reply": "system : I know of these websites about ethnology museums in Stuttgart: {templates.list(url)}"
+    },
+    {
+        "history": [
+            "user : Hi"
+        ],
+        "belief": "belief : ",
+        "kb": "",
+        "reply": "system : Hello"
+    },
+    {
+        "history": [
+            "user : Show me some cosmology museum in Stuttgart?"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"cosmology\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are a few cosmology museums {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : give me burgers restaurants"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"burgers\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are burgers restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Do you know any technology museums located in Stuttgart?"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"technology\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : We have these technology museums around Stuttgart, among others: {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Call them"
+        ],
+        "belief": "belief : phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "kb": "",
+        "reply": "system : Calling {phone_number} ..."
+    },
+    {
+        "history": [
+            "user : List me some pigs museums in Stuttgart"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"pigs\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : The list of pigs museums includes: {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Hello there"
+        ],
+        "belief": "belief : ",
+        "kb": "",
+        "reply": "system : Hello to you"
+    },
+    {
+        "history": [
+            "user : Open their website"
+        ],
+        "belief": "belief : url = row['website'] ; actions.open_website(url)",
+        "kb": "",
+        "reply": "system : Opening {url} in the browser ..."
+    },
+    {
+        "history": [
+            "user : Has Stuttgart history museums?"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : The list of history museums around Stuttgart contains: {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : I want to eat indian food"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"indian\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some indian restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Ring up the Landwirtschaftsmuseum"
+        ],
+        "belief": "belief : phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "kb": "",
+        "reply": "system : Calling {phone_number} ..."
+    },
+    {
+        "history": [
+            "user : give me indian restaurants"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"indian\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are indian restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : "
+        ],
+        "belief": "belief : ",
+        "kb": "",
+        "reply": "system : Hello I am Stuttbard. How can i help you?"
+    },
+    {
+        "history": [
+            "user : What is your purpose?"
+        ],
+        "belief": "belief : domain_keys = domains.keys()",
+        "kb": "",
+        "reply": "system : My purpose is to give you information about things in Stuttgart, like {templates.list(domain_keys)}"
+    },
+    {
+        "history": [
+            "user : Could you suggest me some ethnology museums"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"ethnology\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Sure. Here is a list of ethnology museums {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : I'd like to get a burgers meal"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"burgers\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These restaurants serve burgers meals {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Show me links to homepages of museums about ethnology."
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"ethnology\"') ; url = df['url'].tolist()",
+        "kb": "",
+        "reply": "system : This list contains links to websites about ethnology museums: {templates.list(url)}"
+    },
+    {
+        "history": [
+            "user : Call the phone number of the Heinrich-Heine-H\u00f6he please"
+        ],
+        "belief": "belief : phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "kb": "",
+        "reply": "system : Calling {phone_number} ..."
+    },
+    {
+        "history": [
+            "user : I want to visit a technology museum"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"technology\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some technology museums {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : I want to eat Italian"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"Italian\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some Italian restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Do you know any art museums located in Stuttgart?"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : We have these art museums around Stuttgart, among others: {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : I'd like to go to a ethnology museum"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"ethnology\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are ethnology museums in Stuttgart {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : What is there to do in Stuttgart?"
+        ],
+        "belief": "belief : domain_keys = domains.keys()",
+        "kb": "",
+        "reply": "system : In Stuttgart there are lots of things to do. These are the topics i can tell you about {templates.list(domain_keys)}"
+    },
+    {
+        "history": [
+            "user : I like Italian and indian food"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"Italian\" | cuisine == \"indian\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Then you should like these restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Take me to their url"
+        ],
+        "belief": "belief : url = row['website'] ; actions.open_website(url)",
+        "kb": "",
+        "reply": "system : Opening {url} in the browser ..."
+    },
+    {
+        "history": [
+            "user : Guide me to websites about technology museums."
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"technology\"') ; url = df['url'].tolist()",
+        "kb": "",
+        "reply": "system : These are links to technology museums: {templates.list(url)}"
+    },
+    {
+        "history": [
+            "user : Are you aware of any society museums in Stuttgart?"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"society\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : According to my database the list of society museums includes: {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : What can you tell me about Stuttgart?"
+        ],
+        "belief": "belief : domain_keys = domains.keys()",
+        "kb": "",
+        "reply": "system : I can tell you something about these domains {templates.list(domain_keys)}"
+    },
+    {
+        "history": [
+            "user : Guide me to websites about cosmology museums."
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"cosmology\"') ; url = df['url'].tolist()",
+        "kb": "",
+        "reply": "system : These are links to cosmology museums: {templates.list(url)}"
+    },
+    {
+        "history": [
+            "user : "
+        ],
+        "belief": "belief : ",
+        "kb": "",
+        "reply": "system : I am Stuttbard. How can i assist you?"
+    },
+    {
+        "history": [
+            "user : Can you show me the website?"
+        ],
+        "belief": "belief : url = row['website'] ; actions.open_website(url)",
+        "kb": "",
+        "reply": "system : Opening {url} in the browser ..."
+    },
+    {
+        "history": [
+            "user : Are there any history museums in Stuttgart?"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : The list of history museums includes: {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Give me some technology museums R2D2"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"technology\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are a few technology museums in Stuttgart {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Direct me to the web pages of museums about art."
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"art\"') ; url = df['url'].tolist()",
+        "kb": "",
+        "reply": "system : This list contains urls to websites about art museums: {templates.list(url)}"
+    },
+    {
+        "history": [
+            "user : I want to visit a art museum"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some art museums {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : List me some art museums"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : The list of art museums includes: {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Could you show me some ethnology museums around Stuttgart"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"ethnology\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are ethnology museums around Stuttgart: {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : "
+        ],
+        "belief": "belief : ",
+        "kb": "",
+        "reply": "system : My name is Stuttbard. What can i do for you?"
+    },
+    {
+        "history": [
+            "user : Provide me some links to websites about history museums."
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"history\"') ; url = df['url'].tolist()",
+        "kb": "",
+        "reply": "system : This is a list of urls to websites about  history museums: {templates.list(url)}"
+    },
+    {
+        "history": [
+            "user : Show me some society museum in Stuttgart?"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"society\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are a few society museums {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : I like fries and asian food"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"fries\" | cuisine == \"asian\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Then you should like these restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Show me links to homepages of museums about technology."
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"technology\"') ; url = df['url'].tolist()",
+        "kb": "",
+        "reply": "system : This list contains links to websites about technology museums: {templates.list(url)}"
+    },
+    {
+        "history": [
+            "user : Are there any society museums located in Stuttgart?"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"society\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : The list of society museums around Stuttgart contains: {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Are there any restaurants you know of?"
+        ],
+        "belief": "belief : df = domains['restaurant'] ; cuisines = df['cuisine'].unique()",
+        "kb": "",
+        "reply": "system : Yes! I know restaurants that serve the following cuisines {templates.list(cuisines)}"
+    },
+    {
+        "history": [
+            "user : I want to eat polish"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"polish\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some polish restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : I would like to know more about museums"
+        ],
+        "belief": "belief : df = domains['museum'] ; topic = df['about'].unique()",
+        "kb": "",
+        "reply": "system : This is a list about the topics of museums in Stuttgart: {templates.list(topic)}"
+    },
+    {
+        "history": [
+            "user : What museums are located in Stuttgart?"
+        ],
+        "belief": "belief : df = domains['museum'] ; topic = df['about'].unique()",
+        "kb": "",
+        "reply": "system : The list of themes museums in Stuttgart have includes: {templates.list(cuisines)}"
+    },
+    {
+        "history": [
+            "user : I want to go to a pigs museum"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"pigs\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are some pigs museums {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Give them a call"
+        ],
+        "belief": "belief : phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "kb": "",
+        "reply": "system : Calling {phone_number} ..."
+    },
+    {
+        "history": [
+            "user : Do you know any restaurants that are either burgers or burgers"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"burgers\" | cuisine == \"burgers\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are restaurants that fit your description {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Give the HANS IM GL\u00dcCK a call"
+        ],
+        "belief": "belief : phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "kb": "",
+        "reply": "system : Calling {phone_number} ..."
+    },
+    {
+        "history": [
+            "user : I'd like to eat something"
+        ],
+        "belief": "belief : df = domains['restaurant'] ; cuisines = df['cuisine'].unique()",
+        "kb": "",
+        "reply": "system : What kind of food would you like to eat? {templates.list(cuisines)}"
+    },
+    {
+        "history": [
+            "user : Call the third restaurant"
+        ],
+        "belief": "belief : row = df.iloc[2] ; phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "kb": "",
+        "reply": "system : Calling {phone_number} ..."
+    },
+    {
+        "history": [
+            "user : Are you aware of any history museums in Stuttgart?"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : According to my database the list of history museums includes: {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : What do you know about museums?"
+        ],
+        "belief": "belief : df = domains['museum'] ; topic = df['about'].unique()",
+        "kb": "",
+        "reply": "system : These are themes of museums in Stuttgart: {templates.list(topic)}"
+    },
+    {
+        "history": [
+            "user : Do you know any restaurants that are either indian or Italian"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"indian\" | cuisine == \"Italian\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are restaurants that fit your description {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Show we what you know about museums around Stuttgart?"
+        ],
+        "belief": "belief : df = domains['museum'] ; topic = df['about'].unique()",
+        "kb": "",
+        "reply": "system : The museums in Stuttgart are about: {templates.list(topic)}"
+    },
+    {
+        "history": [
+            "user : What do you know about pigs museums in Stuttgart"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"pigs\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here are examples of pigs museums around Stuttgart: {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : I'd like to go to a museum"
+        ],
+        "belief": "belief : df = domains['museum'] ; topic = df['about'].unique()",
+        "kb": "",
+        "reply": "system : What type of museums would you want to visit? {templates.list(topic)}"
+    },
+    {
+        "history": [
+            "user : What can i talk to you about?"
+        ],
+        "belief": "belief : domain_keys = domains.keys()",
+        "kb": "",
+        "reply": "system : I can talk to you about cool things to do in and around Stuttgart, like {templates.list(domain_keys}"
+    },
+    {
+        "history": [
+            "user : I want to make a call to the last view"
+        ],
+        "belief": "belief : row = df.iloc[-1] ; phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "kb": "",
+        "reply": "system : Calling {phone_number} ..."
+    },
+    {
+        "history": [
+            "user : Give me some art museums"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here is a list of art museums {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Please call their telephone number"
+        ],
+        "belief": "belief : phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "kb": "",
+        "reply": "system : Calling {phone_number} ..."
+    },
+    {
+        "history": [
+            "user : I want food that is  asian or burgers"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"asian\" | cuisine == \"burgers\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Then you should like these restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : I want food that is  indian or Italian"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"indian\" | cuisine == \"Italian\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Then you should like these restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Could you show me some cosmology museums around Stuttgart"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"cosmology\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are cosmology museums around Stuttgart: {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : List polish restaurants"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"polish\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Here is a list of polish restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : List me some art museums in Stuttgart"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : The list of art museums includes: {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Could you suggest me some society museums"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"society\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : Sure. Here is a list of society museums {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : I want to know what types of museums you could show me in Stuttgart?"
+        ],
+        "belief": "belief : df = domains['museum'] ; topic = df['about'].unique()",
+        "kb": "",
+        "reply": "system : Sure. Stuttgart has these types of museums: {templates.list(cuisines)}"
+    },
+    {
+        "history": [
+            "user : I want to go to a restaurant"
+        ],
+        "belief": "belief : df = domains['restaurant'] ; cuisines = df['cuisine'].unique()",
+        "kb": "",
+        "reply": "system : What kind of restaurants do you like? {templates.list(cuisines)}"
+    },
+    {
+        "history": [
+            "user : Give me some society museums R2D2"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"society\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : These are a few society museums in Stuttgart {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Where can i get some fries food?"
+        ],
+        "belief": "belief : df = domains['restaurant'].query('cuisine == \"fries\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : You can get fries food at these restaurants {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : List me some history museums"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : The list of history museums includes: {templates.list(names)}"
+    },
+    {
+        "history": [
+            "user : Has Stuttgart cosmology museums?"
+        ],
+        "belief": "belief : df = domains['museum'].query('about == \"cosmology\"') ; names = df['name'].tolist()",
+        "kb": "",
+        "reply": "system : The list of cosmology museums around Stuttgart contains: {templates.list(names)}"
     }
 ]
