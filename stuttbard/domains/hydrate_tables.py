@@ -397,7 +397,7 @@ def test_table_extraction(path):
         The string defines the path to a json file obtained by the google places api.
 
     """
-    jdata = read_json_file(jpath)
+    jdata = read_json_file(path)
     
     table_a = extract_table(scraped_data_dict=jdata)
     table_b = get_table(scraped_data_dict=jdata)
@@ -497,31 +497,25 @@ def print_json_entry(details_dict):
     print("wheelchair_accessible_entrance:", wheelchair_accessible_entrance)
 
 
-
-
-
-## You can add a column to a table like this now
-#table = add_col(table, {}, 'house_number')
-#table = add_col(table, {}, 'phone_number')
-
-#test_art_museum_extracts(path="stuttbard/domains/scraping_results/museum.json")
-
-jpath = "stuttbard/domains/scraping_results/museum.json"
-cpath = "stuttbard/domains/tables/museum3.csv"
-
-test_table_extraction(path=jpath)
-
-
-
 def main():
     # this way you get the dir name of the file regardless from where it is called
     current_dir = os.path.dirname(__file__)
+    print(current_dir)
     # 1.) iterate over all files in the scraping_results folder
+    scraping_results_dir = os.path.join(current_dir, "scraping_results")
+    scraping_file_paths = [os.path.join(scraping_results_dir, file) for file in os.listdir(scraping_results_dir)]
+    for scraping_file_path in scraping_file_paths:
         # 2.) read the json file to a python dict
+        print(scraping_file_path)
+        json_dict = read_json_file(scraping_file_path) 
             # for every name (key) in the json
             # 3.) get a dict with the attributes we are interested in
             # 4.) write the dict to a list
+        #TODO: adapt the columns to the specific domain.
+        table = extract_table(scraped_data_dict=json_dict, columns=[])
         # 5.) create a pandas df with the list of objects and write save it as a csv file
+        csv_file_path = os.path.join(scraping_results_dir, os.path.split(scraping_file_path)[1].replace("json", "csv"))
+        table.to_csv(csv_file_path, sep=";")
 
 if __name__ == "__main__":
     main()
