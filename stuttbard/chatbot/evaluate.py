@@ -1,56 +1,56 @@
 def parse_beliefstate(beliefstate_string: str):
-    code_blocks = belief_string.split(";")
+    if '=' not in beliefstate_string:
+        return {}
+    
+    code_blocks = beliefstate_string.split(";")
     code_blocks = [cb.strip() for cb in code_blocks ]
-
-    return code_blocks
+    res = {}
+    for cb in code_blocks:
+        key, val = cb.split("=",1)
+        key = key.strip()
+        val = val.strip()
+        res[key] = val
+    return res
 
 
 def action(belief_dict):
     return "sheeesh"
 
 
-def create_df(locals, prev):
-    if domain:
-        df = domains[domain]
-    if query:
-        df = df.query(query)
-    if head:
-        df = df.head(head)
-    if sortby:
-        df = df.sortby(sortby)
-    if cols:
-        df = df[cols]
+def create_df(bs, domains, df):
+    if 'domain' in bs:
+        df = domains[bs['domain']]
+    if 'query' in bs:
+        df = df.query(bs['query'])
+    if 'head' in bs:
+        df = df.head(bs['head'])
+    if 'sortby' in bs:
+        df = df.sortby(bs['sortby'])
 
     return df
 
-# df = domains[domain_name].query(query).head(head).sortby(by, )
-# 
-def evaluate(beliefstate_string: str, prev):
-    belief_dict = parse_beliefstate(beliefstate_string)
-    # 
-    # 
+def resolve_entity(bs, df, entity):
+    if 'entity_index' in bs:
+        return df.iloc[int(bs['entity_index'])]
+    elif 'entity_name' in bs:
+        return df[df['name'] == bs['entity_name']].iloc[0]
+    return entity
 
-    # split the sections
-    pre_df, post_df = beliefstate_string.split("variables : ")
 
-    # Run code bevor the df exists
-    for code in get_codes(pre_df):
-        try:
-            exec(code)
-        except:
-            print("Failed to execute: " + code)
-    
-    df = create_df(locals(), df)
+def evaluate(sample, domains, df, entity):
+    beliefstate_string = sample['belief']
+    bs = parse_beliefstate(beliefstate_string)
+    df = create_df(bs, domains, df)
+    entity = resolve_entity(bs, df, entity)
 
-    # Run code after the df exists
-    for code in get_codes(post_df):
-        try:
-            exec(code)
-        except:
-            print("Failed to execute: " + code)
-
-    res = eval("f'" + belief_string.strip() + "'")
+    response_template = sample['system']
+    res = eval('f"' + response_template.strip() + '"')
     return res
+    return res
+
+
+
+    
 
 # mentions = df
 # mentions
