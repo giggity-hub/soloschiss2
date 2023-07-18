@@ -5,12 +5,9 @@ import os
 import pandas as pd
 
 load_dotenv()
-
-
 API_KEY = os.getenv("GOOGLE_PLACES_API_KEY")
 
 
-# import this to use the google places api
 google_places = GooglePlaces(API_KEY)
 
 def query_result_to_detailed_list(query_result):
@@ -36,4 +33,3 @@ def detailed_list_to_table(detailed_list):
 
 if __name__ == "__main__":
     print(f"your Places API key is: {API_KEY}")
-    print(types)
