@@ -15,32 +15,32 @@
         "system": "Calling {phone_number} ..."
     },
     {
-        "user": "Call the phone number of the Soban - Korean Dining please",
+        "user": "Call the phone number of the Houstons Fine Burrito Company please",
         "belief": "phone_number = row['phone_number'] ; actions.call(phone_number)",
         "system": "Calling {phone_number} ..."
     },
     {
-        "user": "Give the Lecker Sushi - e Center a call",
+        "user": "Give the Nannina a call",
         "belief": "phone_number = row['phone_number'] ; actions.call(phone_number)",
         "system": "Calling {phone_number} ..."
     },
     {
-        "user": "Ring up the Ristorante Cavallino",
+        "user": "Ring up the Hasenbergsteige",
         "belief": "phone_number = row['phone_number'] ; actions.call(phone_number)",
         "system": "Calling {phone_number} ..."
     },
     {
-        "user": "I want to make a call to the fifth museum",
-        "belief": "row = df.iloc[4] ; phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "user": "I want to make a call to the third restaurant",
+        "belief": "row = df.iloc[2] ; phone_number = row['phone_number'] ; actions.call(phone_number)",
         "system": "Calling {phone_number} ..."
     },
     {
-        "user": "Connect me with the last via phone",
-        "belief": "row = df.iloc[-1] ; phone_number = row['phone_number'] ; actions.call(phone_number)",
+        "user": "Connect me with the first via phone",
+        "belief": "row = df.iloc[0] ; phone_number = row['phone_number'] ; actions.call(phone_number)",
         "system": "Calling {phone_number} ..."
     },
     {
-        "user": "Call the second restaurant",
+        "user": "Call the second view",
         "belief": "row = df.iloc[1] ; phone_number = row['phone_number'] ; actions.call(phone_number)",
         "system": "Calling {phone_number} ..."
     },
