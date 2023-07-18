@@ -5,7 +5,7 @@ from typing import Dict
 
 # We need to use this path, because the working directory path changes based on from where the script is executed
 this_dir = os.path.dirname(__file__)
-tables_dir = os.path.join(this_dir, 'extracted_tables')
+tables_dir = os.path.join(this_dir, 'tables')
 
 def load() -> Dict[str , pd.DataFrame]:
     csv_file_paths = glob(tables_dir + '/*.csv')
