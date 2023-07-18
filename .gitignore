@@ -2,3 +2,4 @@
 models/*
 soloist/gtg_pretrained
 soloist/gtg_pretrained.tar.zip
+.env
