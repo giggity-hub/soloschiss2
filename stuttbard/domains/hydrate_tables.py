@@ -539,39 +539,74 @@ def print_json_entry(details_dict):
     print("wheelchair_accessible_entrance:", wheelchair_accessible_entrance)
     print("cuisine:", cuisine)
 
-def main():
-    # this way you get the dir name of the file regardless from where it is called
-    current_dir = os.path.dirname(__file__)
-    # directory filled with the json files obtained from google places api
-    scraping_results_dir = os.path.join(current_dir, "scraping_results")
-    scraping_files = [file for file in os.listdir(scraping_results_dir)]
-    # directory of already existing csv tables that should be extended by json data from scraping_results 
-    # directory
-    tables_dir = os.path.join(current_dir, "tables")
 
-    for scraping_file in scraping_files:
-        try:
-            json_dict = read_json_file(os.path.join(scraping_results_dir, scraping_file))
-            old_csv_file_path = os.path.join(tables_dir, scraping_file.replace("json", "csv"))
-            if os.path.isfile(old_csv_file_path):
-                # if there is already a csv table we want to extend it by the data of the corresponding 
-                # json file
-                table = pd.read_csv(old_csv_file_path, delimiter=";") 
-                #TODO: adapt the columns to the specific domain.
-                table = extend_table(table, json_dict, columns=[])
-            else:
-                # if there is no csv table corresponding to the json file, we create a new one, 
-                # based on the json data
-                #TODO: adapt the columns to the specific domain.
-                table = extract_table(scraped_data_dict=json_dict, columns=[])
+def generate_csv_table(json_path, new_csv_path="", old_csv_path="", columns=[]):
+    """
+    This method generates the csv tables used for our different domains, e.g. restaurant, museums ...
+    If an old csv file is specified this method will try to extend it by the new data of the json
+    file. If there is no old csv file a completely new one will be generated based on the data
+    of the json file.
 
-            results_dir = os.path.join(current_dir, "extracted_tables")
-            csv_file_path = os.path.join(results_dir, scraping_file.replace("json", "csv"))
-            table.to_csv(csv_file_path, sep=";", index=False)
+    Note: The columns is a list of column names that specifies which data to extract from the json and
+    fill the in the csv table.
+
+    Parameters
+    ----------
+    json_path : str
+        The path to the json file obtained from google places api.
+    new_csv_path : str
+        The path were the new generated pandas Dataframe table shalle be saved as csv file.
+    old_csv_path : str
+        The path to an old csv file that should be extended by the new data of the json
+        (i.e. add/update columns).
+    columns : list of strings
+        The list of strings specifies columns to update with new values from scraped_data_dict. 
+    """    
+
+    json_dict = read_json_file(json_path)
+    if os.path.isfile(old_csv_path):
+        # if there is already a csv table we want to extend it with the data of the corresponding 
+        # json file
+        table = pd.read_csv(old_csv_path, delimiter=";") 
+        table = extend_table(table=table, scraped_data_dict=json_dict, columns=columns)
+    else:
+        # if there is no csv table we create a new one, based on the json data
+        table = extract_table(columns=columns, scraped_data_dict=json_dict)
+
+    table.to_csv(new_csv_path, sep=";", index=False)
        
-        except Exception as error:
-            print(error)
-            continue
+    
+
+def main():
+    current_dir = os.path.dirname(__file__)
+
+    # generation of the restaurant related tables
+    restaurant_dir = os.path.join(current_dir, "restaurant")
+    json_path = os.path.join(restaurant_dir, "restaurant.json")
+    old_csv_path = os.path.join(restaurant_dir, "restaurant.csv")
+    new_csv_path = os.path.join(restaurant_dir, "table.csv")
+    generate_csv_table(new_csv_path=new_csv_path, old_csv_path = old_csv_path, 
+                       json_path=json_path, columns=[])
+
+    json_path = os.path.join(restaurant_dir, "more_restaurant.json")
+    new_csv_path = os.path.join(restaurant_dir, "more_table.csv")
+    generate_csv_table(new_csv_path=new_csv_path, json_path=json_path, columns=[])
+
+    # generation of view related tables
+    view_dir =  os.path.join(current_dir, "view")
+    json_path = os.path.join(view_dir, "view.json")
+    old_csv_path = os.path.join(view_dir, "view.csv")
+    new_csv_path = os.path.join(view_dir, "table.csv")
+    generate_csv_table(new_csv_path=new_csv_path, old_csv_path = old_csv_path, 
+                       json_path=json_path, columns=[])
+    
+    # generation of museum related tables
+    museum_dir =  os.path.join(current_dir, "museum")
+    json_path = os.path.join(museum_dir, "museum.json")
+    old_csv_path = os.path.join(museum_dir, "museum.csv")
+    new_csv_path = os.path.join(museum_dir, "table.csv")
+    generate_csv_table(new_csv_path=new_csv_path, old_csv_path = old_csv_path, 
+                       json_path=json_path, columns=[])
 
 if __name__ == "__main__":
     main()
