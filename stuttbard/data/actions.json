@@ -15,23 +15,40 @@
         "system": "Calling {phone_number} ..."
     },
     {
+<<<<<<< HEAD
         "user": "Call the phone number of the Houstons Fine Burrito Company please",
+=======
+        "user": "Call the phone number of the Sushi Le please",
+>>>>>>> b0b35c5c836f15626d575bf019051eba1ec23a58
         "belief": "phone_number = row['phone_number'] ; actions.call(phone_number)",
         "system": "Calling {phone_number} ..."
     },
     {
+<<<<<<< HEAD
         "user": "Give the Nannina a call",
+=======
+        "user": "Give the B\u00fan Vietnam Street-Food a call",
+>>>>>>> b0b35c5c836f15626d575bf019051eba1ec23a58
         "belief": "phone_number = row['phone_number'] ; actions.call(phone_number)",
         "system": "Calling {phone_number} ..."
     },
     {
+<<<<<<< HEAD
         "user": "Ring up the Hasenbergsteige",
+=======
+        "user": "Ring up the Dynasty",
+>>>>>>> b0b35c5c836f15626d575bf019051eba1ec23a58
         "belief": "phone_number = row['phone_number'] ; actions.call(phone_number)",
         "system": "Calling {phone_number} ..."
     },
     {
+<<<<<<< HEAD
         "user": "I want to make a call to the third restaurant",
         "belief": "row = df.iloc[2] ; phone_number = row['phone_number'] ; actions.call(phone_number)",
+=======
+        "user": "I want to make a call to the fourth restaurant",
+        "belief": "row = df.iloc[3] ; phone_number = row['phone_number'] ; actions.call(phone_number)",
+>>>>>>> b0b35c5c836f15626d575bf019051eba1ec23a58
         "system": "Calling {phone_number} ..."
     },
     {
@@ -40,8 +57,13 @@
         "system": "Calling {phone_number} ..."
     },
     {
+<<<<<<< HEAD
         "user": "Call the second view",
         "belief": "row = df.iloc[1] ; phone_number = row['phone_number'] ; actions.call(phone_number)",
+=======
+        "user": "Call the third more_restaurant",
+        "belief": "row = df.iloc[2] ; phone_number = row['phone_number'] ; actions.call(phone_number)",
+>>>>>>> b0b35c5c836f15626d575bf019051eba1ec23a58
         "system": "Calling {phone_number} ..."
     },
     {

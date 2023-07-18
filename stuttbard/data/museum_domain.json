@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "user": "I want to visit a art museum",
         "belief": "df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
         "system": "Here are some art museums {templates.list(names)}"
@@ -21,10 +22,54 @@
     },
     {
         "user": "Show me some pigs museum in Stuttgart?",
+=======
+        "user": "I want to visit a society museum",
+        "belief": "df = domains['museum'].query('about == \"society\"') ; names = df['name'].tolist()",
+        "system": "Here are some society museums {templates.list(names)}"
+    },
+    {
+        "user": "I want to visit a pigs museum",
+        "belief": "df = domains['museum'].query('about == \"pigs\"') ; names = df['name'].tolist()",
+        "system": "Here are some pigs museums {templates.list(names)}"
+    },
+    {
+        "user": "I'd like to go to a technology museum",
+        "belief": "df = domains['museum'].query('about == \"technology\"') ; names = df['name'].tolist()",
+        "system": "These are technology museums in Stuttgart {templates.list(names)}"
+    },
+    {
+        "user": "I'd like to go to a cosmology museum",
+        "belief": "df = domains['museum'].query('about == \"cosmology\"') ; names = df['name'].tolist()",
+        "system": "These are cosmology museums in Stuttgart {templates.list(names)}"
+    },
+    {
+        "user": "Show me some art museum in Stuttgart?",
+        "belief": "df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
+        "system": "Here are a few art museums {templates.list(names)}"
+    },
+    {
+        "user": "Show me some history museum in Stuttgart?",
+        "belief": "df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
+        "system": "Here are a few history museums {templates.list(names)}"
+    },
+    {
+        "user": "I want to go to a cosmology museum",
+        "belief": "df = domains['museum'].query('about == \"cosmology\"') ; names = df['name'].tolist()",
+        "system": "Here are some cosmology museums {templates.list(names)}"
+    },
+    {
+        "user": "I want to go to a history museum",
+        "belief": "df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
+        "system": "Here are some history museums {templates.list(names)}"
+    },
+    {
+        "user": "Give me some pigs museums",
+>>>>>>> b0b35c5c836f15626d575bf019051eba1ec23a58
         "belief": "df = domains['museum'].query('about == \"pigs\"') ; names = df['name'].tolist()",
         "system": "Here are a few pigs museums {templates.list(names)}"
     },
     {
+<<<<<<< HEAD
         "user": "Show me some cosmology museum in Stuttgart?",
         "belief": "df = domains['museum'].query('about == \"cosmology\"') ; names = df['name'].tolist()",
         "system": "Here are a few cosmology museums {templates.list(names)}"
@@ -45,11 +90,14 @@
         "system": "Here is a list of ethnology museums {templates.list(names)}"
     },
     {
+=======
+>>>>>>> b0b35c5c836f15626d575bf019051eba1ec23a58
         "user": "Give me some society museums",
         "belief": "df = domains['museum'].query('about == \"society\"') ; names = df['name'].tolist()",
         "system": "Here is a list of society museums {templates.list(names)}"
     },
     {
+<<<<<<< HEAD
         "user": "Give me some history museums R2D2",
         "belief": "df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
         "system": "These are a few history museums in Stuttgart {templates.list(names)}"
@@ -58,6 +106,21 @@
         "user": "Give me some cosmology museums R2D2",
         "belief": "df = domains['museum'].query('about == \"cosmology\"') ; names = df['name'].tolist()",
         "system": "These are a few cosmology museums in Stuttgart {templates.list(names)}"
+=======
+        "user": "Give me some ethnology museums R2D2",
+        "belief": "df = domains['museum'].query('about == \"ethnology\"') ; names = df['name'].tolist()",
+        "system": "These are a few ethnology museums in Stuttgart {templates.list(names)}"
+    },
+    {
+        "user": "Give me some art museums R2D2",
+        "belief": "df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
+        "system": "These are a few art museums in Stuttgart {templates.list(names)}"
+    },
+    {
+        "user": "Could you suggest me some art museums",
+        "belief": "df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
+        "system": "Sure. Here is a list of art museums {templates.list(names)}"
+>>>>>>> b0b35c5c836f15626d575bf019051eba1ec23a58
     },
     {
         "user": "Could you suggest me some technology museums",
@@ -70,11 +133,21 @@
         "system": "Sure. Here is a list of ethnology museums {templates.list(names)}"
     },
     {
+<<<<<<< HEAD
         "user": "Are there any history museums in Stuttgart?",
+=======
+        "user": "Are there any cosmology museums in Stuttgart?",
+        "belief": "df = domains['museum'].query('about == \"cosmology\"') ; names = df['name'].tolist()",
+        "system": "The list of cosmology museums includes: {templates.list(names)}"
+    },
+    {
+        "user": "List me some history museums in Stuttgart",
+>>>>>>> b0b35c5c836f15626d575bf019051eba1ec23a58
         "belief": "df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
         "system": "The list of history museums includes: {templates.list(names)}"
     },
     {
+<<<<<<< HEAD
         "user": "Are there any cosmology museums in Stuttgart?",
         "belief": "df = domains['museum'].query('about == \"cosmology\"') ; names = df['name'].tolist()",
         "system": "The list of cosmology museums includes: {templates.list(names)}"
@@ -93,11 +166,21 @@
         "user": "List me some history museums",
         "belief": "df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
         "system": "The list of history museums includes: {templates.list(names)}"
+=======
+        "user": "List me some ethnology museums in Stuttgart",
+        "belief": "df = domains['museum'].query('about == \"ethnology\"') ; names = df['name'].tolist()",
+        "system": "The list of ethnology museums includes: {templates.list(names)}"
     },
     {
-        "user": "List me some cosmology museums",
-        "belief": "df = domains['museum'].query('about == \"cosmology\"') ; names = df['name'].tolist()",
-        "system": "The list of cosmology museums includes: {templates.list(names)}"
+        "user": "List me some ethnology museums",
+        "belief": "df = domains['museum'].query('about == \"ethnology\"') ; names = df['name'].tolist()",
+        "system": "The list of ethnology museums includes: {templates.list(names)}"
+>>>>>>> b0b35c5c836f15626d575bf019051eba1ec23a58
+    },
+    {
+        "user": "List me some pigs museums",
+        "belief": "df = domains['museum'].query('about == \"pigs\"') ; names = df['name'].tolist()",
+        "system": "The list of pigs museums includes: {templates.list(names)}"
     },
     {
         "user": "Could you show me some society museums around Stuttgart",
@@ -110,6 +193,7 @@
         "system": "These are art museums around Stuttgart: {templates.list(names)}"
     },
     {
+<<<<<<< HEAD
         "user": "What do you know about ethnology museums in Stuttgart",
         "belief": "df = domains['museum'].query('about == \"ethnology\"') ; names = df['name'].tolist()",
         "system": "Here are examples of ethnology museums around Stuttgart: {templates.list(names)}"
@@ -123,13 +207,39 @@
         "user": "Has Stuttgart technology museums?",
         "belief": "df = domains['museum'].query('about == \"technology\"') ; names = df['name'].tolist()",
         "system": "The list of technology museums around Stuttgart contains: {templates.list(names)}"
+=======
+        "user": "Could you show me some cosmology museums around Stuttgart",
+        "belief": "df = domains['museum'].query('about == \"cosmology\"') ; names = df['name'].tolist()",
+        "system": "These are cosmology museums around Stuttgart: {templates.list(names)}"
     },
     {
-        "user": "Has Stuttgart ethnology museums?",
+        "user": "What do you know about history museums in Stuttgart",
+        "belief": "df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
+        "system": "Here are examples of history museums around Stuttgart: {templates.list(names)}"
+    },
+    {
+        "user": "What do you know about society museums in Stuttgart",
+        "belief": "df = domains['museum'].query('about == \"society\"') ; names = df['name'].tolist()",
+        "system": "Here are examples of society museums around Stuttgart: {templates.list(names)}"
+>>>>>>> b0b35c5c836f15626d575bf019051eba1ec23a58
+    },
+    {
+        "user": "Has Stuttgart art museums?",
+        "belief": "df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
+        "system": "The list of art museums around Stuttgart contains: {templates.list(names)}"
+    },
+    {
+        "user": "Has Stuttgart pigs museums?",
+        "belief": "df = domains['museum'].query('about == \"pigs\"') ; names = df['name'].tolist()",
+        "system": "The list of pigs museums around Stuttgart contains: {templates.list(names)}"
+    },
+    {
+        "user": "Are there any ethnology museums located in Stuttgart?",
         "belief": "df = domains['museum'].query('about == \"ethnology\"') ; names = df['name'].tolist()",
         "system": "The list of ethnology museums around Stuttgart contains: {templates.list(names)}"
     },
     {
+<<<<<<< HEAD
         "user": "Are there any art museums located in Stuttgart?",
         "belief": "df = domains['museum'].query('about == \"art\"') ; names = df['name'].tolist()",
         "system": "The list of art museums around Stuttgart contains: {templates.list(names)}"
@@ -143,6 +253,11 @@
         "user": "Do you know any pigs museums located in Stuttgart?",
         "belief": "df = domains['museum'].query('about == \"pigs\"') ; names = df['name'].tolist()",
         "system": "We have these pigs museums around Stuttgart, among others: {templates.list(names)}"
+=======
+        "user": "Are there any technology museums located in Stuttgart?",
+        "belief": "df = domains['museum'].query('about == \"technology\"') ; names = df['name'].tolist()",
+        "system": "The list of technology museums around Stuttgart contains: {templates.list(names)}"
+>>>>>>> b0b35c5c836f15626d575bf019051eba1ec23a58
     },
     {
         "user": "Do you know any society museums located in Stuttgart?",
@@ -150,6 +265,7 @@
         "system": "We have these society museums around Stuttgart, among others: {templates.list(names)}"
     },
     {
+<<<<<<< HEAD
         "user": "Are you aware of any society museums in Stuttgart?",
         "belief": "df = domains['museum'].query('about == \"society\"') ; names = df['name'].tolist()",
         "system": "According to my database the list of society museums includes: {templates.list(names)}"
@@ -160,6 +276,23 @@
         "system": "According to my database the list of technology museums includes: {templates.list(names)}"
     },
     {
+=======
+        "user": "Do you know any history museums located in Stuttgart?",
+        "belief": "df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
+        "system": "We have these history museums around Stuttgart, among others: {templates.list(names)}"
+    },
+    {
+        "user": "Are you aware of any history museums in Stuttgart?",
+        "belief": "df = domains['museum'].query('about == \"history\"') ; names = df['name'].tolist()",
+        "system": "According to my database the list of history museums includes: {templates.list(names)}"
+    },
+    {
+        "user": "Are you aware of any technology museums in Stuttgart?",
+        "belief": "df = domains['museum'].query('about == \"technology\"') ; names = df['name'].tolist()",
+        "system": "According to my database the list of technology museums includes: {templates.list(names)}"
+    },
+    {
+>>>>>>> b0b35c5c836f15626d575bf019051eba1ec23a58
         "user": "I want to visit a museum.",
         "belief": "df = domains['museum'] ; topic = df['about'].unique()",
         "system": "What topic should the museum be about? {templates.list(topic)}"
@@ -205,9 +338,9 @@
         "system": "The museums in Stuttgart are about: {templates.list(topic)}"
     },
     {
-        "user": "Can you give me urls to any museums about pigs?",
-        "belief": "df = domains['museum'].query('about == \"pigs\"') ; url = df['url'].tolist()",
-        "system": "Here are urls to the websites of pigs museums: {templates.list(url)}"
+        "user": "Can you give me urls to any museums about cosmology?",
+        "belief": "df = domains['museum'].query('about == \"cosmology\"') ; url = df['url'].tolist()",
+        "system": "Here are urls to the websites of cosmology museums: {templates.list(url)}"
     },
     {
         "user": "Can you give me urls to any museums about art?",
@@ -215,6 +348,7 @@
         "system": "Here are urls to the websites of art museums: {templates.list(url)}"
     },
     {
+<<<<<<< HEAD
         "user": "Guide me to websites about cosmology museums.",
         "belief": "df = domains['museum'].query('about == \"cosmology\"') ; url = df['url'].tolist()",
         "system": "These are links to cosmology museums: {templates.list(url)}"
@@ -230,6 +364,13 @@
         "system": "This is a list of urls to websites about  technology museums: {templates.list(url)}"
     },
     {
+=======
+        "user": "Provide me some links to websites about cosmology museums.",
+        "belief": "df = domains['museum'].query('about == \"cosmology\"') ; url = df['url'].tolist()",
+        "system": "This is a list of urls to websites about  cosmology museums: {templates.list(url)}"
+    },
+    {
+>>>>>>> b0b35c5c836f15626d575bf019051eba1ec23a58
         "user": "Provide me some links to websites about pigs museums.",
         "belief": "df = domains['museum'].query('about == \"pigs\"') ; url = df['url'].tolist()",
         "system": "This is a list of urls to websites about  pigs museums: {templates.list(url)}"
@@ -240,9 +381,20 @@
         "system": "This list contains links to websites about ethnology museums: {templates.list(url)}"
     },
     {
+<<<<<<< HEAD
         "user": "Show me links to homepages of museums about cosmology.",
         "belief": "df = domains['museum'].query('about == \"cosmology\"') ; url = df['url'].tolist()",
         "system": "This list contains links to websites about cosmology museums: {templates.list(url)}"
+=======
+        "user": "Show me links to homepages of museums about technology.",
+        "belief": "df = domains['museum'].query('about == \"technology\"') ; url = df['url'].tolist()",
+        "system": "This list contains links to websites about technology museums: {templates.list(url)}"
+    },
+    {
+        "user": "Direct me to the web pages of museums about society.",
+        "belief": "df = domains['museum'].query('about == \"society\"') ; url = df['url'].tolist()",
+        "system": "This list contains urls to websites about society museums: {templates.list(url)}"
+>>>>>>> b0b35c5c836f15626d575bf019051eba1ec23a58
     },
     {
         "user": "Direct me to the web pages of museums about history.",
@@ -250,6 +402,7 @@
         "system": "This list contains urls to websites about history museums: {templates.list(url)}"
     },
     {
+<<<<<<< HEAD
         "user": "Direct me to the web pages of museums about society.",
         "belief": "df = domains['museum'].query('about == \"society\"') ; url = df['url'].tolist()",
         "system": "This list contains urls to websites about society museums: {templates.list(url)}"
@@ -258,6 +411,11 @@
         "user": "Could you provide me links to museums about pigs.",
         "belief": "df = domains['museum'].query('about == \"pigs\"') ; url = df['url'].tolist()",
         "system": "I know of these websites about pigs museums in Stuttgart: {templates.list(url)}"
+=======
+        "user": "Could you provide me links to museums about cosmology.",
+        "belief": "df = domains['museum'].query('about == \"cosmology\"') ; url = df['url'].tolist()",
+        "system": "I know of these websites about cosmology museums in Stuttgart: {templates.list(url)}"
+>>>>>>> b0b35c5c836f15626d575bf019051eba1ec23a58
     },
     {
         "user": "Could you provide me links to museums about society.",

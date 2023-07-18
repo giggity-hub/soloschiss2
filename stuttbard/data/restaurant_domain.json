@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "user": "I want to eat indian food",
         "belief": "df = domains['restaurant'].query('cuisine == \"indian\"') ; names = df['name'].tolist()",
         "system": "Here are some indian restaurants {templates.list(names)}"
@@ -11,10 +12,49 @@
     },
     {
         "user": "I'd like to get a asian meal",
+=======
+        "user": "I want to eat italian food",
+        "belief": "df = domains['restaurant'].query('cuisine == \"italian\"') ; names = df['name'].tolist()",
+        "system": "Here are some italian restaurants {templates.list(names)}"
+    },
+    {
+        "user": "I want to eat american food",
+        "belief": "df = domains['restaurant'].query('cuisine == \"american\"') ; names = df['name'].tolist()",
+        "system": "Here are some american restaurants {templates.list(names)}"
+    },
+    {
+        "user": "I'd like to get a asian meal",
         "belief": "df = domains['restaurant'].query('cuisine == \"asian\"') ; names = df['name'].tolist()",
         "system": "These restaurants serve asian meals {templates.list(names)}"
     },
     {
+        "user": "I'd like to get a asian meal",
+        "belief": "df = domains['restaurant'].query('cuisine == \"asian\"') ; names = df['name'].tolist()",
+        "system": "These restaurants serve asian meals {templates.list(names)}"
+    },
+    {
+        "user": "Where can i get some american food?",
+        "belief": "df = domains['restaurant'].query('cuisine == \"american\"') ; names = df['name'].tolist()",
+        "system": "You can get american food at these restaurants {templates.list(names)}"
+    },
+    {
+        "user": "Where can i get some fast food food?",
+        "belief": "df = domains['restaurant'].query('cuisine == \"fast food\"') ; names = df['name'].tolist()",
+        "system": "You can get fast food food at these restaurants {templates.list(names)}"
+    },
+    {
+        "user": "I want to eat american",
+        "belief": "df = domains['restaurant'].query('cuisine == \"american\"') ; names = df['name'].tolist()",
+        "system": "Here are some american restaurants {templates.list(names)}"
+    },
+    {
+        "user": "I want to eat asian",
+>>>>>>> b0b35c5c836f15626d575bf019051eba1ec23a58
+        "belief": "df = domains['restaurant'].query('cuisine == \"asian\"') ; names = df['name'].tolist()",
+        "system": "These restaurants serve asian meals {templates.list(names)}"
+    },
+    {
+<<<<<<< HEAD
         "user": "I'd like to get a Italian meal",
         "belief": "df = domains['restaurant'].query('cuisine == \"Italian\"') ; names = df['name'].tolist()",
         "system": "These restaurants serve Italian meals {templates.list(names)}"
@@ -43,13 +83,19 @@
         "user": "give me fries restaurants",
         "belief": "df = domains['restaurant'].query('cuisine == \"fries\"') ; names = df['name'].tolist()",
         "system": "Here are fries restaurants {templates.list(names)}"
+=======
+        "user": "give me fast food restaurants",
+        "belief": "df = domains['restaurant'].query('cuisine == \"fast food\"') ; names = df['name'].tolist()",
+        "system": "Here are fast food restaurants {templates.list(names)}"
+>>>>>>> b0b35c5c836f15626d575bf019051eba1ec23a58
     },
     {
-        "user": "give me indian restaurants",
-        "belief": "df = domains['restaurant'].query('cuisine == \"indian\"') ; names = df['name'].tolist()",
-        "system": "Here are indian restaurants {templates.list(names)}"
+        "user": "give me american restaurants",
+        "belief": "df = domains['restaurant'].query('cuisine == \"american\"') ; names = df['name'].tolist()",
+        "system": "Here are american restaurants {templates.list(names)}"
     },
     {
+<<<<<<< HEAD
         "user": "List Italian restaurants",
         "belief": "df = domains['restaurant'].query('cuisine == \"Italian\"') ; names = df['name'].tolist()",
         "system": "Here is a list of Italian restaurants {templates.list(names)}"
@@ -58,6 +104,16 @@
         "user": "List indian restaurants",
         "belief": "df = domains['restaurant'].query('cuisine == \"indian\"') ; names = df['name'].tolist()",
         "system": "Here is a list of indian restaurants {templates.list(names)}"
+=======
+        "user": "List italian restaurants",
+        "belief": "df = domains['restaurant'].query('cuisine == \"italian\"') ; names = df['name'].tolist()",
+        "system": "Here is a list of italian restaurants {templates.list(names)}"
+    },
+    {
+        "user": "List fast food restaurants",
+        "belief": "df = domains['restaurant'].query('cuisine == \"fast food\"') ; names = df['name'].tolist()",
+        "system": "Here is a list of fast food restaurants {templates.list(names)}"
+>>>>>>> b0b35c5c836f15626d575bf019051eba1ec23a58
     },
     {
         "user": "I want to go to a restaurant",
@@ -90,6 +146,7 @@
         "system": "What kind of food would you like to eat? {templates.list(cuisines)}"
     },
     {
+<<<<<<< HEAD
         "user": "Do you know any restaurants that are either burgers or polish",
         "belief": "df = domains['restaurant'].query('cuisine == \"burgers\" | cuisine == \"polish\"') ; names = df['name'].tolist()",
         "system": "Here are restaurants that fit your description {templates.list(names)}"
@@ -117,6 +174,35 @@
     {
         "user": "I want food that is  burgers or Italian",
         "belief": "df = domains['restaurant'].query('cuisine == \"burgers\" | cuisine == \"Italian\"') ; names = df['name'].tolist()",
+=======
+        "user": "Do you know any restaurants that are either italian or asian",
+        "belief": "df = domains['restaurant'].query('cuisine == \"italian\" | cuisine == \"asian\"') ; names = df['name'].tolist()",
+        "system": "Here are restaurants that fit your description {templates.list(names)}"
+    },
+    {
+        "user": "Do you know any restaurants that are either american or american",
+        "belief": "df = domains['restaurant'].query('cuisine == \"american\" | cuisine == \"american\"') ; names = df['name'].tolist()",
+        "system": "Here are restaurants that fit your description {templates.list(names)}"
+    },
+    {
+        "user": "I like italian and fast food food",
+        "belief": "df = domains['restaurant'].query('cuisine == \"italian\" | cuisine == \"fast food\"') ; names = df['name'].tolist()",
+        "system": "Then you should like these restaurants {templates.list(names)}"
+    },
+    {
+        "user": "I like fast food and american food",
+        "belief": "df = domains['restaurant'].query('cuisine == \"fast food\" | cuisine == \"american\"') ; names = df['name'].tolist()",
+        "system": "Then you should like these restaurants {templates.list(names)}"
+    },
+    {
+        "user": "I want food that is  italian or american",
+        "belief": "df = domains['restaurant'].query('cuisine == \"italian\" | cuisine == \"american\"') ; names = df['name'].tolist()",
+        "system": "Then you should like these restaurants {templates.list(names)}"
+    },
+    {
+        "user": "I want food that is  asian or fast food",
+        "belief": "df = domains['restaurant'].query('cuisine == \"asian\" | cuisine == \"fast food\"') ; names = df['name'].tolist()",
+>>>>>>> b0b35c5c836f15626d575bf019051eba1ec23a58
         "system": "Then you should like these restaurants {templates.list(names)}"
     }
 ]
