@@ -15,4 +15,4 @@ def test_no_nan(key, df):
 
 def test_create_sampler():
     sampler = create_sampler()
-    sample = sampler['restaurant']['cuisine'].sample()
+    sample = sampler['restaurant']['address'].sample()

@@ -1,6 +1,6 @@
 from stuttbard.domains.sampler import create_sampler
-from stuttbard.scripts.create_data import parametrize
-from stuttbard.scripts.create_data import get_samples
+from scripts.create_data import parametrize
+from scripts.create_data import get_samples
 from stuttbard.domains.sampler import UniqueRandom
 
 def test_unique_random():
