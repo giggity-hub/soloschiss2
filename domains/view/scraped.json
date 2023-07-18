@@ -1,5 +1,5 @@
-{
-    "Zeppelinstra\u00dfe ": {
+[
+    {
         "address_components": [
             {
                 "long_name": "Zeppelinstra\u00dfe",
@@ -96,7 +96,7 @@
         "utc_offset": 120,
         "vicinity": "Stuttgart-West"
     },
-    "Hasenbergsteige": {
+    {
         "address_components": [
             {
                 "long_name": "Hasenbergsteige",
@@ -177,7 +177,7 @@
         "utc_offset": 120,
         "vicinity": "Stuttgart"
     },
-    "Leibnizstra\u00dfe": {
+    {
         "address_components": [
             {
                 "long_name": "Leibnizstra\u00dfe",
@@ -274,7 +274,7 @@
         "utc_offset": 120,
         "vicinity": "Stuttgart-West"
     },
-    "Uhlandsh\u00f6he": {
+    {
         "address_components": [
             {
                 "long_name": "Uhlandsh\u00f6he",
@@ -369,7 +369,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/107401791017385627913\">Kerstin</a>"
                 ],
-                "photo_reference": "Aaw_FcIFe0i9OmG-yEr_yZ1h-844MfeH1HvNmyO5bmnQkbrS_omvdRaGCzNrTPiixDbk35sC6vs1tjpFub-Z8ohm2rCcLLz8Au-9wR0tep5kbl8RMn22mSboKofG4gqXCn1akUM7JwrQnWLvAP_qc_jXj26jsxK7lz7NbiQBNwD_PKdimW8s",
+                "photo_reference": "Aaw_FcJiDItMuMBazvPCIUaN-Shn-vsIedpYyeXEfW4sIwVNYXXNhdQUHXIc4RMH2S1bdsoBQ7qGbzEUoOLaiohBdiJUjI9LJJaKgQVrKCTNMuO5luIkHykeYZ5dSb0rclPeiTK3v0Wy2VaButT7AqzMaxE1qE-66q0xuNcjDcbKrlM7rDW5",
                 "width": 3968
             },
             {
@@ -377,7 +377,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/107401791017385627913\">Kerstin</a>"
                 ],
-                "photo_reference": "Aaw_FcJAOWNuCr0alXMPmLDIgEmPz3I-c-hEfKjqUttkfnOeUgqoIyG6wGl2SmJlPkVbxhpjv0Db1IJf1dhKNYRirrM6zaW0UIMXCd6_FqXotPHk73h4edQZnekWnX1DQle4wJCRKdBjH4-npEm_evDah0MCeOhyhAEZJZbqOBXUG82wLdwx",
+                "photo_reference": "Aaw_FcIJUB4aKSP36QrlScH1DAZReG3cHadsJUbED_4B4BMUeE9sLyiZPv4EH57K0saSY3qNuC2go2pAg8RJqvX-QUTsSw8Ya1aN88JEc2ighpzHNzR-H1mzREbP79Qsr3LrKc-rhBtZsRVlfj7DwONqjfIDQLRUo9DJXuZn67Qahnj_3Cfl",
                 "width": 3968
             },
             {
@@ -385,7 +385,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/107401791017385627913\">Kerstin</a>"
                 ],
-                "photo_reference": "Aaw_FcLe7_d7GLifRfJcBFYQuTtIWGiWoQ_biSulh9xoqug6cixO9eF0EdO5y8yQxZ_eiazrtY38KFFzLU8_dw8xBUNmUCmvEp1VrkD2ZSWMCAHlTNgN12QtDa9F6ovTqBvcPrBJND9eJyCEpVhkaE4FPiUqFzl0uDELO-CqcQEt51Jbhdyy",
+                "photo_reference": "Aaw_FcKgUxYYU01M0NND8QBnR49TepASb7PMuDe1KQ8lVA1QLrBFy3MJPxn_qWrWU5wBQ_N8IxDizAa1WdVRQkDXJ6HF7ED6Fl9GE_sfn7z1QJMIT8C5oSrgZfwh4lhEoc5n2fhzryym3sJaJjfFQP4hX771XkZjo09dW5pj-JrPS2NrJAIT",
                 "width": 3968
             },
             {
@@ -393,7 +393,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/111607780298088783763\">Bernd Stubbe</a>"
                 ],
-                "photo_reference": "Aaw_FcLUAIP44T93TqUwUkEcEdpddx0U7H9hWqS6bxqn1HlfM96FabpUFlbdvN2Q3M0XHSqAC_7Xzey7-dO9y_PHUqk-RsHakbi4uiFERK07lDanPnWwOJ6IyjnrFTrnhKjesyOonWYx3GqwXeJtPBPjK4TlP5YxEeziCjmshiiHz6TTeEe2",
+                "photo_reference": "Aaw_FcI-T9SfZWdjMPH8Hw8D6wyxJphp0aAVUAMVYNtMubYsVroY7s1pW1drrcNJwOcGYjpU1QZB0QPSvFghw_OT0nvgPgYmqggnFC5tbwzdAmgzHJ5Z5kN0oE6SoC8WFbXP-3krLaOA8XERQiJDebnaLgtzBN-r9976TS9baFOq1a9XSJMs",
                 "width": 3264
             },
             {
@@ -401,7 +401,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/103315567636126844521\">Ingrid Converso</a>"
                 ],
-                "photo_reference": "Aaw_FcKM2Itfy5V_vQzPHaJq407UXHvW_zJz0WOa6Tqp9gD2gOxU7kR418rGAiCtXGFyPGm0j8i3tYMAQjtN5wOiPk2G2A3Vv7L_Ze-4MQWXtJ4kIy4hWH8rsJYzvra2VEDC5aheNaVhSAs1TKYFyPh-M0Y0E6aNoE1HS93gnU59Q555BckM",
+                "photo_reference": "Aaw_FcKNyijocGIyY2oktBshi4ViEz3FHQsbEpWmNdZg31YV1_JdhXISXVD8mwQXyo0xpytpemNe84WXKyVWs4R8Poo0MCeac7b9RbNWFPE79c32F1vopcYyXPMjSDcCje4bC3dNUNL06rMYYcvepZbyU1QCUXJlYOg5niZFXhF8TUxCUqOR",
                 "width": 4608
             },
             {
@@ -409,7 +409,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/111920447790175712086\">Michael Hellermann</a>"
                 ],
-                "photo_reference": "Aaw_FcLkstDv6rlrlwyTvt3aNb_TfQUvQCB1dTFwxSKEofjoj7k0ODMALrQv7yIg0xdEDRp9zTXfrxdQd9drXODMP-nVfo_WJq9BdUAjd7yi1CkoHKVydwuRCLusp6pJLAq4cxiwHcOzMfQyZoepMhzt84eW1ooAdkb5mBX1awUMZtHrQ-WH",
+                "photo_reference": "Aaw_FcJk9lU8OjyRvJk5i-KWLFJjd9K5GpwlRmmITez6KBNlVAaA2jYdLGFagdHs5KJ3uzS59ppCY5HDtLiqn99Ny16ZBTL_aTw_NIHjcC1xmJ1BVqurfIEARn-vKK9QrACvJfxfKM_A1O7XqvzwB5p4uX1L7PU-1rzmDfuxooletx3ai9Ac",
                 "width": 2047
             },
             {
@@ -417,7 +417,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/109922098829029872414\">W Elewi</a>"
                 ],
-                "photo_reference": "Aaw_FcJzkDMYkBkygriIIk0q_kjzX4D230WjjKC2NhNyhyxbkjIsZ5cNkjw3Vt7-WIUtrXiDX0Yiki_t3m0brHofZ1NpBjtC6XmGhHjiYcPuTd7cJqsXB87zTD_YkxnNdd_mmhbMZMIlzZC4Feo6BvB84OU5fsTpic4lg3SRwG9AtMrzPJh5",
+                "photo_reference": "Aaw_FcI_pW4gsP7ab7CIMF0qTnEevmfhnO6lax964G42rAm_xu8QXbQEutorb3U2L3dMJud9nxS-sgG6hglDnggESkd65Wfnc-HBhpJw1TAmfjb1jCJ-DcGaX-JmrtfgnqGyj02YsQ0JLtotYtnudUCjSnpJAQNOnMzJAbrqdyryeadUszDd",
                 "width": 666
             },
             {
@@ -425,7 +425,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/109922098829029872414\">W Elewi</a>"
                 ],
-                "photo_reference": "Aaw_FcLxyvQoq6N7e1fLjj5HTDm638TuW-4DKW0KJCyxzpfnenuCVkNwYRrfcSXZNAqFrwkS2ais2Quge7lAQbhGcxZDgWQYr93vIybX3a_WrRHtNgzYa9fudAm8yogGOK8zR_u2sTDaFxfX5Cmxtm4l0io6CsZstKMMob6i_ZycRNYIpXk9",
+                "photo_reference": "Aaw_FcI3kaFLP9AikDVj5C2N_Q1yxcL9srH3UTouAX_vHFNijeZup4ATIfbWdTXg_AyB_aWfTkyg1BOBqhB0UBrZ1n3fDa_0hxXCITaMVOaqeg_oqBCysJs_7iUBY_IXeiKEPiTp5ZVfVCv0dIZ6aM1ZPGMUd9WgKzye5hn244ABtmhOPWGe",
                 "width": 2022
             },
             {
@@ -433,7 +433,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/109922098829029872414\">W Elewi</a>"
                 ],
-                "photo_reference": "Aaw_FcKxd8DyHBWzFx5Td0D5dIEYL2-ycJw_8uA1v51i9WgfajCmDoowe3IXgdjsg_dNqKc41WMrdAi4kJNjq7_3En3X9ZtsX_HAKytFEkhM4DWcdnGMUWo-W7Ed84qUXQt4Hk0yUgIGOv1w0LEVWnkwgazAVnXRWuiWlS5ac1pHfLZ5FcB5",
+                "photo_reference": "Aaw_FcIYWF9Wv9M80r8ebI6cE7WRQ3eNPEXyLMDFvVnhjP2hgBDvwvh4WcOebTKXwOwoLnaPB-wC89_loeclIzwV_kRJhWnCzm7QG44lRtv33soLD-ksH6v_SJxnXbqE7xQOT6Y4EZk4NCOHI4aLP09m6lmxqBbHvk7C5xnG54wdwJDpf2yL",
                 "width": 4032
             },
             {
@@ -441,7 +441,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/107401791017385627913\">Kerstin</a>"
                 ],
-                "photo_reference": "Aaw_FcKX4F-Rwn427l0PUQnW2fi3uAm0mHWZBRGwXSvmROMZG_Qwylv-t0q_16Szvs40dW7LUBbZSPJGgj_KNx4NlTrjAp-vXmR1Vt5J8f3RZLJ2tUx-33C9tLeSdJ92w5Rfrkkp8MVkfnbrgXz9Ao-9WhptMlpYalN-KGSCK7o63lqHUI78",
+                "photo_reference": "Aaw_FcKs2TzafpJzrtt8rFQ2gz1SeHKMaioUA9Aj6Dx3yCXeQNs9xddc_OZ0yztVnuGZc1rlIMeLQ5bamYjyBhYuaWtMqYPQQdUSu2oKVRUCdGJQDKKGwBIgPEU5lx1U_77JX07oD9jhHQrUS7WloP16lGUS29xJoGzYOzw_1Prsbvxn3V5D",
                 "width": 3968
             }
         ],
@@ -519,7 +519,7 @@
         "utc_offset": 120,
         "vicinity": "Uhlandsh\u00f6he"
     },
-    "Wei\u00dfenburgpark": {
+    {
         "address_components": [
             {
                 "long_name": "3",
@@ -595,28 +595,28 @@
         "adr_address": "<span class=\"street-address\">Bopserwaldstra\u00dfe 3</span>, <span class=\"postal-code\">70184</span> <span class=\"locality\">Stuttgart</span>, <span class=\"country-name\">Germany</span>",
         "business_status": "OPERATIONAL",
         "current_opening_hours": {
-            "open_now": false,
+            "open_now": true,
             "periods": [
                 {
                     "close": {
-                        "date": "2023-07-16",
+                        "date": "2023-07-23",
                         "day": 0,
                         "time": "1600"
                     },
                     "open": {
-                        "date": "2023-07-16",
+                        "date": "2023-07-23",
                         "day": 0,
                         "time": "1000"
                     }
                 },
                 {
                     "close": {
-                        "date": "2023-07-17",
+                        "date": "2023-07-24",
                         "day": 1,
                         "time": "1700"
                     },
                     "open": {
-                        "date": "2023-07-17",
+                        "date": "2023-07-24",
                         "day": 1,
                         "time": "0900"
                     }
@@ -659,24 +659,24 @@
                 },
                 {
                     "close": {
-                        "date": "2023-07-14",
+                        "date": "2023-07-21",
                         "day": 5,
                         "time": "1700"
                     },
                     "open": {
-                        "date": "2023-07-14",
+                        "date": "2023-07-21",
                         "day": 5,
                         "time": "0900"
                     }
                 },
                 {
                     "close": {
-                        "date": "2023-07-15",
+                        "date": "2023-07-22",
                         "day": 6,
                         "time": "1600"
                     },
                     "open": {
-                        "date": "2023-07-15",
+                        "date": "2023-07-22",
                         "day": 6,
                         "time": "1000"
                     }
@@ -718,7 +718,7 @@
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
         "name": "Wei\u00dfenburgpark",
         "opening_hours": {
-            "open_now": false,
+            "open_now": true,
             "periods": [
                 {
                     "close": {
@@ -807,7 +807,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/115800519918918822096\">\u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440 \u041a\u043e\u043d\u0434\u0440\u0430\u0448\u043e\u0432</a>"
                 ],
-                "photo_reference": "Aaw_FcJkzXZPzHAXqlfz9coHyLpPp2qTkS_BIg1infBcqlQXfToK_y1mXldvYT_QwGUdiY4RjMjLkWrrra-NhygS8prOfUvpyc-nxoWMRd2fxMIPSUKyYy-K6lK4ITeZFq8_rm9sUDdubepvDQPgJszz8ATkREyLmlXfaNa619NOz7DnJeZc",
+                "photo_reference": "Aaw_FcKy_r1ai2144ac3BM1nUnZqEPvO_9woi0_GmPYXcocU2sHkSexTnpMNOZoMUkCrfmZ1W50836S8w3yT4Jgdcl_bT6fNlboRZsJHzevCNNGQtqvhWx1l-ItmUmyOxbwvRHImZi55jcCPlnRWDfV1NHwqvuaSn1aDJlX8PaQf5SbSa7xT",
                 "width": 2448
             },
             {
@@ -815,7 +815,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/106842261918831877315\">R. D. (RJ.DJ.)</a>"
                 ],
-                "photo_reference": "Aaw_FcI6FQR6Gfo8Nf0k8FM5Jq9TdYYRsOWXJlsFQK_tH4llm9_br1MSDgxT0euq2KT4jzBLFrnUDRQcdz0snOt4L7pr0D8t_o5THidXJDohWf9PtykD6e8K4dKsTBhOUjFZtzqV4n5NSHgKuLPV-BGVFzl1C6xhy46xOm1WKcWwUcw_z9nD",
+                "photo_reference": "Aaw_FcIc6LzO9YxKYwHY67zCrENwnB5WW311MgJjds-YKIlFCffRCcNc1PC6FmfrHGNdYDWwxixXH0_qz48616SPcFi5kM1M-7sNEPgF54j8lfWO9TUwfHwFDCTky2OtIEzT2JhIfsjNQSlyW0L4vR-sz520wPVVFUamjMx1FK6RU-ArmoYy",
                 "width": 4032
             },
             {
@@ -823,7 +823,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/104080358995885168436\">Kalliha Calypso</a>"
                 ],
-                "photo_reference": "Aaw_FcJtMDxudnfBfSJiseP45qh8tf9FldZ-ITbMMh1OLLSeuU95K3keKVQUsWJBS_NCKgM3H5isy5xGOF4c3K4r5M1pdguzRVVvN_eBGU4T9bC5Ulefg4QpD7iUlKwFR0_oqUdkyQRzl1NplfxzNRniWpSOVuN4OGXIPWphRw5aPcKzViPe",
+                "photo_reference": "Aaw_FcLD7iAa7XblDwbWCCal52W9_utW7HUF8aN4j3Lc0clnbiY3kl_ESzXalwKMyFwj5Fl-V_0hBiusENbbh1Hwq2Fp4ONXAhWp1cMEENZRNKDioVxM8REJCCGon4fRe_-jbOjR_Z5i1Jw2TBZ-1KR_Se2JAazuJ30juIpOn3Pgva0SiAa2",
                 "width": 4624
             },
             {
@@ -831,7 +831,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/112279315666335807462\">Agnes Zabos</a>"
                 ],
-                "photo_reference": "Aaw_FcL-7byrMTIV9kPwV0ky9F2yYRJFkwU2B0tzF76Y1WEQ2rQUQQk5g7rzs5goXBKZe5At9RniDFPYmf2SPCEiTkOt1Xs6EuiFe9thXK77g0ZJcI9IrznKqoOXTCQycCSL__5TkWGH81hfA8TiinLDDjd2nrggbafviUZyD05vYOioiQGQ",
+                "photo_reference": "Aaw_FcIRgVCJjq7OgVvEM1QyYQV_BZT10WxVxxtsX0Md9hX7rmQ-1dX1j66klBHfKR_W_1UEQGj0ohChmLzN0RJ-WKo619VeDbSLThGvKL-at7QL0BGNh3bhXX_2jwSqLeeEIr-iPQt1B8KewBXZ-5klSpbAqZpegTL4qWk6X3lT33naKTnp",
                 "width": 3000
             },
             {
@@ -839,7 +839,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/101913010405667384297\">Holger Widmann (FuePi)</a>"
                 ],
-                "photo_reference": "Aaw_FcJeueX1frB-4eLzgj6Lk6Uz5BVLGQ-WNpSqf3mfCJVACBxUIJZZ6g8crp0p1NsxHR_7gXfJ8nBI0gSWHVyFQ-HkP-osYkE721BYLu_uE-Y0PGchi5vUjMwMTqvdDm4X4Jkhg1-q0gK8EjLnttCPRzzpcE6mI9R3E3YWHNbzez6Xp2AN",
+                "photo_reference": "Aaw_FcLnXaOGQUrOIGL716NQe-u6P_BoSilfGaH5vDqKoT6cJCXdN21oqsVwX-L1mYrCEdOae9spytVuhmTM-_Z1jQOFz7t4qsCkq8XticTxG1wxXRdegCQZN923-dC26CDsRc6HrwH0xYcfv5b9CJfx-s6rpIFW5Th3R3iN-CUH119rLNT3",
                 "width": 3000
             },
             {
@@ -847,7 +847,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/104080358995885168436\">Kalliha Calypso</a>"
                 ],
-                "photo_reference": "Aaw_FcIH9jMXNVKVblaB8hISDD-YxSQUGicmcFWIcWnDa_XMhWnuqSKb7K6yyVzqgaqxDoqzysTI2G_XNowfyIsPfqVrJee96jsDyAtfmFJ55r0D2NWP21PD0iHBgIPBoM_HjxtEElq7EzkDW3uhnktZGDce96222YTyNuiT0dI4vYCZFHzI",
+                "photo_reference": "Aaw_FcJ2a1FnbPMvZDVd545ROhcv0oJy82d0m9aRa4pipAl3LmdeTknYDYcDv2yTLEHruu_hdCLClnQXHqKFNs5Q8M6mkQx-OyHwTHlMFu-hdIspRcNS3zfuX-6DdIdOjHgrT5xy-nZiMD6ruycGYy-mMOPzAOe8LrvDXag4xe0_Kvp1X5zd",
                 "width": 4624
             },
             {
@@ -855,7 +855,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/112279315666335807462\">Agnes Zabos</a>"
                 ],
-                "photo_reference": "Aaw_FcIcHeKPhlDWn0r-N58ZmvlOXB26NfuK8fVAzBhpmOGp2Qx-nwqWluV7ynDoarnlAGCHlYHbwSxGG3y_yE-ysFyFVgyScelBX0n_rdmUYzwbTByZcz0K7bP9hInk34Pwey_i7zXMwoaQnIZzOCns2Aw-Qi9-q-Nbr22H5oO6El7u-gl9",
+                "photo_reference": "Aaw_FcJaPB92y-LJ5lOYhSL82jWsHRQSwThJg6-r7FpOpRQFlxIwo6UElHcqlJp0EaVgMRhz28bSJ5DlFU0MVhIK9vrihGT6Bh_knTQgxagqyMGtT50QITrIaK69baO7l7DpyLJ143CBvvgeeKsbxLrBEsauSme3OeRYYLWcK5qWX13GGQsY",
                 "width": 3000
             },
             {
@@ -863,7 +863,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/111075566171730326614\">Cornelia Erbe</a>"
                 ],
-                "photo_reference": "Aaw_FcKK2k_0Qfut658EpaO87rk03OAWcio18WFbHZJxqDAliXxSUjg2qwrYxqalQ7q7FZoaHJWbPY3ck6Ve_J4N1DXQ5fCVwNTGvgc-qS_ivpo_EFbl_2Ujtcd_blUeBkYZoYI3G7TVX7ikcEulWdwa7-cNSUkNp-G3TgL80nP7EiHKp_Vv",
+                "photo_reference": "Aaw_FcIE1sDaKER4G2Yn0rJ7Nlpy9TqzyYM52ofAP73UgIFPGseI5ZJkrCPSfvjsgibdNruakqba8k1yYed1VrLe8CbH9gW-_7dtGgk1daaTceTB_pfYSTptnsxaLy7TNShsq_gmo7jiZFj43ZevotK25zkSJuLqrWevda65gUOlXmRj86kp",
                 "width": 1960
             },
             {
@@ -871,7 +871,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/113110604248202688524\">Mitja Maro\u0161a</a>"
                 ],
-                "photo_reference": "Aaw_FcJnbnlfTc1SVrQgZ2pnD-hd73FN0iB5BoOBkkwnE2O-h49OszPo-JdhkrKUlsdJYoSX3Vn29cctUI_0sDFgdLLtacp4fBraQ2TD6QGsOVrvlE0mAO6bM8uAYliThGNG_lRui96dhDok8SiqIIQ4BfGRdcUiiCgIU1FU6hNTdHmH__0H",
+                "photo_reference": "Aaw_FcIIBxL-LAm_8K7z6WLugrYgP3gW9vAS9cGJrsrn8eqrq4U-y-MD4cohOqsdVbbvk2UcDwxfGKXN42yKtdJGgGIrBpDhxjgtqG9ls0VB4FP2EQOZGyHZeRjwOYhhvPtBDF-wF9fOvk-D2bRTIyOSXJFckfURCYnMxQKC8G71YcJOm7LG",
                 "width": 3355
             },
             {
@@ -879,7 +879,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/109611195555517567084\">ingrid zydko</a>"
                 ],
-                "photo_reference": "Aaw_FcKkBF6zo9ixBUiYcQhUoT42g0Akzb3iy-ZFu-4z4MA60QxUoOtyINfLpRmuOMypyoL2UysubgloovBKrJM13vIq1QmM8AxXecIRoBtXFnO-UgzPVnNjhe9Q7cPuoMJLCnAb_NxElYf6e1vq-ViAIeST-dq5m_WvXvHIWfLkeZg2GIqQ",
+                "photo_reference": "Aaw_FcKrFdb_JOVmAxCLe-vhMRoUp1JRNBxcxNSHXNwXmFmgZ58_d-ebu5cuQbINnfNhRg9xOgJ9l8pgnkrYveXO4hSFNGQFIWmaBaZGsPyEDYYdIi5oU3dpk2kelgq8Udgug1_xHHPObtiHxON9qmZg-RGsy7rxnXajr1WeQ54atftNibe5",
                 "width": 1908
             }
         ],
@@ -965,7 +965,7 @@
         "website": "https://www.stuttgart-tourist.de/a-weissenburgpark",
         "wheelchair_accessible_entrance": true
     },
-    "Birkenwaldstra\u00dfe": {
+    {
         "address_components": [
             {
                 "long_name": "Birkenwaldstra\u00dfe",
@@ -1046,7 +1046,7 @@
         "utc_offset": 120,
         "vicinity": "Stuttgart"
     },
-    "Santiago-de-Chile-Platz": {
+    {
         "address_components": [
             {
                 "long_name": "Germany",
@@ -1112,14 +1112,14 @@
             "periods": [
                 {
                     "close": {
-                        "date": "2023-07-20",
-                        "day": 4,
+                        "date": "2023-07-24",
+                        "day": 1,
                         "time": "2359",
                         "truncated": true
                     },
                     "open": {
-                        "date": "2023-07-14",
-                        "day": 5,
+                        "date": "2023-07-18",
+                        "day": 2,
                         "time": "0000",
                         "truncated": true
                     }
@@ -1180,19 +1180,11 @@
         },
         "photos": [
             {
-                "height": 3168,
-                "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/102554807879077208158\">Adrian Ender</a>"
-                ],
-                "photo_reference": "Aaw_FcIn21dz0fPrwSfQ1EmcCYEdRPeC1_Afw-Xs8mfUH31SRvJ8--RF8U9McXiTzAcxHCagZK9qaGEof7lKm2q7eSJtkgnzMKBKQCt7vUI6dZZ5LPD0XQWAN9mtKeYijnODVXVqaZKoUxYvbNYehMGBh_jkm_-kII599kc7_lM95YAlCu51",
-                "width": 4752
-            },
-            {
                 "height": 3024,
                 "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/109679883212633894504\">Salvatore Cortese</a>"
+                    "<a href=\"https://maps.google.com/maps/contrib/100629269791897277960\">Sabine B.</a>"
                 ],
-                "photo_reference": "Aaw_FcJWsNAZJxRdtb6HJi5Mft2fXn4FTq7Ix4rFYKadR2DBHSJs-UdfsekPtdM42CJj0810VedXY9APpROuMTj2NBGeHBkrLRyTxqU9vxTWFTkLnBmabjjIuYcfdiOmu1EyvnxsA1guGgYbNshNHTUs0lqkfqbf2LVKj0kKP85yfF4owZAc",
+                "photo_reference": "Aaw_FcK-4UMaBPVkPTHJomyXWYEHyFtCLGigB07QQbNYUgOPqFLlJ6sjR5MaHgpXzkcQlBacBPOWdjmCc2f4i30IblSuylN3DDcczMDBDJU5fDtcuQ7ENSUrlMmShCq9UHtVzIOm8jFys68F5Lx0jDpWxerNQb1xs_IenPmnFMLiG5ODmEY9",
                 "width": 4032
             },
             {
@@ -1200,7 +1192,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/114031308702400283560\">Joe&#39;s Weltreise</a>"
                 ],
-                "photo_reference": "Aaw_FcLdZUls1sI7Pi0x27ngXyOIDMyEzL9e7QSs5sY111DAatTExH1k3MPTy_lnK6f6lg35Ne1Po8fsT5dMjzFNEckevfaoLhK_OzlqBH-SVjypnGgUS9UMIqtr9rXsrbbeBRwAbL4BZG0xQKIQ2OgnS3ldGOe9YbNdqbrggm2AwkvbNqOJ",
+                "photo_reference": "Aaw_FcJfZsdxWdXX3InOFEnE-RgFMwS4HJUo5ZNvU9ZQwN4ZHVa1dnhg1OF4zFxrEw7Srevx8UrPoAGxe6YXbH0c4jeeGrS8LRfMtFTzUXfk1sPRzrP4HYRXuaglbxMaDwF1x3hS-gtqVeVPTHoSF--booT2dOi1S-3Ys830TmMtjTZ8vLk4",
                 "width": 3024
             },
             {
@@ -1208,7 +1200,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/110212628322117747610\">Marcelo Castillo</a>"
                 ],
-                "photo_reference": "Aaw_FcKJrJeF4fplMcy7PVsWKIJ1_l8yqrgz8xwUKcMeJ2fNgtAOFtS0wY4ucILEAo5IYST4zOxXa874fQu3v9nVAGLq06uqTzll_e6FV2dtSXglFsuALs4mdB-c8HvagYhuH-ykUvCGVswSYRKdX02IpcXgwU0wSkOpgGTtsjEv5BUY5uv2",
+                "photo_reference": "Aaw_FcI7WISUnEWsYrrzuoFrrKocucYpjqEHf0KNPGPBWTaWj5zFjDGo4PPbaEkc55qzJWgGTOUNwpI8NLiEhDPMg43GHCa-_jhWE39xE13z6OIVG1AWAZy_fRmfSbds2KENl5hxTy3ppO8n-_lyCvyP0LKbFXuapmcodeUtSwg7QJ0smUwG",
                 "width": 4000
             },
             {
@@ -1216,7 +1208,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/113032890891226290296\">Tripati Narayan Dutta</a>"
                 ],
-                "photo_reference": "Aaw_FcJblBklM8AwZ6nb7jNkLERRz5KwAdbhK9lzEzGMbv_BrP3Wvb3R4YxPTjOae-WmoZVQCjMMXS9hM1kOWPxKHDLWWN7YREdDZL5UK4ucfq4X82h7u70Ys5A8QQ-Jjc4kmevZnaFfAWlphycMJj5OiZF8tTQJkA884lzdwb7qGlRyhDD7",
+                "photo_reference": "Aaw_FcJuAy12FguUATvjVIft1n50vuQkQfEe3mAUR_jXUGcdPAr4nAUiEisSm0Sc3mT_hb-OpKgf2oxkTUDvI2NHRNZsk5O470jq86JY484EXf0RGj1nNiQZSZ6shOgHHSbTVftVq1NFR-YsiN-rncKLpRVTe7LT163k4KmgrQO6myA7mUBj",
                 "width": 2252
             },
             {
@@ -1224,15 +1216,23 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/113032890891226290296\">Tripati Narayan Dutta</a>"
                 ],
-                "photo_reference": "Aaw_FcJwGU6ioswvdAzf9DXiHLnjycnUmdFAKF4QOv8UwUfxEKl3E_hdTPMxyXVkqKllTRw7ZvH6wEW6t5z0BANEycdTtqofGc_6wHDR-7xjCv5U8PTROlQkfsHs5JCckKFvDltMH-rdMTsqWl45pwLD5eDGf4sG2pAV7-Nxb4fNxF-07Bs-",
+                "photo_reference": "Aaw_FcLZok6f-o9XznDobfOXM9G4-Q0ENECcZauvmfCuUO13MEEnkfbgmJqF-rQ4V6J9-sP5FQQBGXgbV5F2pa5LQdeVNrjxsM9RzJY8uswN3i4wlAlUe5eH0VIWJwXH2wstQdneiCuHysBXhncHakM39Wu2-KRQVbc3_49gQL--M_3CQ_UB",
                 "width": 4000
+            },
+            {
+                "height": 3168,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102554807879077208158\">Adrian Ender</a>"
+                ],
+                "photo_reference": "Aaw_FcKB6MREeSBCarpA1eds7SNhWaP_M9QZDOlo5jOw-BKp6KjyGa40G3m_ZHMK8m6cwPAxLEkTWHjKdFtaDsBruSN9d0IBJk_zUT6jYsVfFU15tegDBffNJzxZVdtJneoHkXqNl4VIqNkjkSjbAWfL5F5x_zsfLmRwD2gOr6Qdk58zprh6",
+                "width": 4752
             },
             {
                 "height": 2772,
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/117645327474573732119\">Teresa S.</a>"
                 ],
-                "photo_reference": "Aaw_FcIEnybLh3vih-D74lh2GgvjSmG0wt-s20EwB1c1f60kcb-5PQ5aOsvzoyI7rj_B6mWjS72-tiwGjhqA3eFBp_2dLk4FbXMSgvvrz0voPjMp5mq8okK7grOGA8AxEMz6Pq1kN5sEGTvO0arO-g63fB4nxm2XqE6fXOra-jdtUiOnRdYg",
+                "photo_reference": "Aaw_FcJnk4BW9hxPB5qdVryFsZRtpSFl3X8pWDRcw1zYO_k7KoekRSGQSvzkfjHCPY6bNvFOy17P3rtKVu1UrglfRJiWQVfsdXJ3xNCRN8FaBHhHDEP87WPVTNycmgn0WbVQ6dyWDrs10QDP0jJkrs-XLgsvVVUozteNdP4DNISqzU4LASzB",
                 "width": 4030
             },
             {
@@ -1240,7 +1240,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/117130323249275389837\">le Fritz</a>"
                 ],
-                "photo_reference": "Aaw_FcIAIPVdGCi0AnjiVWaAmVTTr1a1jd-UC3EXjdZtjTTj-TS7ZrLGbALKBeisUDead6CyP4xVUqfOF9BukZ7MK5XI6IVi7yd8QXZD0W-5QHjmG1txqAS0KbW-nthCgWfY9AUibxK37QJq01xji01qYYMkOhOdmOpdS8Z-vD3bHqnlCeMU",
+                "photo_reference": "Aaw_FcIH2tEwXezo9h4oqbmfm-JQiucKz0PBAKId8pMJwyGc_EQHqsNCyx6KQwYBnU12VpwdI9nc8vKC2iPvnBSDO6n5i7hp6Bn39tRC2E-psNZ13nSPdZqwHcoDODbAyRr6VGz_XzQHIHwnSnU_kjnH-O994YCXc6bSnfIGm7ZY0ceJHyzk",
                 "width": 3264
             },
             {
@@ -1248,16 +1248,16 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/114621342672269287734\">Jens St\u00e4hle</a>"
                 ],
-                "photo_reference": "Aaw_FcJrYPf1UuoeP5H9Hd81nCaqDiiC5StfMcsBfkXIsGMT6EVCvLs9XRo3bPuncrn1X8zmh4ipJRNJTOSRC0CD3TjVvLted_FYetL_th3qjJBJ3ZvIlzOmTZbeuYlGBJXJi-hLqbdGDSyW1dJUF3Rl5x9MsXdEa9W-vZ0R_VR8HB9A6peC",
+                "photo_reference": "Aaw_FcJ3vJTK-NXfrUjnV9Fj9qNWjx-1Codu_0usz3aEk16pQ6rT9VSQAwafCdSUAnR_icAvdz_MJ4pbH2BZp9j1azBZfnNtGdP3_MkV1T7pCk4LDTRXTgkThqc6iCc8u9Blk1whpXEGUNxJU-Sq7T4oZSsI68EOfj9YdHcBj9Dpn6aYHvnu",
                 "width": 4624
             },
             {
-                "height": 2448,
+                "height": 3072,
                 "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/101836974738588670412\">Ernst Hermann</a>"
+                    "<a href=\"https://maps.google.com/maps/contrib/101187034809779378671\">Janusz Kloc</a>"
                 ],
-                "photo_reference": "Aaw_FcIxFcT0Rr6dEm-qcT7x_pgYoEoheB9JWfVYJz1yPCjImCEw_7ybJL8VRmeo10flm8-Q2tSIt5nhWqugTaXVAN9E_nnK9AM43H9cpkrgLNwV_pBTYiDsbIEOPyEBJjk8rdrtzIfTALOoRS70OUxu9NhNy0-qwv_Vc3hlaqcgVkjzHZkC",
-                "width": 3264
+                "photo_reference": "Aaw_FcL1B7ndgdoysp8ohyeTGHFdXnbtks93f5WG0PCvje6OWjb9he8J4__YfeGmJdO6c8dAekJ2kGQ8dN43pGmK6Eh5Fh2w9Ks2cvtfa21y-DaRiFe-n9HFCMS5SusRqhjOysolRWewS7t0lGe4g1BnJh2ib7QHOwKYsHfUPf2iHgMRbvhA",
+                "width": 4096
             }
         ],
         "place_id": "ChIJ69WB9qrcmUcR9Dj-svAQqGY",
@@ -1335,12 +1335,12 @@
             "establishment"
         ],
         "url": "https://maps.google.com/?cid=7397181013937240308",
-        "user_ratings_total": 1383,
+        "user_ratings_total": 1384,
         "utc_offset": 120,
         "vicinity": "Santiago de Chile Platz",
         "website": "https://www.stuttgart-tourist.de/a-santiago-de-chile-platz-stuttgart"
     },
-    "Leonorenstra\u00dfe": {
+    {
         "address_components": [
             {
                 "long_name": "Leonorenstra\u00dfe",
@@ -1437,7 +1437,7 @@
         "utc_offset": 120,
         "vicinity": "Degerloch"
     },
-    "Strau\u00dfstaffel": {
+    {
         "address_components": [
             {
                 "long_name": "Strau\u00dfstaffel",
@@ -1534,7 +1534,7 @@
         "utc_offset": 120,
         "vicinity": "Stuttgart Ost"
     },
-    "Aussichtsterrasse am Teehaus": {
+    {
         "address_components": [
             {
                 "long_name": "119",
@@ -1614,14 +1614,14 @@
             "periods": [
                 {
                     "close": {
-                        "date": "2023-07-20",
-                        "day": 4,
+                        "date": "2023-07-24",
+                        "day": 1,
                         "time": "2359",
                         "truncated": true
                     },
                     "open": {
-                        "date": "2023-07-14",
-                        "day": 5,
+                        "date": "2023-07-18",
+                        "day": 2,
                         "time": "0000",
                         "truncated": true
                     }
@@ -1684,7 +1684,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/108201168924355268429\">Dzim Dzounz</a>"
                 ],
-                "photo_reference": "Aaw_FcL_zk1YsOHImTzspPTEuAIMitcwA3LMde8LoM0GWhEa2hv4Zxhw4hYNo8riHOYb2cAg3QRYEVYhO3kvVBPjVfn2ZAcUcbQ_a3EPtF1R3x2YYTGWZl3PibX84lpLTwcTSHHmw0vy-PYPz_J0THV1LWY-e-AokoWqaIZbOXENblprEAxS",
+                "photo_reference": "Aaw_FcJIgg0FoDOTts0OkFP5RvZP8-o-hVpOI2wtjBKdtrMjcD_WHzLiONsXEuIEkLE2L1Yl8DTKbc3JTKr516mjEtAGMyhSWV6uy_RJiU-hlfabiQrfQ1i4CV0gVBQ2c95E6QX67lc2tIyOwpnReYBaMtac_yabwetY5PZuQwF1zgog-8BK",
                 "width": 4000
             },
             {
@@ -1692,7 +1692,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/109407545775358421495\">V. Augusto Valentini</a>"
                 ],
-                "photo_reference": "Aaw_FcIvkIeGxeyf-TdH6KBFqvgdv8oKP_AZI_8AIKnvp5hlc-5UudrRrMNphJqixENlXxr1kRtGczx-FfhsmhsBq6hn7IjMv3K9t-WssaBROtQaAKOL6M89kn5oVYuYtSJGpK8I9MYTVNgxR7vT5SwBY8mLRJ0Qk0rRJqtUgTEp_i38g5Ok",
+                "photo_reference": "Aaw_FcKHBx8XkkGxJ_8lYm9DaLddrUmk6LLW4WZpAU3ZuNJ4PDi-Ww4HLfFGdgXBfNL4GznBNfSzzUHtPFFNEsw8ATVqaXCDAxVHB0RcA4DsHZdr2np6OwIKq6zBymasFVlHLLi5ob-2LN1x6KHgufAXcCPhDZxqlBifg1ectoQ4PK6NFVTA",
                 "width": 3456
             },
             {
@@ -1700,7 +1700,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/108776967669402517583\">Andreas \u201cAJ\u201d Jordan</a>"
                 ],
-                "photo_reference": "Aaw_FcJXzKVgwzvNp9zDgqcMwD8jpsX8ZjaSYBIyFo7AqsUi25lt1JDIurnGkOFR0K9Wz3GSjarkezVR1hhN5Jv3-PKjHi3I8IZaQ6gQX_rVIKRtX5ojmD2v-za4u423HlUAbVHMoL8nlwHrBjS0H9xOr-aiMYOt4rbz55KixmXrSbBcaGRC",
+                "photo_reference": "Aaw_FcIsaxCrwZp4Oq3Pezd6lXjQFnAeuoXbPmnLb7IqJAWVdVy1PTSIoMfuHEAD9rh43pHtr4KXNoCrShcKaayJH-J1ij660epkJipfz4dAdoGnpkII91jUoNx49QvmXwEA0xJgwudEAiDXcLp2QVoxnxUOUk6mwB_rjpu_yQBUa56bYQ36",
                 "width": 4160
             },
             {
@@ -1708,7 +1708,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/114524070488070417782\">\u041d\u0430\u0442\u0430\u043b\u044c\u044f \u0411\u0430\u043d\u0434\u0443\u0440\u043e\u0432\u0430</a>"
                 ],
-                "photo_reference": "Aaw_FcJGvo8RsZ3OA9qeeEI37h7NecP90RJbKmytihVmcIFESjIPSyDHo8XV3ri4NL8wnQGk0DE6pPXSReB31BHbb6wa1QdH-KxRjtOOJsBv5U7zeI9HqahHktPb2wcN1Znta5krBlp2oMcpno21jBkFcHAN7_t-15dfOlWKlEFjujLLbuju",
+                "photo_reference": "Aaw_FcIfGJHQap6HqOtXIqxjW6rmobei6BrON4xoLZeB0i_FpYlmu45awtv_jCZx178okfjIDfNYyAqajw37XHRvRG98004yfK2ihDqRAjTk678BDegzgZ_-AR0XVU0Q42mjbA8ra0enQzax5m8l_CkkSVXLETJnnJLv9_vQNijUGiKili4T",
                 "width": 4032
             },
             {
@@ -1716,7 +1716,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/118415669590463433524\">Lukas Laszlo</a>"
                 ],
-                "photo_reference": "Aaw_FcKzxZ3IQg0x4XQexr4g5ZucwU5GPYzeUdQXsoVmh7USEWOM8HEmH-2hE1gg5zq-3Zb_SQ1lEC-j9IEqTCzO4E5fhe7dcqDDSOjbi2nYnFJ38BCyvX442CXsziE4TPtgNP1m76w5cdM88LQLv90kr_REwkmglDF7EkwWtYageJN8qVCr",
+                "photo_reference": "Aaw_FcIPED065FBGXv_4S-cDRJq4QAN9ELj6tkgVBziznQ66dxi1LAzdvNg8EGtm2L88nokBnELb0EJjbDPARD-5fi-iUYzM1QFLjRr-KpudoUDE205G4qou1IO4zRfifLRuYMs16hvE_8PrObrHrbhRbqtQMpsAZAgfiLOM-tkVIuRZ7NXS",
                 "width": 4928
             },
             {
@@ -1724,7 +1724,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/109407545775358421495\">V. Augusto Valentini</a>"
                 ],
-                "photo_reference": "Aaw_FcI40GvL1ZpH8ybLof0yDaBIrwgWNnrOjdD50XNgQ48i2hKjZO_RhvgTYlSdMDuJHzUqBWyIh8aaRGP49vHWO4G5sF1YQfhdgIlYxzaE7sexPDgAZUiI3GSKCKXgYXR69BGXbkMVNP-N5-x0mtpgbxF8mnZxleiClcxX1fliH8rpB3wa",
+                "photo_reference": "Aaw_FcJ_gr9YV5PogCX4fz993uqvz88_K1oTcUbAW47VYw5UOnxZGz9tAonnrQah6gNkkTMAGt1FC4s_2IFqaomgX05nYuh2w7kU1kaBFNWLZn0rM_AYEgehhhF3solaUGuGDtt-rR5wY47iZcnTB1xhkHoNF0Wz0Ja66S2d5Lxk_XCcKMnK",
                 "width": 4608
             },
             {
@@ -1732,7 +1732,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/116172229920599047025\">Slim Scheidi</a>"
                 ],
-                "photo_reference": "Aaw_FcIemuOJM9hJ8XHaPpZiGKzFJpmuvaTVlKitZLJ2ccKBO6koYenRrt2pqQ8Bqn5y_LYb-R6NAAG7XiI3QjM5PDvZKHrQvWq8zavsz30TNiqmy_UccziCi6LoYUdIq2bN0g7cRdsBJhqtHaZ3UzfaxoQyc4mAsW_DH7uSeMr1SwIS9MSV",
+                "photo_reference": "Aaw_FcLaO1lkvi8fwg8L0rMtS-IprXTUivtqHP8gOGy5EZoMa8Bobd51HSJjMu4MGfZBsu0d9t80kDGPvDwVkre69n79M9yqGx79M-CS7gRN1R57OozUwkUqKzL-ZQgSTsnebADhRCTxzuycmUsaARhlOfLiQKvPK7JeUItn6_bjUlJ6TuNa",
                 "width": 4032
             },
             {
@@ -1740,7 +1740,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/108351255814345527231\">happy umelife</a>"
                 ],
-                "photo_reference": "Aaw_FcLtkFiE1bzLe_cc-yjZXi-333ViGUSxAtvip0pODIE8yXfWADvWqZqgpaezNDUdokV45r9NsyNu4NIYwSTTGdb2BrtdOWNiq1DGqVIzMK6K4EoGHpxTlgJwE57OHZg-xpOaI7MDt0eAu5XuclufaH-lEPR1k7oGqN2SDhgX-NEmUD8z",
+                "photo_reference": "Aaw_FcKvGmCaU5ZPoNS_ckhANBZePbQuVV-0bouBzeGlR7G54cbSwfCNxxPoEoxz9L8PzXc-44sVL4714LHbKSDv8y98r5afrInpctKMF-x9e3ntQmoI51oonaUXHWeCzXRHxR-4H601kDYHcgF5Wbsqn2G7Tszzc3yNmjKqRqR2iVLVS64m",
                 "width": 3456
             },
             {
@@ -1748,7 +1748,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/105604519321824472366\">Valdet Beqiraj</a>"
                 ],
-                "photo_reference": "Aaw_FcJgoTFi-rR95MuC4rSM9uw6Zs_qjg2EZR3Q6rePdoOODQmyjIWJNtj4D3U1tf2TCi9vRp5_3z_XX9jAj4atUE5c1udyE4UDDU1qsl1FIpUmeY0BOhZu5Zniv3urNKxGt8pswOy0Kqzt9fBmdADGnUkT1r8nLk70siPYcqiHV4APPQU",
+                "photo_reference": "Aaw_FcJ7mteCBuR8htyER3bRo7_Ew6P36O3PQT2hXPELqph2l67RW36rv4QytI88svzDHl1Zgbu03x2n5Z9D5kd85a9Iw8p_DKfFZSEcXBCng5GvKMMZbTJBAet8OnCjkO-oTvsFkuBN1MJOhuBPaUEVenOha7ZcDfj6ZJ2FM3d-IDWA3u0",
                 "width": 3988
             },
             {
@@ -1756,7 +1756,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/108351255814345527231\">happy umelife</a>"
                 ],
-                "photo_reference": "Aaw_FcI0JtDCRSVZ-j1IELancEWQ2o6HBM2GVFDmpUPNwwg9YkdphN7_fmab4u96x9AM5_kbZtJArnexN1Nv57RvCN637a0XCragrohfDivPZcicgxAmpvmub-KdwJZvx22wN1JJx80ABtqzBV6qwf7lJdf-oJ14GRRMHsfrwy6gPhK2fnaP",
+                "photo_reference": "Aaw_FcJ2cNFhXjNYKOIjU48YEsViogQMqZ2EGvDHcXVNJnZhul9X3ZxB-iXK9il3nKERX1rE2V_OW2J7IQVbOvlla91sIfHKN6_B5maspxT1vFnVD0nBPR-abOO_T2FKIovfCk-IvSNcLX1mZ4llwBsGG0JTj6SGOoUeks80UH_WublCc-uh",
                 "width": 3456
             }
         ],
@@ -1838,7 +1838,7 @@
         "utc_offset": 120,
         "vicinity": "Hohenheimer Stra\u00dfe 119, Stuttgart"
     },
-    "Aussichtsturm Burgholzhof": {
+    {
         "address_components": [
             {
                 "long_name": "200",
@@ -1918,24 +1918,24 @@
             "periods": [
                 {
                     "close": {
-                        "date": "2023-07-16",
+                        "date": "2023-07-23",
                         "day": 0,
                         "time": "1800"
                     },
                     "open": {
-                        "date": "2023-07-16",
+                        "date": "2023-07-23",
                         "day": 0,
                         "time": "1000"
                     }
                 },
                 {
                     "close": {
-                        "date": "2023-07-15",
+                        "date": "2023-07-22",
                         "day": 6,
                         "time": "1800"
                     },
                     "open": {
-                        "date": "2023-07-15",
+                        "date": "2023-07-22",
                         "day": 6,
                         "time": "1000"
                     }
@@ -2014,7 +2014,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/116592062469332594058\">Marlene Sena da Silva Huth</a>"
                 ],
-                "photo_reference": "Aaw_FcLV23F0pehIX1t9ODwc0Z8rUt0fR63KoJ5pfnVyUKdwzSMuq_EnDTvnWYQykgQ4n2wO7lUcIeQ4sz4vPyZ4dCscFgqhzXGVQd-hFMrq67nnr_NfiwOGhTueUjx-DdX6BTQtrUjE7tqL9krosyWqqSscqATCsTOrXSzQdv81BjgCcM1M",
+                "photo_reference": "Aaw_FcLRfrNhqPz980J00e7t_QY6yrj5KZ18BpWiObREKrDGcucvUXtNGBql46-bgIzEBITwth7yZI8rC_8vV7IIJtr7DQ2HOvleTOsTSApMk2GzHG935ZTXK5-RKxc7dwe671Jm94BK5ylg6Kb8Yr6XMzHGQosznvqUTtXBCOReACjO5yok",
                 "width": 3000
             },
             {
@@ -2022,72 +2022,72 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/118397694770026111193\">Nadine Roefe</a>"
                 ],
-                "photo_reference": "Aaw_FcJT14aimLISEhiEl65_JMku75LfVfEZiw9cGzHZtJKP_fr1F3nO7ryZ7pvI53CXqJ7DoM9XYYdhgXjeAUZNQnjbk2oocsKLcsnD6j3m2Xq16Tv5rzJiEIIAgr_N-dlfPWxMFMSbLm2OIIcZXLqBOS1kAs-FH_fwD_ORCoX4bdR5GrRJ",
+                "photo_reference": "Aaw_FcKf6Qbw2AUQzrf3inDhQo6Uhj7bGg15QeqvNP7PPXl_MAKO8YuWhqXSJ-wxeUVnn3SYZEx2UlPiRXlw_4ifZvrzStkVWOJ79a-r3vNVDlgaR3Zb1h7tgBkv_kTWalK972_zQZQCZJRcc8v-A2GD-v5CR_cZJq1Vn8IOWFkqEOsAdf_N",
                 "width": 4032
             },
             {
-                "height": 3468,
+                "height": 3024,
                 "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/102679605087233720578\">H. Ottmann</a>"
+                    "<a href=\"https://maps.google.com/maps/contrib/102250148901836826776\">Franz Richarz</a>"
                 ],
-                "photo_reference": "Aaw_FcLk8KfM7L_fmkXCiaE1r3ac7YVu5z1DKJHFBi5SjrYra3rW6DecNsHtcl2dBOWM9QKp_f0l0TeeJ1KtuG7UERG2-64LnhHfsXKhLMh0eBkK0oy5Qb9l3xVuyT558vQybvqI9mzE_gItnsqu2Lje4ZNH2YWPUT7YFtWEdhCR6JweAowX",
-                "width": 4624
-            },
-            {
-                "height": 4032,
-                "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/104084990127652638038\">Mat Forster</a>"
-                ],
-                "photo_reference": "Aaw_FcLO2T5m_S1Tx9JRPmHfPesy1aNegqnmyqlRzpgdiI_hypS3QOhRWVo9ht5ipYgiWTxup2zPCK_twLUesLk9W_WpLiW-MtYxbOPZlXV54AjiofdjZaL13ZKh_yrMJWZC-7dh09Se8Oz9-mNk4uGFkrFFd_IZvxAtwV4p9kSo2_oDEGDU",
-                "width": 3024
+                "photo_reference": "Aaw_FcJRH9Tn0v-mw1wV0SuElIZeEcCcmrHvVZOqdrAkBC20409JNTHVb7uUIkB_a3NAdxUhbI4XoDQJoGJEPBHLYngtGl_KYCJzAe-A0HcSgFrdqm3KMGOpfy5no7kuUlRiIT3LoG23nSQ6CpuKG8GSoJwjzoNsjtglgmgDxuZYE_AP4diy",
+                "width": 4032
             },
             {
                 "height": 3468,
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/100990276747948238220\">Sabine G.</a>"
                 ],
-                "photo_reference": "Aaw_FcIRpuXNTAy1o8B8SxzapH1W4Mow4dRtAo5_xISQPOx9ZCW000iQIVWzfimsAQQ9eMOcjQHWT1ned69XKvf3OvKOSYrvV8p5iGIUHWJWssElMu0fB44wwcPO3rJEhIqbSq8rcgHTJowh0aRI5KW4yhXo6vtUfur0gZmZvk298LFvXrAh",
+                "photo_reference": "Aaw_FcJypDol3o-mMs2BDoML_kGIr9KOcC-J4n6EbQoa-cxOL5WcezsEsXiA0I1f_TlrPCz6z_W6sNqztn1WnkQ6Eh9SrSA4cZF8yIoEfVnDQqhAyjX7ut3b1fkmjbZDZP4Xm0XbghA7cwF9vmZnuS5iSBf85ETBUAq7wTSkAhgPIkgdXQQb",
                 "width": 4624
+            },
+            {
+                "height": 4000,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/103640083978599894600\">Ricarda Roloff</a>"
+                ],
+                "photo_reference": "Aaw_FcKjz8-GdLgTSgZcxI7w9y_jyWAuYrDKyn2QUKmnkwxdy3JQlGIwgJEHSL09kjHQmgo5PVWX-1qO9Wlj51ile0DkZ2ycpyqhOKlVkBgJkh2Mjh-R33i-L2R556Y7mcK3ueiog7xCF36PmXmegYCokemrSkddMSqD4UwCVyDi5oSS2k63",
+                "width": 3000
             },
             {
                 "height": 2268,
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/113683944905564455358\">Reinhard Paulitsch</a>"
                 ],
-                "photo_reference": "Aaw_FcJJxBNYH_9DcUxl3lqBMmN_M_5p3tsORmIq1nafgj2hwMu8NGjIPSXbBMfA_bpq8-Xt0AuH9bmZlSJFUjkiYENuc2_26LQtBAfYCI_s5GBeCpc2uWO4t_F7GEip62MMHnUfMcq2DQILM821wmyDoOOM0qSLI0Xs1abfa0ze8J20qZc",
+                "photo_reference": "Aaw_FcIUs308hOUljObAaMgnK4gqg1ayu6PFldC0K9HYIUhXuny2XbiD0ZfFzti_7_B50jXxdQTvvqUMkF15Nox8OAWwJ15uvRA6Lw0S4HFbPfUIVd6jiiI4GyPuzrhSwhrYH95DezTlyprOQ5IzBXD4gAKe8lQsUSthhWHh9bUaVaWree8",
                 "width": 4032
-            },
-            {
-                "height": 9280,
-                "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/113847528841179347361\">Sarah Jane</a>"
-                ],
-                "photo_reference": "Aaw_FcLWjN9iHur3F1I4AP3Gq0kYzo4QfJbqxbgA8dp57U0VNJJ7_xQzrC4VFnS1LxZ_ESvWF-ixg999VHUkXK453gGa6jjhH5nqyfD04AExY4MOu6UIH1ktOJ5SafN5sZfk5weVqqRImNo0p0yXTVlMUVypbZfv3kG0Xbw8E6ptPM1bWe8p",
-                "width": 6944
             },
             {
                 "height": 3024,
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/116207338822985637238\">Robert Stefanowicz</a>"
                 ],
-                "photo_reference": "Aaw_FcIUlG3Ft3aQWG2ujKqBuuKo6hIQOV9MqkNMk_UUpr59zD2OH1ijl63t0oZVmu5XsVmHe_6LMlzcJT7Tij3PVXkIl_z2QteUQ7qwNSHYt6QtCIfQS4Sha5F_7RVAJrRPGYvpPuKquG4bfYVBc3hC0qT3wfVWQlLnTibV_1UxGO2CZbcI",
+                "photo_reference": "Aaw_FcJbjuaczXihfOzwhvTctQidFTN9qmVafcQPWO7YTUwwt6TNJoBGWALuB1m_jQWBvsHL0GTnwUm1ora7QgxSeb_9pmGsiW1Hw9e9vFzrMPMFtlDkvSMauAz0v6AqNDj1Dd01Ivnu-uU4PkhiLDtwycBWSWupDHjqjx-amby9zkVSG-rS",
                 "width": 4032
             },
             {
-                "height": 2576,
+                "height": 2736,
                 "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/117196578112296367719\">DASDING Dasding</a>"
+                    "<a href=\"https://maps.google.com/maps/contrib/104361781805907704327\">Roberta Sr\u0161ek</a>"
                 ],
-                "photo_reference": "Aaw_FcLakAEGG1hLLZOkmOnt2mBzSZahkKn156JPugADIfqOOW8BgrsK_sL9-p-knKCwIpk24OaLNjC83rk-bwop6GtWm5yW3xNqw1l2ffK_JEEI8wXk4eFNxJVihVQi3yi-9VxgNCjNN5bUc5PEfdSh5XlD1YSrdxK8eQnDAYkTZqFZ3T7j",
-                "width": 1932
+                "photo_reference": "Aaw_FcIyyJuilNGxogS2R_pPVRKD5abGHVVbdfauZ4ZHypwgD7uxAmA4DX2Cfks7QS5aZWxjAvd00igszj-QYhU3Z3gwDBnAbIdxHc7Ctsr4Y1dIobJMlE_iml2-Re9DbCbYRrAStLCAn9AlXfg2QNRBi7RrlPSb4N4L1tKcSO1wVQVlqMoJ",
+                "width": 3648
             },
             {
                 "height": 2268,
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/112588092121722313702\">M. Dowidat</a>"
                 ],
-                "photo_reference": "Aaw_FcIm7SZw9NG0hqZeXqek6LIQL_eHDqBm9RfL7b5mTikjIVSRs0KS7-fchb53sHtH-j_7d7CqMzc8YJqvcbNDR9fJC8ODNpIMINQ34Igx__apa-_DKaJeDR1p272TQ7pdmjU5IrNV7e_w_AsNkSZh_w9DlJnEXSljL6XCU65x2ZlAljwb",
+                "photo_reference": "Aaw_FcKhcYlp0Oe7aJE8sXUoF29xtk8cqcjS3koaXA0_7rszle-WY53KQI4pLC4IGWpyxSz-9uFnZ0UmHAMjcM6cbsNYLHDJkx6jy8kDCwDJ90fkk6MBS8NIKHisiHBnpFwO7PB2hwvie5q1PvHf8iZWdl-g1bKr_HSN9j0UojMQyEPVdzHf",
                 "width": 4032
+            },
+            {
+                "height": 4080,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117196578112296367719\">DASDING Dasding</a>"
+                ],
+                "photo_reference": "Aaw_FcJ0zP1yeE_EjtQIUwFry8BK9gdLrVaEXTJI2AT1gH0o0PJPJ3158Iu6R7Q8-L6axD0asN2blTj7GdK8jqzHAhJn9XsjRNUCXRbKKu_03wp0NN_XthVGyZ3iKhnMl_Q2I5Jx-PWoqPlTeLNE51q_xXvmmgCZFbpBct9_boWQEeMMFRNG",
+                "width": 3060
             }
         ],
         "place_id": "ChIJZUXA3bTamUcR2P_rC2VMEJM",
@@ -2164,13 +2164,13 @@
             "establishment"
         ],
         "url": "https://maps.google.com/?cid=10597053920078200792",
-        "user_ratings_total": 508,
+        "user_ratings_total": 509,
         "utc_offset": 120,
         "vicinity": "Auerbachstra\u00dfe 200, Stuttgart",
         "website": "https://www.stuttgart-tourist.de/a-aussichtsturm-burgholzhof",
         "wheelchair_accessible_entrance": false
     },
-    "Ruine Uhlandsh\u00f6he": {
+    {
         "address_components": [
             {
                 "long_name": "40D",
@@ -2250,14 +2250,14 @@
             "periods": [
                 {
                     "close": {
-                        "date": "2023-07-20",
-                        "day": 4,
+                        "date": "2023-07-24",
+                        "day": 1,
                         "time": "2359",
                         "truncated": true
                     },
                     "open": {
-                        "date": "2023-07-14",
-                        "day": 5,
+                        "date": "2023-07-18",
+                        "day": 2,
                         "time": "0000",
                         "truncated": true
                     }
@@ -2320,7 +2320,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/110323241558717126317\">Alex</a>"
                 ],
-                "photo_reference": "Aaw_FcIOeRbtKMTUvVYVfMSr86ALRVHGYk7jEmDAFGrM-ph-EXYaRj1n8IxTMOAF-8mFF3nJpOyqGCb6Az3D4TOfqErGGhaCsc_8w-5K1_8KAvsO8OT-bvzvqr8YQeii--JOmNjBB2NR3gbXtKfaCt0zMcq-k_1vo0HKg9i6d6kt_pZNuuQq",
+                "photo_reference": "Aaw_FcJ0TZtv_LTwr4ovFVhQNBPEhnhxgrKJ5ijTMRdrlns3BMabW6bfQ0rKzq3MOJdPzrKSh5-RgRH2GakGSutCmPQ6JNuTlp2UspIeiH_Xfxaau3yLbEl7KBvfDmx5swHPM4h6htpXCPMGT243WeJjyb6zUiyO7gjRSWLKz9fmlHa7bsxi",
                 "width": 4608
             },
             {
@@ -2328,7 +2328,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/114333476978506304514\">Hatukaj</a>"
                 ],
-                "photo_reference": "Aaw_FcK2UKMSg3wXFG7qPN4kGW3Id5vmmkc40w4FlWMEq_aQfaEVnK1A3frbwPiJg4JgRVI2jwdvuoYMZGx56B8yGiGR0zReB0G7jCO5gjYCx1BFUA-FmIZUKY-hkv9UwEOw74OnAV0vk8TmkPila29SQ89F78g2Mra5ZGGJQEs6jYlwKdcp",
+                "photo_reference": "Aaw_FcIKBQCr5z9NG2tm57DVNLt74C-ii4zh9RB3i3TaYtKh0r7TaaT_eEvcA7vg_sHT7Js_6YD6zdeFe_2U3tAR3Ba5-2VRByIncFkzJUmx0QNP41W3yjSfHI-t1MDSgYd7rgGfVxO4YL8WOPmQPIVOCxzvZW0rvXPh1QY7Vv4bgjLiALKS",
                 "width": 3024
             },
             {
@@ -2336,7 +2336,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/109803655794539871575\">Armin Junker</a>"
                 ],
-                "photo_reference": "Aaw_FcJ8DBxJERc2DezxozKDRyiZVKfzxraHpXSaZpUGZUGmZRsjQCgBqHgUTlcWQ_Pn0Voj0-Bq6cwr60Gw635RQOqATOIRoTdLFscWmzwnc8JXNbc6TNoPIANZDP9-f7_w93DhkuYTUxOLP-58MFv4NcA4EA7l0f1HXm1NPNtRelc2ltk-",
+                "photo_reference": "Aaw_FcJZg255qjRD_P5s0VNS_F1OL15Vyk4G8uAUcbbcCds157oWA0w3SFH_t6qFO2M-xdjUOHgd3tHeu-Q6DI3_xhcZQGBpxmz8HNvEnieoIfh6Ho8RDNcCVol1yW-wFghj6ti7dNo07UDRI8gxZfjQfTpjflfTVIONbZ_8pqdO2FMGnGTi",
                 "width": 3431
             },
             {
@@ -2344,7 +2344,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/101445848101592858680\">Dominik P.</a>"
                 ],
-                "photo_reference": "Aaw_FcIqNLlo9FDcWnJr3mVehgCLpoARO4zZdO3uE6-1eTre7i4LITrGacWuos715krOLSG3IPX2wJpP3AlYvln-gc3G57rN0qMb_wl1O9i-mHXsIqu2zWgh_bfr34NRCervc1T9BsnBldC3NMNsObv5kRjUMnxjkGru4wMvFhx2vgan5khl",
+                "photo_reference": "Aaw_FcL08TM4mLcWGDn4-zwklQq2tDGEKSI_ncUKjEHFUk_BvuDCUdIhklKrzabBpliTRuA1gCmpLxc-QaM7YTGLJqk8R0-yLP2dAZNwfwEfSWyRINjH6CYi-DrKGRUlNQj9_bHSCIzKEv8cW06Kp-BzHf0ymRyxbv1Sm6S48-TuNjMOdhnO",
                 "width": 3603
             },
             {
@@ -2352,7 +2352,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/109333702593717604229\">Maria Taxidou</a>"
                 ],
-                "photo_reference": "Aaw_FcJ7Se37lyr3NqWMyXfuGZzmKd07NUKNcZv95AzIAAy-xH5QDlK8nNJ7Jb9yGj8ZFKMy1v8rGHubeQYfgT-7wVbgSdIL9fIU4EGBrFuMCKs52js-SHhH_AS8VUokqx2Jn0BVOQp-rhuv-CZjTIE6HeztYzl_dP-r8g71A1-8Too5aXsK",
+                "photo_reference": "Aaw_FcJ_jGS2RJpyclKlM700eCA5zHtM4lSEB_9cGoDosI1g7M-iha_WBA0Jq4IBjehRd7z8r1p-042pte0auB6a_BCeWlScMelZSYu2omVr_349shhcupjs3of0bHayHqE0ygMogzH_ghUbDlE7P6g6jstzdemH24Ga7eRn6j5QSYyV36yk",
                 "width": 2592
             },
             {
@@ -2360,7 +2360,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/103907141037297839170\">Nils Fischer</a>"
                 ],
-                "photo_reference": "Aaw_FcJhWni3JU-NcNEBxYfFhXKg-Pgx0wXGNd--njf6bKTRxFjig1k10UQQNTc8ybcegnN-beWfMmSk95llJ-r7OsALTYYhv3jl7NH-vsK_oxD8MqEGLkcCilN_o1o92VkKsEKFRxipPBaZNptBvuUGreJwNkIlR4b2tZR7dSvoMwzDp1ny",
+                "photo_reference": "Aaw_FcJMcdj1KiKPGtqjHyMRaxG79Ktiw3lcHwcA3Penk8MY9zVRZnuGFp7OfQ2oYT-5qSLi62_6VeDFAPY5MFS0ukrsWUUNNwWzQjMwikpBEGGvkxn5Pb7Q7MUFEV_9vcXXuucq-PUkxJGjuPYQ0L3GHnRhJK4A2yfSjjJz-Ksg-xNml2yT",
                 "width": 1931
             },
             {
@@ -2368,7 +2368,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/101238915427473032881\">A\u0337.\u0337C\u0337.\u0337 \u0337</a>"
                 ],
-                "photo_reference": "Aaw_FcLM6qjfWCySE6MG0P87x7uxErMeNx6ffbw7Uf8TQsvFj2pq99Q6TPUA_LxLIZ3xUuNv5YdELblnq3h9E9EdvYG5CQ7dtfWlhamNGdS7RO22avFh6yiM9opAejvg63ttW8-ozpa4jHjdMtxmwEizRk4kiGkH1lkfYL12LomWCG7Mhfwq",
+                "photo_reference": "Aaw_FcIrWbun3TBmSIUKxblMYw9EJnch5FwBU4_TFcbBcVgFVeA25So17AY0zp0kFNl7ZYyX8hXIyHg2-C_WBCAbhtsDI6hDJwDchL0mDs_ulvzQY0Uxam0rf5DPcdLZ9aFIEJslPVsSL3JUnC5ATj3gkqcGCMBBqSLs9I1tMZrpHEVRRhs-",
                 "width": 2848
             },
             {
@@ -2376,7 +2376,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/116420139867466100526\">Mathias Monse</a>"
                 ],
-                "photo_reference": "Aaw_FcJYXUY5VV0ALjaSXx9QlDklqbA8eU29Rnt16wrHwPmGJGtKzUAdT-djqO_TW_gSH3G46eG-llVjgFnMbskzv2dkvvJYxukLTdkk5A9Zkcvp5lKzNv_i2aSXMBR84MVfG8ZHY3YwXTUIsrFo1UjoAAZOl16OQhJncjqd0ynwzL6g98C5",
+                "photo_reference": "Aaw_FcIZlmLdo6nBQOA7Cg5q3aVcfbFsfithwMIY9of98TttCeqqyPYceLU5HOfz6c4hk22UvPf3CWNrniWe3tm6MBh6aaWZCnwUM3awng0rykRjvzIpE_7d1opdJFbkW655OcqbLmEQMe9Ue2yA0IsFGzSWQkxERK5WqhacLuQJu8V25lid",
                 "width": 4032
             },
             {
@@ -2384,7 +2384,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/116420139867466100526\">Mathias Monse</a>"
                 ],
-                "photo_reference": "Aaw_FcJCYvf7SfP8K9hdNwMqv546H5kYXZeUnHcae3zU-qib52y6ApjkPZP7smYQq6ThKYGrA9A2HVwKZgUYlhppVE9uwpjFG5i3ALReGNE9DeleijZxSKv2yGwIJJnhvPlYATrb4QGA35_6m-yfDFP1Fa06-tkAEwCLJ1BFBnF3RlgTqEFr",
+                "photo_reference": "Aaw_FcJNQUP2bR_o5iSz9JX4-QnKhstDW1NZWZUliE6rC4ppzvdg94zQurYM7fatXiGm3Hy79KazJWm3EEjCZjo2gJXTtOK7frpuurFYuvaYO2X5dSSPSiIevYbmnTTX_ZDDFrKdcK27MdBkL66P2uobNLgnugwkhvYUkEfi7Gx-FpMa2Zr0",
                 "width": 4032
             },
             {
@@ -2392,7 +2392,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/109500633593589679581\">David S.</a>"
                 ],
-                "photo_reference": "Aaw_FcIknXHd-IW2beLDmEB-wCttToO9B-Z5oUsiqggLA8m12Wui0lweTvdhrfmEDIUDuyy5s2E08tEz36M6pWKUJVZ-03sQqGkps3EqwFzlQHPdfcmrFQIXIgM3jkTPx2ZUyGNX2SGHTw-bU4_9no-AObP4LpaZPDxBhlV8m9j1KLvmehP8",
+                "photo_reference": "Aaw_FcLNavU4-KYMVU5ATIxufj0pkJ3khOBXuDp4fzTad-vftUPXJx8g5PfRaZ3M_M4bUi5XNrt28674Lw2JMxXSU5iraOeEKSBxIkv7SNdLiRAU6E4YHrf0AANmPAowqrjR7Gb3Nope8O2Jzs6ImsIzm05TQQzFmp3NLV00DTR96tyglWs4",
                 "width": 5760
             }
         ],
@@ -2475,7 +2475,7 @@
         "vicinity": "Hau\u00dfmannstra\u00dfe 40D, Stuttgart",
         "wheelchair_accessible_entrance": false
     },
-    "Bismarckturm": {
+    {
         "address_components": [
             {
                 "long_name": "35",
@@ -2555,12 +2555,12 @@
             "periods": [
                 {
                     "close": {
-                        "date": "2023-07-16",
+                        "date": "2023-07-23",
                         "day": 0,
                         "time": "1900"
                     },
                     "open": {
-                        "date": "2023-07-16",
+                        "date": "2023-07-23",
                         "day": 0,
                         "time": "1100"
                     }
@@ -2633,7 +2633,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/111779523578673162643\">Hubert Mayer</a>"
                 ],
-                "photo_reference": "Aaw_FcK4ZtMrPQu0tH4Gfo7iHANqhOEJrgRz85Nxb-TNnbWDQyejzZnoAWl4vrR3fKgDjJlhE6Mn6rmyuDztBCDVKb4Gklj453JNofqMRJx6-mqn7soEsH_a44RmMhxQZ2uLIctPsqbZAcclgJeF_X2VU-7WO2AGtojhKOgm0cxCrp0NDWfC",
+                "photo_reference": "Aaw_FcKTMDMIswIpsNhcXhATDFTVAfk-DuMOYsCUw-_n_8ELMJDjQMPFOazpdoSUAT_khpEeb6wlm-qBhUdVS89O9d6DHuXQ5KYeJzNrV8BfSK5Xo6_bvme5W9xtxqztdTWhm_sLsocLyBlr70KWlnLsTuF-bX2HVwVxUqC57oxXjkouV93u",
                 "width": 3024
             },
             {
@@ -2641,7 +2641,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/101862040242120437587\">Oliver Martin Sch\u00fces</a>"
                 ],
-                "photo_reference": "Aaw_FcI4KGNyePMUy7IfnuIWbXWUOBL1dwdXR8yCdMz2riLa982puy60xU7IhenexKgz1KMZZh_DifDlMLJH_A8pXEgnMscSH9jT00qhqO41isD1EBJBB3gEdnuVMVALNcKORP4JX61-s8scvYm3hDuyGOeHOS0nIi3zrGnq8DNZ1HoWHrg5",
+                "photo_reference": "Aaw_FcK9CMUctntlO5NumrSBxtok_OuW9Wbtq-tsxmxcEOSd3cRMHX8KcYdcHb1Twc1hh3mhgVC_uRYn8J46wiWVs_aq5Wkt1ZPs4da_o5Xyjs9Ofb7bwHvlNB5n_T1KF05WXPjBnLXOa1iKGI_KyNfMZJ2TltMO55E3E1UR57c5n58LgyWM",
                 "width": 3024
             },
             {
@@ -2649,55 +2649,47 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/110817089135901513912\">Thomas Rager</a>"
                 ],
-                "photo_reference": "Aaw_FcJiLj04eb6gg0ipgqhH4ZtBa-_dkYc15gqukZctk7yELryFMF1fv-EG0LPteoS3ZjB7zSNPet7Z6dS8GWoPEvo8MNMuzXnH9jp81rxiJSCuHlcoBfy8RWYpfpEvpVHqLAB8CKfsOIhstk-IK5-ihqH1xD_U6ZgLICRKQZvUcA9LkTAq",
+                "photo_reference": "Aaw_FcJ61XeYpvitqs_eLRba_zVbJynY9DNWcxKxoheEGRW97nQXIEsiegk_imOiLF7L-YHHoo5qpdNxybsID1GMfHwwZqhsdPV5-qigOSdYJcLxt7l5kUIeyjXuaZaiqWn8pcZyDFANVEwwdkz91ABBu2CXD5yiMapj7xQtUkVSWyd4UcNx",
                 "width": 3024
-            },
-            {
-                "height": 3456,
-                "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/115383884171953712616\">Kurdo Kolenko</a>"
-                ],
-                "photo_reference": "Aaw_FcIIszv31eknE-n5yA5C6hPV2JleRLW5IRJGY2FGxCeon5w9APxF0DT1xU2DBNq5GYnbqa7odQGvbjMf-IGOqrNg6erD2LvtY3xI63IznK3_ixJjO9ausMB079HFgsznFw92KIBjBl3CSPcYWKPK8NoMyX8NIuY3D_bMwTLeQZYsdn0p",
-                "width": 4608
             },
             {
                 "height": 1440,
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/100143414352035385700\">Sibi Husky</a>"
                 ],
-                "photo_reference": "Aaw_FcJZUcYDrlzCm396xHRy5Gl4vskGm_g-6LT7z6esJOgIKuCaE0fDjlv6tSZsjNfJeOYU71paZruN2k_oJqLi05DMV6j0UZtSCCIg5_DGxX7XhZ8UYCJO8hYhDtRfWWHIWnT3qz95sxytThCg3znnPwtXqJ3S3HIY3Im2ckvDBFFieX9I",
+                "photo_reference": "Aaw_FcLFExH4pad5rOCbgNNkMkzW61V2rm3mdryt1e8D6MnYy3W7RWCNlZPapXtavhept0f-IHm7gLmKQ6j57ttipQzp7GpjxYOO83YZyvY17JAQtPH3FCYjFQUxup41JLk7oXAChZAvuzQYVIXP2ohGGEpTcUBsnvkEjJyCnDzIb_1XMnxJ",
                 "width": 1440
-            },
-            {
-                "height": 3000,
-                "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/114079784316613839313\">Michael He\u00dfling</a>"
-                ],
-                "photo_reference": "Aaw_FcL3m0Bc59l0kuI4Ab7LwDUbBPmSaTBHuaI_9oOqWDRcQwuftl2cq91ujZewIv_XTNbyGNMNb9HfTDN5ApmIOePaX2lh2OFlBucjMXz1UCXWQBhD6qMra43thSGkLcllUY5gafl8NIETHumOowrQ8Jllod-niKqaJaiEc4Rz_isFU7GC",
-                "width": 5333
             },
             {
                 "height": 3456,
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/115383884171953712616\">Kurdo Kolenko</a>"
                 ],
-                "photo_reference": "Aaw_FcJcXt2QzBKtTCc_5QOM1emlVx_hZT-6QgYAqDN-Se1K891RlcKbealhEn_zqy40vilunA_FOLnB8BxhCXCJ88EW3kqJg6yVfXTxbC3vv3RhzssEBBC9GoV55q9Vp6WvaLueR95Q9_E6qSXs_8SzoVgWPFzxhePeaqZEhFeps3JRzxm9",
+                "photo_reference": "Aaw_FcKZQ1HbO3GqbTR2dZQSESGIYXxuD5jWOH2CSKLjBeAjDBZAQP2f5KLdCGt3wS3ukJ5BKUl-7yQJ3i-ksIiSa5QMKJGwwggOmUNmvzX7BHvMvwotRUG0LkzIi09_rbpc2o_VMQ10lp_fhKPOCsklYbBjU2zWtTI5QlsH5n9Ig8r4HHJl",
                 "width": 4608
             },
             {
-                "height": 3472,
+                "height": 3000,
                 "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/117130323249275389837\">le Fritz</a>"
+                    "<a href=\"https://maps.google.com/maps/contrib/114079784316613839313\">Michael He\u00dfling</a>"
                 ],
-                "photo_reference": "Aaw_FcJoydwZ3UEBmkPi6Mf4aUsZAEo41qkMcykTqxXtZhG2-ZYFakmhXOWRH-hOpBDDdKihXkzrbByofClOWPpA7gQFyFcEHL1wXw6su9PFae-yV2rG1tDrOedyQ1QU-ymTGr2Ub39ODBVlVWrJkC8LE-b2ysAm9GkHkVg2b3G3iDdBws5T",
-                "width": 4624
+                "photo_reference": "Aaw_FcJ4xgf9WcLQm1PMkxCFkmnp1J_nz_WBtuwlttfWXNBQNHpdQcrU_oKjxADMN0YCxmF3DAdsLs2ghJE8Ap24xJN67d2nRsqI6UM1xFxzHYGPOCaagPfPh_oJ5M8oV2odMywsHh_n6Tyhy6BmbdvA8W08Nu_er2JG_FvujV5vx1DjJZqe",
+                "width": 5333
+            },
+            {
+                "height": 4032,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102366374683957840559\">Kevi Lato</a>"
+                ],
+                "photo_reference": "Aaw_FcIUkMUTO3_TjHgnHwWIZmrV_7y8D_NjayQvWIkPadlfpaCo_KBzuyK3RwJXHif6es3W-y2qtEtQg8mwDzQL3x7atxwIsXb8YxOZ39eNnjExqUNILhW2lO7Y23k5NLndiXcFkF-aNjxDNxAVFGa5SuvCHgvjYc1jpXj7yRJV1WbFO23w",
+                "width": 3024
             },
             {
                 "height": 3024,
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/105359490551973636249\">Maurizio Guzzo</a>"
                 ],
-                "photo_reference": "Aaw_FcIMDEDFzdhcQ0jDhhofCo9F23qoQ2nOl204b8Lap3yDXyUqjyNFA01PN-PPPgX7yS4KkSXghtHnh6djXsHlDcG2LZ7vUy1g2qMmydgJfwPkffqG_ZKF7mk3SBHiim5lEudiphLxz23jB890RnC_wQbYSAwr5r2KSFbtV6gyW6xywZp4",
+                "photo_reference": "Aaw_FcJb6FTt9eYk4uojC45bocA4YqA1C0kovIfkm-uHuRekhNe5vu6qI_DLUQueSjC_SLOroc2egeAdRU5jmcz-RYZzd084bMmGmNs3VDRR9lV-YgicwZfgJ20oU6Kb9ke1IUkPCOexU7nijVOv0Tos-E4K6hdRCilRLPCs_889aL2bg7GH",
                 "width": 4032
             },
             {
@@ -2705,8 +2697,16 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/107897794497335272790\">Annette Reuter</a>"
                 ],
-                "photo_reference": "Aaw_FcIH6XE1nHVk4pqYQSf6ekBhUkb3rTAALFv9neFUSP4lA_NPPBmqYvWPHK4Z99UpRbSGy_VvD8hoNLugLUczsT5usHiOgMRR4CofnkjvRrnBeKK3Ja5vFPq9ZY7m9HiuAXV_dJfJUIdoa_YhfoYpTCAai4lB6127zLp16RmCrXwcUjzg",
+                "photo_reference": "Aaw_FcJwwqizR77KsiPwQSghVUdPsYSXM_NDZ_yPpUmE7sUXKRBH-QTGwRWUX3uNojOGmyKpkL8jhv5T3pCGgw0mCgt1BU4esVWejk48mfeq_gB4TTZtOW7bp4Y-2WfyjQSSJAqUsLRfp_nLiGMwfQNOkCv2N0xpy0WnrtonVq28265hl7R6",
                 "width": 1280
+            },
+            {
+                "height": 4618,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106566648130702630722\">Calin CvB</a>"
+                ],
+                "photo_reference": "Aaw_FcLzC4SPumSfyof9h2MMfiEyHtHMuEQ_X7StF7dsQf4snLA296c5TRHr9IWDdHjJTHfp0aLy2u3XiCicY4e8CHhU2LPQwyYkJ0d5dF8bgto90g_LrQXQ89ATJAw9VKBcQZNaZOLhqZuNKIZ1Mkp1MWGYEHM0eZ_Yuxjg971DJayhq5N_",
+                "width": 3464
             }
         ],
         "place_id": "ChIJM4r0Th_bmUcRUWWAITajyYo",
@@ -2724,7 +2724,7 @@
                 "original_language": "en",
                 "profile_photo_url": "https://lh3.googleusercontent.com/a-/AD_cMMRu46GP9JC0SkCAp2i-CLNM4Q2Y57-T9fRKhLWji4WgjE-h=s128-c0x00000000-cc-rp-mo-ba3",
                 "rating": 5,
-                "relative_time_description": "in the last week",
+                "relative_time_description": "a week ago",
                 "text": "Nice and kind of hidden place on Stuttgart. Worth to visit on a sunny day or a cloudy day,  always nice views I would say. Worth it also for any photographer willing to take some different landscapes apart from the usual ones",
                 "time": 1688832530,
                 "translated": false
@@ -2784,12 +2784,12 @@
             "establishment"
         ],
         "url": "https://maps.google.com/?cid=10000703900438521169",
-        "user_ratings_total": 927,
+        "user_ratings_total": 929,
         "utc_offset": 120,
         "vicinity": "Am Bismarckturm 35, Stuttgart",
         "website": "https://www.stuttgart.de/tourismus/sehenswuerdigkeiten/bismarckturm.php"
     },
-    "Geroksruhe ": {
+    {
         "address_components": [
             {
                 "long_name": "Germany",
@@ -2853,184 +2853,182 @@
         "formatted_address": "70184 Stuttgart, Germany",
         "geometry": {
             "location": {
-                "lat": 48.76621759999999,
-                "lng": 9.2011725
+                "lat": 48.7667922,
+                "lng": 9.198574200000001
             },
             "viewport": {
                 "northeast": {
-                    "lat": 48.7675378802915,
-                    "lng": 9.202494930291502
+                    "lat": 48.7681255302915,
+                    "lng": 9.199927130291501
                 },
                 "southwest": {
-                    "lat": 48.7648399197085,
-                    "lng": 9.199796969708498
+                    "lat": 48.7654275697085,
+                    "lng": 9.197229169708496
                 }
             }
         },
         "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
         "icon_background_color": "#7B9EB0",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-        "name": "Geroksruhe (Merz Schule)",
+        "name": "Geroksruhe",
         "photos": [
             {
-                "height": 3024,
+                "height": 3264,
                 "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/106468451258787130410\">alexander kraai</a>"
+                    "<a href=\"https://maps.google.com/maps/contrib/104969484010861343774\">Victor Samson</a>"
                 ],
-                "photo_reference": "Aaw_FcIdlmhMSaFnCf8WnrWuGmuQp2DBfbPX5k3x6lQT0kkkJNQOW46hsRvg40acKukaknjSc7_A4n93tkE9vIwA11Ltx9mgKhNt7Nvj4KIsZpZeMnKXqJzxMCW4lSgNSBsxmr_2_8gY2jR8WLpUi00GXq0WaLXmkMhOfEMLqE7BOX5vDzgY",
-                "width": 4032
+                "photo_reference": "Aaw_FcJ4G6wgEpUG2u0rvShtoec9EgoMZQzSSjzRljZ7WtTSHdWE2m_CZrPDr7bKre6qkrNtMIi2VSWzGiOZAgxkG6g3qw4cinhtx4mWX5tJNPLsqsdVpssWWH8nZm1O2BNkh2xZJnIOd6MOYx3QjL77c-cUgNzBEdmGGb5TPf5yaGKlvJtk",
+                "width": 2448
             },
             {
-                "height": 3024,
+                "height": 3264,
                 "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/106468451258787130410\">alexander kraai</a>"
+                    "<a href=\"https://maps.google.com/maps/contrib/109189813103321809969\">Senseless Support</a>"
                 ],
-                "photo_reference": "Aaw_FcIZcCw3nWGoELB5HhJc-Y5yqaVoQ6DwQ3qK8QDOGLcfhKQp2mtFytjLBsYGAciomLg9bsLAPnIzFX1VxG2Vtm5M0iwdGn1dcvqfpSqHTEePXs6dQbZBjaaKfyjua-nHLiqyj4NC7yB1OrorVrcxQArVzsli8DFdIzQr6KawWGbDJehv",
-                "width": 4032
+                "photo_reference": "Aaw_FcLENttxiSjaC_QklEGY7xWg_7E4znzSzOrlGEk8yuQvgRVf-sTuGo1c1aIdCodVu2BmZNCwUYPuY0tyWQEwjkLdKoMSp_x1I-Q0-7jLznXGAiC4ZHggCv-EOEAU2vzadjmlmyIu6denyZcudiNiRwcf6HKkAI92VLIa40NK9uBxW1O_",
+                "width": 4928
             },
             {
-                "height": 3024,
+                "height": 5664,
                 "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/116906994379498377997\">Alexander</a>"
+                    "<a href=\"https://maps.google.com/maps/contrib/104969484010861343774\">Victor Samson</a>"
                 ],
-                "photo_reference": "Aaw_FcKFQ9JM00tRuV8HODoxlef4fGFdT7KRkwIMCHMey9qHHQEIM1QFMZb2rDjshNN5PNSWk70BKzT38syKKqsq0_Yq_sDwA892-AuAlJwHJLyIDrGuzszfTpaLL21iSJ44NGWYxGZ1pyS1Fu9_uIyA5ayFjq0tR2OTQ4NiJUG8amUs4CIS",
-                "width": 4032
+                "photo_reference": "Aaw_FcKbMMuPMnye3Y-GLjZg1M3ZS3p6gcl5TFoxzVikWzPKv7mA15CdmpmnSJZSTkYuKsfgdEObHQ-golGfa-F2w_cizeYaVjGvzCz7S22PfPWko3vywkzHORb4Mg24OHUYYTXcQ2_BghcBQRqBvOAOGat5bsSqk6glvI06QfjKH2v_i3Ve",
+                "width": 4248
             },
             {
-                "height": 4032,
+                "height": 5664,
                 "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/111639319696455131926\">Danielo B\u00f6ving</a>"
+                    "<a href=\"https://maps.google.com/maps/contrib/104969484010861343774\">Victor Samson</a>"
                 ],
-                "photo_reference": "Aaw_FcL2qK9WNr8AAU64GWPOptIlTAt14uzaSoa0yJdPjFXgGQxbatnnEyVSjXtNMXKbyqKmB56HpdXewD7_ndrAbHTWiAE48_3KUlvInpy8QqeEOPrnp81l_zGBDROpY56OvEa3y6tNRMz2KmUf5i6PSfHWP1BjCwonhPNZA9dmtNytQtA",
-                "width": 3024
+                "photo_reference": "Aaw_FcKpmEPhTnittwDMIv0mvMfBexjQctn73zs-SgeW2HlpCuSgsMVtFYnOtyEbY2C96IhpG6_ChZGdz_qYP3-4p1ZP5NaWfIcri32MIYV4IFSnHmIZ7HtKCHvpMFC7kyhkaVhbGwIHqBdDlQsiBs-S5Q1xaLKN0s1J2U8wJdoPKXyd3J__",
+                "width": 4248
             },
             {
-                "height": 3024,
+                "height": 3162,
                 "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/106468451258787130410\">alexander kraai</a>"
+                    "<a href=\"https://maps.google.com/maps/contrib/109189813103321809969\">Senseless Support</a>"
                 ],
-                "photo_reference": "Aaw_FcL7bO1WkQdXQgK2lmibuDGeMnkRrYrluyh4O0PX6kYGKRHCoSmwPPMIo4byxyQTHiyT-cat0m3Rv9safwxd6v5o6_EMUAbtRT21emkFl17f5MgG2EKV82VdLA0GZ9OdA2x4aQ7kfk20XAippubKSXU3BRpWCVRyZu98Gd1ABzoju2FJ",
-                "width": 4032
+                "photo_reference": "Aaw_FcLNV4XfxvFduWLKZ3QL19ukjzW9T2GdoMtvm2SD0TOnaAkfDBw7E4ro09xJqflkAJ74wkTIR6f8_aTLUAa-TtrRkW0yRsdGhlBUNOo6t9ZDzu3P6AiI-3EGXRxsi29x58mzEaWvYACTaXZxIZ_7jn7CUc1ggC9HG20qKtWIgxhsCQSA",
+                "width": 4737
             },
             {
-                "height": 3024,
+                "height": 3264,
                 "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/106468451258787130410\">alexander kraai</a>"
+                    "<a href=\"https://maps.google.com/maps/contrib/104969484010861343774\">Victor Samson</a>"
                 ],
-                "photo_reference": "Aaw_FcJkyawHeXGUnBH7GoQQO1zho0BNq_T-vGqTWB_-eY2Cp_-uZJXm6EHRC9G8hrQ89tL7A6O5T83Bmzn5xy64NstJ2r96gAJ4QAC6p-uCx0GAbZj3a_-G_GHMQquo8bNBA4sLVhiNk1rVZOg-Yw_1ZRlfOLer7SiSkW7ZbL4jnaaR1B6g",
-                "width": 4032
+                "photo_reference": "Aaw_FcKf9J68k3G6wAn1Gq5ruQ1Z_kWfBHPtCfRSwGYkdHWOq1iY8jO54sbChB_6srr4AxICvAL897FpqGJ0QJeSjG7fhh4_4p8fivpKtsAKFD4XcxCv2qA2ETNrmlZ1q8ZiV5k3HtoDFs6Va85ZGv34jMn1u-v3mL8lBWwJrwVCNcV_wER1",
+                "width": 2448
             },
             {
-                "height": 2840,
+                "height": 5664,
                 "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/106468451258787130410\">alexander kraai</a>"
+                    "<a href=\"https://maps.google.com/maps/contrib/104969484010861343774\">Victor Samson</a>"
                 ],
-                "photo_reference": "Aaw_FcIXIg75AQYsZSQy24D_DuW5xmz_G2nFwXtHuXi3w0bEjjxWkLzmmjttZa6F0c3zz9UxmN-qRX7y6bXzeUrR9hrfiSB5w47vFs-MsLYlwYCk6pPC1UQSRDMDjZ20baeU3BaOQt85ehXJo7HJgowJkdb7Zu9dUMeEFcwzPEiO6uvJywzk",
-                "width": 3787
+                "photo_reference": "Aaw_FcIOyDUv3jf5-UsMrXu1yEoqTEfNNYtXDmZU27RMS406ge0P5E9zIRV0ESm1RCb_RsVwW_u2UqoEMV1p5olmHJGZ_HTmGy02ud_P46TorEqBClbdxtWTU3X99do9MCWXeHEa8fHHtaDichhNHCdtNarIHWrpj-ZS3MRNgKtTqtaIb-6u",
+                "width": 4248
             },
             {
-                "height": 3024,
+                "height": 3120,
                 "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/106468451258787130410\">alexander kraai</a>"
+                    "<a href=\"https://maps.google.com/maps/contrib/107095565276477878632\">Max Schulze</a>"
                 ],
-                "photo_reference": "Aaw_FcIggbtmtlJp8e15JjybOAWXVjO2v7VJMKtwJiRml85dtG0YWYjFBdJ6wr8zuKrsjhSL3SsF5ryaT_dvLMfjYZ-AdMvSICNul4jPI0Asa8PrN5hAABFGPyYlSkhGtExENSXdgVoTmqptp1wMtWtFP4Tf3JliJVEe_2zfl-ndb27pqfLE",
-                "width": 4032
+                "photo_reference": "Aaw_FcIdHBp1v174dZzaYzMQGY8rsV_GTA4GIZpMSG9RLr4sbih5pSeMrt5Cm15YZ6rDlvDS818voA4HKsLK9QOxnwt6R8a_MQKtYHSDosIwt5ylSm-ll4giBqvVPgU2qS4aLNrEFYCKX_Qxmu8GW7uTwAfQqVOohiIJ7ctHit86Xnmr7wPF",
+                "width": 4160
             },
             {
-                "height": 2246,
+                "height": 2448,
                 "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/106468451258787130410\">alexander kraai</a>"
+                    "<a href=\"https://maps.google.com/maps/contrib/104969484010861343774\">Victor Samson</a>"
                 ],
-                "photo_reference": "Aaw_FcIhYSOkKyYWgK41YcRB2PykwvWYiKFTv95goQZoyQfye2nEWHd04yCDEUx9AOUWdrHoSfPTiz70hlra8OK09qD72EqFCsMZyMFFzijnfaONg3SqZqT_ZbeiJnh84LIJvEkfgPU_y-_og3smHUS1N9W7sWb1jub0O-YANX7WaxZaQJ_J",
-                "width": 2995
+                "photo_reference": "Aaw_FcI_LxXlKAY1Mbnl0CC7pV5CSRQtmKFrq0iA004acwwNQunrCL2nAh5XkGV-d4lVJ3xpB9bQ3CeCDzlZO29z84JUZSDgYgo3GchnZsv8taYHOUKA6BgVtUYSpS0UI3-nYqZWAgyfqnPhaled-BYqIsm7vufpUwEYM7m7Ahjep8v4tpKO",
+                "width": 3264
             },
             {
-                "height": 3024,
+                "height": 5664,
                 "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/102690489725986197825\">Ingrid G\u00f6tz</a>"
+                    "<a href=\"https://maps.google.com/maps/contrib/104969484010861343774\">Victor Samson</a>"
                 ],
-                "photo_reference": "Aaw_FcJLwLpG7fzEY4_gDCKVi1c6PWGVYHDGb-q_Hqww8Yak758i_5bRVgqg5V_2KDdfrp9rqrGmIVRpihGtVMt-FurQ0wFHYr3gUv3wf82tiIPL1-uQYsEGHF4f3FcopTs7AsI5WZlIWWGf2osxy3uOEc3dvwf_4Q0W4R3g_UjSUKwD07jG",
-                "width": 4032
+                "photo_reference": "Aaw_FcJXHIYSEKFiwvSPvGC3BnsbiXOMCmioCNu8MbJbVu3RQ3LLcmaQg0uzFLJwVtp2C4CEJFMr8dobPw474q3u4MLxfhj9Nas3H3wEN9fmVdfbqJ3nvtWBv__D5OK3MpPlgGsl_vlVLWDL5g0b_Nq2nAWghWJpIcbNBrpEVUev3MmrDq6p",
+                "width": 4248
             }
         ],
-        "place_id": "ChIJhQCO5bzEmUcRuDo43Sfm1cM",
+        "place_id": "ChIJJTpnnbzEmUcRaHWC4B88bxQ",
         "plus_code": {
-            "compound_code": "Q682+FF Stuttgart, Germany",
-            "global_code": "8FWFQ682+FF"
+            "compound_code": "Q58X+PC Stuttgart, Germany",
+            "global_code": "8FWFQ58X+PC"
         },
-        "rating": 4.4,
-        "reference": "ChIJhQCO5bzEmUcRuDo43Sfm1cM",
+        "rating": 4.6,
+        "reference": "ChIJJTpnnbzEmUcRaHWC4B88bxQ",
         "reviews": [
             {
-                "author_name": "Peter K",
-                "author_url": "https://www.google.com/maps/contrib/103548978810669833870/reviews",
+                "author_name": "Andreas Wallenwein",
+                "author_url": "https://www.google.com/maps/contrib/115171351199234037889/reviews",
                 "language": "en",
                 "original_language": "de",
-                "profile_photo_url": "https://lh3.googleusercontent.com/a/AAcHTtdQrGH_klS9xevLvGPW053K4XKRe3b3nSWGh3LX1ky4=s128-c0x00000000-cc-rp-mo-ba5",
-                "rating": 4,
-                "relative_time_description": "2 years ago",
-                "text": "Great view in good weather",
-                "time": 1615132524,
-                "translated": true
-            },
-            {
-                "author_name": "Uwe Reitenberger",
-                "author_url": "https://www.google.com/maps/contrib/103849694496101163976/reviews",
-                "language": "en",
-                "original_language": "de",
-                "profile_photo_url": "https://lh3.googleusercontent.com/a/AAcHTte0AIdGJ-0xeqSUrOlfjnijbzioaGl3vNbG1dLSGrUZ=s128-c0x00000000-cc-rp-mo-ba5",
+                "profile_photo_url": "https://lh3.googleusercontent.com/a-/AD_cMMTA7En4k0WHO_bSMjw4xOEkAmsYcG3khdb8hXQ2aqnwcQac=s128-c0x00000000-cc-rp-mo-ba8",
                 "rating": 5,
                 "relative_time_description": "3 years ago",
-                "text": "Next door nice viewing platform",
-                "time": 1593297856,
+                "text": "Very nice view and proximity to the forest.",
+                "time": 1589023227,
                 "translated": true
             },
             {
-                "author_name": "Jan Uwe Morrone Merrone",
-                "author_url": "https://www.google.com/maps/contrib/117623176697622227590/reviews",
+                "author_name": "Andi Mueller",
+                "author_url": "https://www.google.com/maps/contrib/105542872248672957526/reviews",
                 "language": "en",
                 "original_language": "de",
-                "profile_photo_url": "https://lh3.googleusercontent.com/a-/AD_cMMQoaHU_kbz01W0LkhBjYRHuFBcuQ1P0ZOKI8Q-yJxRRuLrk=s128-c0x00000000-cc-rp-mo-ba5",
+                "profile_photo_url": "https://lh3.googleusercontent.com/a-/AD_cMMRj67XblaKOlgkg05O2a2xhQo2pSUV_97hEgAiWFJqQlKk=s128-c0x00000000-cc-rp-mo-ba6",
                 "rating": 4,
-                "relative_time_description": "6 years ago",
-                "text": "Nice view but the place is unfortunately neglected.",
-                "time": 1497213151,
+                "relative_time_description": "2 years ago",
+                "text": "Nice vantage point with a playground on one of the main access roads on the Geroksruhe in Stuttgart-Gablenberg",
+                "time": 1597583478,
                 "translated": true
             },
             {
-                "author_name": "Susanne Karkosch",
-                "author_url": "https://www.google.com/maps/contrib/102004337613464968112/reviews",
-                "profile_photo_url": "https://lh3.googleusercontent.com/a/AAcHTtcCdrDqeswIaQozJJHwc6DlpIRg6P8rvXO1k80A5IV7=s128-c0x00000000-cc-rp-mo",
+                "author_name": "Max Schulze",
+                "author_url": "https://www.google.com/maps/contrib/107095565276477878632/reviews",
+                "language": "en",
+                "original_language": "de",
+                "profile_photo_url": "https://lh3.googleusercontent.com/a-/AD_cMMQx7nfDVWVrl2lMq9B5X5yFxE8TKUfSQW7uR3OzuCKtOVM=s128-c0x00000000-cc-rp-mo-ba5",
                 "rating": 4,
-                "relative_time_description": "2 years ago",
+                "relative_time_description": "4 years ago",
+                "text": "Beautiful view",
+                "time": 1542731183,
+                "translated": true
+            },
+            {
+                "author_name": "Leon Wallis",
+                "author_url": "https://www.google.com/maps/contrib/114037671459603685088/reviews",
+                "profile_photo_url": "https://lh3.googleusercontent.com/a/AAcHTtcB9y8SfdcktcwgmRR0EaF97EbYz3cbcRC_Bly2MbkT9O0=s128-c0x00000000-cc-rp-mo-ba5",
+                "rating": 5,
+                "relative_time_description": "5 years ago",
                 "text": "",
-                "time": 1595854293,
+                "time": 1516890918,
                 "translated": false
             },
             {
-                "author_name": "Alexander",
-                "author_url": "https://www.google.com/maps/contrib/116906994379498377997/reviews",
-                "profile_photo_url": "https://lh3.googleusercontent.com/a-/AD_cMMRcC0LFbAwGfzO-_QjNlx8iyzPUmtrUc2LSn7iZrMk6yg=s128-c0x00000000-cc-rp-mo-ba6",
+                "author_name": "Charly Oesterle",
+                "author_url": "https://www.google.com/maps/contrib/103888185753386049096/reviews",
+                "profile_photo_url": "https://lh3.googleusercontent.com/a/AAcHTteLoqR7y-m3Srlypr794ADdYtTmDE6cx3wAoJCAwF8R=s128-c0x00000000-cc-rp-mo",
                 "rating": 5,
-                "relative_time_description": "6 months ago",
+                "relative_time_description": "5 years ago",
                 "text": "",
-                "time": 1671377635,
+                "time": 1504507342,
                 "translated": false
             }
         ],
         "types": [
-            "subway_station",
             "transit_station",
             "point_of_interest",
             "establishment"
         ],
-        "url": "https://maps.google.com/?cid=14111438066324880056",
+        "url": "https://maps.google.com/?cid=1472461710781740392",
         "user_ratings_total": 5,
         "utc_offset": 120,
-        "vicinity": "Germany",
-        "wheelchair_accessible_entrance": true
+        "vicinity": "Germany"
     },
-    "Schillerh\u00f6he": {
+    {
         "address_components": [
             {
                 "long_name": "Gerlingen-Schillerh\u00f6he",
@@ -3117,7 +3115,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/108727494878431484680\">John Waldorf</a>"
                 ],
-                "photo_reference": "Aaw_FcLFj-6tKHYkFCZZvv-2gNHMWDzGmuFFqVJWi0KMkGlgZ6Hy7mKTeTownDPwpKRiu_ohA0xAVN7nXPnv0SJAzo-Qxb3feVRuU_HSMDJUIyCbWxwuL_rTb0mcQ9DwzGHi7I8fg6n-4_Z7JeeCGOY2paSPclC3X2sdIKb4KfsRtkctHGgh",
+                "photo_reference": "Aaw_FcIlSh1ElpglEfA6RHO2fqIGDpb2IznozY1TDUbbvLzo_Nj5g1cizHlWHBB-0eMVK3IxrpSFXpgpN7ckmM6IV6M3mT4L5X-NQLYVwWp2LVzDDyj9MDGdaSuqW2JovSVzHTzGOTAx_E2KWaSejfSFNrPNNoJuLefFSzZQbekcj0vcOmqf",
                 "width": 1440
             },
             {
@@ -3125,7 +3123,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/108727494878431484680\">John Waldorf</a>"
                 ],
-                "photo_reference": "Aaw_FcKWdLAJVFOci0qxaiK2BmBwaVP9xCLraB7msS08jARxl6-ySwmpT-kjvOhTv9jTlgR6IJHVSoZV9QlYm4QUkLnw67tclltVZxE6rByyZiPI9N_ADl7yOzIrD2sNedmnAP2OAPvFJ5df4W4uMLZ3uY4rIsvOgvcRNW97BowxedZqkBHr",
+                "photo_reference": "Aaw_FcI9eEqJa1LInKCqeGFeulsa2w5PjCk3N3RxvHxMwZJ3w7pzdBka5BhlaNlzcwIy5aMC0n0SrPaEU8cXEjgC33fU_rvO7-XBHWApgZyp492K7-deWIOmfPKocoNtDDsCRPPDz2n74-MG9yQRCXqg4FQQwrOMrIeLzhkmdmwL5DTI3euX",
                 "width": 1440
             },
             {
@@ -3133,7 +3131,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/108727494878431484680\">John Waldorf</a>"
                 ],
-                "photo_reference": "Aaw_FcJb2-Ld_zYYtUXhGn4L97DJBEdbhPm5MhFcxa_7f-aMUhlLwPZVe9XGkLXe-M3fWtUaHZtS2LHvkh6ik41aW_5uLcjnu73d9dF4THJKgLNQT_BPdvleAuqwq-9p3rNRHuvGhOrRJLEXasJXCoU40BBH_A-KhpGMHIDnuHJxYllI61Wk",
+                "photo_reference": "Aaw_FcJ5yVIdjxCl7UdKqIhT-2WTYHqbpZtEjZwF18O2G8VN_nM-n4TcMxWkntoHLvRNBc_K0EhK_slpwzz7niERPXzMVMvdeLIbhfmkttmXibGDByKx7UYrDGltg_Zcqp6lUCE6LbV4QZmC4wCihdsjhgbfppzYpP9ubTuOXw2kE6fTAisV",
                 "width": 1440
             },
             {
@@ -3141,7 +3139,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/108727494878431484680\">John Waldorf</a>"
                 ],
-                "photo_reference": "Aaw_FcJLauPvSN9prcQke8ZlM0isdlWl2oePfqwIj17dNB6KH8FsyLuiVWtjt6-3vLBxHzzl6X3yDgbTeKt98J_QJSKvKuUDVF2ICipZeoImYktpf8BgDeF5eW2HAN1SjAkKNMgzspO9CgzHyaXQNsgpJJDmwULCN_580uJhD0LEnQ-Uxmk5",
+                "photo_reference": "Aaw_FcKB6uD4V2X35MSXjBw81l_4_Q-Tb2XQ-knHqEfoPfxxyLHZ1AmVPwmwZNWhohEWEOiNqdSdZhnI-ZCGRcR5d5rL8eXJ9r9M-fGZC2YOJ3uDlLqhvoCnAZsQdey2sMoNU26TD6Q6zLL8k6uNVde2lmI-GyVMxn_b0rZKpx-t48zLaYs5",
                 "width": 1440
             },
             {
@@ -3149,7 +3147,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/108727494878431484680\">John Waldorf</a>"
                 ],
-                "photo_reference": "Aaw_FcKlF6ztJdragZt8B8VB-befLFuTPSG0Xt7uLJLtwh9WnRI-iHNrFSy5YJkx1Tle10etmpVa8uCuZl7H4H9qf-E1zD6lclJJN048LErKh3hSxbG_br0gyN6DDCzc5mQ1kVnRQ1bnD9j3vW3iyuNZ3Dh7ac9tM2Z7s--eD-9y2hMQhRuZ",
+                "photo_reference": "Aaw_FcLcO1gNqaO4e66gE16fVsGEIb3sKcw-RbXN4H06b_zNFITKyg3ZXMdksz4f1Vuv2XQWHi_LP3hx_sBmJA3YM3tFND5OJJ1cqMUzrBMVsPuq7qNno7xrdkOYVWv4vZme7p_9U3v1_6B-k97g2jGfvZY5FRf0nuvrFPuwWmU7IPARAwpF",
                 "width": 1440
             },
             {
@@ -3157,7 +3155,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/108727494878431484680\">John Waldorf</a>"
                 ],
-                "photo_reference": "Aaw_FcIDN-9EC2voIgNzFxsfAGw-_XEBTb7PUIGNTQVSK2YeTnI32oxLzXNtOlD7xXIIcA5nnxtqGPXWOqPxWRsDkFsMQATzdR1B-pR8MHbYNqobBcNtcL_XAwN5i2BYDV4m-veJbcVP0mOK3j9VeFX0Eiz8_49fwlZhzprj9ufhdi4zvAeQ",
+                "photo_reference": "Aaw_FcIP9k3A7CL04HhywPX1VP-mzWwZ2NBNy3O8HMDUaiWboDckZkPsfx20s2KlrMVs2e2QksHeqOwk_oKbjnxuCVdCqP4JCaPHjlzfZpRAqgDSZg2crWsfU7p2xs2xPyiQ_ysdYwqB84Oijw_xoM5AzUpky6LQ4suCLNkW-MSfc5f15lOG",
                 "width": 1440
             },
             {
@@ -3165,7 +3163,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/111607780298088783763\">Bernd Stubbe</a>"
                 ],
-                "photo_reference": "Aaw_FcKEIMDdtY9dNZPqbmGvS5ETpfiskeN3CW3YRiOxrD4xc8oYMJcY7iHXEFIHqLXXT8tZJwmNzm2-HXLw6CpDHWwPtDjBq06LGiIxhCStJiJHC5pwcvNnVKPtw20Jn413iIWMbGzzy0QWORrX-0VZzSsGJbSLW9CGIqIufN61Sv0_VtaC",
+                "photo_reference": "Aaw_FcKThwWD6xEMYhPTka8Xx2un58a6-9NC9QDQr-dop9BVJNnTMHGraSxYZ7dQFod3AUN6P9K4zro4GnqJXX6vZP43TVxW-_1-P5rcnfUNpWsqiPfU55iGDZyabszd7j41nQMkRZaw6B_pQlAANM0kyAhTPZDGiid7LmTmlQjIa19Q4BgC",
                 "width": 4576
             },
             {
@@ -3173,7 +3171,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/108727494878431484680\">John Waldorf</a>"
                 ],
-                "photo_reference": "Aaw_FcKDinqkqlk4ZoC_8q_vdVvPdUV1gFw9mbwH0FE96o8JZHzUQw79RglxLedwVqbMBXki0DjuVgxa4JWLGKY2HHuIgicm9y9EjuGCE8G9PfZDzGUFNRsr9xSrluzRup5BxGCs5eX2T7o6vG4rf-eVzCDNA5pKH03Us854sY7_j1z7He9H",
+                "photo_reference": "Aaw_FcJxiDkV7jq8dQGAS5RWNeJ5unefxUR6QQbCNW1z9oqr0nmxIf_oLUu78qJzM2LPf1lnBWhBLJCtXd1kumE8EcrcO7YHMiLNN1LeKj02qG5wnRXh09Ktm19869aNugzv0jbn8hGclBcq8_qj-L68sNmeAGnfT62U0oHCVSYb_0HB1ua2",
                 "width": 1440
             },
             {
@@ -3181,7 +3179,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/108727494878431484680\">John Waldorf</a>"
                 ],
-                "photo_reference": "Aaw_FcLgVLl34gWvptVpXbKzwgFUuf3D9FyMhauMDKc95U55Mv_PhXGbHrPwpkRsc9LKc9wiCf33CWjindxjoTfCMeP7R9XLSoqOpUa_lGx1YNaKUffz4cFLqqMhXuBiPwXAhxjf8MqOizMdne7I41bXDWWY-YikC_LmxWGdVQlSG_8mUGHr",
+                "photo_reference": "Aaw_FcI6yyBjwPw1qpfQBRj0tKYyeV2kK28FhSgqz-SBs3s59cA7-2H61VLz6YLVa4sTFOlk0jMdpj9rim3pbUX__a5dMD9naY_1lVOXzR2r4gvwh_SxDTNLuuAzjMSTOw-sRzXJmYrKZ60f6fDMazZBC_Lc2P8Vm-FVhKsxx_yYAhDOmrbi",
                 "width": 5120
             },
             {
@@ -3189,7 +3187,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/108727494878431484680\">John Waldorf</a>"
                 ],
-                "photo_reference": "Aaw_FcKMen8fdh5VqOewS2MnFDlr3nF0OxI3e-AYjlRP15t2MmyEHJvznTkhlnXQldBh5kvZIxUYLtHuLWQXZOL2DOav4B6376KrKu4xki-LaG40FYGGh_sgcgjn-4JIjg6w5FpawLXomkXpJOlyBEYMrDaXLu8tDaFDr6SaFWz9kES6L8Zs",
+                "photo_reference": "Aaw_FcKq-dOnv3VyWfn0-An0Nc2KagXOzyM1ke18dFOSOn_1PrHtLgqQuG9KMaZub28rR3KdnqonKkFTAM32ys92f6qlWSXByqRXza-TgGbomcZ2I8XuWJB8eFkCgxIoTOfaDf_fPpu8ND5Kt3MBXnJNC914b39uglBwZDJel0Qswsc3Hj4I",
                 "width": 1440
             }
         ],
@@ -3204,7 +3202,7 @@
         "utc_offset": 120,
         "vicinity": "Gerlingen-Schillerh\u00f6he"
     },
-    "Heinrich-Heine-H\u00f6he": {
+    {
         "address_components": [
             {
                 "long_name": "28",
@@ -3284,14 +3282,14 @@
             "periods": [
                 {
                     "close": {
-                        "date": "2023-07-20",
-                        "day": 4,
+                        "date": "2023-07-24",
+                        "day": 1,
                         "time": "2359",
                         "truncated": true
                     },
                     "open": {
-                        "date": "2023-07-14",
-                        "day": 5,
+                        "date": "2023-07-18",
+                        "day": 2,
                         "time": "0000",
                         "truncated": true
                     }
@@ -3354,7 +3352,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/105604519321824472366\">Valdet Beqiraj</a>"
                 ],
-                "photo_reference": "Aaw_FcJjVzjvQk4wwiFF13kPYxzw1CSyfLIj4UFjH77LBwQd433LznoWWQQKJK8SqkIdVqDLSRprnRKl5YhsEDd814qN_Oa_6my_6CoGRpkhOhpwVUJCzLvLmJJNcl6H2d5PbiyTYqw92D00EQgIu4i9fCsAmkrJWwDuZaf_HjPOXir05W0",
+                "photo_reference": "Aaw_FcKRWIkg1RnNUQA77nH04rAO1bG-7hpaXdMwes-5rAjJal9eTGhz798ZP5F_RnURJoJZmye7qwS2-iS2e0JcHETu_fqr_mhNLTRvFg7CZIXC-nAqO4GaBHx3y74LFgcRLerfUiTOcJLnG3iGXvwGd2en8JQUCJZxne7nVdp4NlK5uJA",
                 "width": 4032
             },
             {
@@ -3362,7 +3360,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/105604519321824472366\">Valdet Beqiraj</a>"
                 ],
-                "photo_reference": "Aaw_FcIONnIyeVJMvLzevAdDsEmTlQPh09z9T6lYbSYCarKjgThiP2pPYOsoZ1aqn41ed21apo9WvWZA7srRQX_ZP2eBpJ8m4qno6PL1-uWEBTqW8UtsbuZqa7VP6IHghLEKWIiExbjy_4ozHxSqTJR0b2R6PhsWI-A51OgZpODEhQYt-x4",
+                "photo_reference": "Aaw_FcJAIxcDT6ryosOT9ZuWOCueGZcm4CGP5AmI35sAM1tvjla7DcVGy6CcKlr-uGa21cgaIXravkbbNwvkwAD_bejrctAziiu0uPaix2eQqw40ypjoZdyBD4umqDhDrqQVbA-x2GCnXb9_xpE82PXL9PQXugXRscmo-6PzsXbv_8IITjA",
                 "width": 4032
             },
             {
@@ -3370,7 +3368,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/117406753045172953929\">Katarzyna K</a>"
                 ],
-                "photo_reference": "Aaw_FcIRhymNMx28iP7bjRoodwOP8sM511PqFfaRhKBWT6SHfyKXf3VtgIZOihFCpzBjdBVCWLOEf3cQEuV-kva62cSAF6sgZI5H2yFJg2BOqmV54oKWutB-B-P31ae1VgXTBkjNnZStULQDPcoxV7yHVmqmTg_Z-T4u56EX1aLHAAXkp8-v",
+                "photo_reference": "Aaw_FcKgZxqPFhMPY_2KepAAWLtgOXwocyXmUhqfDCI670G4D4Ov9pmRPwEOzKhabLx5aQ-y2oUcU1u_HMRvUbZ6LAtqtd_25pD6h6etezbVGYbwSEdPoZlL_kE73ZpaQeOQUiBBfQmF2XYB3x7FdQcPs8ob7b_c5aqTuKogN8XGkVl_COj3",
                 "width": 4624
             },
             {
@@ -3378,7 +3376,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/109553866022725007867\">Jannik H.</a>"
                 ],
-                "photo_reference": "Aaw_FcK_o9Z2Y7VjjfZHZyq4Im0wy7mcExcdEe6RBCA9UKdJ8hv7-3OqxmhaTF1IbaWjON4zdvaIOVa2FyL7I4742ZPRwUu8phPyy0htPUg7mZ-23ug2-hRobg18bKiGthmUcdX47P5gsAsXNdM3AkCmIerRz36Wy73OkZdDHhbHAcuFd8zh",
+                "photo_reference": "Aaw_FcJ0jW9RWq1LFkaJ19Vg3e6dng6l_INIDxL7c1dxXQj6mlZTcxaOVm4oGc5WgwxCGzUfEcKi2WDZ3TXb0bGbJg5rfbSWGf8GBWoUJeLyYrVPSs8m6Br3K3V3YWZrwSvVE7Ja12esICZMdUcwj1nw0jjn6uxdB63u5L5uwmcYSX4OMIPo",
                 "width": 3024
             },
             {
@@ -3386,7 +3384,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/110363163509324114744\">Simon Linker</a>"
                 ],
-                "photo_reference": "Aaw_FcLPeep7USXeVcbTciQ1BZ5l_lGDFazZhN9ODvqBEVuainJsKB1ccyAdYWRYgJ9MxowLbAu6w1LE3u_J4fj7SH6nTzyCvAEp5PXTDUwvDT36kSD3LL6O1PYzcQY8gmUG6MG6ZmVaSOJFb0JVLUV-AyGvYItjiRLNi4oeFpxrk51pjD3Z",
+                "photo_reference": "Aaw_FcJPMVvHF8YMX0xgxpFTHxQNgEXbaY-wqAjVYD4U_ANy3acd1iOefdrSx73NqM05ZPAvR7DyWlJ110HRAW4yqG8ZFRweBBIH7tkgyZh8ItUfWj8kGvNb0n_y6P3BHiFX38RkB_MJWbZtGJq9CJKPhk0tb9hhJPpF-tMPG3izWXFAoOPu",
                 "width": 4608
             },
             {
@@ -3394,7 +3392,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/112653384898029124644\">Sebastian Martin</a>"
                 ],
-                "photo_reference": "Aaw_FcINit7rfW4EBBy173RPHxLkLJb8WtUnvWc42mHcWE5H15TFqtM9U5TXufXyUlm9NwDPQOt8m3QveXXkrOkkWMcP6lzy9bT-hW0_pLWVG7D1Bs3lj9bviOQLZb_e5MIftA9x3GFQykQB-4yniaC6j3TmP3RoO9W7V3QWhG79NZzSwu95",
+                "photo_reference": "Aaw_FcIendMcKHGWp7bAB9dxDVEA4jF2oRVE5hAacs51hHoHPv3aIsCpkT6JHN3Uq78NXIAiE0ly3n6rzr2NXof8sFk-jO0GQ44jWpFSRJAK-cfzLqcQ-tILQBaCjdehRA48MCGIC4q2Ckm8Hde5XABtwpCQqDp6saJ7TLq71hIIXHENjCot",
                 "width": 3188
             },
             {
@@ -3402,7 +3400,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/110363163509324114744\">Simon Linker</a>"
                 ],
-                "photo_reference": "Aaw_FcIGjfCP5aIsQoA02UrAZKsm3RiuJ__fRUie0CODuKv8SkIzIKoKfLVqFW0CgG3e9G0W8kVMt16VZU4SLKkT8gCZU9_SVEg93NCmvPyJarm6-s1GNVxKH7K7v-CvS9-lmZqyXXg73ZyDfJs-mjxfJLe1YYAYoOvirKkJyqi9NcwKeSOA",
+                "photo_reference": "Aaw_FcJMwDYiTANty0b09O5_soowT8ACh5a1uwCoEWyNdK0_awmFUEAdq70HIdUlFaBHdWMneTqWlXUCrH7l82DzATp_0XwMuGkxA275Thwsqs7mMURO1soq3spX8YUHI9r9NWPpdKrymNBBSr6tf1ggSmzD5YlX7zNL1sxhHf4EtRVQUZ5h",
                 "width": 4608
             },
             {
@@ -3410,7 +3408,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/105604519321824472366\">Valdet Beqiraj</a>"
                 ],
-                "photo_reference": "Aaw_FcJ7t1tA2VezDV9bSGj4ALUdTFh4B1k6ImpF4rPWqZFjJ8WD0EyK2uzw9f4JdpXmTDJ1OFNHHEaf5vwNe1eIOi_LfOBKD_PVSzH_3ovh0_VCGjZ3p3vTQcsAC3ql1KK5QdL5KX6TLI3eTihzcUX2rKL3DsiFV_zthpY7sqqMV5cq6uc",
+                "photo_reference": "Aaw_FcKUwJ0UG0y0mc6itYRZeY9yDX0MMqTd03kwgCwHteG_dbrwH69gUBauHtrb_XAYVqUlzjVXkrfvcobfosZCMYr3kxujvh8fPIV75cy2ixGBvzEp__Q_t-NeBCLMab_rH6yr1UyTixziThikM6M8bkQStMvZMHgI5uLGDI_m6bJmSxE",
                 "width": 2268
             },
             {
@@ -3418,7 +3416,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/105604519321824472366\">Valdet Beqiraj</a>"
                 ],
-                "photo_reference": "Aaw_FcJgP72soRoPLhxkuMemDNU0RAn3awK3s00sotmJVZLCpa0DdrzClQSVwvBf_6vsB-SaCGHdT8BE7pLwRZou9BJAZNyudkvZci_M128hSj3_lsM4vwxjxqgiUAS-tmY9vsDNH6J-9NWfryoe34eq-mRWa0Dqt94FIbamv21HLrozQck",
+                "photo_reference": "Aaw_FcIK6BF4MWbfAtvMxiGfsz4W_83AX4YGrlSqaK3jqpGamhRVO4Mz2X44lS83LzIUDJjQJFFDBw3E385oc0AyGZLDZ4eb5H3vJAgmmd71xmxaSWnNPHmpHDLl7R88LNW9xQBtqjNonoN1CSvbkLioFP3VXaJE70X-YxYb0Pgtb0kr8NU",
                 "width": 4032
             },
             {
@@ -3426,7 +3424,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/112653384898029124644\">Sebastian Martin</a>"
                 ],
-                "photo_reference": "Aaw_FcJqY91kkNQqR-MQlhXe-dA6Y5gOl7zgclQ1ZATPRXQQ4Yu_808MPnJt4W6P2FRwhnEfyQ02awT44yPQHFi5evL2fLQAGbXNYIPXJgX2iB5UV3lhWvKT4RxMvzPW5ovddLk00jm_lDAuYTaD396sJ-qB0uA4ta8b4yajvRpJdyzLeY16",
+                "photo_reference": "Aaw_FcK00HXjIOntrj9QJMxwbDRKolGtbSWez-2y2D_BgwvTZzscRHb29USXh_QkWNj04qt-BYAw5xYe2vnNzjY8hoqTCiNFtOIogPKVddJmkjhem645SPyJSX_O-29zGrsN6f-e0WROcQFnq-N8_9hZjzCCoqC7FeLg2EmDPV_3w_R3XS8w",
                 "width": 8384
             }
         ],
@@ -3511,7 +3509,7 @@
         "website": "https://www.stuttgart.de/vv/adresse/heinrich-heine-hoehe.php",
         "wheelchair_accessible_entrance": true
     },
-    "Birkacher Feld": {
+    {
         "address_components": [
             {
                 "long_name": "Birkach",
@@ -3577,14 +3575,14 @@
             "periods": [
                 {
                     "close": {
-                        "date": "2023-07-20",
-                        "day": 4,
+                        "date": "2023-07-24",
+                        "day": 1,
                         "time": "2359",
                         "truncated": true
                     },
                     "open": {
-                        "date": "2023-07-14",
-                        "day": 5,
+                        "date": "2023-07-18",
+                        "day": 2,
                         "time": "0000",
                         "truncated": true
                     }
@@ -3647,7 +3645,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/112544560875863040028\">Endless Voyager</a>"
                 ],
-                "photo_reference": "Aaw_FcLCKOI-X8Qsv8hX0kyVGNgsrmQYm4PR7PcXLYb9vRxBBplGAaKUrzKAP8LZAlhjC1nZGMiPJbqpBZ-mt5X6ZOOivQsGh6nlrXmKM2TsS4XY_rkTQ9bVM_RSgNvrJlQu19t0kdyYPV3rDzMwtRNjy_z97fUMiAUiFTGBf4UAlTuaDGVa",
+                "photo_reference": "Aaw_FcJDFFRaFq2wF13TWTPcj5iVL5BTA8VmRYOcywFiW8ZfXEpZzu963qMAH4ylEbkT8RH9UicibfqZwqjIg_xcgjPN3RYWLjG-ccSvZf7rqi4urOa04L2nuvShK73vrdllpKBwMGBaMp3Usgr4cBT9BA7DEVxvlRgsDHYIkM7kLGKVQztL",
                 "width": 4624
             },
             {
@@ -3655,7 +3653,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/117870075881434949060\">Max Kuhn</a>"
                 ],
-                "photo_reference": "Aaw_FcIzFRzZBXZQoGKghQcnnJIyi6aNB-ChjI-fyhoUXEeQiEQxaW5lwSKIzYef2eIp10ia8VY6cTNGsqzDf6PkvCV4tzSGb2B-NS9cXiQYj7mBkQHUiN9hA5wYtLGQP-FWex8U9mAF1uzYPYB-tlD24UYc1lQ0g8Yki6Sxq3rTVH7f4MOU",
+                "photo_reference": "Aaw_FcLwXTP_fc-fiSqihdRDPhI9dUEwiPlKqkJ1jWQEbZah_CsrlW6U0FvXq_Hw8dONJubIXMjC4XlC_Sy-r4rSEFl6lnrdGnS7Z1rsXZNuhZgem_UGDzVRlmubC4BOTfKR-kY91eCl-hPPyS6el_RgP_4gvE32rCLjWN86zbycbdMUYrIF",
                 "width": 4624
             },
             {
@@ -3663,7 +3661,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/109745956480478948356\">Arnold Harter</a>"
                 ],
-                "photo_reference": "Aaw_FcJyYzObEeN_ztIC40tTP117UUTMj4Z8JJRXPnd5LTcw3Rp9HFUII3gR-7830EPdBuCtqrtVk2QGv6MO4-ue6w-HJ1WtkhdV162NlCb0be_oxhJt0EMf5SZJDXHpo6meKxHRFED3DoojAij8axfQWO2Siep5cZL_GfXRK3pDp9byQX7R",
+                "photo_reference": "Aaw_FcLcdIXV2hMjR6U9-awguH652Hw84gJbkU7LahYebQ2FVJi5kMei8IGSmjT-EBWioscd7pN0Po2NCM8ey8pMw8cqTdERRofDKB704Sg_SWDEDfSIIlB2XRd6Vsk4qmjyQVBoxxL9au-g1zg5h8zHVlClHrsrwf6nfqjZY5e02aEIoWXv",
                 "width": 4032
             },
             {
@@ -3671,7 +3669,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/115292387814673100061\">Muhammad Shahid</a>"
                 ],
-                "photo_reference": "Aaw_FcJRWskWpCKiJbwsolrwKGPUuO_JJqCM4y-2MNBmqVwek7yBNzMpkZSNHJclRDLcRQi_QbxX36oo0ODQAFrmbapcgVlrTj0E07UJ_7KJlVz7HFzDv-z123H9jdYHDmzIxLZsGceiutXkOiQ-FV9-DpIhhMZ4-PqomsUy8caACBc16af1",
+                "photo_reference": "Aaw_FcIP7dx3uO-L94REibExQq0m8znuUTbVvrywuEEBpOwp5ImvVXYsNGzRxz6Ft7pXEcVYSz4DKE4svM-B6GPgpXOQR0paWoU5MW_egpwz7e6ISaf6s7GrR_d7h1HLcJNAkd8_LqytWrsmPKxqbKGGlZJ02qRLO__72rvWKqZYrUkRjwo8",
                 "width": 4032
             },
             {
@@ -3679,7 +3677,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/109745956480478948356\">Arnold Harter</a>"
                 ],
-                "photo_reference": "Aaw_FcJx9JtZ5khtHogS4taJd_DRaa876BjLj1LxIRwMP4sSzQnPXNWV5IwEyRrrFrBXCwLT1ICVJo8bVu1MNEnuHbnHhMhhm6A6h9T3Ut5VPLw6edE8OgVClntNmaHlmEvwfvBzHV5Ni9kXQsKTSkRZEIjdOdQDbEf2JTBLLnaDgLov9LS2",
+                "photo_reference": "Aaw_FcIrrhZaJjRblMWVbMgVuHO9T1cIJEmzkM12NVdcCczS7iR466v_SrknOAeqtVUoKjDZis2fP8tYStYHLu-ial8oB3rgf6CPRQVTW5BvsO2yhzuVZeQFJSje1AT4VrQvOpI-L6gCAZ_SVNYMdcB9MCI1F7MF2filbiMbgQLEy5qDtRl2",
                 "width": 2647
             },
             {
@@ -3687,7 +3685,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/111856657447610644489\">HMD HMD</a>"
                 ],
-                "photo_reference": "Aaw_FcJu-lq_kzOrF_lHZhQ73T9bq8ot5t4StqS0DOhMTdk7125NPIm84Wrq3oxjWRJ9dHhnbgJEhM2kLahsExjU_ATie01nW2ZD95AYnb7yG6lQn02UhsZHKuwSC8usmbkR02JejLikAg5SyDWbN-3HXbeLMtke4G5K9u-nva_IrXjJDEKF",
+                "photo_reference": "Aaw_FcIAUsDGFUh_6eyOw2oDF1qMe18AvTA-TV5b41zjDAi-aZgh_ZueGmP3VRMoDac2u853-M4VsuLETDohKLia4033YdhTM6BNGUSWm_tJyodw1tovGiXYpL0YrEmgmkiDS_BLH5A5YGuE3-nfkk5YZtPoPZF2YEDO613jtSegQKtUt-in",
                 "width": 4032
             },
             {
@@ -3695,7 +3693,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/102443545588038289553\">Andrej Vysochanski</a>"
                 ],
-                "photo_reference": "Aaw_FcKntWWFb0QgX6RqibEeFU6JIaKeHbFx8LWT_kEmVIaFwjZBjQZ7r3Iu8NJdQnjH9onnQU3EhYVh8C4ziaTVGPND_J3BjYd4H-QBWtzSafRRfp_R2doICFSddc84W-9HqYDzMRXF7RLU3KUObd2GjD2mBhQ_DKW9Cpg72W_OUzZq6vmJ",
+                "photo_reference": "Aaw_FcJ8R_jMwE0hrnElci6OR6iQHwBjIPh9M3UT-xt0SdaHA1qgRs3ZID9gSCiAvBrDZkySRikJvAxryPv_H5FmOG7Sf2-_lno7SIsQ8NWVkEIa7O-8WKX9Ok2NTUei-TCKrBJziQNXks0iI4T3Lfo-y0rZMUWzQqdkzVOH3mAaQxw8w2m6",
                 "width": 3024
             },
             {
@@ -3703,7 +3701,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/101278403454609611530\">OP schwarz</a>"
                 ],
-                "photo_reference": "Aaw_FcKHTo9wALyHHgo5ymzDUDsajfy1bC9FwCa6mBZm98eN_yQfj6KdGuROVUGAm8AFOgxd54QEd594V0HgS7IBGXlVeoxlBBmv6Htk1zqW2you8ubZH6MMskPsfgA58efDErXb0Bf_A6T6oFPhu4QNK6kVm6rbdp-C2gCAYqXD2cQ1M6w",
+                "photo_reference": "Aaw_FcKGRYTWG1SBIIMw9KyWFoFxW1nk_8ATbJCJdXMZGtQD_pxT5daRwbBhSg_7SbVjrjVVzHWDKsIZUtzdIw0JNzYoBc_3IoRjHSHqUCp6ixvsQsAZH5osfcAR6v06abK_U8AXjzPiifQtSDLvJWsKvpDhuzLZ-JtdYS0WojuAfmIPlvs",
                 "width": 4000
             },
             {
@@ -3711,7 +3709,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/115292387814673100061\">Muhammad Shahid</a>"
                 ],
-                "photo_reference": "Aaw_FcJYtQVTcd1XFWSf25o0pYl6YaV6Pjlr2krFn5JNxoMAGHy3Tw3MEvUvP2pQx-6v9CgsnhBE0ZZn314zcIVf5cFQ4x5tIha2ORKme1SOuP93G2aft0LWHH6bu5ItWHbGw4Au9Za5e_F-45AncAOc8evdvJwdG7cDuNWtBeg5oGLRGV4E",
+                "photo_reference": "Aaw_FcLrXytbzhe4LgDyLr12m2-dQdgrE0D9EHgKf9uK2GgmAVnSKERv1djkpOXqqbikEdOrf5TP6We4bHkFoDzi9yP1r4QqHYxiqIeiTRgYE17q7RukEokOBML9IKE44a3U1zpRIAgHbg5AeAkOcEU8YVpXQBY6EUDKAIJbVm76fhPcyvhX",
                 "width": 4032
             },
             {
@@ -3719,7 +3717,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/105998569033186033097\">Sorin Ionut</a>"
                 ],
-                "photo_reference": "Aaw_FcLT5B_UG1xktKAKU-LvlaOutUFxekFSSJa1B57XnHUzjI1z_u6PF6Ntv9mID5mDasqcESSINeSq4rCfHsHFOIf8Xs-gAFUXmmfbeo2HZOdZrU2b4Sb4IWnDRZyqmVyMvNQx48kl1I30x-vXGgYv8LehiY9fqriLpU5qFh79Gjs_CiGa",
+                "photo_reference": "Aaw_FcLgthVHYsbfGVBt3bh_1JL-ENd3u1hNbHn1tn2Cs-DLqQGrcG5KCNYxG8Gt4lRFH-WOYRTyTH4rEX-eiHZEKLAEkFxUKhRiaRbD6EHmampdMwTNMwMu91xF882Oe1Hnn7ZOlJxJ2ypzkrN-CH2jyBbVMd10V1tfoSmYS4S10Og3R9IH",
                 "width": 2752
             }
         ],
@@ -3803,7 +3801,7 @@
         "vicinity": "Stuttgart",
         "wheelchair_accessible_entrance": true
     },
-    "Karlsh\u00f6he": {
+    {
         "address_components": [
             {
                 "long_name": "Stuttgart",
@@ -3869,14 +3867,14 @@
             "periods": [
                 {
                     "close": {
-                        "date": "2023-07-20",
-                        "day": 4,
+                        "date": "2023-07-24",
+                        "day": 1,
                         "time": "2359",
                         "truncated": true
                     },
                     "open": {
-                        "date": "2023-07-14",
-                        "day": 5,
+                        "date": "2023-07-18",
+                        "day": 2,
                         "time": "0000",
                         "truncated": true
                     }
@@ -3943,7 +3941,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/112653858308433302081\">Heiko Grassmann</a>"
                 ],
-                "photo_reference": "Aaw_FcIQUeWR3AB3_gs139RW7ZHY0WLeMJY-nngCQ1rvSHGVcqGACzOzTEeeLWJOkRgKWNtzl_laH_c0aMGJuPn6lKp5nG7z0CyRj_2fwLuy9gI6I_jtcPALZIvmHJcBBkSvY778hd_S-2uDptrTolCu2zB6ZyS12avRmHeYDshA5olx4x2K",
+                "photo_reference": "Aaw_FcJc4c7FCKWwNwt0MuRnL9fq0V0qEytKm8hmXBES170Gohek7u_HWZhJDT847EyAjzvfSEuRDk-x29fsp7LQ_TQnupaTxMql1Y5YR8NXPT8_LvPAJSxaG4Rul8-I1Vapovc9njZsRFR988jOAXCiiHw_2NuewJXtqkefCoRcSJQFO8Tg",
                 "width": 4032
             },
             {
@@ -3951,7 +3949,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/106090204373597337609\">Alexander K\u00e4ppler</a>"
                 ],
-                "photo_reference": "Aaw_FcLkBujuFcDrMo0kY0LtF3G1aEzhbSxET4IKzM1QhbZHb0P76eLfBmDl6-Cf6UWKilETHCewPd2twEJgPaidQ_QqTc_BXi5sy1hpY8YUidRmsJwddK78pBmlkgGiZodJ75AgDdWx61TmwY6CduonpR9M4d1fIUkNdvPORKktKaQbc-zj",
+                "photo_reference": "Aaw_FcInh9Seua8XYXcc6uS654kzFNlYnvFCxSBhCn8iCizrA6r1mQ_DvlJ3or4kBEq7U2kShJt2D7NPgX4ekjsLMaVcvKSiSQPRqj9o00Ize74RWxpcY98v-0hIeXrq1AUBV0FzYOXWlpgW-TntsOiiJ52h__rH5qBuxp3rQO66XHEu3f1W",
                 "width": 3968
             },
             {
@@ -3959,7 +3957,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/102540775364655054504\">Olga Fieberg</a>"
                 ],
-                "photo_reference": "Aaw_FcKTP5nHaURAcRpiYMxYorospznHqPI33t6hgWbxIYw6ADPyP-yuRY4U2vbCiOtwNjxDuhDFome7P2GuMbZszWZIpNYrI-6yxUGvB-N5CDnv2Emf0pVmcFvSc6BoTvePt3xTY65IdEoMUGW_CcB1_ZvcuPd-jbmghu_6l1tYMIIyK783",
+                "photo_reference": "Aaw_FcL4vh1nTLXhwGKBCXy-_8gvy0LdH1d-MbDSUtcTY5fgNUFaeDj3sLhrjuylMzO54h4qpQkkUoZ_K3DVGoI8cMppFqp3sItQrLOdABz6iukVCrSfl7xbNXT8LU-CcN4KGMr52pvhvQuDBvdHOwTHOa5s0cHFlhdy9SsFr8Pi8RKzB5l0",
                 "width": 4608
             },
             {
@@ -3967,7 +3965,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/105470282258893774749\">Luis Antonio Ram\u00edrez Mart\u00ednez</a>"
                 ],
-                "photo_reference": "Aaw_FcIpjwQKZDd3DhDSmyAeSR5B5gD4TdW1xfq9jHv20yiky2a2MFo5koHXKCaERgDV8v3HQ0c3y85GjSpi0cw8qYoJ1JvBZevfXoCqVhmL9IzEg4ToJSeYeQBpCF-N8nm29xhQXSdmXYzXkhVwGiE1hwq2X10qv842Gd3Z8mycLoria1oQ",
+                "photo_reference": "Aaw_FcJ7t3bGhtLetUQmtwjlQI-hm9oGeR7RlF4UMbG7uioR1n1CHcgYsddQm0Ti7HuMLYNeVwSWv1Wj4n42qorDV2GGPKOCDImapdxy-jH6aqG4sXtTIWZjHIyxuvHlysgwUh0RXFIiRU7Z0gTI9kio_azFLuxL8Eu1ZaW39wv7fCbhKd8A",
                 "width": 4338
             },
             {
@@ -3975,7 +3973,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/100924676960644944580\">\u0410R. MeGa.</a>"
                 ],
-                "photo_reference": "Aaw_FcK5nuOKkKDG4kp5a6iUGrR1dymyIneXAX1h5tHd1BQeCnv7kxhmss-vUnYzN-VmYfWJmJuwFdlZ1kaJdyA21zoB0O5oef2RpUoDhgUtcSOiB-U3QRRHbYvOvx7G0AM1fSLUPkta6AC6e_JnrzyZrf1XAFkyzWQTt3viVpHvsQT2Jg7S",
+                "photo_reference": "Aaw_FcIMUxGrq8KhYDDH2G5450rCpQUiUllGeQyN6Q2VGukq4lf9UNFr9EP-0MRvO8_s7V00keG9YJSvcg-9LkmkzPpUcrLc4sEw5d3pBTjsZ2qrmv2V2Q1ynqKCYoL0_-M4zVY-RIJdbjtxTYPqIJHZ4CJkmbNUry8ZLS0Ozgao2fAMed8M",
                 "width": 4080
             },
             {
@@ -3983,23 +3981,23 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/116650151422863147013\">Patrick \u201cyvanmuller683\u201d Seeger</a>"
                 ],
-                "photo_reference": "Aaw_FcJGoaAZLKKhIXigZxduntFQ8sK-xnXOnIxjX8jeR_MpSPfKNDZ1jpnr2b35XITKnRmD40ohDbl0k2YAOXiK4V3VE69cQ1tRjxZrhzgFR-I2hCSvSeESOiEBxkPCKYtfgrQtKpVB0OEYPP5kCzusmGPHx9YbFkgc52QEc9moSBOR473t",
+                "photo_reference": "Aaw_FcLC3LQ19sn-v0wG8RgNhd94sEeWyWrohni0sjPpkQt63CW6DRw7XUxhVEjDMYsHK2-VlkKUSL3q_TErMZADCEWBmJ0RlmJhGJLYZOdnsK-0Jv_WvQAA0PwJOTXU4ZVkn25-8rnneAbABlTZLvtX49LYz-W6s9wm6egt5KSjPocECup7",
                 "width": 3648
             },
             {
-                "height": 4288,
+                "height": 3024,
                 "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/117603188939995023803\">Simona Puglisi</a>"
+                    "<a href=\"https://maps.google.com/maps/contrib/105958758741790590522\">Bibi Taechanan</a>"
                 ],
-                "photo_reference": "Aaw_FcJtK6Bi5XB7fs5GQvR5V7cLANMC5MmDss_STw1veAZRrMRcWhXqpgl-vcxY0ke5Sfwka-9imkWs2F0KGhtIogG2MeA1Vr2oKoIiz_92IifGAkKBmBT-8iCGDLurlqWfJ49Of2ATmyNte8XRe17KF-BbbMaSCMVRV4WZKmQLgyXdf5UC",
-                "width": 2848
+                "photo_reference": "Aaw_FcI4Xxc5wO1kygXpEcqJQWU6BV5zmksBZHbW8E0wEmKo5pcdhnr2K24COLXi5y9cUt4EE16iMqAqUMLu3WWp3HXaseEyqkn2URuLdXRsxbTEDrDb0IngWUIRUAWmiE71AfR9KNp23secDyotikkv8MBZ03wuufqtQKur99NviPD-NNA",
+                "width": 4032
             },
             {
                 "height": 4032,
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/101374851935196845729\">Lourdes</a>"
                 ],
-                "photo_reference": "Aaw_FcIqyLNXri1BMfwpG46ZHG9MQ3x9IGVPfKD5y1BYGH8ftyRiob8-IZJAN9ByzMzf8HADxTokcHiG4siDPCnItSD8i_bdeDzoDfzgqvLaiHwHp5Hi97x2N1T9AQ0clG35Hyxm75fN1gkJ_FUDN-9fc5cjLiz8ENMNl6Ltvpo5I30IEi3o",
+                "photo_reference": "Aaw_FcKgis48natfT8vKLNwLcQYoQcJ9S9RcnFH-7vzJhcy3cEHrB3maLq2NBvTT0bFYg3mxbSnoc9weijUKGYj3Uktaznst1CJllgle8X0CblHr8bfmqh6PbcNAbjiBoqWLCjHyorVsJggDs9uEjhd6s1aYlCeWfndEBcQmyv3cgtgy-UwV",
                 "width": 3024
             },
             {
@@ -4007,7 +4005,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/104011241939461592960\">Gerhard Wlk</a>"
                 ],
-                "photo_reference": "Aaw_FcIFnuHVd1W3iNVusNaqOEK-D5hstHmUxk2Jk44V55Jpzlrxhm1T4WLcj_w9pspVeCXvYcieMoi9U7aKuIZJPlQGFpcgU_obs7s79aoxQ5K2_ZsYyBfv_s0Pu79OiW8c5WEvihBOJpFR8tbBGg5XXPD5a4QMKoB0FX1VUyQqhq33m8vy",
+                "photo_reference": "Aaw_FcI6-RdnHsqFdHEX2SFkv6tFhXFnUKWj75s6qcQeFlc8mkxO3LUCrJ992-PczL-EjCDa0hLbXwcGTYQAZQ3DFTgfVIGHCP7WAY-N2f69DH4P5_ImP1aNTLx9CUMH-G_LcD8vS42dsy9diFGpuyTJXtdJj6PNku-hY-chSDP0r2d9F-85",
                 "width": 4608
             },
             {
@@ -4015,7 +4013,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/116219675297377425472\">Harry Van den Hirsch</a>"
                 ],
-                "photo_reference": "Aaw_FcIGFPdG92oBatG3eJpl6oPL9QVVNBLE_cDGOaE8iHYTRrRMMBp8XhmwCoy7d54Kip9x8BByuH6d_mbiwZL3Wa2vfAJ8AzpttVqin09n2b7niOSmKsguQ1HLDe9Mch-gLIuk29_30I9mWDPcRDxoqPHHpkYbLZ-bHpuCT2znAM2Qc1Su",
+                "photo_reference": "Aaw_FcJphrr-_VRKyJdZ4MmW-DmYgZqk1wmBxfZEQZ10N-wNkMqu6eLE9G8G4MvQdmp6Um2smnXyEHMSCSiW_W_B3LDVXYFICRiCZgTy8IskCDI2_EiiMWtdglmdWRv9t0mcZ-U7fBNJ8o_BaFpwI_sS16xXnAEAUWF2RcvdhiyiXjk2s6FC",
                 "width": 3024
             }
         ],
@@ -4095,13 +4093,13 @@
             "establishment"
         ],
         "url": "https://maps.google.com/?cid=15234373616296714038",
-        "user_ratings_total": 2011,
+        "user_ratings_total": 2017,
         "utc_offset": 120,
         "vicinity": "Stuttgart",
         "website": "https://www.stuttgart-tourist.de/a-karlshoehe-stuttgart",
         "wheelchair_accessible_entrance": true
     },
-    "Aussichtspunkt am Flughafen Stuttgart": {
+    {
         "address_components": [
             {
                 "long_name": "Filderstadt",
@@ -4158,14 +4156,14 @@
             "periods": [
                 {
                     "close": {
-                        "date": "2023-07-20",
-                        "day": 4,
+                        "date": "2023-07-24",
+                        "day": 1,
                         "time": "2359",
                         "truncated": true
                     },
                     "open": {
-                        "date": "2023-07-14",
-                        "day": 5,
+                        "date": "2023-07-18",
+                        "day": 2,
                         "time": "0000",
                         "truncated": true
                     }
@@ -4228,7 +4226,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/108723282141729042777\">Julian Gondring</a>"
                 ],
-                "photo_reference": "Aaw_FcK_5DKTl9WgLuGIBmOSzkCCKTzVAvE9aQgS0EPngtORQdt4tbGLJm3sfk__myo5PDjstcDamxOXxYV1lTvZQ0uL_xCikAGV6GC66EWx1reKVqy_W-mAanQxWqq0WWrVy0Va4-ao5zhU4HRAVBZ0zeqhn0vvcO4vHbf-yHBuniuPSpzS",
+                "photo_reference": "Aaw_FcJc0lSRypbxUsA64_3nAG4IdMLLIugmYsFqOWXXiPraFKizuNsWOSjkQVhyBSw5gVDzb4k6oJbhVXb3_ojdVR23LD9DdcR4zC-jdYAaKzFyQHazLSfDpWFeMoFSNX8lsYwvyz7waFSW8IkuFUDEjaivLEOqI6MrJ5UQl1LTdVZfEC6F",
                 "width": 4608
             },
             {
@@ -4236,31 +4234,31 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/115981848979612250697\">Denis Wagner</a>"
                 ],
-                "photo_reference": "Aaw_FcJc1Y3jtCwuOfdElLjCN6ejzq5kBof9MszJXSzFHLnyEYqvfxuPZ7_48KCED4v3t5nQ4d0jzUlPInjQYe7U90UMYpojA1n82yddTrn5CMBEFp3Wfy9RvJm0tw2zVSWoP3FYdDjAsd0pun6yA4IO7TI4sISfQTsml_tI1pIEK3u9bAxS",
+                "photo_reference": "Aaw_FcIFCNIJUhGv53KdgdA6zmsDvy6J2HdmXpILLURiHOZKxWd4eH9-_YGCYDc9ukBbhaFABxm0-u8Vytm1i1d4KNEZYy8mr0TeLLiw0-Ggr4-cjj2kDEP8-XPT2UR4WBbq0mRQ38SPZlzA75t6UExELtGobFBHr09Ye7ShM6BDgYFzJfed",
                 "width": 4624
-            },
-            {
-                "height": 1980,
-                "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/113067321594372578775\">Henriette Bayer</a>"
-                ],
-                "photo_reference": "Aaw_FcLy4Cn0Q0U7SLC5ZRvv2FZ9iUEi2ltsJMaZ7Z3V2mV3TiAyg9Ryj-wsTvFj7B8j5XW0cBpJ5mmMZWtCWp-iIU-olb_1M6e5_LyrMH06MABI2R22vDKOT9YTNitJVP9VjamUNbbS2euDXk9f02b4u_iM-xe_22T7Hjt3r4BKVAQzseoe",
-                "width": 3520
             },
             {
                 "height": 4000,
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/115952253936211730896\">Melanie Ziegler</a>"
                 ],
-                "photo_reference": "Aaw_FcJyANRlYoLuTbvq9aXYflw8kSSCZ7D58bB5xBqb-nWPlPam2Y_yZwl-DgKkEisvYaNVZ0ZFEwP_xBNE0QgZfkSzZBRYO9Qu9Xnwl-tbu_ijypjnVMzVPVODwJJPyvTjmIeBzJzQzkf8UuQzl6IMLFTbpdiIZpHVd7U0H2clwDGP6aqX",
+                "photo_reference": "Aaw_FcLrh5yPYQpxYmiuSiw5uNw8qlIJqTGbRhxSw3TjMhvx-h5thGSKh6Pii4nvhFcMa3Cmv4HP4tu9YF3nnUYDNb8gql3XhTilMTn9MCqZAG12Ax0Ej1m21HOHT_m41HbRcLlGOZV11okH5mvaeIyoDBPwaewvwNkgiArmG55y_WlsIKHY",
                 "width": 6000
+            },
+            {
+                "height": 1980,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113067321594372578775\">Henriette Bayer</a>"
+                ],
+                "photo_reference": "Aaw_FcILxiaz-uJhlNFwZRzmLtYKNAvp-UZqmYvtMrYmGFgsTjrRT3ZRKY1QgvSBs2ACChkaIX3M0UJCJX2H-memf9zhajb8WET4MfVA2fisJXK1MFFgiqGizgCzmNcNUpsLWampm59Ksqew_zlUjvtSWi3N_jSWXIGjqXoLVJCistX0hHjT",
+                "width": 3520
             },
             {
                 "height": 3468,
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/115981848979612250697\">Denis Wagner</a>"
                 ],
-                "photo_reference": "Aaw_FcLTvD8XGLVwRnzfmHFLSA-YkUjOSTXxXmzp1BOIIoYbQ3rGhiA6CxnNvd2rqixq1P4NxeCdWDjUQlZsPgBn_78xm4yzvl-xn4yxUqA_PfEHZgk8_IxeK0a58xJUykSHzyxJJdFLM_7-yXXgfuVsaxfgLciD11WVYHB1KF4WTFvLMFaK",
+                "photo_reference": "Aaw_FcLock06L0S7mbiDJ-t6UD3L8EBocIs43XosetjWXod8zUgSSRf3QnDxWqPD70dizIS5u2jxe7_gzpUinGj_S8GqP1ZIwCe9Tywm4zW54S0rhn2pGt4g7jQ34FC-4G1inARP2q7nPplbNtRY6xU_qqybDnxYl4Rf6E3EFvexOQmeFNg2",
                 "width": 4624
             },
             {
@@ -4268,23 +4266,15 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/109790873215168399042\">Tobias M.</a>"
                 ],
-                "photo_reference": "Aaw_FcLDOn3Z7T5pmxSc3mdafTwO1lw2i1VQHh108URWYh7woKjWXdkHEuMxhQWRMLmUtKiFSaZprld-uHqGQFn1xEoTVHaSEQg2XVymdFqwilkX4ZmIOj_ZmvnEwDFN_dd5mSJY_2Rgbowmskwslr2FAWUds3zVwWlA1xky_tBT1K6F52l9",
+                "photo_reference": "Aaw_FcIQnwHkFfVH37285QzAUzjSz_uqxPBQfi5Q19zEYioRFvt2GfUt-sVDCrwYqvO--tF9TpTb_GNwuhzNrCm6ZzDrZTY45qb5lx5dvF0-uiVW1ps97n_eB-mCcP8vpHRqoiHl67Lmz_X8pve-ia79K4KpSDc4N5iuRVWLxGiQh9LDODGo",
                 "width": 6016
-            },
-            {
-                "height": 4000,
-                "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/115952253936211730896\">Melanie Ziegler</a>"
-                ],
-                "photo_reference": "Aaw_FcIziNtSjmORIo_7GPlik9JxjiTqBQzCyBVtDNXH-3hYQHqhA8u9YwAvGTaKoGMQ_KdzlAwBcxspl99H_W_a83LUDWDNq5DqUuIJ9_Yv3I6eH63GKgnXNRNtH4ozNZObUaDmcPisk8feobkwY_6g3GJ4uaa80Q586Yq93lMu-nPxhgN3",
-                "width": 6000
             },
             {
                 "height": 3024,
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/110961503512977270589\">Carsten W.</a>"
                 ],
-                "photo_reference": "Aaw_FcLvWF-BZbru6HAxNASVvwoy3tn8LYM8JnWqdyWkDLNhRXJDgW4mhZK3-aI3XQ2jPaqOtC82JwL_UNm2ggd2JGxJ6Q_sT-yvraS9i2fvXlYyfO7mQqAmCkiZeDrYz_bPcr3QU6DZMh2OI-QXQwKuR4QutmN_T4HgPUVnEKD5juKmmHh1",
+                "photo_reference": "Aaw_FcInWok2WXv4GwXHp-GAszyKbEg_yw-U3UjWvqm0Qh-6WPZppsSrxUQrCThnqYof158ZXNyHsIREoo1m1hmd4zLujsMZ31_gndsUhPElOHSPEzqhbGC9IhQJXMyLZaVha4eMlADvSLJf5HFPK_5lX9Sa_YjFXC-dVeMlN7qAiLAfbHPA",
                 "width": 4032
             },
             {
@@ -4292,7 +4282,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/115981848979612250697\">Denis Wagner</a>"
                 ],
-                "photo_reference": "Aaw_FcI0UTqqHu8mQy6E8NAcU0AfISAQY7dqGNFGUZN46KFizOYqNRQ21N_7OFOuU20j7Sn9QyIO7jpnJqQ7j5zLxqKgHONLYP_ECbbppSZEbx-PhywIJ8VT-vNMkhO94_XnMFIDxp_Ri8g-c0r6bt6EZXEJBw1cfh2o2SH7cGSS0Ya_wWIk",
+                "photo_reference": "Aaw_FcLeCx6PmzISG_NOMGDWFfSUyAl1pcZfD-TRr49nf6hXVzJAyCcqr1wujYx9znr8t4C17XfIv0Rq-1gult5kCKGQ0CRM2HttXUzZc45o3G_rCEp97r3V8ydk6nVugwLQnr7hkaNwAOeYAoilYBY9pzG5M5ke9D-SFOuTjmRWBSm22HJ2",
                 "width": 4592
             },
             {
@@ -4300,8 +4290,16 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/100009793066914178879\">Luka</a>"
                 ],
-                "photo_reference": "Aaw_FcJrhGAzSKCF6jZYzKlHBzydKQwGPRfdVgUXx5wXU2uOLQMyGPSbDpJmMt6RfgOkEbc1RwmvQg3jUfqFXP3rubJSStvkiSFUfsZkk6kWOy58twP4hlOnApU2SonPN1B-kLDgxrEeM0Ry1QduniF7LpCxqbIrTAGUoOeaNIs1BrynAilM",
+                "photo_reference": "Aaw_FcLHr8qaAENzyJ8gDp2cm9mqVfp3nMvuRhveILF-9ymWBDy8suGLJ6lr2CMz127Xt1mMUaxntw0_lKiR3sksUcGL8kUI9RwFCGVcFu5wb2Jrm4Yr7ZIoaJ2eg0Fc4vuz-aJoYBr1JwbH2jWwcr4by9_KFJjw9HdWOHy-Jv8qiqJtx9AS",
                 "width": 3024
+            },
+            {
+                "height": 4000,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115952253936211730896\">Melanie Ziegler</a>"
+                ],
+                "photo_reference": "Aaw_FcL8hGkLukworBQ-MhxrqhmSvF6uIr-0mcn590GCYsv7VIHzHvQ0NZt7ToM-fFu7dFCSqaN5FNWqktcXmrHSJ7X3XHvYdDeviwDIuVnUmgtbRQWkgrb5kpFEPRSk10kE3ddwau5UEplnPa1_wMc1F6GDHGgDTwdH_J7BTfa_bGYfDxFD",
+                "width": 6000
             }
         ],
         "place_id": "ChIJVebJjxXCmUcRLaOifuTaZZE",
@@ -4355,7 +4353,7 @@
                 "original_language": "en",
                 "profile_photo_url": "https://lh3.googleusercontent.com/a-/AD_cMMRNDn3DDGBapBYNQhFDGCxcAnPwNqEnC1JQc_mKqkb3u1g=s128-c0x00000000-cc-rp-mo",
                 "rating": 5,
-                "relative_time_description": "8 months ago",
+                "relative_time_description": "9 months ago",
                 "text": "top",
                 "time": 1666122237,
                 "translated": false
@@ -4378,12 +4376,12 @@
             "establishment"
         ],
         "url": "https://maps.google.com/?cid=10477020783059313453",
-        "user_ratings_total": 94,
+        "user_ratings_total": 95,
         "utc_offset": 120,
         "vicinity": "Unnamed Rd, 70794, Filderstadt",
         "wheelchair_accessible_entrance": false
     },
-    "Fernsehturm Stuttgart": {
+    {
         "address_components": [
             {
                 "long_name": "120",
@@ -4459,28 +4457,28 @@
         "adr_address": "<span class=\"street-address\">Jahnstra\u00dfe 120</span>, <span class=\"postal-code\">70597</span> <span class=\"locality\">Stuttgart</span>, <span class=\"country-name\">Germany</span>",
         "business_status": "OPERATIONAL",
         "current_opening_hours": {
-            "open_now": false,
+            "open_now": true,
             "periods": [
                 {
                     "close": {
-                        "date": "2023-07-16",
+                        "date": "2023-07-23",
                         "day": 0,
                         "time": "2200"
                     },
                     "open": {
-                        "date": "2023-07-16",
+                        "date": "2023-07-23",
                         "day": 0,
                         "time": "1000"
                     }
                 },
                 {
                     "close": {
-                        "date": "2023-07-17",
+                        "date": "2023-07-24",
                         "day": 1,
                         "time": "2200"
                     },
                     "open": {
-                        "date": "2023-07-17",
+                        "date": "2023-07-24",
                         "day": 1,
                         "time": "1000"
                     }
@@ -4523,24 +4521,24 @@
                 },
                 {
                     "close": {
-                        "date": "2023-07-14",
+                        "date": "2023-07-21",
                         "day": 5,
                         "time": "2200"
                     },
                     "open": {
-                        "date": "2023-07-14",
+                        "date": "2023-07-21",
                         "day": 5,
                         "time": "1000"
                     }
                 },
                 {
                     "close": {
-                        "date": "2023-07-15",
+                        "date": "2023-07-22",
                         "day": 6,
                         "time": "2200"
                     },
                     "open": {
-                        "date": "2023-07-15",
+                        "date": "2023-07-22",
                         "day": 6,
                         "time": "1000"
                     }
@@ -4584,7 +4582,7 @@
         "international_phone_number": "+49 711 232597",
         "name": "Stuttgart TV Tower",
         "opening_hours": {
-            "open_now": false,
+            "open_now": true,
             "periods": [
                 {
                     "close": {
@@ -4673,7 +4671,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/101819515376823301084\">Kia Hafezi</a>"
                 ],
-                "photo_reference": "Aaw_FcK4DT8XAPDc5nVjPwYcEpWCReFd-WLF6hMLbU226pk39VQQR45q3BtsQUrcgcnO65HjaJufHaD5dI1TXcCQZqQkpJic_X9gOA6MkEK8vGc6CYhkRT8FRG-SR6Y1DD3IQvNMQK2XbEcWsHXa5GvbEhor8_Ko3SlkQFnCSr-ylSP2_26_",
+                "photo_reference": "Aaw_FcLATP5M79ApiAgALjJVBJlVXIFvxzba_ppbzvTrOZa6AbC3eyvRYRJMsKPJgAmOTlcFc_UGMMYjacgpp-Inm1eUau9L5hXOFNAqjfZ1mR8zh0_r0jdOQZWeITPkerBspktdMC2xmH1A9A6ig8X5dWx-L30Z2_2XkAckjgHONXDAitl0",
                 "width": 3024
             },
             {
@@ -4681,7 +4679,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/113937745233414121978\">Dinka Marinova</a>"
                 ],
-                "photo_reference": "Aaw_FcK8yf_tbn4OQF8Au-QF8kKa30OeP_O9OiSM8xqeJMfTn_4f365j_AQesLjePqJKbtaQbqdT4jGEJ8KA0IFLAUI6aEjghs4WtDQQOwvY4VTFwD8jbjuqwV_UtAc20o35ep1DDhICKYV8Iplimbd6IdCV_NZ6Nbsl0xjN7KruVl4y_D1h",
+                "photo_reference": "Aaw_FcKF9jzaQQmQA4_Xs98R_a3CMlFc2ijdop9l-kHl6bYleMtJIBly3QshaRSf9VepazwIMvA6US-Ox24FRY362jl8kFiYuHw3RZ7Ooe-2XbU9siCZR6hcjJLJXmbt8V7XXDq0hdZWSHfA23zmytKV1Qs1OMsugZO-uMLJWwBOb_vB5YZi",
                 "width": 3472
             },
             {
@@ -4689,7 +4687,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/113937745233414121978\">Dinka Marinova</a>"
                 ],
-                "photo_reference": "Aaw_FcKupVc3ytlGOVvfXo7n-xFenhuNs3UqKbJxhKhDglEn0hEVdY35Lw6KAy96TvgRJ3Ro2p_SkPgtwIuvLyOVYmtVwuTS5XZlA6IENh25Uq2jB7m1SgF62phsM4myAXLCEUUULkUvwBFBH_KFvBzeWYAh-sETcumnYcO8dzSAPViraz_m",
+                "photo_reference": "Aaw_FcLGZx0blGlH7b2OAL6XIqcAHHGhaKBxQ9YuRqEte8ZmKmB9OlI1ZgFlVLjCCJr4rO0xQhlYRYxvRufjiNq4oxaQR5CRBNjacR9HdMVjz3-zUXUNIup5UdQAohO5erxdNwXo5w6cpAfHccU-ehzzpjaj_5rL8l17DeeCghxkJAFakrOD",
                 "width": 4640
             },
             {
@@ -4697,7 +4695,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/117733701349575154170\">Laurence Pascault</a>"
                 ],
-                "photo_reference": "Aaw_FcKBonmrAvmwDlQjmxjh2GgVG27wKS2QEqmNLar6r5LUlOUsnLIjWKGM1LZamP8UmHQHp6EXabeWKc_6TjHkIYXGHsxU48g_4jEb7pR_s4boKhCB1eo_LjMcrlH_vYCNMgTjEnocmZbd7VKeW-saUSJLInAOqSaY1eItMUQ5u9qZkx-H",
+                "photo_reference": "Aaw_FcLMiC-_4RVgneQB2WrDVzWBSQXxAlmKXDtQDzLI6fLfN9G23T8H0Hn4c7C5S_wxtavHd8KTnIGW0IBndEdwr4WkNJLu1OmgZTb24xzIDrZ2eTiCmu000xtwRM_1Xo77AZIZqG-lSKzFsY2h_3AN1teU3mJBBjkMwdJL-fKNOqpFVoS2",
                 "width": 6086
             },
             {
@@ -4705,7 +4703,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/108561255360063236697\">Monika Scherer</a>"
                 ],
-                "photo_reference": "Aaw_FcLsgTI1SEfpxRHDVgnGkNxbE4ZSdXcGxO8dtR6_UiTaiBIw7vNpFV5s3sFc5MG_-XiCWlQOucC6mUZSNGG7Prr7VK-ptuSkT9wzbNIBhuzZPLLHf7MyVzZeyar6vX9L34hi094L6D8jdfbLqvc7YQNg_KFg5XYuxxN1iNd2xJbojgl3",
+                "photo_reference": "Aaw_FcJBcaCuPCFSd1bN8oaLxxVpHG6TtVLtc5HTRZjC7uAXFm6wT_mcdMLDjUTRLXDC_tF3Rv2pBmG-rAGTnZS6h-Z9EXlC3a3Nx2a2b2VoCR2vVDHNhN4ygBHDSikN97rDSo3J5Np0Wm7BGMbm_xEnomdZusOIveOQHM_3l542ElzNc_yl",
                 "width": 3000
             },
             {
@@ -4713,7 +4711,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/111631059577462167479\">Alexander Mertens</a>"
                 ],
-                "photo_reference": "Aaw_FcIoW_XOJaJ2BpzEcrbMJSJUCXX45e99CIu1TQEccNMOmCeYka5ckRaWQVoRbONr1Yp23Wy-RrfR1MJYo-qMUM3Qtr837WuYL58WeOKidJ-d3lPp0sztBSyWvaZFOtKdae9U5FET6hAXysG4Xu1ihZRUirt5RZbAw0RHQD3UmqXNUoeM",
+                "photo_reference": "Aaw_FcKpPnfT1dYV5JJTDBXzJyjKJ8kqTq1vvdoU-t7RHFRFle-0iKTMBjOrOq4t9Woj0tZJrY5A7TheaqrZKcaHio8xVLHKqw9KLoCt5_vxxVMvEvknoFR7_LtHR8vK4mloupXxUY4S4Z75ZkFBS53SsSHqW90m_dWR09ZSOmmqYZRHYWWX",
                 "width": 3264
             },
             {
@@ -4721,7 +4719,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/107648559534895118312\">Hans-Bilal Lauer</a>"
                 ],
-                "photo_reference": "Aaw_FcLSkjaUYkRl8XrmQAHAvxn35i_I9jjytJ-9a2dHPg6w3-2UouqqAxR7HQpg7PcCSbbYysLbFY2vrxGcAAEov6DYabWm5x2_MKMhnE6vkUEOZa_BMTIDkcTNfl-k1bRZ7mVN2qEaklf2ygk6u_XkdEXvZs8NGDii7Cs6zoGGiZAWiGDC",
+                "photo_reference": "Aaw_FcIBo9fHq8jpSiWdQ3PABwjvlu4cOcnz6SMoOUjw9lUHvsVl3BhRF5NLMjhhYaDnqfXVurQQBljHgOrRqSwdlSTexQW1CkMh-bPNeM18O1YGbJEy-hVgdEihk6QmPNQwgmsgU25bgOR5SWCnfpTYMqqivXFJjpsdvY5ulud8yeQJe2Dl",
                 "width": 4608
             },
             {
@@ -4729,7 +4727,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/106290720075860577437\">Lodovico Bua</a>"
                 ],
-                "photo_reference": "Aaw_FcJhdenIzXJ9MsYL5xArCdM7SvBepZA-F_wMJvBtvpkYCgTDxljCyphUttja0P_rDsUkGjRVDqhwKFmeK0BF5RaF-fQ1BrmtQUhGEVRVNI6_wgHq0NcwDPnRsQktyORz1UG1V_I6ClMureWAGf259svaK56_rsXNsVodZNUBSNAENUdP",
+                "photo_reference": "Aaw_FcLiBKU40xugC36BXZiGMna3x5IOvSqc6a077Qj7c1Y_4Yxb4fOCTZXwFK4ZwWIazlvl1XdcN2rP8TQ1KqdonCtgCoc6v1jPEq9keKafgJDBy7y3HUEqk-B0RSctsVUi09PPQIBsrGbb3HjzALFkReSFbEOp91le_tiY9Nl6hQARwPKM",
                 "width": 4032
             },
             {
@@ -4737,16 +4735,16 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/115474622225614539092\">travelsarah2211</a>"
                 ],
-                "photo_reference": "Aaw_FcILOXO_KR8zuL8tGqgKNl1oQH2hjZDf7D28AIYTq_G9rWJsPOUxjZhtXDb0qmkkxppojF-NEF6Cp3LmwzYIcD7OgwTZnZp111UtB9mCHTatcVjRng0d-bWjA2Ln1JHDmbagjjE-ZlQnJOmM05ryDFX4S94epYJX2yEx2P0VSnwQmFtR",
+                "photo_reference": "Aaw_FcK9kVqlcyB_FWXtwngMMcTObDXOni3gDoo7-VNAok6hHGQ8mescNfDgsxACcskR91vas2CCYyjCrU8-YDV8aZJhfmXUR0sWuxelXtzomaEHjUtWZai0jxMnGJTDjfA-d7yKrf62guHX9tOC4zvsj-vnuLv0r5T1Zo7MScKGK7o4X7p-",
                 "width": 4032
             },
             {
-                "height": 3464,
+                "height": 4032,
                 "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/104866987829911008565\">Praetorian_76</a>"
+                    "<a href=\"https://maps.google.com/maps/contrib/112320589652079831766\">Santhosh Thirunavukkarasu (Sandy)</a>"
                 ],
-                "photo_reference": "Aaw_FcI8SH7vW0v2T_VZNR6q9V-tOOn5Nv0SyNu4VA2HV37kKFHsecbuUg5MRPNInvtDlGdl8X5oklwsYNOkVx8BjfIQ-q7BwTrwvKI6ZR4gEc9pSt375QK5C7L69FuHRT_g7ABn8B-xOR7XHLP488ujQIfKYxWOkpSdavWh_74QzcyQMu5S",
-                "width": 4618
+                "photo_reference": "Aaw_FcJz34kxp7wRj7Cl8y3LLHXrLzSkyGQibZhxSUh38LIKe3sOErc_ixfKRWINtvdAcGoFWffDcxD6Oum0coYfwceZwEFYB_zOBG_GyCIT3jCH3TG_jELxHBXgphtAohdI24VdhgN7GJBOzTaRXPK48w1EsDj8K6Pbt790IBnUStXG6Q8X",
+                "width": 2268
             }
         ],
         "place_id": "ChIJpR6UjKfEmUcRcqW5MbHYdO4",
@@ -4764,7 +4762,7 @@
                 "original_language": "en",
                 "profile_photo_url": "https://lh3.googleusercontent.com/a-/AD_cMMTYJ8a1LmsGU2VVyiFW2YqgbrxI27YtUaFbNId_Pq0UpoLl=s128-c0x00000000-cc-rp-mo-ba3",
                 "rating": 5,
-                "relative_time_description": "2 weeks ago",
+                "relative_time_description": "3 weeks ago",
                 "text": "Visiting the Stuttgart TV Tower was a quick, fun, and beautiful experience. The sleek design and impressive height of the tower immediately caught my attention. The elevator ride to the observation deck was swift, leading to a breathtaking panoramic view of Stuttgart. The cityscape, with its blend of modern and historical landmarks, was simply stunning. The vibrant colors and bustling streets added to the charm. I enjoyed learning about Stuttgart's history and culture through interactive displays. Time flew by as I explored different vantage points and captured memorable photos. Sharing the experience with friends made it even more enjoyable. Leaving the tower was bittersweet, but the memories will always remind me of this swift, exciting, and beautiful visit.",
                 "time": 1687566341,
                 "translated": false
@@ -4776,7 +4774,7 @@
                 "original_language": "en",
                 "profile_photo_url": "https://lh3.googleusercontent.com/a-/AD_cMMSDRLMNxs0cgC2Ed2EbTjiwUYA9TuSVJqQcSV9AASFXWho=s128-c0x00000000-cc-rp-mo-ba3",
                 "rating": 4,
-                "relative_time_description": "4 weeks ago",
+                "relative_time_description": "a month ago",
                 "text": "217 meter tall TV tower. .!! A beauty standing between the forest cover in Stuttgart is a must see place. The place gives a nice view of the places around the city. . If possible also visit the restaurant on the top floor for a dine in clouds. . lastly don't forget to get your own tower mint on coin (good souvenir).",
                 "time": 1686908332,
                 "translated": false
@@ -4788,7 +4786,7 @@
                 "original_language": "en",
                 "profile_photo_url": "https://lh3.googleusercontent.com/a-/AD_cMMTVullZnbR2Qu9vzGncgx2FWV9MxQvkWL3WEcp_btNR0X0=s128-c0x00000000-cc-rp-mo-ba3",
                 "rating": 5,
-                "relative_time_description": "in the last week",
+                "relative_time_description": "a week ago",
                 "text": "Incredible sight view , a must in Stuttgart :)\n\nAlso in winter it is incredible.\nYou pay like 10\u20ac and you get to the top with someone of the stuff, that explains you everything about the turret. Then you have a coffee/restaurant and on top an awesome view of the city.",
                 "time": 1688801964,
                 "translated": false
@@ -4824,24 +4822,17 @@
             "establishment"
         ],
         "url": "https://maps.google.com/?cid=17182596733880345970",
-        "user_ratings_total": 11074,
+        "user_ratings_total": 11091,
         "utc_offset": 120,
         "vicinity": "Jahnstra\u00dfe 120, Stuttgart",
         "website": "http://www.fernsehturm-stuttgart.de/",
         "wheelchair_accessible_entrance": true
     },
-    "Killesbergturm": {
+    {
         "address_components": [
             {
-                "long_name": "99",
-                "short_name": "99",
-                "types": [
-                    "street_number"
-                ]
-            },
-            {
-                "long_name": "Thomastra\u00dfe",
-                "short_name": "Thomastra\u00dfe",
+                "long_name": "Stresemannstra\u00dfe",
+                "short_name": "Stresemannstra\u00dfe",
                 "types": [
                     "route"
                 ]
@@ -4896,199 +4887,253 @@
                 ]
             },
             {
-                "long_name": "70192",
-                "short_name": "70192",
+                "long_name": "70191",
+                "short_name": "70191",
                 "types": [
                     "postal_code"
                 ]
             }
         ],
-        "adr_address": "<span class=\"street-address\">Thomastra\u00dfe 99</span>, <span class=\"postal-code\">70192</span> <span class=\"locality\">Stuttgart</span>, <span class=\"country-name\">Germany</span>",
-        "business_status": "CLOSED_TEMPORARILY",
-        "formatted_address": "Thomastra\u00dfe 99, 70192 Stuttgart, Germany",
+        "adr_address": "<span class=\"street-address\">Stresemannstra\u00dfe</span>, <span class=\"postal-code\">70191</span> <span class=\"locality\">Stuttgart</span>, <span class=\"country-name\">Germany</span>",
+        "business_status": "OPERATIONAL",
+        "current_opening_hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "close": {
+                        "date": "2023-07-24",
+                        "day": 1,
+                        "time": "2359",
+                        "truncated": true
+                    },
+                    "open": {
+                        "date": "2023-07-18",
+                        "day": 2,
+                        "time": "0000",
+                        "truncated": true
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: Open 24 hours",
+                "Tuesday: Open 24 hours",
+                "Wednesday: Open 24 hours",
+                "Thursday: Open 24 hours",
+                "Friday: Open 24 hours",
+                "Saturday: Open 24 hours",
+                "Sunday: Open 24 hours"
+            ]
+        },
+        "editorial_summary": {
+            "language": "en",
+            "overview": "Leisure park with fountains, a 40-m.-high tower with sweeping views, petting zoo & swimming pool."
+        },
+        "formatted_address": "Stresemannstra\u00dfe, 70191 Stuttgart, Germany",
         "geometry": {
             "location": {
-                "lat": 48.8052935,
-                "lng": 9.171248499999999
+                "lat": 48.8041174,
+                "lng": 9.173753999999999
             },
             "viewport": {
                 "northeast": {
-                    "lat": 48.80664248029151,
-                    "lng": 9.172597480291502
+                    "lat": 48.8094072,
+                    "lng": 9.19181835
                 },
                 "southwest": {
-                    "lat": 48.80394451970851,
-                    "lng": 9.169899519708499
+                    "lat": 48.7989916,
+                    "lng": 9.15832895
                 }
             }
         },
-        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
-        "icon_background_color": "#7B9EB0",
-        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-        "name": "Killesbergturm",
-        "permanently_closed": true,
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+        "icon_background_color": "#4DB546",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+        "name": "Herenpark Killesberg",
+        "opening_hours": {
+            "open_now": true,
+            "periods": [
+                {
+                    "open": {
+                        "day": 0,
+                        "time": "0000"
+                    }
+                }
+            ],
+            "weekday_text": [
+                "Monday: Open 24 hours",
+                "Tuesday: Open 24 hours",
+                "Wednesday: Open 24 hours",
+                "Thursday: Open 24 hours",
+                "Friday: Open 24 hours",
+                "Saturday: Open 24 hours",
+                "Sunday: Open 24 hours"
+            ]
+        },
         "photos": [
             {
                 "height": 4032,
                 "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/107025147129346288175\">Alex Schnell</a>"
+                    "<a href=\"https://maps.google.com/maps/contrib/117719280184497109202\">Jeton Sulejmani</a>"
                 ],
-                "photo_reference": "Aaw_FcLIkUVAJ8eFoXfNki0i0cMX7cPMQNvGf4HWUL0xRo19H9cPHfE6xmBFS1deAAE62qumUgvRgoZmrtsadx0CLUL48zPlD9jYOjgz37IW0EAOqyfnAEsAn9t3ld5O3pmRimx7FQgY2gOgkOYgz0_MSWSIWvpOcPUhNZa_3NcuLuBl7xnS",
+                "photo_reference": "Aaw_FcLXC8OAmoXuv7v6HJRVovyvpa31J5SkMLde3dWk4OJ2bLxsNgPUpsC2XEy6kW1UeYSQQLpsQhBS3K434zBHX2l5bthP_sx6oxbRx5944iGkzvfd37KmcTrfy3LvkRdf4frmW9oQcJ7kjkKvRGe-0Mw9hf8S38nEw28lKixM0rJ2rc9L",
                 "width": 3024
+            },
+            {
+                "height": 4624,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114576135364699845721\">Zolt\u00e1n Csan\u00e1di</a>"
+                ],
+                "photo_reference": "Aaw_FcKirzix_ldXgt0TaaaLO6bfRKxDfF3nHhBsQWmEdWvY4GRmAKs6uAPXQYRxs86KFOBzZaeEHMoTaPa03f8zMHCe3a9IUggNfmpRmZqovpeuNgF0USTVJjBzVQnikn2pOFnd7oCRlzA_mgSZOVUhBhaZXrshWe9eV-fgar5CGKkJRn74",
+                "width": 3468
+            },
+            {
+                "height": 9000,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108014563492879176537\">Alex G.</a>"
+                ],
+                "photo_reference": "Aaw_FcJXLrCGAdhi964TqyIzI4TwG68qOLCQJH4VNjq7poFSgVQImdB_A4mciE2V0R96kG_rwamXOiduwMKAdc5Bh_Jq6Bsm1hmPS1FJrvE11X3MKFYqAjV2_FZcA5CEhVx7xM3HczPxvJ98GqxElEmVm70QwSmn0ROAJFeyKhn_Nk5I1UJb",
+                "width": 12000
+            },
+            {
+                "height": 3024,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116897348241334433268\">Dr. Thejashree Hulikal Nataraju</a>"
+                ],
+                "photo_reference": "Aaw_FcI9E6vO_oiQlYmSmy1skoS-mgv4UWldKAsugnfkhpJ8t3Lo-egZao5tXGhlw1Ukb_Me858w7w58XbsvoJzy2ARMVsxVoGMkJsxYigj8sj4cujF4cEgZlL-dVVzae7LlVsUzwtzKCGWMFfiHL04K-6zpibTkchC6U4YzBgNWWnDRPFCb",
+                "width": 4032
+            },
+            {
+                "height": 4032,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104931437938678526416\">Judith Plocher</a>"
+                ],
+                "photo_reference": "Aaw_FcJK4c7QunfbCyObBsDrHjUNNtagIqB0ajWZ8V0pOAp4sJxZqLCrFNv0x-aTKvxmbgy2Q6g-ywy2i1_UAXiKxaq2wh8rTptuKjzd_XMBtYXgmtGPUfpTilmFcUxgV7u9OK4nGTyu0Z2UE0NVs5gOAFU_f52rHUg-I6Ll7arxlhTmpB60",
+                "width": 3024
+            },
+            {
+                "height": 12000,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/107217375402560071617\">WO_ MC_ES (Wolfl)</a>"
+                ],
+                "photo_reference": "Aaw_FcLqAS5dHCUzxmZr0tjPToRRkdta89GfBbYo0yIRdyhbIH7YD473uIuD4QLVkgbmW6f9u4x33GW_sNF3LWNR5mKNvFycYFxyzqZwTSLJDT0HQwV3BWDCNNzyezm0WFqaJlyn7FG1KXpSZIfq_A9FBs2gU4fqcZdk2Mkf5FkytKZJagOt",
+                "width": 9000
+            },
+            {
+                "height": 9000,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108014563492879176537\">Alex G.</a>"
+                ],
+                "photo_reference": "Aaw_FcKWVe9gtdlC-6Nrwkum0-SEBI3Nz8sviEB-fZtaFHXZniEFIjHuV0nIc3nj7hlG_4yq-Smr8qeAiTez4bfFZXcUHMQW8paruUaQ25z-Y9qhZ5eu38oHIIa5Zs1NA0RIku5EERRPjlnIyeaG4Ya0MlSWimZEN72oB9S-7NuFhyONJqGo",
+                "width": 12000
+            },
+            {
+                "height": 3468,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114576135364699845721\">Zolt\u00e1n Csan\u00e1di</a>"
+                ],
+                "photo_reference": "Aaw_FcL-7BliEIhMdENTMNlEYUVSnsJGZrRR8x8q-eKjUQrLZsKojUzfUhlvr46Gr9dWlhHJSbZJQ3fDK5n24fFkSctGRbtePqW6xdMDyzhWzKk3lDTXv8V3ZMrJZ7pqkoRYt7mXAu_bccdr-yIXozeh-HkI-pZP4pvAJCYOchvW-J4_lJXm",
+                "width": 4624
             },
             {
                 "height": 1512,
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/108244886575847811262\">Markus Zorg</a>"
                 ],
-                "photo_reference": "Aaw_FcLE8LN_Kh68ZnRXIRshQ9q5iecwty-oNt8jNsEr2HvfOzIkUNaL7kFPRpfGFAxZoyWJCtXHhoPO7WLNb_las26Vyuce4Lkq8aQS10Im6AuOBbMrT_tAclfMvSU_8qiz1yEfW3mIVNKlpv1kWLDEwsfRZh9zQ5IUr0Y6zbIALLCAwAux",
+                "photo_reference": "Aaw_FcIRbI7Z9sMTX6P6n0ipIgwM5ia2LajlvI9gn9dI1Z1wrky9FFXpb60bzPVA1z7tFtcQMLyf99nwK0fHWQLPK1jM3Ykn9AVu3QjLSmn5tVF3wyzNoK6kZnSde5I7p05ni_AvKKPTxT-dhV0IocfKct2WSuweJgHQZ6G62P1qw59QoEMa",
                 "width": 2016
             },
             {
-                "height": 4032,
+                "height": 4000,
                 "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/115983828246404893499\">Alex Monic</a>"
+                    "<a href=\"https://maps.google.com/maps/contrib/111344900620861529574\">Benjamin Loschke</a>"
                 ],
-                "photo_reference": "Aaw_FcLlZhEdHVn4v1mNt31waHgEuHFHPMk6l_dYa2B428NdEEbz9cub7_k-xYRx3MgMMQEBby3xLWUKu8h3kebwKKkT5scw_KNZklaD3sa_T-982rCra5x-Oj-5yqmxelSwqAeaggrmBn0kcrfB1qp7woqd_DfZvjuk9hkuvM8zGtnHmb9U",
-                "width": 3024
-            },
-            {
-                "height": 4310,
-                "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/105905466243738153772\">Emmanuel LEGROS</a>"
-                ],
-                "photo_reference": "Aaw_FcLDFThaxa8FdtEtoYn_Pn9zdtXnM9jSoIEGLSLwI0C7sCZhGvnMvLDH9YIRpR0pWIE4yRif-7pFdde5eS07mTS1uoUGF3RFuDpqu9-7_xr9McZeWDzjz3mCbrN6zBw8LmrDCIkplUZIxPoa9vskSp3tecUv6HxFJ_lblaLj--qofEQj",
-                "width": 3448
-            },
-            {
-                "height": 1920,
-                "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/117065473823693879343\">John Klopp</a>"
-                ],
-                "photo_reference": "Aaw_FcKiV3iOvolZVT_J6f3cpunjPJ758mmgVDBvgd7nPk5mxF8paJuWjS6UqlnLsYv5R-ZeW8cc02BaDo_IMCczU-Jwc4cZAWnF2zqQEG1x4sOfieX04WvPUmD26uRBzsGi1nEOLuuf4o6ucn6c_NcIfzpnOf70yX3YtRgx2A1xuiUNcT15",
-                "width": 1080
-            },
-            {
-                "height": 4032,
-                "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/115983828246404893499\">Alex Monic</a>"
-                ],
-                "photo_reference": "Aaw_FcKLvTO_UliXwrXV6srepO1rJKpOtpjoMukftSut54_7gE4S9_7cD7OHfEupEbg9xHasUBdUeuI9MKb3UgVFUMhBYaNhNbEVFmGBZMpBmpzhi0GFCZUxwE8LaJb9mXDAQKiTA_fT1J1YAzRJRFy49xSwCoN3IGWiKzdXCZ8y94Zzy9_e",
-                "width": 3024
-            },
-            {
-                "height": 4032,
-                "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/112349702669754453745\">Adi Forgang</a>"
-                ],
-                "photo_reference": "Aaw_FcLLGBvZPGp9XOthATehojERKwqSA3ps3PkOLls3n3xoHI8JqDEpZcQgdqoD4lh47ggQ4W4sWr47GyMAUEnegv599ESU4sqweve0h5OyeHh7RT7v2r-BYn6C22tHIswyhKWfEoXhRyFPvGJzXjo8uVF3Up0aLR24ISOiOe-7B4tO5TZD",
-                "width": 2268
-            },
-            {
-                "height": 3024,
-                "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/117118416163659473046\">Julian T.</a>"
-                ],
-                "photo_reference": "Aaw_FcI37IQZYwiuCnLZwcpxs6wUhJfTrIoyg5XdMWoEeWirhicGzJVnPhRxAtIGIWpI-DJof-FsM8l-tFuK9xCxmikjCIb_ACkuu95PpsALFzpZeF6187Pkys01JmBvCeWJSJHp5UpL8GhPMj2wEeH8DC7aFaxxymyqGRVGaJjpFqsOsUf1",
-                "width": 4032
-            },
-            {
-                "height": 4080,
-                "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/117428000634261047459\">Dimitri S.</a>"
-                ],
-                "photo_reference": "Aaw_FcJX0ubrWJATBJa_N4qGwKcUZnCTtJii3YfNUYMheG6m91zSpxYU1AKgyV7qWnrz0wq0CQqWvwR88-B2ZgfooxVidoRZR2LChDc54siOVVezo7ZY06SjtGCqdE84zHgiWdD0SBDkEoKFTvCklCOaKUjw6Tdrlsjq9UJ7Zlbt-pvyfYLJ",
-                "width": 3072
-            },
-            {
-                "height": 2889,
-                "html_attributions": [
-                    "<a href=\"https://maps.google.com/maps/contrib/106176517327378002042\">Robert Babiak</a>"
-                ],
-                "photo_reference": "Aaw_FcL_dI-KIFPZpPbUE4wu3oumcbrrBTsoKw-NhZAu7JA_yCS8Cg7g43nVch0ODDicfIJLnr8d615nUpu2xN6Xz1CRiciXKcnefsYaDCjcUCHL9TSwsBpowyU_BuKwCiHNs4TpZhms6KoAXRDS1vvJFGNYJSAd2NA7BhL7Bb0O1T8jvvZb",
-                "width": 3911
+                "photo_reference": "Aaw_FcISore6C2sszPyN0eC5QY2thsq9SYnWiFB1iHRl98ufeOqlwLTZNlddc2qfLyTPlX7Wzv3orBY3VFSkOF1V_O2dQTLL_TML95fPcU74HPBkPViOwFcRacdja8ZuIVQMunNm8EYC9xEeXMipwcxyoWCQogaxyA_ozvTTH3o4Yeb6qjHa",
+                "width": 3000
             }
         ],
-        "place_id": "ChIJJZ7NJRfbmUcRQdKuSEnT9eM",
+        "place_id": "ChIJNwoMHK3bmUcRSi4PCSzDZHE",
         "plus_code": {
-            "compound_code": "R54C+4F Stuttgart, Germany",
-            "global_code": "8FWFR54C+4F"
+            "compound_code": "R53F+JG Stuttgart, Germany",
+            "global_code": "8FWFR53F+JG"
         },
         "rating": 4.7,
-        "reference": "ChIJJZ7NJRfbmUcRQdKuSEnT9eM",
+        "reference": "ChIJNwoMHK3bmUcRSi4PCSzDZHE",
         "reviews": [
             {
-                "author_name": "Uday Sudani",
-                "author_url": "https://www.google.com/maps/contrib/103835552605875987364/reviews",
+                "author_name": "Som",
+                "author_url": "https://www.google.com/maps/contrib/105863852826521599882/reviews",
                 "language": "en",
                 "original_language": "en",
-                "profile_photo_url": "https://lh3.googleusercontent.com/a-/AD_cMMT3u-CETK2LByRQSzQHwR10_r7RpdVtScs65d4gVrVZAic=s128-c0x00000000-cc-rp-mo-ba5",
-                "rating": 4,
-                "relative_time_description": "2 months ago",
-                "text": "Turm is very nice and good location but there is no information regarding closing timing. I went there to watch the sunset but unfortunately it is closed. It was not dark still it was close so I don't know when they closed it. I suggest to skip this tower to watch sunset because of you go there and it is closed then you will miss beautiful sunset. Management need to update closing time on the website as well. On website, opening time is mentioned as 7AM, but I didn't went there on morning so if you want to go there in the morning then please check by your own that weather it is open or not.",
-                "time": 1682361567,
-                "translated": false
-            },
-            {
-                "author_name": "Rob P",
-                "author_url": "https://www.google.com/maps/contrib/111726835335730128995/reviews",
-                "language": "en",
-                "original_language": "en",
-                "profile_photo_url": "https://lh3.googleusercontent.com/a/AAcHTtcy7TR8x0OuWj-xcXggLxL4bhs5mUjc84JPNGU1WDMu=s128-c0x00000000-cc-rp-mo",
-                "rating": 3,
-                "relative_time_description": "4 months ago",
-                "text": "Tall tower, great view",
-                "time": 1677010982,
-                "translated": false
-            },
-            {
-                "author_name": "Deepak Kalalbandi",
-                "author_url": "https://www.google.com/maps/contrib/100144437134875260249/reviews",
-                "language": "en",
-                "original_language": "en",
-                "profile_photo_url": "https://lh3.googleusercontent.com/a-/AD_cMMS44auuzclxxE8O9yY50piE6KRlZWOjjwmgBUqfZJvjnzxc=s128-c0x00000000-cc-rp-mo-ba4",
+                "profile_photo_url": "https://lh3.googleusercontent.com/a/AAcHTtf5hyHo1pNJPohsFIZdK7JBLnnvL_7DL1fldAcjipwY=s128-c0x00000000-cc-rp-mo-ba3",
                 "rating": 5,
-                "relative_time_description": "2 weeks ago",
-                "text": "One of the peaceful parks visited around stuttgart..",
-                "time": 1688052322,
+                "relative_time_description": "3 months ago",
+                "text": "Fantastic park which can be visited across various seasons and easily reachable by public transport & privately. In summer there are events planned in the park and also there will be small steam engine train for kids & family. Good picnic spot for families & friends for those who live around Stuttgart region.",
+                "time": 1681160571,
                 "translated": false
             },
             {
-                "author_name": "Arani Das",
-                "author_url": "https://www.google.com/maps/contrib/103918053310059573614/reviews",
+                "author_name": "RYU\u7adc",
+                "author_url": "https://www.google.com/maps/contrib/117515536764941997355/reviews",
                 "language": "en",
                 "original_language": "en",
-                "profile_photo_url": "https://lh3.googleusercontent.com/a-/AD_cMMTp2ittpcnuFxV1Na1TUD0W2ntoUZJuQ8ioVK_W_-BNfV-E=s128-c0x00000000-cc-rp-mo-ba5",
+                "profile_photo_url": "https://lh3.googleusercontent.com/a-/AD_cMMTE_otU0wXY4yZHd_BFOjA4ia5YmK9uedJyj43f3axPWVcG=s128-c0x00000000-cc-rp-mo-ba3",
+                "rating": 5,
+                "relative_time_description": "9 months ago",
+                "text": "Awesome park! Lots of green space and places to hang out/have picnics in. The tower\u2019s view is absolutely stunning, though it is shakey so be careful if you have a fear of heights.",
+                "time": 1665404637,
+                "translated": false
+            },
+            {
+                "author_name": "abhay agrahari",
+                "author_url": "https://www.google.com/maps/contrib/110044476488023447728/reviews",
+                "language": "en",
+                "original_language": "en",
+                "profile_photo_url": "https://lh3.googleusercontent.com/a-/AD_cMMRjhAI9kAFCqA9fPT6jJpB07Cq7fiJEK78PYWIhj9BNWxk=s128-c0x00000000-cc-rp-mo-ba4",
                 "rating": 5,
                 "relative_time_description": "a month ago",
-                "text": "Enjoy excellent views over Stuttgart, right up to the Swabian alps on a clear day, if you are willing to climb up some flights or stairs. The surrounding area of killesberg Park is also excellent to hang out and have a picnic in summer.",
-                "time": 1685635327,
+                "text": "A best place to spend your full day.\nActivities:\n- Beautiful gardens\n- Cycling zone\n- Jogging zone\n- Kid's zone\n- Toy train tour\n- Small zoo\n- View point at top\n- Good restaurants",
+                "time": 1685483543,
                 "translated": false
             },
             {
-                "author_name": "Raijo V James",
-                "author_url": "https://www.google.com/maps/contrib/118288741933459150777/reviews",
+                "author_name": "Ian Bevis",
+                "author_url": "https://www.google.com/maps/contrib/115473847029929375089/reviews",
                 "language": "en",
                 "original_language": "en",
-                "profile_photo_url": "https://lh3.googleusercontent.com/a-/AD_cMMQzg6_xZCnkYfdOdno99FMjLdxxJ_Q8CzOR39BsR7CfbVY=s128-c0x00000000-cc-rp-mo-ba7",
+                "profile_photo_url": "https://lh3.googleusercontent.com/a-/AD_cMMQ2dVqKjc9dqTibeyse-89kNNtAqa12s6PKjwbvQpfwcg=s128-c0x00000000-cc-rp-mo-ba4",
                 "rating": 5,
-                "relative_time_description": "8 months ago",
-                "text": "Little shaky and thus scary! But hit has very beautiful view!",
-                "time": 1667332796,
+                "relative_time_description": "3 months ago",
+                "text": "Lovely park to visit and take in the view. A lovely cafe / bar also at hand and fair.",
+                "time": 1681104584,
+                "translated": false
+            },
+            {
+                "author_name": "Ioana Siman",
+                "author_url": "https://www.google.com/maps/contrib/110955711206961912914/reviews",
+                "language": "en",
+                "original_language": "en",
+                "profile_photo_url": "https://lh3.googleusercontent.com/a-/AD_cMMRXvkjnrC9dwgGNWVnNrP6Yq0IoH-BET36Ge87AWNwHlck0=s128-c0x00000000-cc-rp-mo-ba6",
+                "rating": 5,
+                "relative_time_description": "2 months ago",
+                "text": "Nice park just outside of the centre of stuttgart. Plenty of nice options for families - train rides, carousels, restaurants, a department store nearby etc. very nice views of the city from the walking platform.",
+                "time": 1683064578,
                 "translated": false
             }
         ],
         "types": [
+            "park",
+            "tourist_attraction",
             "point_of_interest",
             "establishment"
         ],
-        "url": "https://maps.google.com/?cid=16426267527609242177",
-        "user_ratings_total": 83,
+        "url": "https://maps.google.com/?cid=8170870217854889546",
+        "user_ratings_total": 7387,
         "utc_offset": 120,
-        "vicinity": "Thomastra\u00dfe 99, Stuttgart",
-        "website": "http://www.killesbergturm.de/"
+        "vicinity": "Stresemannstra\u00dfe, Stuttgart",
+        "website": "https://www.stuttgart.de/hoehenpark-killesberg",
+        "wheelchair_accessible_entrance": true
     },
-    "Feuerbacher Heide": {
+    {
         "address_components": [
             {
                 "long_name": "Bonatzweg",
@@ -5161,14 +5206,14 @@
             "periods": [
                 {
                     "close": {
-                        "date": "2023-07-20",
-                        "day": 4,
+                        "date": "2023-07-24",
+                        "day": 1,
                         "time": "2359",
                         "truncated": true
                     },
                     "open": {
-                        "date": "2023-07-14",
-                        "day": 5,
+                        "date": "2023-07-18",
+                        "day": 2,
                         "time": "0000",
                         "truncated": true
                     }
@@ -5231,7 +5276,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/100143414352035385700\">Sibi Husky</a>"
                 ],
-                "photo_reference": "Aaw_FcKn4NUJLsh7Y03LPwRciVwIs3WChlQD-Ke1aYqm1eWRmMSMTAhM66Dd8Uem5uQ76smrGyIw-NZdGrDubrw-qW-H_sTjPXCzFTyS62cdy9OeCigQJ9ad4bMuEwuLCDj_buCEprvbliK62tq1O0HUKOlGsIPOELVBx__v7NWIhyMzzalq",
+                "photo_reference": "Aaw_FcKkoK3HH0n0dC6SugFoAcw2HVM9cPY3m9QoZPn-pPwessZoLsdBDyWoTkW695jHjfc7AhqK1YlISZ8YZMr_sug4uDJtrhBlzcBfD_XCHYMlFGFUuiZkSELW80v0u7VxziCpCYoqHQHykuRKk5c3D05ij6HqGFZfT4f3Qp2cGwll_kWq",
                 "width": 3648
             },
             {
@@ -5239,7 +5284,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/110449111947979812428\">Robert Justyna</a>"
                 ],
-                "photo_reference": "Aaw_FcLHTbSwHu5PRmp9f0jheSAZ6Imew909hVWtqxHuow-K_KNMMvWgPDDLmpfFjIEX5X3jUVOT0sEi5Ao511aUepQZONeDuuTdCDIXBQt24onfZAltn4DOROOdGuBAc3HWG2y-gSeVjKBF3vMJz7G4k6R9k1kn1dtUXET_keBWnfoYRKnk",
+                "photo_reference": "Aaw_FcKGMzM6f0Q56P6PyCtxxotigAs2vRQtEWMUmRChz4PtvDmoee98TBfgj24eQ6dBQSS2MwUVoitWR4bTMJeOPUbMPW_HeQiGcHDycf7x33RjlmkyW84PG_VJRjvYcv9W2KkIaaMfNMBGOPwVDo1zH4MZwRrn2Ccs9BDYbo4QwJRXDBU7",
                 "width": 2448
             },
             {
@@ -5247,7 +5292,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/108967325010342149192\">Manuela Schmauder</a>"
                 ],
-                "photo_reference": "Aaw_FcLIm5rXN4a-2smGRiL0Dv_f1FszUDC0sKomZQDZ8Ga4fCVSim8ZzvgReS151TnPghEA922cAelsG7fefdKWxNrLrv_Xl4GGl5ZNSLWa3kKVa8qCYQkcTSudUZUHmPfMECKmoiLtKtJ2oAPs4_-Vi_gkN-4PNqIqYke_9d_svKDCPxOk",
+                "photo_reference": "Aaw_FcKbIItufBZcQziJ8ZdAaAq_S1zBgf78vGkz1VCZ0UzyfKwE653pFYaeS73_pXBNaXcl0sugQKh1nqcir52Fjvoq_VGg4tOS0baM_I29dwYmqHQP6xd5AqX7O3d_QNE04oBXqk4AIIaB1w0V8shMPJ07QuX4gpwRiQ3Sfg9PQHIjM3xM",
                 "width": 4032
             },
             {
@@ -5255,7 +5300,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/107897630522401481421\">Ellen</a>"
                 ],
-                "photo_reference": "Aaw_FcL7Xssc4ET-dFW3PBRyRVmHZ65TkmDmye2VJ0Qm9dFYEBPOV4UydXauUxsNFszx7PNBNqeBOjCle3CW9Ab4fDjINU4X47scEJXnyhFEsz2gvfbYZmz3BNT-Wl6CSupvLPpyHyF5k-Q12O9FFimJCBGNhLyFNMNy0Vo3bbpes5qsNlGt",
+                "photo_reference": "Aaw_FcIs7xi4w4WaEku8tRVmjaBlXeXdTwaxZwH5gF6n-g1QgnAJBd-9ONZDIZzvyRgIQ1Hflv5-kSYeYKNwEbK9aY3DScUN8GE7o19xTCkgSDPlc-vz3Vo6mnsb0SVHnb4uRJA0348MJtL54lHilZBrehvLIRT0RDMcXYcTl_9Y57v4BnlK",
                 "width": 3024
             },
             {
@@ -5263,7 +5308,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/115383884171953712616\">Kurdo Kolenko</a>"
                 ],
-                "photo_reference": "Aaw_FcLu7vKxBkraE76gwKAXQhTKQae03GCf7RheqBOhi2pCjFBVEFfhfkv0Hs70xNN-GbJ24TAIBGmVIyavEXI9Hs2AeSMvKpJhQFoUejvhQOnovlMqjMMtIKWDrgA2JvizM5pdQHmlTSBrwtkIVJ6mlm29p3QqtFDS5MBcdVufdG3DBAIi",
+                "photo_reference": "Aaw_FcKN7CNRU6SDTu7PisCxbM7arDydn9vQsZ4m2k7FDImkUSZYM441h-nvNeiHJB4N14VdYKsp1DCNvrrwNcUnqXKx4Qt286RkBj2ap0wDO3JfQEt1qLgbssIUrTbSXWVeLg3D9Y0C853UUDDoQdLSV6rhjfy8pvPHabMuqqvAhOB0a9vY",
                 "width": 4608
             },
             {
@@ -5271,7 +5316,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/109043104707582289770\">Mike K\u00e4stner</a>"
                 ],
-                "photo_reference": "Aaw_FcL3sQfdPpcf5J4N3oCyjIOet2gXB_1duq0y5v6YPpGyCRpGwuua9Uhb_Lsks4R4kdoPOrosmUw_JAbQaxkin2gofvRDzz25qq0w1NlXlYVHE-Nj18mVd-MBgSInw6zeDt5gj8Xx-f1nO1EjnOip-IbJp5rQNthjtKtS-HcHEt-Ei7HA",
+                "photo_reference": "Aaw_FcJOn-XNt9uCvpPgVOMe7-KLca03RUwGXdV_XzAc0CEQgjsv1L2anUgnB4ByaNnn_3nzhIjxUbJ0CM2FqB3ASr9vXQlZ1_LswxSiGscDI7qDBbwOqHvpuhSLFZRlPKCtpSuyH7S4PI5jI9A8iVM-Ki60Rp-4eLiTR_2yp-BsJeSmgzU5",
                 "width": 3024
             },
             {
@@ -5279,7 +5324,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/100143414352035385700\">Sibi Husky</a>"
                 ],
-                "photo_reference": "Aaw_FcInAHeRHAg-CtJ3KBtbyhHn9ZkJAANLoJ_7dUlHVHzmJicceqUCUhbJloKimYjYhRMuGUo6jMJrWt9BhLv0uWQQ6K7b9t9se9L8AbBnXBLdAOP_hIzt3OE8qn4fR-zKB4lw13jRoKcbnEZyj8UpAsldGX3Ej9XUC0ozTOkoJVzzT7Nw",
+                "photo_reference": "Aaw_FcJWtCcSTKxfpvuyesF3m4bmxqaMnOiEmy_6tlbpMHBNPSGwqkF4TAWif2xcnfuJ5fkSh_KoNwVF5wg25LR8qLg4KkoJuKddJBVetCpaW63tWWMlnb2c09iqxgLMTXFDHYq4l9UpgqhPbd1ChwVUWG67KaLkPchN5XT1wbAtrFfaCzvN",
                 "width": 3648
             },
             {
@@ -5287,7 +5332,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/100143414352035385700\">Sibi Husky</a>"
                 ],
-                "photo_reference": "Aaw_FcJfQSRr0QaUdlHSj7I8DjiPAWBduGpEPUy4XOlluxdFb6sQQv_rsQe5F9f6k_v5vwir_KeldWjQZeKTI2OUJyJ51lLqJUhNWWZznIXIRtTHa6Kj-DnpSdDgd-ZyqhfGs8RlGHCyYsiuBHhPH9iiy2CqUIAXVotzdcNNiaagK14b0Fgh",
+                "photo_reference": "Aaw_FcKSP6Mh-jnZwn4RpoLIQ1jtHJoLKx4luhZPpBrFffw6LVjNClLvSZdV4bNhlU8bqwR8AXLuAKVlRPs9qRfFm3x6S05yOcWF7Ce_DLNn4UpB4wQg9q4XsGMApFwdBWzSAd4mk0brE2T1B4PEunzSOmNXDCvq0W8HVqghlT-pBjfw1bDf",
                 "width": 4618
             },
             {
@@ -5295,7 +5340,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/111920545137938928355\">Hartmut Schiller</a>"
                 ],
-                "photo_reference": "Aaw_FcKUCw8LKtE7YyVfsoSEmlBOPexgNy5RvkCQKtTroNLZ0nmpAL53StoxFb68K2xM9wQjSQfy1tQWk7X4JCKQsDyE7UBNBmOopc5nrCiqRM2Q1bT6rBOxMpccUidr7NzRe4llkgHKSTrOCNfXb3ypdBHZfPwMRphNUdRC2bi_pqh8yqRl",
+                "photo_reference": "Aaw_FcKSo0s7B34nAkcgCOIjaPglmrXXI7mQ99Kxl-icfA-UKAA1xEKANRfA8VHrb9ilDPh_-3X79hPUlC0BdpIJ6s208xSVMfwIGN1QUMLb5vaYSvE-kzGPC5rtFluCIpCR1G2Dci83MsM_n2vEoG938FdHXfrLzYVjgefBosvF7-CjzElw",
                 "width": 4608
             },
             {
@@ -5303,7 +5348,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/107897630522401481421\">Ellen</a>"
                 ],
-                "photo_reference": "Aaw_FcLxU5b3PE0MURXJWKbH9lI8XgVCCaTMUGYrHpzyK26zwy8kKr7xaQj6v5MY7gtncHjGFBZS7Mmbs1u99pakTB8iRWNAU5-HgjA-x6uu5q_VxOhZL89zBIFojg6eC-mtS081X3emJwnNE9KhTor3TdjSe_bJ6M3BAeBDz4raxC9oUws7",
+                "photo_reference": "Aaw_FcJUatQCe8uhC0hOz7xpqujD8mcBgs4f3fZxZSYGVorK9PivS3uypdHmDnszRW_vdVAy2MW0S7O3-TSKukpIhwidnjnEUfoadAC7eKRUE2N9Be_fN1nzEBx3PyXiltvPp0YIVICaQe7Xt3o4rhUcu2sWWz_hWp5N0HWFb_P9RkQRJHVS",
                 "width": 3024
             }
         ],
@@ -5383,12 +5428,12 @@
             "establishment"
         ],
         "url": "https://maps.google.com/?cid=16796140947185422743",
-        "user_ratings_total": 184,
+        "user_ratings_total": 185,
         "utc_offset": 120,
         "vicinity": "Bonatzweg, Stuttgart",
         "wheelchair_accessible_entrance": true
     },
-    "Schillerlinde": {
+    {
         "address_components": [
             {
                 "long_name": "4",
@@ -5468,14 +5513,14 @@
             "periods": [
                 {
                     "close": {
-                        "date": "2023-07-20",
-                        "day": 4,
+                        "date": "2023-07-24",
+                        "day": 1,
                         "time": "2359",
                         "truncated": true
                     },
                     "open": {
-                        "date": "2023-07-14",
-                        "day": 5,
+                        "date": "2023-07-18",
+                        "day": 2,
                         "time": "0000",
                         "truncated": true
                     }
@@ -5538,7 +5583,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/113317606587296200646\">Monika Stuible</a>"
                 ],
-                "photo_reference": "Aaw_FcKaqn6rZJl7dVBmBKKgWstNm80B4ORCdsOoexNXHS8ab-Uht_kfx6-xArbt_mHE-UglaHDNX-wDfj5Ra4gJDxRKnoUNyKyDGTtidbaTfqz8R1sDqD5nCNJCyiPwV6PNb3OBun7OACktEtr0z5gRSPm6Rw8tI4cMbFJOsF6qPXPnCiB9",
+                "photo_reference": "Aaw_FcJKBfVSLc1Xy-Y1OOgdpSpTs67A4NffKojulCWZrpKsov0lZ8XVSHCZXo00xqm99MlnHaAeeSk75l70JJvF5LncdPIDVagHYZSAJlUBDaAXNjpOFpQcyu8VM3E5EIQGqAmTZVwizsFX1CfoU2ZqoKxF0CUxKGfZcru5Z_9l4trkb_ld",
                 "width": 4608
             },
             {
@@ -5546,7 +5591,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/104287690307571926281\">Stefan B.</a>"
                 ],
-                "photo_reference": "Aaw_FcJWNGlk1X8NKPRCWMqO4cVhxYQ2NHOQ7lz4H-EHUzhaKRCBpl-pzOBVJpmn86CEFKmjz_53t75vNyWEeUP3cYfCyYZ4sHJYN1io3JtckgC8NaVbau-IEuflJon1Iw7T6J5SHKmhqhmU1r997V_iHT9A5G8n_YR71tIWWct5hUiPUwax",
+                "photo_reference": "Aaw_FcKq4r5sCcusuG8ccYsMvottK8lmWoYS3YkcsSzOk9EF5XlYsUfxoxclW_n7d7YCYtlwDf5jcEbWg2_WMmxKyOoER5GYHSUg2nA51bA_lADj_fTy2mKxCXmC25I7nOVju1vriED8AjmEUWldtjQiYh1jpJWIEg1Cdji_ibCQ0VkHmxIV",
                 "width": 4608
             },
             {
@@ -5554,7 +5599,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/115259640717712702382\">Kai-Uwe Graeser</a>"
                 ],
-                "photo_reference": "Aaw_FcLB-KPcaQ3dqapV07wj3mLGCz0ORaq8hjasNhHqBHU6xeA5QEYAOg77Z0h5_liSGaWHjh8N-Gu2fn6KJSvXZpMWq9U1JifHsorVNYTT6ShRBxMLhiT9LBiD99asbhbMeUwTFn05uyF8PvZ18u2mq2FsHKaL2ifGVTiZJLPfGyh1xLpB",
+                "photo_reference": "Aaw_FcL8Izr9YRXEkiwQIo84OGPfnu2r7GkqX7ZSs78ZscBCEKT1mOMKbyj62HhFuXHAuQsPLDaAsKdQwoqNB2CMNr8rWlb_SGU9luowK4XhvBDc-OK9BahmQjW6xswb5FkQywKOkWLmTyIbDcn9gZMhWGosab7yCUcYRyTOWn1yPFKQyHz0",
                 "width": 2736
             },
             {
@@ -5562,7 +5607,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/113061480762037890973\">Ilse Dittmar</a>"
                 ],
-                "photo_reference": "Aaw_FcIWUgnfBKqctBWOXz-e1LzIHg9jLJPO1BXu092IeWLWWTFCH8742Db9VZDaLC449tbxWEEEWJRHV8WZ4dYSOBU3LlOYpSHxl4zexFheha0uPqXBVVa783GXVPHt2aOKdWVgT6ej5osajfhVundqruWp6RRCqFN8T24KqlQiEKJYuvzJ",
+                "photo_reference": "Aaw_FcJ5WU5UScmyQo3kS2DBpxBPcZ-RCcmQgZnO6EIQomjcZQE1Wii_doSirFZ-IrXT0323V9nZTSWEbDNE7mRGHBUhMxWX5RGEF9EWolmxb8p3kM24zz8zx3pYEXJOoXeK8lpNmmiYnnkYZs7mwf7wrxAWSfM5W1aKLPxLoeElE9yfLMe6",
                 "width": 4032
             },
             {
@@ -5570,7 +5615,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/107915453297711392101\">Wingman8472</a>"
                 ],
-                "photo_reference": "Aaw_FcLz5qwoiTKCYJzpLVPVSIl0LAkl_paae6zLP8kM4oYsEZv8Chq4aCiONWM45onYl_musaWCzYC3fmkG9ePDzLjYspbaNt5fBDlVwBOjJY42rWI48jhN1iWO3L7Cut7Jdj9v3Qr6k5_RUJpxRpmgyYVyNBuY9DeljOpX6DEUV2NBCgH4",
+                "photo_reference": "Aaw_FcL_0uXQ7HHlw81HrXHb4I6mDNi-u6GMXf0_uUYoTW-dcWG6kcSMz98P9CNHW0eapkddY1WNIE7-B36usgsJgllJd8FcgyUeNyy9pnPW4ETgpL_fQ2GBh5H9nJqJ7v7TbL3yNxsfN3kyzUI1r7hcESr74dmB6Gm0W-iwCqrsRNzaBqqw",
                 "width": 4032
             },
             {
@@ -5578,7 +5623,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/102854270998045479689\">Max Mustermann</a>"
                 ],
-                "photo_reference": "Aaw_FcIHbV7rhhVL2plF8ivsnjV_35iVRdf2YYL4CJqSqn-dJCpNMgLLwid87RzGbpMMuq_kPsw0GPH1RDH9v03gcD17Buaw6CAQSZ69oltP99vpYiDJP4p2RdSejFNKuGukFVPQ99pQI6g4hRYl8k6vx9PjnnnXLxZUU4bfGJP2nIRBQZHv",
+                "photo_reference": "Aaw_FcIIPJzk98jHiOfEWMpk3-NZlHI8IZLKrB9yWw7TajtBRjnhkO597zJ9p05KPww1gAZwEofIRB-OFOEaHwJusSZdec9NdT3t4qNVAQlLns3R2-0JU7_KaA-EUG1cUEOIj0rfv48NcNVc-QDod-iXdrpL8cNF5MVVZsR7Bkwz-yQN41t_",
                 "width": 2048
             },
             {
@@ -5586,7 +5631,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/116632422123637914398\">Gilb Dunhill6</a>"
                 ],
-                "photo_reference": "Aaw_FcLKCz8cAZXZ7tNfAqytcvoXXwaoLRhyeChX2kKus0XM0ocDV-lN_jROtHWWsnTWcX2nK03rskwlgLG0YN-HVBG50p5pGKoV2NKBzdbU5tsPemqZd--_x-mUCVgxTnI5Tyg2t-XJCJbaRNHdksbxAWWYvgkN6m8kB6Wlxb5BeRwBBv9c",
+                "photo_reference": "Aaw_FcJilSXJ9_xoZqlxIXPKOGKRnZLygPfkC3wWNvyIlhbvVL_JQ5jYyBZcqHTOIHWhydm-p-jvc3aqF7dJ9sjjSVVrsX2OsyN9OnVM3OpN0mjvyehWd0bNiPiCKQfEBl4awUfjwNZ0D-3KdeABEgOGB5gz0jShR6GCPG1ghwmyVXwxAQGe",
                 "width": 5312
             },
             {
@@ -5594,7 +5639,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/102432485390532939122\">Markus Mauer</a>"
                 ],
-                "photo_reference": "Aaw_FcJKKoCglSjZfEy9VEsX9lsl8Io25po_szXHjO00Uuf2Lv53PHbDRNU9E53aCGLjBNFSKEbGIRwYj77ZqoSTN-iXd2lZgcmeHByqPVP_DO6sAh8sEf-n9W4zcDD7pXliVBRSWt2jL7AVCZyBNVBsScDGw8exvJfz98hx464hbmJRxPuN",
+                "photo_reference": "Aaw_FcJXg-dPUveW-VxN12xwsWfks7XZao1XcvtlcQb_mqM5TaqBOeu3kcp_7LZM9acTdjjgIKD_panGGU958-FJqQENkTyDzKYo4CbV2ChBAQb34jLooZkxA3NEHDpbfGIzXoDjaibQOi82IqoyEbyG5wP-Ug1xTlBEZ06GBiFhzKaUzFBV",
                 "width": 4032
             },
             {
@@ -5602,7 +5647,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/105542872248672957526\">Andi Mueller</a>"
                 ],
-                "photo_reference": "Aaw_FcLjBvClocf2vW_QtiJmM3LAFLP08jNl_Ma_tWbHdO1OUoe6PBkjEyyPUDT48rkgyE0eyTLO0bdE8e6Lvi6vbiUSfx2Br-syI34JMQbnGCPbKR3y144PNFwN6mUClGWFlnl6yHNuwc_KOPe6NzbvLfEgIP7SuRR8kDFmYNKIuYWfLYRL",
+                "photo_reference": "Aaw_FcLHv9WM2Rh-gNCTvljL_Gwmbzbx06odYgP8ZLBjvnjP52CJ2LZ5c-SOqAL1Tes49OR95ahqlEET54zX83zZW86xIstgiRChFo-eojxcDMST-SVK6kQUbgORekk4h665Fw8Ilr-ek-VM28n7Wt4Vyw14hb3xwsTGPaTTQM6H44NnxtS3",
                 "width": 1600
             },
             {
@@ -5610,7 +5655,7 @@
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/100099520958398873299\">Andreas Lill</a>"
                 ],
-                "photo_reference": "Aaw_FcIiLlkwhFLGWAqirQb3MDZ8VfEF3Ja13Wk3TvaUVwZg0D7LplhHj4r2Am-0EqgnPqQJ7PpeXrT7vXFlrHrFFLEsA7qgc7Fl5zmmo4LZ01D3LIk2j7s3a4xILp-j-cYvVd8-Hq-9RHV38H1g1lTh7eWO4ngEg8mlWhxzpEZH2j27My-s",
+                "photo_reference": "Aaw_FcIESDJvkI7JKmWmnSTzNrLEmq7kohzTuXnaxoBGivTaIZSMMO45EjMFfEN6GdUsJ9uf_7UBCG9OCcQhFoLvofsoUZ4LS0H0UTs1eH1PMuNwyGvaE5Q3DOpLHynBpqDsp4vCrlUTtKmUJGwzWjwvTRBF0UCHguvh5g6qOj8VfCjPmSnV",
                 "width": 1710
             }
         ],
@@ -5690,9 +5735,9 @@
             "establishment"
         ],
         "url": "https://maps.google.com/?cid=8573601071977102840",
-        "user_ratings_total": 110,
+        "user_ratings_total": 112,
         "utc_offset": 120,
         "vicinity": "Im Schleifrain 4, Stuttgart",
         "website": "http://www.vsv-stuttgart.de/index.php?article_id=51"
     }
-}
+]
