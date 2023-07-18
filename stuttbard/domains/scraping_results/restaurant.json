@@ -555,7 +555,10 @@
         "utc_offset": 120,
         "vicinity": "Mail\u00e4nder Platz 7, Stuttgart",
         "website": "https://losteria.net/de/restaurants/restaurant/stuttgart-mailaender-platz/?utm_source=google&utm_medium=Yext",
-        "wheelchair_accessible_entrance": true
+        "wheelchair_accessible_entrance": true,
+        "cuisine": [
+            "italian"
+        ]
     },
     "Frittenwerk": {
         "address_components": [
@@ -991,7 +994,10 @@
         "utc_offset": 120,
         "vicinity": "Mail\u00e4nder Platz 7, Stuttgart",
         "website": "https://www.frittenwerk.com/stuttgart-milaneo.php",
-        "wheelchair_accessible_entrance": true
+        "wheelchair_accessible_entrance": true,
+        "cuisine": [
+            "fast food"
+        ]
     },
     "HANS IM GL\u00dcCK": {
         "address_components": [
@@ -1550,7 +1556,10 @@
         "utc_offset": 120,
         "vicinity": "Lissabonner Stra\u00dfe 2, Stuttgart",
         "website": "https://hansimglueck-burgergrill.de/burger-restaurant/stuttgart-europaviertel/?utm_source=google&utm_medium=yext&utm_campaign=1",
-        "wheelchair_accessible_entrance": true
+        "wheelchair_accessible_entrance": true,
+        "cuisine": [
+            "american"
+        ]
     },
     "Hotalo": {
         "address_components": [
@@ -2010,7 +2019,10 @@
         "utc_offset": 120,
         "vicinity": "K\u00f6nigstra\u00dfe 26, Stuttgart",
         "website": "https://www.koenigsbau-passagen.de/gastronomie/hotalo/?location=p534-13",
-        "wheelchair_accessible_entrance": false
+        "wheelchair_accessible_entrance": false,
+        "cuisine": [
+            "asian"
+        ]
     },
     "Mata Hari": {
         "address_components": [
@@ -2478,7 +2490,10 @@
         "utc_offset": 120,
         "vicinity": "Gei\u00dfstra\u00dfe 3, Stuttgart",
         "website": "http://www.facebook.com/matahari0711",
-        "wheelchair_accessible_entrance": true
+        "wheelchair_accessible_entrance": true,
+        "cuisine": [
+            "fast food"
+        ]
     },
     "Oblomow": {
         "address_components": [
@@ -2946,6 +2961,9 @@
         "utc_offset": 120,
         "vicinity": "Torstra\u00dfe 20, Stuttgart",
         "website": "https://m.facebook.com/oblomow.stuttgart/?locale2=de_DE",
-        "wheelchair_accessible_entrance": true
+        "wheelchair_accessible_entrance": true,
+        "cuisine": [
+            "fast food"
+        ]
     }
 }

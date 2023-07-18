@@ -182,6 +182,13 @@ def extract_wheelchair_accessible_entrance(details_dict):
     return result
 
 
+def extract_cuisine(details_dict):
+    """
+    Returns the cuisine of this restaurant. 
+    """
+    result = details_dict["cuisine"][0]
+    return result
+
 # The extractor dict contains all the extractor functions for the desired columns
 # An extractor function receives a details dict for a specific name
 # Define all the missing functions
@@ -204,7 +211,8 @@ extractor = {
     "rating": extract_rating,
     "price_level": extract_price_level,
     "vicinity": extract_vicinity,
-    "wheelchair_accessible_entrance": extract_wheelchair_accessible_entrance
+    "wheelchair_accessible_entrance": extract_wheelchair_accessible_entrance,
+    "cuisine": extract_cuisine
 }
 
 
@@ -508,6 +516,7 @@ def print_json_entry(details_dict):
     vicinity = extract_vicinity(details_dict)
     website = extract_website(details_dict)
     wheelchair_accessible_entrance = extract_wheelchair_accessible_entrance(details_dict)
+    cuisine = extract_cuisine(details_dict)
 
     print("city:", city)
     print("area:", area)
@@ -528,7 +537,7 @@ def print_json_entry(details_dict):
     print("vicinity:", vicinity)
     print("website:", website)
     print("wheelchair_accessible_entrance:", wheelchair_accessible_entrance)
-
+    print("cuisine:", cuisine)
 
 def main():
     # this way you get the dir name of the file regardless from where it is called
