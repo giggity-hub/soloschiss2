@@ -31,5 +31,17 @@ def detailed_list_to_table(detailed_list):
     table = pd.DataFrame(rows)
     return table
 
+
+def get_details_for_place_name(name):
+    query_result = google_places.text_search(name, location="Stuttgart")
+    place = query_result.places[0]
+    place.get_details()
+    return place.details
+
+def names_to_detailed_list(names):
+    details = map(get_details_for_place_name, names)
+    return list(details)
+
+
 if __name__ == "__main__":
     print(f"your Places API key is: {API_KEY}")
