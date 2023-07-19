@@ -1,7 +1,0 @@
-cuisine;name;address;phone_number;area;price;rating;vegan_options;dishes;url
-Italian;L'Osteria;Mailänder Platz 7;0711 22007707;north;expensive;4.8;True;steak, burgers;https://losteria.net/de/restaurants/restaurant/stuttgart-mailaender-platz/
-fries;Frittenwerk;Mailänder Platz 7;0211 26009227;south;cheap;4.2;True;pizza, apples;https://www.frittenwerk.com/stuttgart-milaneo.php
-burgers;HANS IM GLÜCK;Marienstraße 3B;0711 25274604;west;regular;2.3;True;pasta;https://hansimglueck-burgergrill.de/burger-restaurant/stuttgart-marienstrasse/
-asian;Hotalo;Königstraße 26;0176 66856614;east;expensive;2.1;FALSE;kebap;https://www.koenigsbau-passagen.de/gastronomie/hotalo/?location=p534-13
-indian;Mata Hari;Geißstraße 3;0711 50421479;west;cheap;4.5;FALSE;salad;http://www.facebook.com/matahari0711
-polish;Oblomow;Torstraße 20;01577 1532031;north;regular;1.8;FALSE;wraps;https://m.facebook.com/oblomow.stuttgart/?locale2=de_DE

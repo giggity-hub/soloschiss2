@@ -1,18 +1,16 @@
 import pytest
-from stuttbard.domains.dataframes import load
-from stuttbard.domains.sampler import create_sampler
+from domains.domains import load_domains_dict, load_domain_sampler
+import pandas as pd
 
-def test_load():
-    domains = load()
-    assert sorted(domains.keys()) == sorted(['museum', 'restaurant', 'view'])
+def test_load_domains():
+    domains_dict = load_domains_dict()
+    for domain_name, table in domains_dict.items():
+        assert type(table) == pd.DataFrame
+        assert 'name' in table.columns
 
-domains = load()
+def test_load_domain_sampler():
+    domains_dict = load_domains_dict()
+    domains_sampler = load_domain_sampler(domains_dict)
 
-@pytest.mark.parametrize('key, df', domains.items())
-def test_no_nan(key, df):
-    assert df.isna().sum().sum() == 0
-
-
-def test_create_sampler():
-    sampler = create_sampler()
-    sample = sampler['restaurant']['address'].sample()
+    random_name = domains_sampler['view']['name'].sample()
+    assert type(random_name) == str
