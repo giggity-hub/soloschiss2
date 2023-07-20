@@ -7,7 +7,8 @@ from importlib.machinery import SourceFileLoader
 import json
 from pathlib import Path
 
-from stuttbard.domains.sampler import create_sampler
+from domains.domains import load_domain_sampler
+from domains.domains import domains_dict
 
 # this_dir = Path(os.path.dirname(__file__))
 # parent_dir = this_dir.parent.absolute()
@@ -21,7 +22,8 @@ class format_dictizzly_bizzl(dict):
     def __missing__(self, key):
         return "%(" + key + ")s"
 
-def get_samples(samplers_dict):
+def get_samples(samplers_dict: dict):
+    
     format_dict = {key : sampler.sample() for (key, sampler) in samplers_dict.items()}
 
     res = {}
@@ -74,25 +76,14 @@ def to_soloist_format(compact_dict):
     return soloist_dict
 
 
-def load_data():
-    data = []
-    for (dir_path, dir_names, file_names) in os.walk(DATA_DIR):
-        json_files = glob.glob(dir_path + '/*.json')
-
-
-        for file_path in json_files:
-            with open(file_path) as f:
-                data += json.load(f)
-
-    return data
-
 def save_data(data, out_path):
     # out_path = os.path.join(out_dir, "data.json")
     with open(out_path, 'w+') as f:
         json.dump(data, f, indent=4)
 
 def convert_python_files():
-    domain_sampler = create_sampler()
+    data = []
+    domain_sampler = load_domain_sampler(domains_dict)
     for (dir_path, dir_names, file_names) in os.walk(DATA_DIR):
         # file_paths = [os.path.join(dir_path, name) for name in file_names]
         python_files_in_dir = glob.glob(dir_path + '/*.py')
@@ -107,19 +98,15 @@ def convert_python_files():
 
                 # spec.loader.exec_module(foo)
                 json_result = tmp_module.main(domain_sampler, parametrize)
-            
-            json_path = os.path.join(dir_path, module_name + '.json')
+                data += json_result
 
-            with open(json_path, 'w+') as f:
-                json.dump(json_result, f, indent=4)
-
-
+    return data
 
 if __name__ == "__main__":
     # 1.) Save the output of all python files to json files
     file_name = sys.argv[1]
-    convert_python_files()
-    data = load_data()
+    data = convert_python_files()
+    # data = load_data()
     random.shuffle(data)
     data = list(map(to_soloist_format, data))
     out_path = os.path.join(OUT_DIR, f"{file_name}.json")
