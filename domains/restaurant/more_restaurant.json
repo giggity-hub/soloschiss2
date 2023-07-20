@@ -1,5 +1,5 @@
 {
-    "Palm Tree African Restaurant": {
+    "Palm Tree": {
         "address_components": [
             {
                 "long_name": "15",
@@ -182,7 +182,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 1521 8201631",
-        "name": "Palm Tree African Restaurant",
+        "name": "Palm Tree",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -3864,7 +3864,7 @@
             "american"
         ]
     },
-    "Asiamo Restaurant": {
+    "Asiamo": {
         "address_components": [
             {
                 "long_name": "147",
@@ -4124,7 +4124,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 7151 9765788",
-        "name": "Asiamo Restaurant",
+        "name": "Asiamo",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -4455,7 +4455,7 @@
             "asian"
         ]
     },
-    "Dong Kinh Asia Restaurant": {
+    "Dong Kinh": {
         "address_components": [
             {
                 "long_name": "25",
@@ -4687,7 +4687,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 7031 437777",
-        "name": "Dong Kinh Asia Restaurant",
+        "name": "Dong Kinh",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -6129,7 +6129,7 @@
             "asian"
         ]
     },
-    "ASIA Viet Long Bad-Cannstatt": {
+    "ASIA Viet Long": {
         "address_components": [
             {
                 "long_name": "12",
@@ -6299,7 +6299,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 55348318",
-        "name": "ASIA Viet Long Bad-Cannstatt",
+        "name": "ASIA Viet Long",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -7778,7 +7778,7 @@
             "asian"
         ]
     },
-    "Sichuan China Restaurant": {
+    "Sichuan": {
         "address_components": [
             {
                 "long_name": "27",
@@ -7996,7 +7996,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 50477452",
-        "name": "Sichuan China Restaurant",
+        "name": "Sichuan",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -8734,7 +8734,7 @@
             "chinese"
         ]
     },
-    "China Restaurant Asia Sonnengarten": {
+    "Asia Sonnengarten": {
         "address_components": [
             {
                 "long_name": "14",
@@ -8991,7 +8991,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 25968278",
-        "name": "China Restaurant Asia Sonnengarten",
+        "name": "Asia Sonnengarten",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -9310,7 +9310,7 @@
             "chinese"
         ]
     },
-    "New Shanghai Restaurant": {
+    "New Shanghai": {
         "address_components": [
             {
                 "long_name": "291",
@@ -9555,7 +9555,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 86060788",
-        "name": "New Shanghai Restaurant",
+        "name": "New Shanghai",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -10052,7 +10052,7 @@
             "chinese"
         ]
     },
-    "KuaiStyle Restaurant": {
+    "KuaiStyle": {
         "address_components": [
             {
                 "long_name": "27",
@@ -10285,7 +10285,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 24853286",
-        "name": "KuaiStyle Restaurant",
+        "name": "KuaiStyle",
         "opening_hours": {
             "open_now": false,
             "periods": [
@@ -10582,7 +10582,7 @@
             "chinese"
         ]
     },
-    "China Restaurant CQ Flavour": {
+    "CQ Flavour": {
         "address_components": [
             {
                 "long_name": "126",
@@ -10827,7 +10827,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 4791300",
-        "name": "China Restaurant CQ Flavour",
+        "name": "CQ Flavour",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -11684,7 +11684,7 @@
             "chinese"
         ]
     },
-    "Tsang\u2019s Kitchen Hong Kong Cuisine": {
+    "Tsang\u2019s Kitchen": {
         "address_components": [
             {
                 "long_name": "11",
@@ -11926,7 +11926,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 50464841",
-        "name": "Tsang\u2019s Kitchen Hong Kong Cuisine",
+        "name": "Tsang\u2019s Kitchen",
         "opening_hours": {
             "open_now": false,
             "periods": [
@@ -15564,7 +15564,7 @@
             "french"
         ]
     },
-    "Restaurant Le Cassoulet": {
+    "Le Cassoulet": {
         "address_components": [
             {
                 "long_name": "30",
@@ -15672,7 +15672,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 22212270",
-        "name": "Restaurant Le Cassoulet",
+        "name": "Le Cassoulet",
         "opening_hours": {
             "open_now": false,
             "periods": [
@@ -21106,7 +21106,7 @@
             "greek"
         ]
     },
-    "Meze meze stuttgart": {
+    "Meze meze": {
         "address_components": [
             {
                 "long_name": "21",
@@ -21280,7 +21280,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 39120690",
-        "name": "Meze meze stuttgart",
+        "name": "Meze meze",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -22385,7 +22385,7 @@
             "greek"
         ]
     },
-    "BE GREEK BEST GYROS OF TOWN": {
+    "BE GREEK": {
         "address_components": [
             {
                 "long_name": "45",
@@ -22545,7 +22545,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 7151 1692729",
-        "name": "BE GREEK BEST GYROS OF TOWN",
+        "name": "BE GREEK",
         "opening_hours": {
             "open_now": false,
             "periods": [
@@ -23925,7 +23925,7 @@
             "indian"
         ]
     },
-    "Namaste India am Berlinerplatz Liederhalle": {
+    "Namaste India": {
         "address_components": [
             {
                 "long_name": "53A",
@@ -24166,7 +24166,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 50076200",
-        "name": "Namaste India am Berlinerplatz Liederhalle",
+        "name": "Namaste India",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -24579,7 +24579,7 @@
             "indian"
         ]
     },
-    "Indisches Indian Restaurant Vinayaga": {
+    "Vinayaga": {
         "address_components": [
             {
                 "long_name": "20",
@@ -24821,7 +24821,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 50876893",
-        "name": "Indisches Indian Restaurant Vinayaga",
+        "name": "Vinayaga",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -25848,7 +25848,7 @@
             "indian"
         ]
     },
-    "Indisches Restaurant KASHMIR": {
+    "KASHMIR": {
         "address_components": [
             {
                 "long_name": "97",
@@ -26114,7 +26114,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 7152 903232",
-        "name": "Indisches Restaurant KASHMIR",
+        "name": "KASHMIR",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -27172,7 +27172,7 @@
             "italian"
         ]
     },
-    "Ristorante La Scala": {
+    "La Scala": {
         "address_components": [
             {
                 "long_name": "41",
@@ -27393,7 +27393,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 290607",
-        "name": "Ristorante La Scala",
+        "name": "La Scala",
         "opening_hours": {
             "open_now": false,
             "periods": [
@@ -28242,7 +28242,7 @@
             "italian"
         ]
     },
-    "Little Italy Restaurant": {
+    "Little Italy": {
         "address_components": [
             {
                 "long_name": "30",
@@ -28403,7 +28403,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 6079032",
-        "name": "Little Italy Restaurant",
+        "name": "Little Italy",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -30181,7 +30181,7 @@
             "italian"
         ]
     },
-    "Ristorante Goldoni": {
+    "Goldoni": {
         "address_components": [
             {
                 "long_name": "151",
@@ -30339,7 +30339,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 6599889",
-        "name": "Ristorante Goldoni",
+        "name": "Goldoni",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -31046,7 +31046,7 @@
             "italian"
         ]
     },
-    "Ristorante Cavallino": {
+    "Cavallino": {
         "address_components": [
             {
                 "long_name": "35",
@@ -31266,7 +31266,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 616275",
-        "name": "Ristorante Cavallino",
+        "name": "Cavallino",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -31557,7 +31557,7 @@
             "italian"
         ]
     },
-    "Ristorante La Piazza": {
+    "La Piazza": {
         "address_components": [
             {
                 "long_name": "11",
@@ -31739,7 +31739,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 247873",
-        "name": "Ristorante La Piazza",
+        "name": "La Piazza",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -32102,7 +32102,7 @@
             "italian"
         ]
     },
-    "Don Via Restaurant": {
+    "Don Via": {
         "address_components": [
             {
                 "long_name": "14",
@@ -32298,7 +32298,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 99789002",
-        "name": "Don Via Restaurant",
+        "name": "Don Via",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -32562,7 +32562,7 @@
             "italian"
         ]
     },
-    "PIZZA & PASTA - San Marco": {
+    "San Marco": {
         "address_components": [
             {
                 "long_name": "100",
@@ -32695,7 +32695,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 30 20213300",
-        "name": "PIZZA & PASTA - San Marco",
+        "name": "San Marco",
         "opening_hours": {
             "open_now": false,
             "periods": [
@@ -36098,7 +36098,7 @@
             "italian"
         ]
     },
-    "Kikuya Japanese Restaurant": {
+    "Kikuya": {
         "address_components": [
             {
                 "long_name": "31",
@@ -36272,7 +36272,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 50095217",
-        "name": "Kikuya Japanese Restaurant",
+        "name": "Kikuya",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -36521,7 +36521,7 @@
             "japanese"
         ]
     },
-    "Keyaki Japanese Cuisine": {
+    "Keyaki": {
         "address_components": [
             {
                 "long_name": "5",
@@ -36755,7 +36755,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 25517476",
-        "name": "Keyaki Japanese Cuisine",
+        "name": "Keyaki",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -37548,7 +37548,7 @@
             "japanese"
         ]
     },
-    "Japanisches Restaurant Kicho": {
+    "Kicho": {
         "address_components": [
             {
                 "long_name": "19",
@@ -37806,7 +37806,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 247687",
-        "name": "Japanisches Restaurant Kicho",
+        "name": "Kicho",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -39233,7 +39233,7 @@
             "korean"
         ]
     },
-    "Soban - Korean Dining": {
+    "Soban": {
         "address_components": [
             {
                 "long_name": "20",
@@ -39443,7 +39443,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 65625188",
-        "name": "Soban - Korean Dining",
+        "name": "Soban",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -40148,7 +40148,7 @@
             "korean"
         ]
     },
-    "Bulgogi Queen Korean BBQ Restaurant": {
+    "Bulgogi Queen Korean BBQ": {
         "address_components": [
             {
                 "long_name": "3",
@@ -40330,7 +40330,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 86060656",
-        "name": "Bulgogi Queen Korean BBQ Restaurant",
+        "name": "Bulgogi Queen Korean BBQ",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -41939,7 +41939,7 @@
             "korean"
         ]
     },
-    "Los Locos Latinos U-Salzwiesenstra\u00dfe -Argentinisches Steakhouse": {
+    "Los Locos Latinos": {
         "address_components": [
             {
                 "long_name": "70",
@@ -42112,7 +42112,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 50468142",
-        "name": "Los Locos Latinos U-Salzwiesenstra\u00dfe -Argentinisches Steakhouse",
+        "name": "Los Locos Latinos",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -45557,7 +45557,7 @@
             "pizza"
         ]
     },
-    "Pizzeria Da Luigi": {
+    "Da Luigi": {
         "address_components": [
             {
                 "long_name": "12",
@@ -45786,7 +45786,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 80607058",
-        "name": "Pizzeria Da Luigi",
+        "name": "Da Luigi",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -46087,7 +46087,7 @@
             "pizza"
         ]
     },
-    "Pizzeria Rosticceria Palma": {
+    "Rosticceria Palma": {
         "address_components": [
             {
                 "long_name": "41",
@@ -46317,7 +46317,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 65227003",
-        "name": "Pizzeria Rosticceria Palma",
+        "name": "Rosticceria Palma",
         "opening_hours": {
             "open_now": false,
             "periods": [
@@ -46616,7 +46616,7 @@
             "pizza"
         ]
     },
-    "Pizzeria da Micci": {
+    "da Micci": {
         "address_components": [
             {
                 "long_name": "3",
@@ -46821,7 +46821,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 54040070",
-        "name": "Pizzeria da Micci",
+        "name": "da Micci",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -47102,7 +47102,7 @@
             "pizza"
         ]
     },
-    "Pizza Trullo's \ufe0f": {
+    "Trullo's \ufe0f": {
         "address_components": [
             {
                 "long_name": "20",
@@ -47271,7 +47271,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 5005770",
-        "name": "Pizza Trullo's \ufe0f",
+        "name": "Trullo's \ufe0f",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -47521,7 +47521,7 @@
             "pizza"
         ]
     },
-    "Luna - Restaurant - Karaoke - Bar": {
+    "Luna": {
         "address_components": [
             {
                 "long_name": "36",
@@ -47648,7 +47648,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 176 31774567",
-        "name": "Luna - Restaurant - Karaoke - Bar",
+        "name": "Luna",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -49058,7 +49058,7 @@
             "spanish"
         ]
     },
-    "Enso Sushi & Grill": {
+    "Enso": {
         "address_components": [
             {
                 "long_name": "6",
@@ -49291,7 +49291,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 99717718",
-        "name": "Enso Sushi & Grill",
+        "name": "Enso",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -52875,7 +52875,7 @@
             "sushi"
         ]
     },
-    "Mikomi Sushi & Grill": {
+    "Mikomi": {
         "address_components": [
             {
                 "long_name": "3",
@@ -53108,7 +53108,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 78251688",
-        "name": "Mikomi Sushi & Grill",
+        "name": "Mikomi",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -54445,7 +54445,7 @@
             "sushi"
         ]
     },
-    "Krua Thai Bolan Thairestaurant": {
+    "Krua Thai Bolan": {
         "address_components": [
             {
                 "long_name": "159",
@@ -54674,7 +54674,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 34225235",
-        "name": "Krua Thai Bolan Thairestaurant",
+        "name": "Krua Thai Bolan",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -54976,7 +54976,7 @@
             "thai"
         ]
     },
-    "Pinto-Mama Thairestaurant": {
+    "Pinto-Mama": {
         "address_components": [
             {
                 "long_name": "99",
@@ -55182,7 +55182,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 35146509",
-        "name": "Pinto-Mama Thairestaurant",
+        "name": "Pinto-Mama",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -58307,7 +58307,7 @@
             "vietnamese"
         ]
     },
-    "Ngon Deli - Vietnamese Home Cooking": {
+    "Ngon Deli": {
         "address_components": [
             {
                 "long_name": "69",
@@ -58477,7 +58477,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 55049770",
-        "name": "Ngon Deli - Vietnamese Home Cooking",
+        "name": "Ngon Deli",
         "opening_hours": {
             "open_now": false,
             "periods": [
@@ -59166,7 +59166,7 @@
             "vietnamese"
         ]
     },
-    "Sen Viet Restaurant": {
+    "Sen Viet": {
         "address_components": [
             {
                 "long_name": "59",
@@ -59388,7 +59388,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 283856",
-        "name": "Sen Viet Restaurant",
+        "name": "Sen Viet",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -61920,7 +61920,7 @@
             "vietnamese"
         ]
     },
-    "Huong Viet - Vietnamesische Spezialit\u00e4ten": {
+    "Huong Viet": {
         "address_components": [
             {
                 "long_name": "23",
@@ -62150,7 +62150,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 25356221",
-        "name": "Huong Viet - Vietnamesische Spezialit\u00e4ten",
+        "name": "Huong Viet",
         "opening_hours": {
             "open_now": true,
             "periods": [
@@ -63295,7 +63295,7 @@
             "vietnamese"
         ]
     },
-    "Thai-Viet - asian cuisine \u00b7 sushi \u00b7 wok": {
+    "Thai-Viet": {
         "address_components": [
             {
                 "long_name": "18",
@@ -63517,7 +63517,7 @@
         "icon_background_color": "#FF9E67",
         "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
         "international_phone_number": "+49 711 50494999",
-        "name": "Thai-Viet - asian cuisine \u00b7 sushi \u00b7 wok",
+        "name": "Thai-Viet",
         "opening_hours": {
             "open_now": true,
             "periods": [
