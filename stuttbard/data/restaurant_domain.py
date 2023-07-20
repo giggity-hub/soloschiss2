@@ -5,12 +5,12 @@ def main(domain_sampler, parametrize):
         "samplers": {"cuisine": domain_sampler['restaurant']['cuisine']},
         "belief": "domain = restaurant ; cuisine = %(cuisine)s",
         "user_system": [
-            ("I want to eat %(cuisine)s food", "Here are some %(cuisine)s restaurants slot_df_names"),
-            ("I'd like to get a %(cuisine)s meal", "These restaurants serve %(cuisine)s meals slot_df_names"),
-            ("Where can i get some %(cuisine)s food?", "You can get %(cuisine)s food at these restaurants slot_df_names"),
-            ("I want to eat %(cuisine)s", "Here are some %(cuisine)s restaurants slot_df_names"),
-            ("give me %(cuisine)s restaurants", "Here are %(cuisine)s restaurants slot_df_names"),
-            ("List %(cuisine)s restaurants", "Here is a list of %(cuisine)s restaurants slot_df_names"),
+            ("I want to eat %(cuisine)s food", "Here are some %(cuisine)s restaurants slot_df_name"),
+            ("I'd like to get a %(cuisine)s meal", "These restaurants serve %(cuisine)s meals slot_df_name"),
+            ("Where can i get some %(cuisine)s food?", "You can get %(cuisine)s food at these restaurants slot_df_name"),
+            ("I want to eat %(cuisine)s", "Here are some %(cuisine)s restaurants slot_df_name"),
+            ("give me %(cuisine)s restaurants", "Here are %(cuisine)s restaurants slot_df_name"),
+            ("List %(cuisine)s restaurants", "Here is a list of %(cuisine)s restaurants slot_df_name"),
         ]
     })
 
@@ -35,11 +35,11 @@ def main(domain_sampler, parametrize):
             "cuisine2": domain_sampler['restaurant']['cuisine']},
         "user_system": [
             ("Do you know any restaurants that are either %(cuisine1)s or %(cuisine2)s", 
-                "Here are restaurants that fit your description slot_df_names"),
+                "Here are restaurants that fit your description slot_df_name"),
             ("I like %(cuisine1)s and %(cuisine2)s food",
-                "Then you should like these restaurants slot_df_names"),
+                "Then you should like these restaurants slot_df_name"),
             ("I want food that is  %(cuisine1)s or %(cuisine2)s",
-                "Then you should like these restaurants slot_df_names")
+                "Then you should like these restaurants slot_df_name")
         ]
     })
 

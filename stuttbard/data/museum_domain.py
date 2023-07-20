@@ -3,7 +3,7 @@ def main(domain_sampler, parametrize):
     query_by_type = parametrize({
         "n_repetitions": 2,
         "samplers": {"topic": domain_sampler['museum']['about']},
-        "belief": "domain = museum ; about = '%(topic)s'",
+        "belief": "domain = museum ; about = %(topic)s",
         "user_system": [
             ("I want to visit a %(topic)s museum", "Here are some %(topic)s museums slot_df_name"),
             ("I'd like to go to a %(topic)s museum", "These are %(topic)s museums in Stuttgart slot_df_name"),
@@ -27,15 +27,15 @@ def main(domain_sampler, parametrize):
     query_domain = parametrize({
         "belief": "domain = museum",
         "user_system": [
-            ("I want to visit a museum.", "What topic should the museum be about? slot_df_topic"),
-            ("What topics do the museums in Stuttgart have?", "Stuttgart contains museums about these topics: {templates.list(cuisines)}"),
-            ("I want to know what types of museums you could show me in Stuttgart?", "Sure. Stuttgart has these types of museums: {templates.list(cuisines)}"),
-            ("What museums are located in Stuttgart?", "The list of themes museums in Stuttgart have includes: {templates.list(cuisines)}"),
-            ("What types of museums are available in Stuttgart?", "I know of these kinds of museums in Stuttgart: {templates.list(cuisines)}"),
-            ("I'd like to go to a museum", "What type of museums would you want to visit? slot_df_topic"),
-            ("I would like to know more about museums", "This is a list about the topics of museums in Stuttgart: slot_df_topic"),
-            ("What do you know about museums?", "These are themes of museums in Stuttgart: slot_df_topic"),
-            ("Show we what you know about museums around Stuttgart?", "The museums in Stuttgart are about: slot_df_topic")
+            ("I want to visit a museum.", "What topic should the museum be about? slot_df_about"),
+            ("What topics do the museums in Stuttgart have?", "Stuttgart contains museums about these topics: slot_df_about"),
+            ("I want to know what types of museums you could show me in Stuttgart?", "Sure. Stuttgart has these types of museums: slot_df_about"),
+            ("What museums are located in Stuttgart?", "The list of themes museums in Stuttgart have includes: slot_df_about"),
+            ("What types of museums are available in Stuttgart?", "I know of these kinds of museums in Stuttgart: slot_df_about"),
+            ("I'd like to go to a museum", "What type of museums would you want to visit? slot_df_about"),
+            ("I would like to know more about museums", "This is a list about the topics of museums in Stuttgart: slot_df_about"),
+            ("What do you know about museums?", "These are themes of museums in Stuttgart: slot_df_about"),
+            ("Show we what you know about museums around Stuttgart?", "The museums in Stuttgart are about: slot_df_about")
         ]
     })
 
