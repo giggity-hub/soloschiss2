@@ -6,7 +6,7 @@ from utils.unique_random import UniqueRandom
 
 # We need to use this path, because the working directory path changes based on from where the script is executed
 this_dir = os.path.dirname(__file__)
-domain_names = ['restaurant', 'museum', 'view', 'stairs']
+domain_names = ['restaurant', 'museum','stairs']
 
 def load_domains_dict() -> Dict[str , pd.DataFrame]:
     table_paths = [os.path.join(this_dir, domain_name, 'table.csv') for domain_name in domain_names]
