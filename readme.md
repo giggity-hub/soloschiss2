@@ -1,16 +1,26 @@
-# Running Commands
-All python scripts must be run as modules from the root folder
+# Interacting
 ```bash
-# create the training data
-python3 -m stuttbard.scripts.create_data
-# Run the tests
-python3 -m pytest tests
+# start the docker container (if it isn't already running)
+sudo docker compose up -d
+
+# enter into the docker container
+sudo docker compose exec myapp bash
+
+# start the soloist server (inside docker bash)
+python3 app.py <model_name>
+# Example:
+python3 app.py model_schmodel
+
+# start the chatbot (inside local shell)
+python3 -m stuttbard.chatbot.chat
 ```
 
-# Commands
+# Training
 ```bash
 # Generate json training data
-python3 -m scripts.create_data
+python3 -m scripts.create_data <dataset_name>
+# Example
+python3 -m scripts.create_data data_schmata
 
 # Build the Docker Image
 sudo docker compose up -d --build
@@ -23,14 +33,17 @@ source scripts/train_kbbot.sh <training-data> <model_name>
 # Example:
 source scripts/train_kbbot.sh kb.soloist.json model_schmodel
 
-# Serve the model (from inside docker bash)
-python3 app.py <model_name>
-# Example:
-python3 app.py model_schmodel
-
 # exit docker bash
 exit
 
 # Deactivate the Container
 docker compose down
+```
+# Testing
+```bash
+# run all tests
+py.test tests
+
+# run specific test file
+py.test tests/<filename>.py
 ```
