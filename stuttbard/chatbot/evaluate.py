@@ -14,98 +14,87 @@ def parse_beliefstate(beliefstate_string: str):
         res[key] = val
     return res
 
-
-def action(belief_dict):
-    return "sheeesh"
-
-
 def create_df(bs, domains, df):
-    if 'domain' in bs:
+    if 'domain' in bs and bs['domain'] is not None:
         df = domains[bs['domain']]
-    if 'query' in bs:
+    if 'query' in bs and bs['query'] is not None:
         df = df.query(bs['query'])
-    if 'head' in bs:
+    if 'head' in bs and bs['head'] is not None:
         df = df.head(bs['head'])
-    if 'sortby' in bs:
+    if 'sortby' in bs and bs['sortby'] is not None:
         df = df.sortby(bs['sortby'])
 
     return df
+
+SPECIAL_WORDS = ['sortby', 'head', 'domain', 'entity_name', 'entity_index']
+OR_CHARACTER = '|'
+
+def construct_query(bs):
+    # Assume that every key value where key is not a special word is a query constraint
+    constraints = []
+    for key, val in bs.items():
+        if key in SPECIAL_WORDS:
+            continue
+        options = val.split(OR_CHARACTER)
+        options = [f'"{opt.strip()}"' for opt in options]
+        expression = f'{key} == {" | ".join(options)}'
+        constraints.append(expression)
+
+    if len(constraints) == 0:
+        return None
+    else:
+        return " & ".join(constraints)
 
 def resolve_entity(bs, df, entity):
     if 'entity_index' in bs:
         return df.iloc[int(bs['entity_index'])]
     elif 'entity_name' in bs:
-        return df[df['name'] == bs['entity_name']].iloc[0]
+        return df[df['name'].str.contains(bs['entity_name'])].iloc[0]
     return entity
 
+def render_df(df):
+    return "sooooooos"
 
+def render_entity_value(entity, column):
+    return entity[column]
 
-def render_entity_value():
-    pass
+def render_column(df, column):
+    return '\n'.join(df[column].tolist())
 
-def render_column():
-    pass
+def render_slot_value(matched_slot, df, entity):
+    values = matched_slot.split('_', maxsplit=2)
+
+    column = values[2] if len(values) == 3 else None
+
+    if values[1] == 'df' and not column:
+        return render_df(df)
+    elif values[1] == 'df' and column:
+        return render_column(df, column)
+    elif values[1] == 'entity' and column:
+        return render_entity_value(entity, column)
 
 def find_all_slots_in_template(template_string):
-    # define this pattern
-    pattern = ''
+    pattern = 'slot_(entity|df)[a-z_]*'
     matches = [m for m in re.finditer(pattern, template_string)]
     return matches
 
 def fill_template_slots(template_string, df, entity):
-    matches = find_all_slots_in_template()
-    pass
-    # 1.) find all substrings of the form slot_df_xxxx or slot_entity_xxx
-    # column names may also include underscores but never a space
-    # slot_df_xxx means that column xxx should be displayed
-    # slot_entity_xxx means that attribute xxx of the entity should be displayed
-    # 2.) Once you have all the matches replace the slots in the string with correct values
-    # for columns (slot_df_xxx) use render_column() and for entity values (slot_entity_xxx) use render_entity_value()
+    matches = find_all_slots_in_template(template_string)
+    for match in matches:
+        matched_slot = match.group()
+        slot_value = render_slot_value(matched_slot, df, entity)
+        template_string = template_string.replace(matched_slot, slot_value)
+    
+    return template_string
 
 
 def evaluate(sample, domains, df, entity):
     beliefstate_string = sample['belief']
     bs = parse_beliefstate(beliefstate_string)
+    bs['query'] = construct_query(bs)
     df = create_df(bs, domains, df)
     entity = resolve_entity(bs, df, entity)
 
     response_template = sample['system']
     res = fill_template_slots(response_template, df, entity)
     return res
-
-
-
-
-
-    
-
-# mentions = df
-# mentions
-
-# entity0 : df[df['name']=='Stefan']
-# df.iloc[0]
-
-# the phone number of the entity0['name'] 
-
-# entity1 = 
-
-# What is the phone number of the first one? entity = df. entity0 =  entity1 = df.iloc[0]
-# cols = [phone_number]
-
-# What is its address? 
-# entity0['address'] ; cols = ['address']
-
-# What is the telephone number of the Hatori?
-# number = domains['restaurant'].query()
-# hatori = 
-
-# What are their ratings?
-# the rating of the 
-
-
-def soos():
-    x = 'asdfd'
-    print(locals())
-
-if __name__ == "__main__":
-    evaluate("domain = 'restaurant', ")
