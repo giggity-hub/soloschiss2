@@ -12,5 +12,14 @@ def test_load_domain_sampler():
     domains_dict = load_domains_dict()
     domains_sampler = load_domain_sampler(domains_dict)
 
-    random_name = domains_sampler['view']['name'].sample()
+    random_name = domains_sampler['restaurant']['name'].sample()
     assert type(random_name) == str
+
+def test_sampler_index():
+    domains_dict = load_domains_dict()
+    domains_sampler = load_domain_sampler(domains_dict)
+
+    index_str, index_int = domains_sampler['index'].sample()
+    assert type(index_str) == str
+    assert len(index_str) > 0
+    assert type(index_int) == int
