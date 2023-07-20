@@ -24,17 +24,26 @@ def domains():
     return domains
 
 
+
 def test_create_df(domains):
-    bs = parse_beliefstate("domain = restaurant ; query = cuisine == 'italian'")
+    bs = parse_beliefstate("domain = restaurant ; cuisine = italian")
     df = create_df(bs, domains, None)
     assert df.iloc[0]['name'] == 'Little Ceasars'
 
-def test_resolve_entity(domains):
-    bs = parse_beliefstate("domain = restaurant ; query = cuisine == 'italian' ; entity_index = 0")
+def test_resolve_entity_by_index(domains):
+    bs = parse_beliefstate("domain = restaurant ; cuisine = italian ; entity_index = 0")
     df = create_df(bs, domains, None)
 
     entity = resolve_entity(bs, df, None)
     assert entity['name'] == 'Little Ceasars'
+
+@pytest.mark.parametrize("entity_name", ['Little Ceasars', 'le baguette', 'zum Wildschwein'])
+def test_resolve_entity_by_name(domains, entity_name):
+    bs = {'entity_name': entity_name}
+    df = create_df(bs, domains, domains['restaurant'])
+
+    entity = resolve_entity(bs, df, None)
+    assert entity['name'] == entity_name
 
 @pytest.mark.parametrize("test_input, expected", [
     ({'cuisine': 'asian'}, 'cuisine == "asian"'),
@@ -98,7 +107,7 @@ def test_evaluate(domains):
         'belief': "domain = restaurant ; cuisine = italian ; entity_index = 0",
         'system': "The name of the place is slot_entity_name"
     }
-    res = evaluate(sample, domains, None, None)
+    res, _, _ = evaluate(sample, domains, None, None)
     assert res == "The name of the place is Little Ceasars"
 
 
@@ -108,7 +117,7 @@ def test_evaluate_with_domain(domains):
         'system': "The name of the place is slot_entity_name"
     }
     df = domains['restaurant']
-    res = evaluate(sample, domains, df, None)
+    res, _, _ = evaluate(sample, domains, df, None)
     assert res == "The name of the place is Little Ceasars"
 
 def test_evaluate_with_entity(domains):
@@ -118,5 +127,5 @@ def test_evaluate_with_entity(domains):
     }
     df = domains['restaurant']
     entity = df.iloc[0]
-    res = evaluate(sample, domains, df, entity)
+    res, _, _ = evaluate(sample, domains, df, entity)
     assert res == "The name of the place is Little Ceasars"

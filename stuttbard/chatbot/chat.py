@@ -1,74 +1,55 @@
 import re
-from stuttbard.domains.dataframes import load
+from domains.domains import domains_dict
 from argparse import Namespace
+import requests
+from stuttbard.chatbot.evaluate import evaluate
 
-domains = load()
-
-class Chat():
-    def __init__(self) -> None:
-        self.history = [] 
+def query_soloist(history):
+    r = requests.get('http://localhost:8000', json={'history': history})
+    return r.text
 
 
-
-    def start(self):
-        domains = load()
-        
-
-        while True:
-            # Get Model Output for User Input
-            user_in = input()
-            user_in_prefixed = f'user : {user_in}'
-            self.history.append(user_in_prefixed)
-
-            raw_output = sample([user_in_prefixed])[0]
-
-            split_at = raw_output.find('system : ')
-            system_response = raw_output[split_at:]
-            belief_string = raw_output[:split_at]
-
-            res = "I sorry i did not understand that"
-            try:
-                for code in belief_string.split(";"):
-                    exec(code.strip())
-                res = eval("f'" + belief_string.strip() + "'")
-            except:
-                pass
+def start():
+    domains = domains_dict
+    df = None
+    entity = None
     
+    while True:
+        # Get Model Output for User Input
+        user_in = input()
+        user_in_prefixed = f'user : {user_in}'
+        # history.append(user_in_prefixed)
 
-            self.history.append(system_response)
+        raw_output = query_soloist([user_in_prefixed])
 
-            print(raw_output)
-            print(res)
+        split_at = raw_output.find('system : ')
+        system_response = raw_output[split_at:]
+        belief_string = raw_output[:split_at]
 
-def do_shit(belief_string, system_response, prev={'df': 'sheesh'}):
-    ns = Namespace(**prev)
+        sample = {
+            'belief': belief_string,
+            'system': system_response
+        }
 
-    # print(domains)
-    res = "Sorry i nix understando"
-    code_blocks = belief_string.split(";")
-    code_blocks = [cb.strip() for cb in code_blocks]
+        res = "I sorry i did not understand that"
+        print(f"raw model output: {raw_output}")
+        print(f"sample: {sample}")
+        try:
+            res, df, entity = evaluate(sample, domains, df, entity)
+        except Exception as e:
+            print(e)
+            
+        # print(domains['restaurant'])
+        # self.history.append(system_response)
 
-
-    try:
-        for cb in code_blocks:
-            exec(cb)
-        print(ns.df)
-        eval_string = system_response.strip()
-        print(eval_string)
-        res = eval('f"' + eval_string + '"')
-    except Exception as e:
-        print(e)
-        print("Oh boiiii something really bad happened")
-    
-    return res, locals()
+        print(f"res: {res}")
 
 
 if __name__ == "__main__":
-    
+    start()
     # print(domains)
     # print("sheeeeeeesh")
-    x, y = do_shit("ns.df = domains['restaurant']", "give me your wallet {ns.df['name'].iloc[0]}")
-    print(x)
+
     # print(df)
     # chat = Chat()
     # chat.start()

@@ -14,17 +14,6 @@ def parse_beliefstate(beliefstate_string: str):
         res[key] = val
     return res
 
-def create_df(bs, domains, df):
-    if 'domain' in bs and bs['domain'] is not None:
-        df = domains[bs['domain']]
-    if 'query' in bs and bs['query'] is not None:
-        df = df.query(bs['query'])
-    if 'head' in bs and bs['head'] is not None:
-        df = df.head(bs['head'])
-    if 'sortby' in bs and bs['sortby'] is not None:
-        df = df.sortby(bs['sortby'])
-
-    return df
 
 SPECIAL_WORDS = ['sortby', 'head', 'domain', 'entity_name', 'entity_index']
 OR_CHARACTER = '|'
@@ -44,6 +33,20 @@ def construct_query(bs):
         return None
     else:
         return " & ".join(constraints)
+    
+
+def create_df(bs, domains, df):
+    bs['query'] = construct_query(bs)
+    if 'domain' in bs and bs['domain'] is not None:
+        df = domains[bs['domain']]
+    if 'query' in bs and bs['query'] is not None:
+        df = df.query(bs['query'])
+    if 'head' in bs and bs['head'] is not None:
+        df = df.head(bs['head'])
+    if 'sortby' in bs and bs['sortby'] is not None:
+        df = df.sortby(bs['sortby'])
+
+    return df
 
 def resolve_entity(bs, df, entity):
     if 'entity_index' in bs:
@@ -53,10 +56,10 @@ def resolve_entity(bs, df, entity):
     return entity
 
 def render_df(df):
-    return "sooooooos"
+    return df.to_string()
 
 def render_entity_value(entity, column):
-    return entity[column]
+    return str(entity[column])
 
 def render_column(df, column):
     return '\n'.join(df[column].tolist())
@@ -80,6 +83,7 @@ def find_all_slots_in_template(template_string):
 
 def fill_template_slots(template_string, df, entity):
     matches = find_all_slots_in_template(template_string)
+    print(f"matches: {matches}")
     for match in matches:
         matched_slot = match.group()
         slot_value = render_slot_value(matched_slot, df, entity)
@@ -91,10 +95,13 @@ def fill_template_slots(template_string, df, entity):
 def evaluate(sample, domains, df, entity):
     beliefstate_string = sample['belief']
     bs = parse_beliefstate(beliefstate_string)
-    bs['query'] = construct_query(bs)
+    print(f"belief_state: {bs}")
+    
     df = create_df(bs, domains, df)
+    print(f"df: {df.head()}")
     entity = resolve_entity(bs, df, entity)
+    print(f"entity: {entity}")
 
     response_template = sample['system']
     res = fill_template_slots(response_template, df, entity)
-    return res
+    return res, df, entity
