@@ -98,7 +98,7 @@ def evaluate(sample, domains, df, entity):
     print(f"belief_state: {bs}")
     
     df = create_df(bs, domains, df)
-    print(f"df: {df.head()}")
+    print(f"df: {df.head() if df is not None else df}")
     entity = resolve_entity(bs, df, entity)
     print(f"entity: {entity}")
 
