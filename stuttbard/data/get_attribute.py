@@ -7,7 +7,7 @@ def main(domain_sampler, parametrize):
     ]
 
 
-    # Include 3 type of user inputs for every column name
+    # Include 1 question for every column name in our datasets
     # Also include attributes which are not in the dataset. hopefully this will lead to better generalization
     # DO NOT INCLUDE SYNONYMS: topic should not be recognized as the about column and instead as the topic column
     # We can resolve synonyms in the chatbot. this makes it easier for the model
@@ -17,7 +17,11 @@ def main(domain_sampler, parametrize):
         ('How tall is the %(entity_mention)s', 
             'The slot_entity_name is slot_entity_tall tall'),
         ('What is the rating of the %(entity_mention)s',
-            'The rating of the slot_entity_name is slot_entity_rating')
+            'The rating of the slot_entity_name is slot_entity_rating'),
+        ('Please give me the phone number of the %(entity_mention)s',
+            'The phone number of the slot_entity_name is slot_entity_phone_number'),
+        ('Could you provide me with the url of the %(entity_mention)s',
+            'The url of the slot_entity_name is slot_entity_url')
     ]
 
     # Extend the following list of entity mentions
