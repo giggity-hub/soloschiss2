@@ -25,6 +25,10 @@ def load_domain_sampler(domains_dict):
 
     # Add additional helper methods
     domain_sampler['index'] = UniqueRandom([('first', 0), ('second', 1), ('third', 2), ('fourth', 3), ('fifth', 4), ('last', -1)])
+    # Hier kannst du aehnlich wie fuer index einen neuen sampler hinzufuegen
+    # Du kannst alle namen aus allen domains in eine liste fuegen indem du alle tabellen joinst 
+    # (siehe pandas join oder combine oder whatever weiss gerade nicht genau wie der lachs heisst)
+    # und dann die unique values der name column holst
     return domain_sampler
 
 domains_dict = load_domains_dict()
