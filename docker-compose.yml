@@ -17,3 +17,7 @@ services:
     image: myapp_image
     stdin_open: true 
     tty: true
+
+volumes:
+  models:
+  data:
