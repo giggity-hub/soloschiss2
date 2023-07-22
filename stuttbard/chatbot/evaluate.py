@@ -1,6 +1,18 @@
 import re
+from typing import Dict, List
+import pandas as pd
 
-def parse_beliefstate(beliefstate_string: str):
+
+def parse_beliefstate(beliefstate_string: str) -> dict:
+    """Parse a belief state string into a dictionary. 
+    parse_beliefstate("name = Hatori ; cuisine = chinese") = {'name': 'Hatori', 'cuisine': 'chinese'}
+
+    Args:
+        beliefstate_string (str): The belief state string from the model
+
+    Returns:
+        dict: The parsed belief state dictionary
+    """
     if '=' not in beliefstate_string:
         return {}
     
@@ -18,8 +30,19 @@ def parse_beliefstate(beliefstate_string: str):
 SPECIAL_WORDS = ['sortby', 'head', 'domain', 'entity_name', 'entity_index']
 OR_CHARACTER = '|'
 
-def construct_query(bs):
-    # Assume that every key value where key is not a special word is a query constraint
+def construct_query(bs: dict) -> str:
+    """Constructs a pandas df query string from a belief state.
+    It is assumed, that all values that are not reserved keywords are mean to be queries
+
+    construct_query({'cuisine': 'chinese | japanese', 'area': 'Stuttgart-Mitte'}) 
+    => "cuisine == 'chinese' | 'japanese' & area == 'Stuttgart-Mitte'"
+
+    Args:
+        bs (dict): A belief state dictionary
+
+    Returns:
+        str: A pandas dataframe query string
+    """
     constraints = []
     for key, val in bs.items():
         if key in SPECIAL_WORDS:
@@ -35,7 +58,19 @@ def construct_query(bs):
         return " & ".join(constraints)
     
 
-def create_df(bs, domains, df):
+def create_df(bs: dict, domains: Dict[str, pd.DataFrame], df: pd.DataFrame) -> pd.DataFrame:
+    """This function determines which dataframe the user is talking about by evaluating the belief state.
+    If the user does not change or constrain the current dataframe This function does nothing.
+
+
+    Args:
+        bs (dict): A Belief State Dictionary
+        domains (Dict[str, pd.DataFrame]): The domains Dictionary
+        df (pd.DataFrame): The selected dataframe before evluation of the belief state
+
+    Returns:
+        pd.DataFrame: The selected dataframe after evaluating the belief state
+    """
     bs['query'] = construct_query(bs)
     if 'domain' in bs and bs['domain'] is not None:
         df = domains[bs['domain']]
@@ -48,7 +83,18 @@ def create_df(bs, domains, df):
 
     return df
 
-def resolve_entity(bs, df, entity):
+def resolve_entity(bs: dict, df: pd.DataFrame, entity : pd.Series) -> pd.Series:
+    """This function updates the selected entity based on the belief state.
+    A new entity will be selected if either entity_index or entity_name are present in the belief state.
+
+    Args:
+        bs (dict): _description_
+        df (pd.DataFrame): _description_
+        entity (pd.Series): _description_
+
+    Returns:
+        pd.Series: _description_
+    """
     if 'entity_index' in bs:
         return df.iloc[int(bs['entity_index'])]
     elif 'entity_name' in bs:
@@ -76,7 +122,18 @@ def render_slot_value(matched_slot, df, entity):
     elif values[1] == 'entity' and column:
         return render_entity_value(entity, column)
 
-def find_all_slots_in_template(template_string):
+def find_all_slots_in_template(template_string: str) -> List[re.Match]:
+    """Find all slots in a system response string.
+    Slots are indicated by slot_df_xxx or slot_entity_xxx
+
+    find_all_slots_in_template("The address is slot_entity_address")
+
+    Args:
+        template_string (str): _description_
+
+    Returns:
+        List[re.Match]: _description_
+    """
     pattern = 'slot_(entity|df)[a-z_]*'
     matches = [m for m in re.finditer(pattern, template_string)]
     return matches
