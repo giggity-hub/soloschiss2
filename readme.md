@@ -1,3 +1,8 @@
+# Prerequisites
+- Docker Installation
+- Python 3
+- Unzip the pretrained soloist model inside the soloist folder as `soloist/gtg_pretrained`
+- Unzip all models you wish to use in the /models folder
 # Interacting
 ```bash
 # start the docker container (if it isn't already running)
