@@ -29,7 +29,34 @@ def load_domain_sampler(domains_dict):
     # Du kannst alle namen aus allen domains in eine liste fuegen indem du alle tabellen joinst 
     # (siehe pandas join oder combine oder whatever weiss gerade nicht genau wie der lachs heisst)
     # und dann die unique values der name column holst
+
+    # domain sampler to sample the domain names randomly
+    domain_sampler['domain'] = UniqueRandom(list(domains_dict.keys()))
+
+    
+    """
+    pandas join allows not that the two table to join have matching column names
+    pandas merge works with "outer" as option but could possibly have duplicates in the name column so 
+    it needs extra work
+    # domain sampler to sample the names of entities in our dataset
+    joined_table = domains_dict[list(domains_dict.keys())[0]]
+    for other_table in domains_dict.values():
+        # the 
+        joined_table = joined_table.merge(other_table, how='outer', on='name')    
+    name_list = list(joined_table["name"])
+    # this ensures that we have no duplicate of names in our list
+    assert(len(set(name_list)) == len(name_list))
+    """
+
+    name_list = []
+    for other_table in domains_dict.values():
+        name_list.extend(list(other_table["name"]))
+    # removes duplicates from the name list
+    name_list = list(set(name_list))
+    domain_sampler['name'] = UniqueRandom(name_list)
+
     return domain_sampler
 
 domains_dict = load_domains_dict()
 domain_sampler = load_domain_sampler(domains_dict)
+

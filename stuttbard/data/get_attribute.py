@@ -1,4 +1,5 @@
 from utils.unique_random import UniqueRandom
+#from domains.domains import load_domains_dict, load_domain_sampler
 
 def main(domain_sampler, parametrize):
     attributes_and_col_name = [
@@ -38,30 +39,77 @@ def main(domain_sampler, parametrize):
         # type 1: just the name
         ('Hotalo', 'Hotalo', 'name'),
         # type two: index + 'one'
-        ('first one', 0, 'index')
+        ('first one', 0, 'index'),
         # type three: just index
-        ('last', -1, 'index')
+        ('last', -1, 'index'),
         # type four: index + domain name
         ('first restaurant', 0, 'index'),
         # type five name + domain name
         ('StadtPalais museum', 'StadtPalais', 'name')
-        ]
+    ]
     # Below are two functions which generate mentions of a given type
-    def generate_type_five(n):
+    def generate_type_five(n): # not sure if it works
         res = []
         for i in range(n):
             # assuming that you have defined a "name" sampler in domains.domains
             rand_name = domain_sampler['name'].sample()
             rand_domain = domain_sampler['domain'].sample()
             res.append((f'{rand_name} {rand_domain}', rand_name, 'name'))
+        return res
 
-    def generate_type_two(n):
+    def generate_type_one(n): # works
+        res = []
+        for i in range(n):
+            rand_name = domain_sampler['name'].sample()
+            res.append((rand_name, rand_name, 'name'))
+        return res
+
+    def generate_type_two(n): # works
         res = []
         for i in range(n):
             index_str, index_int = domain_sampler['index'].sample()
-            res.append((index_str + ' one', index_int, 'index',))
+            res.append((index_str + ' one', index_int, 'index'))
         return res
     
-    # Now you also need to write a function which constructs a belief state given a 
+    def generate_type_three(n): #works
+        res = []
+        for i in range(n):
+            index_str, index_int = domain_sampler['index'].sample()
+            res.append((index_str, index_int, 'index'))
+        return res
+
+    def generate_type_four(n): #works
+        res = []
+        for i in range(n):
+            index_str, index_int = domain_sampler['index'].sample()
+            rand_domain = domain_sampler['domain'].sample()
+            res.append((index_str + " " + rand_domain, index_int, 'index'))
+        return res
+
     
+    
+    # Now you also need to write a function which constructs a belief state given a 
     res = []
+
+
+
+    """
+    ################
+    no_examples = 3
+    response1 = generate_type_one(no_examples)
+    response2 = generate_type_two(no_examples)
+    response3 = generate_type_three(no_examples)
+    response4 = generate_type_four(no_examples)
+    response5 = generate_type_five(no_examples)
+    print("response1:", response1)
+    print("response2:", response2)
+    print("response3:", response3)
+    print("response4:", response4)
+    print("response5:", response5)
+    """
+
+"""
+domains_dict = load_domains_dict()
+domain_sampler = load_domain_sampler(domains_dict=domains_dict)
+main(domain_sampler=domain_sampler, parametrize=None)
+"""
