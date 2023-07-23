@@ -23,3 +23,49 @@ def test_sampler_index():
     assert type(index_str) == str
     assert len(index_str) > 0
     assert type(index_int) == int
+
+def test_sampler_name():
+    domains_dict = load_domains_dict()
+    domains_sampler = load_domain_sampler(domains_dict)
+
+    name = domains_sampler['name'].sample()
+    assert type(name) == str
+    assert len(name) > 0
+
+def test_sampler_entity_name():
+    # The belief state form of the name should be inside the text form
+    domains_dict = load_domains_dict()
+    domains_sampler = load_domain_sampler(domains_dict)
+
+    name_text, name_bs = domains_sampler['entity_name'].sample()
+    assert name_bs in name_text
+    print(name_text)
+    print(name_bs)
+    # assert False
+
+def test_sampler_entity_index():
+    # The belief state form of the name should be inside the text form
+    domains_dict = load_domains_dict()
+    domains_sampler = load_domain_sampler(domains_dict)
+
+    index_str, index_int = domains_sampler['entity_index'].sample()
+    assert type(index_str) == str
+    assert len(index_str) > 0
+    assert type(index_int) == int
+
+    print(index_str)
+    print(index_int)
+    # assert False
+
+def test_sampler_entity():
+    domains_dict = load_domains_dict()
+    domains_sampler = load_domain_sampler(domains_dict)
+
+    text_occurence, belief_state = domains_sampler['entity'].sample()
+    assert type(text_occurence) == str
+    assert type(belief_state) == str
+    assert '=' in belief_state
+
+    print(text_occurence)
+    print(belief_state)
+    assert False

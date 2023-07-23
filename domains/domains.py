@@ -3,6 +3,7 @@ import os
 from glob import glob
 from typing import Dict
 from utils.unique_random import UniqueRandom
+import random
 
 # We need to use this path, because the working directory path changes based on from where the script is executed
 this_dir = os.path.dirname(__file__)
@@ -54,6 +55,44 @@ def load_domain_sampler(domains_dict):
     # removes duplicates from the name list
     name_list = list(set(name_list))
     domain_sampler['name'] = UniqueRandom(name_list)
+
+
+    
+
+    domain_sampler['entity_name'] = UniqueRandom([])
+    def entity_name_sample():
+        rand_name = domain_sampler['name'].sample()
+        entity_bs = rand_name
+        entity_text = rand_name
+        include_domain_name = random.uniform(0, 1) > 0.5
+        if include_domain_name:
+            rand_domain = domain_sampler['domain'].sample()
+            entity_text += ' ' + rand_domain
+        return (entity_text, entity_bs, )
+    domain_sampler['entity_name'].sample = entity_name_sample
+
+    domain_sampler['entity_index'] = UniqueRandom([])
+    def entity_index_sample():
+        index_text, index_int = domain_sampler['index'].sample()
+        suffix_type = random.choice(['NOTHING', 'ONE', 'RND_DOMAIN'])
+
+        if suffix_type == 'ONE':
+            index_text += ' one'
+        elif suffix_type == 'RND_DOMAIN':
+            random_domain = domain_sampler['domain'].sample()
+            index_text += ' ' + random_domain
+        
+        return (index_text, index_int, )
+    domain_sampler['entity_index'].sample = entity_index_sample
+
+
+    domain_sampler['entity'] = UniqueRandom([])
+    def entity_sample():
+        entity_type = random.choice(['entity_name', 'entity_index'])
+        text_form, bs_form = domain_sampler[entity_type].sample()
+        belief_state = f"{entity_type} = {bs_form}"
+        return (text_form, belief_state)
+    domain_sampler['entity'].sample = entity_sample
 
     return domain_sampler
 
