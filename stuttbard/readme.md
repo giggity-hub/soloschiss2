@@ -23,6 +23,18 @@ belief = "entity_index = 0"
 #head: Select only the first n entries from the df
 belief = "head = 2"
 ```
+## Query Content
+All key value pairs where the key is not a special keyword are treated as query parameters
+```python
+# look for asian cuisine
+belief = "cuisine = asian"
+
+# look for chinese cuisine in Stuttgart-Mitte
+belief = "cuisine = chinese ; area = Stuttgart-Mitte"
+
+# look for history or art museums
+belief = "about = history | art"
+```
 ## System Response
 In the System response you can either reference columns of the currently selected dataframe or attributes from the currently selected entity
 - Use `slot_entity_xxx` to select attribute `xxx` from the active entity
