@@ -108,7 +108,7 @@ def render_entity_value(entity, column):
     return str(entity[column])
 
 def render_column(df, column):
-    return '\n'.join(df[column].tolist())
+    return '\n' + '\n'.join(list(df[column].unique()))
 
 def render_slot_value(matched_slot, df, entity):
     values = matched_slot.split('_', maxsplit=2)
