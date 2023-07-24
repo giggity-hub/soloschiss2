@@ -7,10 +7,38 @@ def main(domain_sampler, parametrize):
     ask_for_single_attr_without_mention = parametrize({
         'belief': '',
         'user_system': [
-            ('Give me the address of that place %(entity_mention)s',
+            ('Give me the address of that place',
                 'The address of the slot_entity_name is slot_entity_address'),
             ('Where is it located?',
-                'The slot_entity_name is located at slot_entity_address')
+                'The slot_entity_name is located at slot_entity_address'),
+            ('Tell me the sheesh of it',
+                'The sheesh of the slot_entity_name is slot_entity_sheesh'),
+            ('Lookup the price range of that place',
+                'The price range of the slot_entity_name is slot_entity_price_range'),
+            ('What is the influx of it?',
+                'The influx of the slot_entity_name is slot_entity_influx'),
+            ('How much does it weigh?',
+                'The slot_entity_name weighs slot_entity_weight'),
+            ('Can you give me the house number?',
+                'The house number of the slot_entity_name is slot_entity_house_number'),
+            ('In which area is it?',
+                'The slot_entity_name is in the slot_entity_area area'),
+            ('Which district is it in?',
+                'The slot_entity_name is in the slot_entity_district district'),
+            ('Is it wheelchair accessible?', 
+                'The slot_entity_name is slot_entity_wheelchair_access'),
+            ('Do they have student discounts?',
+                'The slot_entity_name has slot_entity_student_discounts'),
+            ('Do they offer free wifi?',
+                'The slot_entity_name offers slot_entity_free_wifi'),
+            ('In what year was it build?',
+                'The slot_entity_name was build in slot_entity_year_build'),
+            ('What is the average rating of that place?',
+                'The average rating of the slot_entity_name is slot_entity_average_rating'),
+            ('What is its height?',
+                'The height of the slot_entity_name is slot_entity_height'),
+            ('And what is the diameter?',
+                'The diameter fo the slot_entity_name is slot_entity_diameter')
         ]
     })
 
@@ -64,6 +92,4 @@ def main(domain_sampler, parametrize):
     ]
     })
     
-
-
-    return [*ask_for_single_attr_by_mention]
+    return [*ask_for_single_attr_by_mention, *ask_for_single_attr_without_mention]
