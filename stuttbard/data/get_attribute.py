@@ -39,6 +39,16 @@ def main(domain_sampler, parametrize):
                 'The height of the slot_entity_name is slot_entity_height'),
             ('And what is the diameter?',
                 'The diameter fo the slot_entity_name is slot_entity_diameter')
+            ('How can I call them?',
+                'The phone number of slot_entity_name is slot_entity_phone_number'),
+            ('How expensive is it?',
+                'slot_entity_name costs slot_entity_price'),
+            ('When is it open?',
+                'The opening hours of slot_entity_name are slot_entity_opening_hours'),
+            ('Can you list what kind of services they offer?',
+                'Sure, slot_entity_name offers the following services: slot_entity_services'),
+            ('What kind of material is it made of?',
+             'slot_entity_name is made of slot_entity_material'),
         ]
     })
 
@@ -89,6 +99,29 @@ def main(domain_sampler, parametrize):
             'The address of the slot_entity_name is slot_entity_address'),
         ('And what is the duration of the %(entity_mention)s?',
             'The duration of the slot_entity_name is slot_entity_duration'),
+
+        ('How much does %(entity_mention)s weigh?',
+            'The weight of the slot_entity_name is slot_entity_weight'),
+        ('What color is %(entity_mention)s?',
+            'The color of the slot_entity_name is slot_entity_color'),
+        ('Do you know what kind of cuisine they serve in %(entity_mention)s?',
+            'They serve slot_entity_cuisine food in slot_entity_name'),
+        ('What is the expiry date of the %(entity_mention)s?',
+            'The expiry date of the slot_entity_name is slot_entity_expiry_date'),
+        ('Please give me the email of the %(entity_mention)s',
+            'The email of the slot_entity_name is slot_entity_email'),
+        ('How do I find %(entity_mention)s?',
+            'The address of slot_entity_name is slot_entity_address'),
+        ('Can you check if there are any promotions at %(entity_mention)s?',
+            'slot_entity_name currently has the following promotions: slot_entity_promotions'),
+        ('Any idea who %(entity_mention)s is named after?',
+            'slot_entity_name is named after slot_entity_named_after'),
+        ('Do you have any information about the opening hours of %(entity_mention)s?',
+            'The opening hours of slot_entity_name are slot_entity_opening_hours'),
+        ('Do you have any reviews for %(entity_mention)s?',
+            'Here are some reviews for slot_entity_name: slot_entity_reviews'),
+        ('How much is %(entity_mention)s?',
+            'slot_entity_name costs slot_entity_price'),
     ]
     })
     
