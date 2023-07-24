@@ -2,10 +2,11 @@ import argparse
 import json
 import os
 import sys
+from nltk.translate.bleu_score import sentence_bleu
+from nltk.tokenize import wordpunct_tokenize as tokenizer
 
 root_dir = os.path.abspath(os.path.join(__file__, '..', '..'))
 sys.path.append(root_dir)
-from stuttbard.chatbot.chat import query_soloist
 from stuttbard.chatbot.evaluate import parse_beliefstate
 
 
@@ -19,16 +20,17 @@ def main(test_file: str, verbose: bool = False):
     tp_attr = 0  # attributes that are both in gold and predicted
     fp_attr = 0  # attributes in predicted but not in gold
     fn_attr = 0  # in gold but not in predicted
+    bleu_scores = []
 
     for dialogue in data:
-        user_inp = dialogue['history']
-        raw_output = query_soloist(user_inp)
+        # get reply for calculating BLEU
+        reply_gold = dialogue['reply_gold'].replace('system :', '', 1).strip()
+        reply_pred = dialogue['reply_pred'].replace('system :', '', 1).strip()
+        bleu_scores.append(sentence_bleu([tokenizer(reply_gold)], tokenizer(reply_pred)))
 
-        belief_string = dialogue['belief'][9:]
-        belief_gold = parse_beliefstate(belief_string)
-
-        split_at = raw_output.find('system : ')
-        belief_pred = parse_beliefstate(raw_output[:split_at])
+        # get belief for calculating accuracy/precision/recall
+        belief_gold = parse_beliefstate(dialogue['belief_gold'].replace('belief :', '', 1).strip())
+        belief_pred = parse_beliefstate(dialogue['belief_pred'].replace('belief :', '', 1).strip())
 
         total_attr += len(belief_gold)
 
@@ -58,6 +60,7 @@ def main(test_file: str, verbose: bool = False):
         fn_attr += fn
         fp_attr += fp
 
+    bleu = sum(bleu_scores) / len(bleu_scores)
     accuracy = full_matches / total_dialogues
     precision = tp_attr / (tp_attr + fp_attr) if (tp_attr + fp_attr) > 0 else 0
     recall = tp_attr / (tp_attr + fn_attr) if (tp_attr + fn_attr) > 0 else 0
@@ -65,6 +68,7 @@ def main(test_file: str, verbose: bool = False):
 
     print(f'Total dialogues: {total_dialogues}')
     print(f'Accuracy (exact matches): {accuracy:.2f}')
+    print(f'Macro-averaged BLEU score: {bleu:.2f}')
     print('\nAttribute-level metrics')
     print(f'Precision: {precision:.2f}')
     print(f'Recall: {recall:.2f}')
