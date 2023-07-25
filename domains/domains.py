@@ -27,6 +27,8 @@ def fill_sampler(domains_dict, domain_sampler):
 
     # domain sampler to sample the domain names randomly
     domain_sampler['domain'] = UniqueRandom(list(domains_dict.keys()))
+    
+    domain_sampler['number'] = UniqueRandom([('one', 1), ('two', 2), ('three', 3), ('four', 4), ('five', 5), ('six', 6), ('seven', 7), ('eight', 8), ('nine', 9), ('ten', 10)])
 
     
     """
