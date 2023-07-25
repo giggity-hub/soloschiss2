@@ -41,7 +41,7 @@ def main(parametrize):
     
     query_rating = parametrize({
         "n_repetitions": 2,
-        "samplers": {"number": list(range(5))},
+        "samplers": {"number": lambda s : s['restaurant']['rating']},
         "belief": "domain = museum; sortby = rating; head = %(number)s",
         "user_system": [
             ("Show me the top %(number)s museums in Stuttgart.", "The top rated museums are: slot_df_name"),
