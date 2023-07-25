@@ -3,11 +3,13 @@ import os
 from glob import glob
 from typing import Dict
 from utils.unique_random import UniqueRandom
+from utils.unique_random import get_sampler_split
 import random
 
 # We need to use this path, because the working directory path changes based on from where the script is executed
 this_dir = os.path.dirname(__file__)
 domain_names = ['restaurant', 'museum','stairs']
+TRAIN_TEST_SLPIT = 0.8
 
 def load_domains_dict() -> Dict[str , pd.DataFrame]:
     table_paths = [os.path.join(this_dir, domain_name, 'table.csv') for domain_name in domain_names]
@@ -15,15 +17,7 @@ def load_domains_dict() -> Dict[str , pd.DataFrame]:
     return dict(zip(domain_names, tables))
 
 
-def load_domain_sampler(domains_dict):
-    domain_sampler = {}
-    for domain_name, table in domains_dict.items():
-        domain_sampler[domain_name] = {}
-        col_names = list(table.columns.values)
-        for col_name in col_names:
-            col_values = list(table[col_name].dropna().unique())
-            domain_sampler[domain_name][col_name] = UniqueRandom(col_values)
-
+def fill_sampler(domains_dict, domain_sampler):
     # Add additional helper methods
     domain_sampler['index'] = UniqueRandom([('first', 0), ('second', 1), ('third', 2), ('fourth', 3), ('fifth', 4), ('last', -1)])
     # Hier kannst du aehnlich wie fuer index einen neuen sampler hinzufuegen
@@ -95,7 +89,25 @@ def load_domain_sampler(domains_dict):
     domain_sampler['entity'].sample = entity_sample
 
     return domain_sampler
+    
+
+
+def load_domain_sampler(domains_dict):
+    domain_sampler = {}
+    test_sampler = {}
+    for domain_name, table in domains_dict.items():
+        domain_sampler[domain_name] = {}
+        test_sampler[domain_name] = {}
+        col_names = list(table.columns.values)
+        for col_name in col_names:
+            col_values = list(table[col_name].dropna().unique())
+            domain_sampler[domain_name][col_name], test_sampler[domain_name][col_name] = get_sampler_split(col_values, TRAIN_TEST_SLPIT)
+
+    domain_sampler = fill_sampler(domains_dict, domain_sampler)
+    test_sampler = fill_sampler(domains_dict, test_sampler)
+
+    return domain_sampler, test_sampler
 
 domains_dict = load_domains_dict()
-domain_sampler = load_domain_sampler(domains_dict)
+domain_sampler, test_sampler = load_domain_sampler(domains_dict)
 
