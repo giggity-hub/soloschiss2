@@ -48,7 +48,7 @@ def test_resolve_entity_by_name(domains, entity_name):
 @pytest.mark.parametrize("test_input, expected", [
     ({'cuisine': 'asian'}, 'cuisine == "asian"'),
     ({'cuisine': 'mexican', 'area': 'Stuttgart-Mitte'}, 'cuisine == "mexican" & area == "Stuttgart-Mitte"'),
-    ({'cuisine': 'mexican | asian'}, 'cuisine == "mexican" | "asian"')
+    ({'cuisine': 'mexican or asian'}, 'cuisine == "mexican" | "asian"')
 ])
 def test_construct_query(test_input, expected):
     assert construct_query(test_input) == expected
@@ -75,8 +75,8 @@ def test_find_all_slots_in_template(test_input, expected):
 @pytest.mark.parametrize("test_input, expected", [
     ('slot_entity_name', 'Little Ceasars'),
     ('slot_entity_cuisine', 'italian'),
-    ('slot_df_name', 'Little Ceasars\nle baguette\nzum Wildschwein'),
-    ('slot_df_cuisine', 'italian\nfrench\ngerman')
+    ('slot_df_name', '\nLittle Ceasars\nle baguette\nzum Wildschwein'),
+    ('slot_df_cuisine', '\nitalian\nfrench\ngerman')
 ])
 def test_render_slot_value(test_input, expected, domains):
     df = domains['restaurant']
@@ -89,8 +89,8 @@ def test_render_slot_value(test_input, expected, domains):
 @pytest.mark.parametrize("test_input, expected", [
     ('The slot_entity_name is open', 'The Little Ceasars is open'),
     ('The cuisine is slot_entity_cuisine', 'The cuisine is italian'),
-    ('The names are slot_df_name', 'The names are Little Ceasars\nle baguette\nzum Wildschwein'),
-    ('The cuisines are slot_df_cuisine', 'The cuisines are italian\nfrench\ngerman'),
+    ('The names are slot_df_name', 'The names are \nLittle Ceasars\nle baguette\nzum Wildschwein'),
+    ('The cuisines are slot_df_cuisine', 'The cuisines are \nitalian\nfrench\ngerman'),
     ('The cuisine of the slot_entity_name is slot_entity_cuisine', 'The cuisine of the Little Ceasars is italian')
 ])
 def test_fill_template_slots(test_input, expected, domains):
