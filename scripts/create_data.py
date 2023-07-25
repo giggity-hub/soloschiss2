@@ -74,7 +74,6 @@ def get_samplers(sampler_accesors, sampler):
 def parametrize(config):
     random.shuffle(config['user_system'])
     train_tuples, test_tuples = train_test_split(config['user_system'], test_size=0.25)
-    print(len(train_tuples), len(test_tuples))
 
     train_config = {
         "user_system": train_tuples,
@@ -152,3 +151,5 @@ if __name__ == "__main__":
     out_path_test = os.path.join(OUT_DIR, f"{file_name}_test.json")
     save_data(train_data, out_path_train)
     save_data(test_data, out_path_test)
+
+    print(f"You have {len(train_data)} training samples and {len(test_data)} test samples")

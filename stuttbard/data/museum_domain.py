@@ -104,7 +104,7 @@ def main(parametrize):
             ("What is the phone number of the %(name)s museum?", "The phone number is slot_entity_phone_number."),
             
             ("Show me the google maps rating of the %(name)s museum in Stuttgart.", "According to the reviews the slot_entity_name museum achieved an average rating of slot_entity_rating."),
-            ("What rating does the %(name)s museum in Stuttgart have on google maps.", "The slot_entity_name museum has an average rating of slot_entity_rating.")
+            ("What rating does the %(name)s museum in Stuttgart have on google maps.", "The slot_entity_name museum has an average rating of slot_entity_rating."),
             ("How popular is the %(name)s museum in Stuttgart?.", "The reviews give the slot_entity_name museum an average rating of slot_entity_rating."),
             ("Is the %(name)s museum in Stuttgart good?", "In reviews the museum achieved an average rating of slot_entity_rating."),
             ("Do people like the %(name)s museum?", "To my knowledge the museum achieved slot_entity_rating as average rating from reviews."),
