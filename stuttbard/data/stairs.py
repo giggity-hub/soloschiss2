@@ -1,8 +1,8 @@
-def main(domain_sampler, parametrize):
+def main(parametrize):
 
     query_by_area = parametrize({
         "n_repetitions": 2,
-        "samplers": {"area": domain_sampler['stairs']['area']},
+        "samplers": {"area": lambda s: s['stairs']['area']},
         "belief": "domain = stairs ; area = %(area)s",
         "user_system": [
             ("Do you know any staeffeles in %(area)s ?", "Here are staeffeles in %(area)s slot_df_name"),

@@ -1,8 +1,8 @@
-def main(domain_sampler, parametrize):
+def main(parametrize):
 
     query_by_type = parametrize({
         "n_repetitions": 2,
-        "samplers": {"topic": domain_sampler['museum']['about']},
+        "samplers": {"topic": lambda s: s['museum']['about']},
         "belief": "domain = museum ; about = %(topic)s",
         "user_system": [
             ("I want to visit a %(topic)s museum", "Here are some %(topic)s museums slot_df_name"),
@@ -51,8 +51,7 @@ def main(domain_sampler, parametrize):
             ("Show me %(number)s good museums around Stuttgart.", "This is a list of museums valued highly by people: slot_df_name")
         ]
     })
-    
-    
+
     query_wheel_chair_accessible = parametrize({
         "belief": "domain = museum; wheelchair_accessible_entrance = True",
         "user_system": [
@@ -63,10 +62,9 @@ def main(domain_sampler, parametrize):
         ]
     })
     
-    
     query_child = parametrize({
         "n_repetitions": 2,
-        "samplers": {"topic": domain_sampler['museum']['about']},
+        "samplers": {"topic": lambda s: s['museum']['about']},
         "belief": "domain = museum; for_children = 1; about = %(topic)s",
         "user_system": [
             ("My kid likes %(topic)s do you have any museums about this topic?", "Here is a list of museums about %(topic)s: slot_df_name"),
