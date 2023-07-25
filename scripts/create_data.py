@@ -24,8 +24,7 @@ class format_dictizzly_bizzl(dict):
         return "%(" + key + ")s"
     
 
-train_sampler = load_domain_sampler(domains_dict)
-test_sampler = load_domain_sampler(domains_dict)
+train_sampler, test_sampler = load_domain_sampler(domains_dict)
 
 def get_samples(samplers_dict: dict):
     
@@ -74,7 +73,8 @@ def get_samplers(sampler_accesors, sampler):
 
 def parametrize(config):
     random.shuffle(config['user_system'])
-    train_tuples, test_tuples = train_test_split(config['user_system'])
+    train_tuples, test_tuples = train_test_split(config['user_system'], test_size=0.25)
+    print(len(train_tuples), len(test_tuples))
 
     train_config = {
         "user_system": train_tuples,
@@ -134,16 +134,17 @@ def convert_python_files():
 
                 for moped in json_res:
                     # print(moped)
-                    train_data.append(moped[0])
-                    if len(moped) > 1:
-                        test_data.append(moped[1])
+                    train_data += moped[0]
+                    # if len(moped) > 1:
+                    test_data += moped[1]
 
     return train_data, test_data
 
 if __name__ == "__main__":
     # 1.) Save the output of all python files to json files
     file_name = sys.argv[1]
-    test_data, train_data = convert_python_files()
+    train_data, test_data = convert_python_files()
+
     # data = load_data()
     test_data = list(map(to_soloist_format, test_data))
     train_data = list(map(to_soloist_format, train_data))

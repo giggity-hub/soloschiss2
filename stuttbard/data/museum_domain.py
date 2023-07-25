@@ -2,7 +2,7 @@ def main(parametrize):
 
     res = []
     
-    res += parametrize({
+    res.append(parametrize({
         "n_repetitions": 2,
         "samplers": {"topic": lambda s: s['museum']['about']},
         "belief": "domain = museum ; about = %(topic)s",
@@ -24,9 +24,9 @@ def main(parametrize):
             ("Do you know any %(topic)s museums located in Stuttgart?", "We have these %(topic)s museums around Stuttgart, among others: slot_df_name"),
             ("Are you aware of any %(topic)s museums in Stuttgart?", "According to my database the list of %(topic)s museums includes: slot_df_name")
         ]
-    })
+    }))
 
-    res += parametrize({
+    res.append(parametrize({
         "belief": "domain = museum",
         "user_system": [
             ("I want to visit a museum.", "What topic should the museum be about? slot_df_about"),
@@ -39,9 +39,9 @@ def main(parametrize):
             ("What do you know about museums?", "These are themes of museums in Stuttgart: slot_df_about"),
             ("Show we what you know about museums around Stuttgart?", "The museums in Stuttgart are about: slot_df_about")
         ]
-    })
+    }))
     
-    res += parametrize({
+    res.append(parametrize({
         "n_repetitions": 2,
         "samplers": {"number": lambda s : s['museum']['rating']},
         "belief": "domain = museum; sortby = rating; head = %(number)s",
@@ -52,9 +52,9 @@ def main(parametrize):
             ("Give me the %(number)s highest rated museums.", "The %(number)s museums rated highest by people are: slot_df_name"),
             ("Show me %(number)s good museums around Stuttgart.", "This is a list of museums valued highly by people: slot_df_name")
         ]
-    })
+    }))
 
-    res += parametrize({
+    res.append(parametrize({
         "belief": "domain = museum; wheelchair_accessible_entrance = True",
         "user_system": [
             ("Do you know museums accessible by wheechair users?", "Here is a list of museums with a wheelchair accessible entrance: slot_df_name"),
@@ -62,9 +62,9 @@ def main(parametrize):
             ("List some museums with accessible entrance for wheelchairs?", "I know of these museums with an accessible entrance for wheelchairs: slot_df_name"),
             ("What museums in Stuttgart have an entrance made for wheelchair users?", "These are museums people sitting in a wheelchair can enter: slot_df_name")
         ]
-    })
+    }))
     
-    res += parametrize({
+    res.append(parametrize({
         "n_repetitions": 2,
         "samplers": {"topic": lambda s: s['museum']['about']},
         "belief": "domain = museum; for_children = 1; about = %(topic)s",
@@ -74,11 +74,11 @@ def main(parametrize):
             ("Can you show me %(topic)s museums my child would like to visit?", "Here are some %(topic)s museums that are enjoyable for children: slot_df_name"),
             ("Is there any %(topic)s museum my child would enjoy?", "slot_entity_name is a %(topic)s museum also made for children.")
         ]
-    })
+    }))
     
     
     # single column queries (i.e. single attribute queries) based on entity_name belief state
-    res += parametrize({
+    res.append(parametrize({
         "samplers": {"name": lambda s : s['museum']['name']},
         "belief": "domain = museum; entity_name = %(name)s",
         "user_system": [
@@ -122,11 +122,11 @@ def main(parametrize):
             ("Show me the website of the %(name)s museum.", "The link to the official website is slot_entity_website."),
             ("Direct me to the website of the %(name)s museum!", "The website of the slot_entity_name museum can be reached under slot_entity_website.")
         ]
-    })
+    }))
     
     
     # single column queries (i.e. single attribute queries) based on entity_index belief state
-    res += parametrize({
+    res.append(parametrize({
         'samplers': {'index_text, index_int': lambda s : s['index']},
         'belief': "domain = museum; entity_index = %(index_int)s",
         "user_system": [
@@ -143,7 +143,7 @@ def main(parametrize):
             ("What is the topic of the %(index_text)s museum?", "The %(index_text)s museum is about slot_entity_about or more specific about slot_entity_about_specific."),
             ("I would like to visit the %(index_text)s museum. In which area is it?", "The slot_entity_name museum is in the slot_entity_area.")
         ]
-    })
+    }))
         
 
     # query_url_by_topic = parametrize({
@@ -165,5 +165,6 @@ def main(parametrize):
     #             "I know of these websites about %(topic)s museums in Stuttgart: {templates.list(url)}")
     #     ]
     # })
+
 
     return res

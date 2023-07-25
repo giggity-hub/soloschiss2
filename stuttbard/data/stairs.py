@@ -3,7 +3,7 @@ def main(parametrize):
     res = []
 
     # query by area
-    res += parametrize({
+    res.append(parametrize({
         "n_repetitions": 2,
         "samplers": {"area": lambda s: s['stairs']['area']},
         "belief": "domain = stairs ; area = %(area)s",
@@ -13,10 +13,10 @@ def main(parametrize):
             ("Please show me some staeffeles in %(area)s", "Here are staeffeles in %(area)s slot_df_name"),
             ("I want to go to a staeffele in %(area)s", "Here are staeffeles in %(area)s slot_df_name")
         ]
-    })
+    }))
 
     # Most number of steps
-    res+= parametrize({
+    res.append(parametrize({
         "belief": "domain = stairs ; sortby = number_of_steps; entity_index = 0",
         "user_system": [
             ("Which stair has the most number of steps?",
@@ -28,15 +28,49 @@ def main(parametrize):
             ("Tell me which staeffeles has the most steps",
                 "With slot_entity_number_of_steps steps, the slot_entity_name has the most steps")
         ]
-    })
+    }))
 
-    res += parametrize({
-        "belief": ""
-    })
+    # Query just domain
+    res.append(parametrize({
+        "belief": "domain = stairs",
+        "user_system": [
+            ("I want to see some of the famous Stuttgarter stairs",
+                "In which area would you like to look for staeffeles?"),
+            ("Show me some staeffeles please",
+                "In which area would you like to look for staeffeles?"),
+            ("Do you know any good stairs to climb?",
+                "In which area would you like to look for staeffeles?"),
+            ("Tell me about the staeffeles in Stuttgart",
+                "In which area would you like to look for staeffeles?"),
+            ("I want to go to one of the staeffeles",
+                "In which area would you like to look for staeffeles?"),
+            ("Do you know where i can find any staeffeles?",
+                "In which area would you like to look for staeffeles?"),
+            ("I'd like to see one of those Stuttgarter stairs",
+                "In which area would you like to look for staeffeles?"),
+            ("Tell me where i can find staeffeles in Stuttgart",
+                "In which area would you like to look for staeffeles?")
+        ]
+    }))
+
+    res.append(parametrize({
+        "belief": "area = %(area)s",
+        "samplers": {"area": lambda s: s['stairs']['area']},
+        "user_system": [
+            ("I want to see some in %(area)s please",
+                "Here are some locations that fit your description slot_df_name"),
+            ("In the %(area)s area",
+                "Here are some locations that fit your description slot_df_name"),
+            ("I want to go to the %(area)s area",
+                "Here are some locations that fit your description slot_df_name"),
+            ("Show me the ones in %(area)s",
+                "Here are some locations that fit your description slot_df_name")
+        ]
+    }))
 
 
     # 5 highest in area
-    res+= parametrize({
+    res.append(parametrize({
         "belief": "domain = stairs ; head = 5 ; sortby = height; area = %(area)s",
         "samplers": {
             'area': lambda s : s['stairs']['area']},
@@ -50,10 +84,10 @@ def main(parametrize):
             ("I want to know what the five highest staeffeles in %(area)s are",
                 "Here are the five highest stairs in %(area)s. slot_df_name"),
         ]
-    })
+    }))
 
 
-    res += parametrize({
+    res.append(parametrize({
         'samplers': {
             'name': lambda s : s['stairs']['name']
         },
@@ -66,7 +100,7 @@ def main(parametrize):
             ("How many steps does the %(name)s have?",
                 "The slot_entity_name has slot_entity_number_of_steps steps"),
             ("Wha is the number of steps of the %(name)s?",
-                "The slot_entity_name has slot_entity_number_of_steps steps")
+                "The slot_entity_name has slot_entity_number_of_steps steps"),
             ("Tell me the length of the %(name)s",
                 "The slot_entity_name has a length of slot_entity_length"),
             ("How long is the %(name)s?",
@@ -80,9 +114,9 @@ def main(parametrize):
             ("In which part of town is the %(name)s in?",
                 "The slot_entity_name is in the slot_entity_area area")
         ]
-    })
+    }))
 
-    res += parametrize({
+    res.append(parametrize({
         'samplers': {
             'index_text, index_int': lambda s : s['index']
         },
@@ -96,7 +130,7 @@ def main(parametrize):
             ("Look up how many steps the %(index_text)s set of stairs has please",
                 "The slot_entity_name has slot_entity_number_of_steps steps"),
             ("Do you know how many steps the %(index_text)s one has?",
-                "The slot_entity_name has slot_entity_number_of_steps steps")
+                "The slot_entity_name has slot_entity_number_of_steps steps"),
             # Length
             ("What's the length of the %(index_text)s one?",
                 "The slot_entity_name has a length of slot_entity_length"),
@@ -112,12 +146,9 @@ def main(parametrize):
                 "The slot_entity_name is in the slot_entity_area area")
         ]
 
-    })
+    }))
 
-    res += parametrize({
-        'samplers': {
-            'index_text, index_int': lambda s : s['index']
-        },
+    res.append(parametrize({
         'belief': "",
         "user_system": [
             ("Tell me it's height",
@@ -128,7 +159,7 @@ def main(parametrize):
             ("How many steps does it have?",
                 "The slot_entity_name has slot_entity_number_of_steps steps"),
             ("Can you tell me the number of steps of that one?",
-                "The slot_entity_name has slot_entity_number_of_steps steps")
+                "The slot_entity_name has slot_entity_number_of_steps steps"),
             # Length
             ("What's it's length?",
                 "The slot_entity_name has a length of slot_entity_length"),
@@ -144,7 +175,7 @@ def main(parametrize):
                 "The slot_entity_name is in the slot_entity_area area")
         ]
 
-    })
+    }))
     
 
     return res
