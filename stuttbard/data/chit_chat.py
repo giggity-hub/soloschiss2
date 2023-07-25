@@ -1,4 +1,4 @@
-def main(domain_sampler, parametrize):
+def main(parametrize):
     greet = parametrize({
         "belief": "",
         "user_system": [
