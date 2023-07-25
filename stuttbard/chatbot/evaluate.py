@@ -28,7 +28,7 @@ def parse_beliefstate(beliefstate_string: str) -> dict:
 
 
 SPECIAL_WORDS = ['sortby', 'head', 'domain', 'entity_name', 'entity_index']
-OR_CHARACTER = '|'
+OR_CHARACTER = ' or '
 
 def construct_query(bs: dict) -> str:
     """Constructs a pandas df query string from a belief state.
