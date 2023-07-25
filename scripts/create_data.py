@@ -6,6 +6,7 @@ import glob
 from importlib.machinery import SourceFileLoader
 import json
 from pathlib import Path
+from sklearn.model_selection import train_test_split
 
 from domains.domains import load_domain_sampler
 from domains.domains import domains_dict
@@ -21,6 +22,10 @@ OUT_DIR = './data'
 class format_dictizzly_bizzl(dict):
     def __missing__(self, key):
         return "%(" + key + ")s"
+    
+
+train_sampler = load_domain_sampler(domains_dict)
+test_sampler = load_domain_sampler(domains_dict)
 
 def get_samples(samplers_dict: dict):
     
@@ -41,7 +46,7 @@ def get_samples(samplers_dict: dict):
     return res
 
 
-def parametrize(config):
+def _parametrize(config):
     n_repetitions = config['n_repetitions'] if 'n_repetitions' in config else 1
     belief = config['belief']
     res = []
@@ -61,6 +66,34 @@ def parametrize(config):
             res.append(sample)
 
     return res
+
+def get_samplers(sampler_accesors, sampler):
+    # print(sampler_accesors)
+    return {key : fn(sampler) for (key, fn) in sampler_accesors.items()}
+
+
+def parametrize(config):
+    random.shuffle(config['user_system'])
+    train_tuples, test_tuples = train_test_split(config['user_system'])
+
+    train_config = {
+        "user_system": train_tuples,
+        "belief": config['belief'],
+    }
+
+    test_config = {
+        "user_system": test_tuples,
+        "belief": config['belief'],
+    }
+    if 'samplers' in config:
+        train_config['samplers'] = get_samplers(config['samplers'], train_sampler)
+        test_config['samplers'] = get_samplers(config['samplers'], test_sampler)
+
+    return _parametrize(train_config), _parametrize(test_config)
+
+
+
+
 
 prefix_system = lambda x : 'system : ' + x
 prefix_user = lambda x : 'user : ' + x
@@ -82,8 +115,9 @@ def save_data(data, out_path):
         json.dump(data, f, indent=4)
 
 def convert_python_files():
-    data = []
-    domain_sampler = load_domain_sampler(domains_dict)
+    train_data = []
+    test_data = []
+    
     for (dir_path, dir_names, file_names) in os.walk(DATA_DIR):
         # file_paths = [os.path.join(dir_path, name) for name in file_names]
         python_files_in_dir = glob.glob(dir_path + '/*.py')
@@ -93,21 +127,27 @@ def convert_python_files():
                 file_name = os.path.basename(python_file_path)
                 module_name, _ = os.path.splitext(file_name)
 
-
                 tmp_module = SourceFileLoader(module_name, python_file_path).load_module()
 
                 # spec.loader.exec_module(foo)
-                json_result = tmp_module.main(domain_sampler, parametrize)
-                data += json_result
+                json_res = tmp_module.main(parametrize)
 
-    return data
+                for moped in json_res:
+                    # print(moped)
+                    train_data.append(moped[0])
+                    if len(moped) > 1:
+                        test_data.append(moped[1])
+
+    return train_data, test_data
 
 if __name__ == "__main__":
     # 1.) Save the output of all python files to json files
     file_name = sys.argv[1]
-    data = convert_python_files()
+    test_data, train_data = convert_python_files()
     # data = load_data()
-    random.shuffle(data)
-    data = list(map(to_soloist_format, data))
-    out_path = os.path.join(OUT_DIR, f"{file_name}.json")
-    save_data(data, out_path)
+    test_data = list(map(to_soloist_format, test_data))
+    train_data = list(map(to_soloist_format, train_data))
+    out_path_train = os.path.join(OUT_DIR, f"{file_name}_train.json")
+    out_path_test = os.path.join(OUT_DIR, f"{file_name}_test.json")
+    save_data(train_data, out_path_train)
+    save_data(test_data, out_path_test)

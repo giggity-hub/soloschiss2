@@ -1,6 +1,9 @@
 def main(parametrize):
 
-    query_by_area = parametrize({
+    res = []
+
+    # query by area
+    res += parametrize({
         "n_repetitions": 2,
         "samplers": {"area": lambda s: s['stairs']['area']},
         "belief": "domain = stairs ; area = %(area)s",
@@ -11,49 +14,41 @@ def main(parametrize):
         ]
     })
 
-    # ask_for_attribute_by_name = parametrize({
-    #     "n_repetitions": 2,
-    #     "samplers": {"stairs_name": domain_sampler['stairs']['name']},
-    #     "belief": "entity_name = %(stairs_name)s",
+    # Most number of steps
+    res+= parametrize({
+        "belief": "domain = stairs ; sortby = number_of_steps; entity_index = 0",
+        "user_system": [
+            ("Which stair has the most number of steps?",
+                "With slot_entity_number_of_steps steps, the slot_entity_name has the most steps"),
+            ("Show me the stair with the most steps",
+                "With slot_entity_number_of_steps steps, the slot_entity_name has the most steps"),
+            ("I want to know which stair has the most steps",
+                "With slot_entity_number_of_steps steps, the slot_entity_name has the most steps")
+        ]
+    })
+
+    # res += parametrize({
     #     "user_system": [
-    #         # ask for named_after
-    #         ("Who was the %(stairs_name)s named after?", 
-    #             "The slot_entity_name was named after slot_entity_named_after"),
-    #         ("Who gave the %(stairs_name)s it's name?", 
-    #             "The slot_entity_name was named after slot_entity_named_after"),
-    #         # Ask for number_of_steps
-    #         ("How many steps does the the %(stairs_name)s have?",
-    #             "The slot_entity_name has slot_entity_number_of_steps stairs"),
-    #         ("What's the stair count for the %(stairs_name)s?",
-    #             "The slot_entity_name has slot_entity_number_of_steps stairs"),
-    #         # Ask for length
-    #         ("How long is the %(stairs_name)s ?",
-    #             "The slot_entity_name is slot_entity_length meters long"),
-    #         ("What's the length of the %(stairs_name)s ?",
-    #             "The slot_entity_name is slot_entity_length meters long"),
-    #         # Ask for height
-    #         ("How high is the %(stairs_name)s ?",
-    #             "The slot_entity_name is slot_entity_height meters high"),
-    #         ("What's the height of the %(stairs_name)s ?",
-    #             "The slot_entity_name is slot_entity_height meters high"),
-    #         # Ask for area
-    #         ("Which area of Stuttgart is the %(stairs_name)s in?",
-    #             "The slot_entity_name is in slot_entity_area"),
-    #         ("In which part of town is the %(stairs_name)s located?",
-    #             "The slot_entity_name is in slot_entity_area")
+    #         "What is the longest stair set in %(area)s?",
+            
     #     ]
     # })
 
-    ask_for_maximum_values = [
-        {"user": "Which staeffele has the most steps?",
-        "belief": "domain = stairs ; sortby = number_of_steps ; entity_index= 0",
-        "system": "With slot_entity_number_of_steps steps, the slot_entity_name has the most steps"},
-        {"user": "Which is the highest staeffele in Stuttgart?",
-        "belief": "domain = stairs ; sortby = height ; entity_index= 0",
-        "system": "With a height of slot_entity_height meters, the slot_entity_name is the highest"},
-        {"user": "Which is the longest staeffele in Stuttgart?",
-        "belief": "domain = stairs ; sortby = length ; entity_index= 0",
-        "system": "With a length of slot_entity_length meters, the slot_entity_name is the longest"}
-    ]
+    # 5 highest in area
+    res+= parametrize({
+        "belief": "head = 5 ; sortby = height; area = %(area)s",
+        "samplers": {
+            'area': lambda s : s['stairs']['area']},
+        "user_system": [
+            ("Show me the five highest stairs in %(area)s",
+                "Here are the five highest stairs in %(area)s. slot_df_name"),
+            ("Which stairs in %(area)s belong to the 5 highest?",
+                "Here are the five highest stairs in %(area)s. slot_df_name"),
+            ("Can you tell me what the five highest stairs are in %(area)s?",
+                "Here are the five highest stairs in %(area)s. slot_df_name")
+        ]
+    })
 
-    return [*query_by_area, *ask_for_maximum_values]
+    
+
+    return res
