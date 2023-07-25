@@ -43,4 +43,4 @@ def main(parametrize):
         ]
     })
 
-    return [*query_by_cuisine, *query_domain, *query_by_2_cuisines]
+    return [query_by_cuisine, query_domain, query_by_2_cuisines]

@@ -78,4 +78,4 @@ def main(parametrize):
         ]
     })
 
-    return [*greet, *inform_domains, *hello, *thanks, *bye, *misc]
+    return [greet, inform_domains, hello, thanks, bye, misc]

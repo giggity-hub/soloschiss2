@@ -96,4 +96,4 @@ def main(parametrize):
     #     ]
     # })
 
-    return [*query_by_type, *query_domain, *query_rating, *query_wheel_chair_accessible, *query_child]
+    return [query_by_type, query_domain, query_rating, query_wheel_chair_accessible, query_child]
