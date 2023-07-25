@@ -1,0 +1,194 @@
+[
+    {
+        "history": [
+            "user : "
+        ],
+        "belief": "belief : ",
+        "kb": "",
+        "reply": "system : Hello I am Stuttbard. How can i help you?"
+    },
+    {
+        "history": [
+            "user : What can i talk to you about?"
+        ],
+        "belief": "belief : domain_keys = domains.keys()",
+        "kb": "",
+        "reply": "system : I can talk to you about cool things to do in and around Stuttgart, like {templates.list(domain_keys}"
+    },
+    {
+        "history": [
+            "user : What can you tell me about Stuttgart?"
+        ],
+        "belief": "belief : domain_keys = domains.keys()",
+        "kb": "",
+        "reply": "system : I can tell you something about these domains {templates.list(domain_keys)}"
+    },
+    {
+        "history": [
+            "user : Hello"
+        ],
+        "belief": "belief : ",
+        "kb": "",
+        "reply": "system : Hello"
+    },
+    {
+        "history": [
+            "user : I demand that you tell me the purpose of the African Bistro Black White restaurant"
+        ],
+        "belief": "belief : entity_name = African Bistro Black White",
+        "kb": "",
+        "reply": "system : The purpose of the slot_entity_name is slot_entity_purpose"
+    },
+    {
+        "history": [
+            "user : Could you provide me with the url of the Sakura"
+        ],
+        "belief": "belief : entity_name = Sakura",
+        "kb": "",
+        "reply": "system : The url of the slot_entity_name is slot_entity_url"
+    },
+    {
+        "history": [
+            "user : Give me the address of that place"
+        ],
+        "belief": "belief : ",
+        "kb": "",
+        "reply": "system : The address of the slot_entity_name is slot_entity_address"
+    },
+    {
+        "history": [
+            "user : Can you give me the house number?"
+        ],
+        "belief": "belief : ",
+        "kb": "",
+        "reply": "system : The house number of the slot_entity_name is slot_entity_house_number"
+    },
+    {
+        "history": [
+            "user : Could you show me some society museums around Stuttgart"
+        ],
+        "belief": "belief : domain = museum ; about = society",
+        "kb": "",
+        "reply": "system : These are society museums around Stuttgart: slot_df_name"
+    },
+    {
+        "history": [
+            "user : I want to go to a cosmology museum"
+        ],
+        "belief": "belief : domain = museum ; about = cosmology",
+        "kb": "",
+        "reply": "system : Here are some cosmology museums slot_df_name"
+    },
+    {
+        "history": [
+            "user : What topics do the museums in Stuttgart have?"
+        ],
+        "belief": "belief : domain = museum",
+        "kb": "",
+        "reply": "system : Stuttgart contains museums about these topics: slot_df_about"
+    },
+    {
+        "history": [
+            "user : What types of museums are available in Stuttgart?"
+        ],
+        "belief": "belief : domain = museum",
+        "kb": "",
+        "reply": "system : I know of these kinds of museums in Stuttgart: slot_df_about"
+    },
+    {
+        "history": [
+            "user : Show me the top 3.9 museums in Stuttgart."
+        ],
+        "belief": "belief : domain = museum; sortby = rating; head = 3.9",
+        "kb": "",
+        "reply": "system : The top rated museums are: slot_df_name"
+    },
+    {
+        "history": [
+            "user : I want to go to one of the 4.7 best museums in Stuttgart."
+        ],
+        "belief": "belief : domain = museum; sortby = rating; head = 4.7",
+        "kb": "",
+        "reply": "system : The 4.7 best rated museums are: slot_df_name"
+    },
+    {
+        "history": [
+            "user : What museums in Stuttgart have an entrance made for wheelchair users?"
+        ],
+        "belief": "belief : domain = museum; wheelchair_accessible_entrance = True",
+        "kb": "",
+        "reply": "system : These are museums people sitting in a wheelchair can enter: slot_df_name"
+    },
+    {
+        "history": [
+            "user : Is there any cosmology museum my child would enjoy?"
+        ],
+        "belief": "belief : domain = museum; for_children = 1; about = cosmology",
+        "kb": "",
+        "reply": "system : slot_entity_name is a cosmology museum also made for children."
+    },
+    {
+        "history": [
+            "user : I want to eat russian food"
+        ],
+        "belief": "belief : domain = restaurant ; cuisine = russian",
+        "kb": "",
+        "reply": "system : Here are some russian restaurants slot_df_name"
+    },
+    {
+        "history": [
+            "user : I want to eat greek"
+        ],
+        "belief": "belief : domain = restaurant ; cuisine = greek",
+        "kb": "",
+        "reply": "system : Here are some greek restaurants slot_df_name"
+    },
+    {
+        "history": [
+            "user : I'd like to eat something"
+        ],
+        "belief": "belief : domain = restaurant",
+        "kb": "",
+        "reply": "system : What kind of food would you like to eat? slot_df_cuisine"
+    },
+    {
+        "history": [
+            "user : I want to eat some food"
+        ],
+        "belief": "belief : domain = restaurant",
+        "kb": "",
+        "reply": "system : What type of food do you want to eat? slot_df_cuisine"
+    },
+    {
+        "history": [
+            "user : I like turkish and german food"
+        ],
+        "belief": "belief : domain = restaurant ; cuisine = turkish | german",
+        "kb": "",
+        "reply": "system : Then you should like these restaurants slot_df_name"
+    },
+    {
+        "history": [
+            "user : Please show me some staeffeles in Degerloch"
+        ],
+        "belief": "belief : domain = stairs ; area = Degerloch",
+        "kb": "",
+        "reply": "system : Here are staeffeles in Degerloch slot_df_name"
+    },
+    {
+        "history": [
+            "user : I want to know which stair has the most steps"
+        ],
+        "belief": "belief : domain = stairs ; sortby = number_of_steps; entity_index = 0",
+        "kb": "",
+        "reply": "system : With slot_entity_number_of_steps steps, the slot_entity_name has the most steps"
+    },
+    {
+        "history": [
+            "user : Which stairs in Stuttgart-Mitte belong to the 5 highest?"
+        ],
+        "belief": "belief : head = 5 ; sortby = height; area = Stuttgart-Mitte",
+        "kb": "",
+        "reply": "system : Here are the five highest stairs in Stuttgart-Mitte. slot_df_name"
+    }
+]
