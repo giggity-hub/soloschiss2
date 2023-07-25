@@ -2,7 +2,7 @@ def main(parametrize):
     res = []
 
     # asking about restaurants in general
-    res += parametrize({
+    res.append(parametrize({
         "belief": "domain = restaurant",
         "user_system": [
             ("I want to go to a restaurant",
@@ -26,10 +26,10 @@ def main(parametrize):
             ("What can you tell me about restaurants here in Stuttgart?",
                 "You can find a range of different cuisines around here. What do you prefer? slot_df_cuisine"),
         ]
-    })
+    }))
 
     # choose a cuisine
-    res += parametrize({
+    res.append(parametrize({
         "samplers": {"cuisine": lambda s: s['restaurant']['cuisine']},
         "belief": "domain = restaurant ; cuisine = %(cuisine)s",
         "user_system": [
@@ -52,10 +52,10 @@ def main(parametrize):
             ("I'm really craving %(cuisine)s food right now",
                 "Here are some %(cuisine)s restaurants for you: slot_df_name"),
         ]
-    })
+    }))
 
     # choose multiple cuisines
-    res += parametrize({
+    res.append(parametrize({
         "belief": "domain = restaurant ; cuisine = %(cuisine1)s or %(cuisine2)s",
         "samplers": {
             "cuisine1": lambda s: s['restaurant']['cuisine'],
@@ -74,10 +74,10 @@ def main(parametrize):
             ("Maybe %(cuisine1)s or %(cuisine2)s food?",
                 "Ok, here are restaurants that serve either %(cuisine1)s or %(cuisine2)s food: slot_df_name"),
         ]
-    })
+    }))
 
     # follow-up questions without mention
-    res += parametrize({
+    res.append(parametrize({
         "belief": "",
         "samplers": {
         },
@@ -166,13 +166,13 @@ def main(parametrize):
             ("What type of food does it have?",
                 "slot_entity_name offers slot_entity_cuisine food"),
         ]
-    })
+    }))
 
     # questions based on the name
-    res += parametrize({
+    res.append(parametrize({
         "belief": "entity_name = %(name)s",
         "samplers": {
-            "name": lambda s: s["restaurants"]["name"]},
+            "name": lambda s: s["restaurant"]["name"]},
         "user_system": [
             # address
             ("What is the address of %(name)s?",
@@ -258,10 +258,10 @@ def main(parametrize):
             ("What type of food does %(name) specialize in?",
                 "slot_entity_name specializes in slot_entity_cuisine food!"),
         ]
-    })
+    }))
 
     # index-based
-    res += parametrize({
+    res.append(parametrize({
         'samplers': {
             'index_text, index_int': lambda s: s['index']
         },
@@ -285,7 +285,7 @@ def main(parametrize):
                 "slot_entity_name has a rating of slot_entity_rating out of 5"),
             ("Does the %(index_text)s one have a good reputation?",
                 "Based on user reviews of slot_entity_name, its average rating is slot_entity_rating out of 5."),
-            ("Look up the reviews for number %(index_index)s",
+            ("Look up the reviews for number %(index_int)s",
                 "According to the reviews, the average rating of slot_entity_name is slot_entity_rating out of 5."),
             ("Tell me the rating of the %(index_text)s one",
                 "slot_entity_name is rated slot_entity_rating out of 5."),
@@ -326,10 +326,10 @@ def main(parametrize):
             ("Tell me about the wheelchair accessibility of that %(index_text)s place",
                 "The wheelchair access of slot_entity_name is slot_entity_wheelchair_access."),
         ]
-    })
+    }))
 
     # best rating TODO number of top entries is inconsistent
-    res += parametrize({
+    res.append(parametrize({
         "belief": "domain = restaurants ; head = 5 ; sortby = rating",
         "samplers": {},
         "user_system": [
@@ -346,10 +346,10 @@ def main(parametrize):
             ("I'm interested which restaurants are best rated",
                 "Here are the five highest-rated restaurants: slot_df_name"),
         ]
-    })
+    }))
 
     # best rating filtered by cuisine
-    res += parametrize({
+    res.append(parametrize({
         "belief": "domain = restaurants ; head = 3 ; sortby = rating; cuisine = %(cuisine)s",
         "samplers": {"cuisine": lambda s: s['restaurant']['cuisine']},
         "user_system": [
@@ -366,7 +366,7 @@ def main(parametrize):
             ("What is the best restaurant that serves %(cuisine)s cuisine?",
                 "Here are the three highest-rated %(cuisine)s restaurants: slot_df_name"),
         ]
-    })
+    }))
 
     # TODO most expensive ones
 
