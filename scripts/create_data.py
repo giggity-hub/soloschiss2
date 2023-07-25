@@ -68,28 +68,28 @@ def _parametrize(config):
     return res
 
 def get_samplers(sampler_accesors, sampler):
+    # print(sampler_accesors)
     return {key : fn(sampler) for (key, fn) in sampler_accesors.items()}
 
 
 def parametrize(config):
     random.shuffle(config['user_system'])
     train_tuples, test_tuples = train_test_split(config['user_system'])
-    test_samplers = get_samplers(config['samplers'], train_sampler)
-    train_samplers = get_samplers(config['samplers'], train_sampler)
 
-    train_res = _parametrize({
+    train_config = {
         "user_system": train_tuples,
         "belief": config['belief'],
-        "samplers": train_samplers,
-    })
+    }
 
-    test_res = _parametrize({
+    test_config = {
         "user_system": test_tuples,
         "belief": config['belief'],
-        "samplers": test_samplers,
-    })
+    }
+    if 'samplers' in config:
+        train_config['samplers'] = get_samplers(config['samplers'], train_sampler)
+        test_config['samplers'] = get_samplers(config['samplers'], test_sampler)
 
-    return train_res, test_res
+    return _parametrize(train_config), _parametrize(test_config)
 
 
 
@@ -133,8 +133,10 @@ def convert_python_files():
                 json_res = tmp_module.main(parametrize)
 
                 for moped in json_res:
+                    # print(moped)
                     train_data.append(moped[0])
-                    test_data.append(moped[1])
+                    if len(moped) > 1:
+                        test_data.append(moped[1])
 
     return train_data, test_data
 
