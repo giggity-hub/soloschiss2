@@ -113,12 +113,15 @@ def render_column(df, column):
 def render_slot_value(matched_slot, df, entity):
     values = matched_slot.split('_', maxsplit=2)
 
+    # extract column name from the placeholder variable
     column = values[2] if len(values) == 3 else None
 
     if values[1] == 'df' and not column:
         return render_df(df)
+    # if the column is specified, lists its unique values
     elif values[1] == 'df' and column:
         return render_column(df, column)
+    # returns the value of the specific entity in this column
     elif values[1] == 'entity' and column:
         return render_entity_value(entity, column)
 
@@ -144,6 +147,10 @@ def fill_template_slots(template_string, df, entity):
     for match in matches:
         matched_slot = match.group()
         slot_value = render_slot_value(matched_slot, df, entity)
+        # if there's no information about the requested attribute, give up
+        if slot_value == "None":
+            template_string = "Sorry, I don't have this information."
+            break
         template_string = template_string.replace(matched_slot, slot_value)
     
     return template_string
