@@ -1,7 +1,8 @@
 from utils.unique_random import UniqueRandom
 #from domains.domains import load_domains_dict, load_domain_sampler
 
-def main(domain_sampler, parametrize):
+
+def main(parametrize):
 
     # Add some more user_system examples here
     ask_for_single_attr_without_mention = parametrize({
@@ -38,7 +39,7 @@ def main(domain_sampler, parametrize):
             ('What is its height?',
                 'The height of the slot_entity_name is slot_entity_height'),
             ('And what is the diameter?',
-                'The diameter fo the slot_entity_name is slot_entity_diameter')
+                'The diameter fo the slot_entity_name is slot_entity_diameter'),
             ('How can I call them?',
                 'The phone number of slot_entity_name is slot_entity_phone_number'),
             ('How expensive is it?',
@@ -56,7 +57,7 @@ def main(domain_sampler, parametrize):
     ask_for_single_attr_by_mention = parametrize({
         'belief': '%(mention_belief_state)s',
         'samplers': {
-            'entity_mention, mention_belief_state': domain_sampler['entity']
+            'entity_mention, mention_belief_state': lambda s: s['entity']
         },
         'user_system': [
         ('What is the name of the %(entity_mention)s?',

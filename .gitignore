@@ -3,6 +3,9 @@ models/*
 soloist/gtg_pretrained
 soloist/gtg_pretrained.tar.zip
 .env
+.idea
+venv
+pickles
 
 # __pycache__
 **/__pycache__/

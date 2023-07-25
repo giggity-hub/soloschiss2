@@ -1,8 +1,8 @@
-def main(domain_sampler, parametrize):
+def main(parametrize):
 
     query_by_cuisine = parametrize({
         "n_repetitions": 2,
-        "samplers": {"cuisine": domain_sampler['restaurant']['cuisine']},
+        "samplers": {"cuisine": lambda s: s['restaurant']['cuisine']},
         "belief": "domain = restaurant ; cuisine = %(cuisine)s",
         "user_system": [
             ("I want to eat %(cuisine)s food", "Here are some %(cuisine)s restaurants slot_df_name"),
@@ -31,8 +31,8 @@ def main(domain_sampler, parametrize):
         "n_repetitions": 2,
         "belief": "domain = restaurant ; cuisine = %(cuisine1)s | %(cuisine2)s",
         "samplers": {
-            "cuisine1": domain_sampler['restaurant']['cuisine'],
-            "cuisine2": domain_sampler['restaurant']['cuisine']},
+            "cuisine1": lambda s: s['restaurant']['cuisine'],
+            "cuisine2": lambda s: s['restaurant']['cuisine']},
         "user_system": [
             ("Do you know any restaurants that are either %(cuisine1)s or %(cuisine2)s", 
                 "Here are restaurants that fit your description slot_df_name"),

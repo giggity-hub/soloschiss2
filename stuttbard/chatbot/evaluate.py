@@ -122,7 +122,7 @@ def render_slot_value(matched_slot, df, entity):
     elif values[1] == 'entity' and column:
         return render_entity_value(entity, column)
 
-def find_all_slots_in_template(template_string: str) -> List[re.Match]:
+def find_all_slots_in_template(template_string: str):
     """Find all slots in a system response string.
     Slots are indicated by slot_df_xxx or slot_entity_xxx
 

@@ -1,4 +1,4 @@
-def main(domain_sampler, parametrize):
+def main(parametrize):
     return []
 
     call_by_mention = parametrize({
@@ -12,7 +12,7 @@ def main(domain_sampler, parametrize):
 
     call_by_name = parametrize({
         "belief": "action = call",
-        "samplers": {"name": domain_sampler['name']},
+        "samplers": {"name": lambda s: s['name']},
         "user_system": [
             ("Call the phone number of the %(name)s please", "Calling {phone_number} ..."),
             ("Give the %(name)s a call", "Calling {phone_number} ..."),
