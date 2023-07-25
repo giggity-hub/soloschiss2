@@ -38,6 +38,43 @@ def main(domain_sampler, parametrize):
             ("Show we what you know about museums around Stuttgart?", "The museums in Stuttgart are about: slot_df_about")
         ]
     })
+    
+    query_rating = parametrize({
+        "n_repetitions": 2,
+        "samplers": {"number": list(range(5))},
+        "belief": "domain = museum; sortby = rating; head = %(number)s",
+        "user_system": [
+            ("Show me the top %(number)s museums in Stuttgart.", "The top rated museums are: slot_df_name"),
+            ("Can you give me a list of the %(number)s highest rated museums.", "Among the %(number)s highest rated museums in Stuttgart are: slot_df_name"),
+            ("I want to go to one of the %(number)s best museums in Stuttgart.", "The %(number)s best rated museums are: slot_df_name"),
+            ("Give me the %(number)s highest rated museums.", "The %(number)s museums rated highest by people are: slot_df_name"),
+            ("Show me %(number)s good museums around Stuttgart.", "This is a list of museums valued highly by people: slot_df_name")
+        ]
+    })
+    
+    
+    query_wheel_chair_accessible = parametrize({
+        "belief": "domain = museum; wheelchair_accessible_entrance = True",
+        "user_system": [
+            ("Do you know museums accessible by wheechair users?", "Here is a list of museums with a wheelchair accessible entrance: slot_df_name"),
+            ("I am a wheelchair user, can you show me some museums accessible for me?", "These list includes museums with an accessible entrance for wheelchairs: slot_df_name"),
+            ("List some museums with accessible entrance for wheelchairs?", "I know of these museums with an accessible entrance for wheelchairs: slot_df_name"),
+            ("What museums in Stuttgart have an entrance made for wheelchair users?", "These are museums people sitting in a wheelchair can enter: slot_df_name")
+        ]
+    })
+    
+    
+    query_child = parametrize({
+        "n_repetitions": 2,
+        "samplers": {"topic": domain_sampler['museum']['about']},
+        "belief": "domain = museum; for_children = 1; about = %(topic)s",
+        "user_system": [
+            ("My kid likes %(topic)s do you have any museums about this topic?", "Here is a list of museums about %(topic)s: slot_df_name"),
+            ("Are there museums about %(topic)s suitable for children in Stuttgart?", "These are %(topic)s themed museums suitable for children: slot_df_name"),
+            ("Can you show me %(topic)s museums my child would like to visit?", "Here are some %(topic)s museums that are enjoyable for children: slot_df_name"),
+            ("Is there any %(topic)s museum my child would enjoy?", "slot_entity_name is a %(topic)s museum also made for children.")
+        ]
+    })
 
     
 
@@ -61,4 +98,4 @@ def main(domain_sampler, parametrize):
     #     ]
     # })
 
-    return [*query_by_type, *query_domain]
+    return [*query_by_type, *query_domain, *query_rating, *query_wheel_chair_accessible, *query_child]
