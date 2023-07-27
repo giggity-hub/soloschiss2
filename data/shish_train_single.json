@@ -1,6 +1,190 @@
 [
     {
         "history": [
+            "user : Are there any museums suitable for children?"
+        ],
+        "belief": "belief : domain = museum ; for_children = 1",
+        "kb": "",
+        "reply": "system : Here are suitable museums for children: slot_df_name"
+    },
+    {
+        "history": [
+            "user : Show me the topic of the first seven museums!"
+        ],
+        "belief": "belief : head = 7",
+        "kb": "",
+        "reply": "system : These are the topics of the first seven museums: slot_df_about"
+    },
+    {
+        "history": [
+            "user : How popular is the fourth museum?"
+        ],
+        "belief": "belief : entity_index = 3",
+        "kb": "",
+        "reply": "system : On google maps the slot_entity_name museum achieved an average rating of slot_entity_rating."
+    },
+    {
+        "history": [
+            "user : Do you know the location of the museum?"
+        ],
+        "belief": "",
+        "kb": "",
+        "reply": "system : The museum has the house number slot_entity_house_number of the slot_entity_street in the area slot_entity_area."
+    },
+    {
+        "history": [
+            "user : How can I contact the museum?"
+        ],
+        "belief": "",
+        "kb": "",
+        "reply": "system : You can reach the slot_entity_name museum under slot_entity_phone_number."
+    },
+    {
+        "history": [
+            "user : List me some society museums in Stuttgart."
+        ],
+        "belief": "belief : domain = museum ; about = society",
+        "kb": "",
+        "reply": "system : Sure, here is a list of museums about society: slot_df_name."
+    },
+    {
+        "history": [
+            "user : More specific I am interested in museums with the topic natural history."
+        ],
+        "belief": "belief : about_specific = museum_about_specific)",
+        "kb": "",
+        "reply": "system : The list of museums about natural history includes: slot_df_name."
+    },
+    {
+        "history": [
+            "user : Can you give me the phone number of the third one"
+        ],
+        "belief": "belief : entity_index = 2",
+        "kb": "",
+        "reply": "system : The slot_entity_name museum has the phone number slot_entity_phone_number"
+    },
+    {
+        "history": [
+            "user : What is the adress of this museum again?"
+        ],
+        "belief": "",
+        "kb": "",
+        "reply": "system : The museum has the adress: slot_entity_address"
+    },
+    {
+        "history": [
+            "user : Then give me the google plus code of this museum."
+        ],
+        "belief": "",
+        "kb": "",
+        "reply": "system : The slot_entity_name museum has the international google plus code slot_entity_plus_code."
+    },
+    {
+        "history": [
+            "user : List me the museum in Stuttgart according to their rating."
+        ],
+        "belief": "belief : domain = museum ; sortby = rating",
+        "kb": "",
+        "reply": "system : Here is the list of museums sorted by their google ratings: slot_df_name"
+    },
+    {
+        "history": [
+            "user : What is the rating of the last one?"
+        ],
+        "belief": "belief : entity_index = -1",
+        "kb": "",
+        "reply": "system : The last museum called slot_entity_name has a google rating of slot_entity_rating."
+    },
+    {
+        "history": [
+            "user : Is the museum for children?"
+        ],
+        "belief": "",
+        "kb": "",
+        "reply": "system : The suitability of the slot_entity_name museum for children is: slot_entity_children."
+    },
+    {
+        "history": [
+            "user : What is the theme of the Landwirtschaftsmuseum museum?"
+        ],
+        "belief": "",
+        "kb": "",
+        "reply": "system : slot_entity_about is the topic of the slot_entity_name museum"
+    },
+    {
+        "history": [
+            "user : Can you give me the adress of this museum?"
+        ],
+        "belief": "",
+        "kb": "",
+        "reply": "system : Sure, the Haus der Geschichte museum can be found at slot_entity_adress."
+    },
+    {
+        "history": [
+            "user : I want to see some of the famous Stuttgarter stairs"
+        ],
+        "belief": "belief : domain = stairs",
+        "kb": "",
+        "reply": "system : In which area would you like to look for staeffeles? i know some in slot_df_area"
+    },
+    {
+        "history": [
+            "user : Please show me some staeffeles in Stuttgart-Mitte"
+        ],
+        "belief": "belief : domain = stairs ; area = Stuttgart-Mitte",
+        "kb": "",
+        "reply": "system : Here are staeffeles in Stuttgart-Mitte slot_df_name"
+    },
+    {
+        "history": [
+            "user : Nevermind, I want to go to the Stuttgart-S\u00fcd area"
+        ],
+        "belief": "belief : area = Stuttgart-S\u00fcd",
+        "kb": "",
+        "reply": "system : Here are staeffeles in Stuttgart-S\u00fcd slot_df_name"
+    },
+    {
+        "history": [
+            "user : I want to know who the fifth of those was named after"
+        ],
+        "belief": "belief : entity_index = 4",
+        "kb": "",
+        "reply": "system : The slot_entity_name was named after slot_entity_named_after"
+    },
+    {
+        "history": [
+            "user : Tell me how long it is"
+        ],
+        "belief": "",
+        "kb": "",
+        "reply": "system : The slot_entity_name has a length of slot_entity_height"
+    },
+    {
+        "history": [
+            "user : Wha is the number of steps of the Wullestaffel?"
+        ],
+        "belief": "belief : entity_name = Wullestaffel",
+        "kb": "",
+        "reply": "system : The slot_entity_name has slot_entity_number_of_steps steps"
+    },
+    {
+        "history": [
+            "user : Tell me the length of the Gerokstaffel"
+        ],
+        "belief": "belief : entity_name = Gerokstaffel",
+        "kb": "",
+        "reply": "system : The slot_entity_name has a length of slot_entity_length"
+    },
+    {
+        "history": [
+            "user : How many steps does it have?"
+        ],
+        "belief": "",
+        "kb": "",
+        "reply": "system : The slot_entity_name has slot_entity_number_of_steps steps"
+    },
+    {
+        "history": [
             "user : Show me some staeffeles please"
         ],
         "belief": "belief : domain = stairs",
@@ -9,17 +193,17 @@
     },
     {
         "history": [
-            "user : I'd like to go to the Degerloch"
+            "user : I'd like to go to the Stuttgart-S\u00fcd"
         ],
-        "belief": "belief : area = Degerloch",
+        "belief": "belief : area = Stuttgart-S\u00fcd",
         "kb": "",
-        "reply": "system : Here are staeffeles in Degerloch slot_df_name"
+        "reply": "system : Here are staeffeles in Stuttgart-S\u00fcd slot_df_name"
     },
     {
         "history": [
-            "user : How high is the third of those?"
+            "user : How high is the second of those?"
         ],
-        "belief": "belief : entity_index = 2",
+        "belief": "belief : entity_index = 1",
         "kb": "",
         "reply": "system : The slot_entity_name has a height of slot_entity_height"
     },
@@ -33,9 +217,9 @@
     },
     {
         "history": [
-            "user : How did the Oscar-Heiler-Staffel come to its name?"
+            "user : How did the Helene-Schoettle-Staffel come to its name?"
         ],
-        "belief": "belief : entity_name = Oscar-Heiler-Staffel",
+        "belief": "belief : entity_name = Helene-Schoettle-Staffel",
         "kb": "",
         "reply": "system : The slot_entity_name was named after slot_entity_named_after"
     },
@@ -57,7 +241,7 @@
     },
     {
         "history": [
-            "user : Do you know where i can find any staeffeles?"
+            "user : Do you know any good stairs to climb?"
         ],
         "belief": "belief : domain = stairs",
         "kb": "",
@@ -65,87 +249,31 @@
     },
     {
         "history": [
-            "user : I want to go to a staeffele in Stuttgart-Ost"
+            "user : Show me the ones in Stuttgart-Mitte"
         ],
-        "belief": "belief : domain = stairs ; area = Stuttgart-Ost",
+        "belief": "belief : area = Stuttgart-Mitte",
         "kb": "",
-        "reply": "system : Here are staeffeles in Stuttgart-Ost slot_df_name"
+        "reply": "system : Here are staeffeles in Stuttgart-Mitte slot_df_name"
     },
     {
         "history": [
-            "user : Show me the stair with the most steps"
+            "user : Can you tell me what the five highest stairs are in that area?"
         ],
-        "belief": "belief : domain = stairs ; sortby = number_of_steps; entity_index = 0",
+        "belief": "belief : domain = stairs ; head = 5 ; sortby = height",
         "kb": "",
-        "reply": "system : With slot_entity_number_of_steps steps, the slot_entity_name has the most steps"
+        "reply": "system : Here are the five highest stairs in slot_area. slot_df_name"
     },
     {
         "history": [
-            "user : Which stairs in Degerloch belong to the 5 highest?"
+            "user : What's the length of the last one?"
         ],
-        "belief": "belief : domain = stairs ; head = 5 ; sortby = height; area = Degerloch",
+        "belief": "belief : entity_index = -1",
         "kb": "",
-        "reply": "system : Here are the five highest stairs in Degerloch. slot_df_name"
+        "reply": "system : The slot_entity_name has a length of slot_entity_length"
     },
     {
         "history": [
-            "user : Now i want to see some in Bad Cannstatt please"
-        ],
-        "belief": "belief : area = Bad Cannstatt",
-        "kb": "",
-        "reply": "system : Here are some staeffeles that fit your description slot_df_name"
-    },
-    {
-        "history": [
-            "user : How long is the R\u00f6merstaffel?"
-        ],
-        "belief": "belief : entity_name = R\u00f6merstaffel",
-        "kb": "",
-        "reply": "system : The slot_entity_name has a length of slot_entity_height"
-    },
-    {
-        "history": [
-            "user : Tell me it's height"
-        ],
-        "belief": "",
-        "kb": "",
-        "reply": "system : The slot_entity_name has a height of slot_entity_height"
-    },
-    {
-        "history": [
-            "user : Who was that stair set named after?"
-        ],
-        "belief": "",
-        "kb": "",
-        "reply": "system : The slot_entity_name was named after slot_entity_named_after"
-    },
-    {
-        "history": [
-            "user : I want to see some of the famous Stuttgarter stairs"
-        ],
-        "belief": "belief : domain = stairs",
-        "kb": "",
-        "reply": "system : In which area would you like to look for staeffeles? i know some in slot_df_area"
-    },
-    {
-        "history": [
-            "user : Please show me some staeffeles in Stuttgart-Ost"
-        ],
-        "belief": "belief : domain = stairs ; area = Stuttgart-Ost",
-        "kb": "",
-        "reply": "system : Here are staeffeles in Stuttgart-Ost slot_df_name"
-    },
-    {
-        "history": [
-            "user : Nevermind, I want to go to the Degerloch area"
-        ],
-        "belief": "belief : area = Degerloch",
-        "kb": "",
-        "reply": "system : Here are staeffeles in Degerloch slot_df_name"
-    },
-    {
-        "history": [
-            "user : I want to know who the fourth of those was named after"
+            "user : Do you know who the fourth was named after?"
         ],
         "belief": "belief : entity_index = 3",
         "kb": "",
@@ -153,35 +281,19 @@
     },
     {
         "history": [
-            "user : Tell me how long it is"
+            "user : Look up how many steps the fifth set of stairs has please"
         ],
-        "belief": "",
-        "kb": "",
-        "reply": "system : The slot_entity_name has a length of slot_entity_height"
-    },
-    {
-        "history": [
-            "user : Wha is the number of steps of the Helene-Schoettle-Staffel?"
-        ],
-        "belief": "belief : entity_name = Helene-Schoettle-Staffel",
+        "belief": "belief : entity_index = 4",
         "kb": "",
         "reply": "system : The slot_entity_name has slot_entity_number_of_steps steps"
     },
     {
         "history": [
-            "user : Tell me the length of the Georg-Elser-Staffel"
+            "user : Which stair has the most number of steps?"
         ],
-        "belief": "belief : entity_name = Georg-Elser-Staffel",
+        "belief": "belief : domain = stairs ; sortby = number_of_steps; entity_index = 0",
         "kb": "",
-        "reply": "system : The slot_entity_name has a length of slot_entity_length"
-    },
-    {
-        "history": [
-            "user : How many steps does it have?"
-        ],
-        "belief": "",
-        "kb": "",
-        "reply": "system : The slot_entity_name has slot_entity_number_of_steps steps"
+        "reply": "system : With slot_entity_number_of_steps steps, the slot_entity_name has the most steps"
     },
     {
         "history": [
@@ -193,17 +305,17 @@
     },
     {
         "history": [
-            "user : Tell me the height of the fifth one please"
+            "user : Tell me the height of the second one please"
         ],
-        "belief": "belief : entity_index = 4",
+        "belief": "belief : entity_index = 1",
         "kb": "",
         "reply": "system : The slot_entity_name has a height of slot_entity_height"
     },
     {
         "history": [
-            "user : How high is the Taubenstaffel ?"
+            "user : How high is the Dobelstaffel ?"
         ],
-        "belief": "belief : entity_name = Taubenstaffel",
+        "belief": "belief : entity_name = Dobelstaffel",
         "kb": "",
         "reply": "system : The slot_entity_name has a height of slot_entity_height"
     },
@@ -217,9 +329,9 @@
     },
     {
         "history": [
-            "user : Tell me how long the last one is please"
+            "user : Tell me how long the third one is please"
         ],
-        "belief": "belief : entity_index = -1",
+        "belief": "belief : entity_index = 2",
         "kb": "",
         "reply": "system : The slot_entity_name has a length of slot_entity_height"
     },
@@ -233,25 +345,25 @@
     },
     {
         "history": [
-            "user : I want to know what the five longest staeffeles in Stuttgart-Ost are"
+            "user : I want to know what the five longest staeffeles in Stuttgart-Mitte are"
         ],
-        "belief": "belief : domain = stairs ; head = 5 ; sortby = length ; area = Stuttgart-Ost",
+        "belief": "belief : domain = stairs ; head = 5 ; sortby = length ; area = Stuttgart-Mitte",
         "kb": "",
-        "reply": "system : Here are the five longest stairs in Stuttgart-Ost. slot_df_name"
+        "reply": "system : Here are the five longest stairs in Stuttgart-Mitte. slot_df_name"
     },
     {
         "history": [
-            "user : How many steps does the Paul-L\u00f6be-Staffel have?"
+            "user : How many steps does the Taubenstaffel have?"
         ],
-        "belief": "belief : entity_name = Paul-L\u00f6be-Staffel",
+        "belief": "belief : entity_name = Taubenstaffel",
         "kb": "",
         "reply": "system : The slot_entity_name has slot_entity_number_of_steps steps"
     },
     {
         "history": [
-            "user : Who was the Liststaffel named after?"
+            "user : Who was the Else-Himmelheber-Staffel named after?"
         ],
-        "belief": "belief : entity_name = Liststaffel",
+        "belief": "belief : entity_name = Else-Himmelheber-Staffel",
         "kb": "",
         "reply": "system : The slot_entity_name was named after slot_entity_named_after"
     }

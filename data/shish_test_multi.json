@@ -1,101 +1,123 @@
 [
     {
         "history": [
-            "user : Do you know any good stairs to climb?"
+            "user : What topics do the museums in Stuttgart have?"
         ],
         "kb": "",
-        "belief": "belief : domain = stairs",
-        "reply": "system : In which area would you like to look for staeffeles? i know some in slot_df_area"
+        "belief": "belief : domain = museum",
+        "reply": "system : Stuttgart contains museums about these topics: slot_df_about"
     },
     {
         "history": [
-            "user : Do you know any good stairs to climb?",
-            "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
-            "user : Show me the ones in Stuttgart-S\u00fcd"
+            "user : What topics do the museums in Stuttgart have?",
+            "system : Stuttgart contains museums about these topics: slot_df_about",
+            "user : I want to visit a museum in the area Obert\u00fcrkheim"
         ],
         "kb": "",
-        "belief": "belief : area = Stuttgart-S\u00fcd",
-        "reply": "system : Here are staeffeles in Stuttgart-S\u00fcd slot_df_name"
+        "belief": "belief : area = Obert\u00fcrkheim",
+        "reply": "system : In the area Obert\u00fcrkheim we have museums about the topics slot_df_about"
     },
     {
         "history": [
-            "user : Do you know any good stairs to climb?",
-            "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
-            "user : Show me the ones in Stuttgart-S\u00fcd",
-            "system : Here are staeffeles in Stuttgart-S\u00fcd slot_df_name",
-            "user : Can you tell me what the five highest stairs are in that area?"
+            "user : What topics do the museums in Stuttgart have?",
+            "system : Stuttgart contains museums about these topics: slot_df_about",
+            "user : I want to visit a museum in the area Obert\u00fcrkheim",
+            "system : In the area Obert\u00fcrkheim we have museums about the topics slot_df_about",
+            "user : Give me the highest rated museum."
         ],
         "kb": "",
-        "belief": "belief : domain = stairs ; head = 5 ; sortby = height",
-        "reply": "system : Here are the five highest stairs in slot_area. slot_df_name"
+        "belief": "belief : sortby = rating ; head = 1",
+        "reply": "system : The slot_entity_name museum has with slot_entity_rating the highest rating in this area."
     },
     {
         "history": [
-            "user : Do you know any good stairs to climb?",
-            "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
-            "user : Show me the ones in Stuttgart-S\u00fcd",
-            "system : Here are staeffeles in Stuttgart-S\u00fcd slot_df_name",
-            "user : Can you tell me what the five highest stairs are in that area?",
-            "system : Here are the five highest stairs in slot_area. slot_df_name",
-            "user : What's the length of the third one?"
+            "user : What topics do the museums in Stuttgart have?",
+            "system : Stuttgart contains museums about these topics: slot_df_about",
+            "user : I want to visit a museum in the area Obert\u00fcrkheim",
+            "system : In the area Obert\u00fcrkheim we have museums about the topics slot_df_about",
+            "user : Give me the highest rated museum.",
+            "system : The slot_entity_name museum has with slot_entity_rating the highest rating in this area.",
+            "user : Where is this museum?"
         ],
         "kb": "",
-        "belief": "belief : entity_index = 2",
-        "reply": "system : The slot_entity_name has a length of slot_entity_length"
+        "belief": "",
+        "reply": "system : The slot_entity_name museum is located at the adress slot_entity_address."
     },
     {
         "history": [
-            "user : Do you know any good stairs to climb?",
-            "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
-            "user : Show me the ones in Stuttgart-S\u00fcd",
-            "system : Here are staeffeles in Stuttgart-S\u00fcd slot_df_name",
-            "user : Can you tell me what the five highest stairs are in that area?",
-            "system : Here are the five highest stairs in slot_area. slot_df_name",
-            "user : What's the length of the third one?",
-            "system : The slot_entity_name has a length of slot_entity_length",
-            "user : Do you know who the last was named after?"
+            "user : What topics do the museums in Stuttgart have?",
+            "system : Stuttgart contains museums about these topics: slot_df_about",
+            "user : I want to visit a museum in the area Obert\u00fcrkheim",
+            "system : In the area Obert\u00fcrkheim we have museums about the topics slot_df_about",
+            "user : Give me the highest rated museum.",
+            "system : The slot_entity_name museum has with slot_entity_rating the highest rating in this area.",
+            "user : Where is this museum?",
+            "system : The slot_entity_name museum is located at the adress slot_entity_address.",
+            "user : Does the museum have an accessible entrance for wheelchair users"
         ],
         "kb": "",
-        "belief": "belief : entity_index = -1",
-        "reply": "system : The slot_entity_name was named after slot_entity_named_after"
+        "belief": "",
+        "reply": "system : The museum has an accesible entrance for wheelchair users is slot_entity_wheelchair_access"
     },
     {
         "history": [
-            "user : Do you know any good stairs to climb?",
-            "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
-            "user : Show me the ones in Stuttgart-S\u00fcd",
-            "system : Here are staeffeles in Stuttgart-S\u00fcd slot_df_name",
-            "user : Can you tell me what the five highest stairs are in that area?",
-            "system : Here are the five highest stairs in slot_area. slot_df_name",
-            "user : What's the length of the third one?",
-            "system : The slot_entity_name has a length of slot_entity_length",
-            "user : Do you know who the last was named after?",
-            "system : The slot_entity_name was named after slot_entity_named_after",
-            "user : Look up how many steps the fourth set of stairs has please"
+            "user : I am interested in the Polizeimuseum museum in Stuttgart."
         ],
         "kb": "",
-        "belief": "belief : entity_index = 3",
-        "reply": "system : The slot_entity_name has slot_entity_number_of_steps steps"
+        "belief": "belief : domain = museum ; name = Polizeimuseum",
+        "reply": "system : For the slot_entity_name museum I can give you information on these properties: df_columns"
     },
     {
         "history": [
-            "user : Do you know any good stairs to climb?",
-            "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
-            "user : Show me the ones in Stuttgart-S\u00fcd",
-            "system : Here are staeffeles in Stuttgart-S\u00fcd slot_df_name",
-            "user : Can you tell me what the five highest stairs are in that area?",
-            "system : Here are the five highest stairs in slot_area. slot_df_name",
-            "user : What's the length of the third one?",
-            "system : The slot_entity_name has a length of slot_entity_length",
-            "user : Do you know who the last was named after?",
-            "system : The slot_entity_name was named after slot_entity_named_after",
-            "user : Look up how many steps the fourth set of stairs has please",
-            "system : The slot_entity_name has slot_entity_number_of_steps steps",
-            "user : Which stair has the most number of steps?"
+            "user : I am interested in the Polizeimuseum museum in Stuttgart.",
+            "system : For the slot_entity_name museum I can give you information on these properties: df_columns",
+            "user : What is the adress of the Stra\u00dfenbahnmuseum museum in Stuttgart?"
         ],
         "kb": "",
-        "belief": "belief : domain = stairs ; sortby = number_of_steps; entity_index = 0",
-        "reply": "system : With slot_entity_number_of_steps steps, the slot_entity_name has the most steps"
+        "belief": "",
+        "reply": "system : The slot_entity_name museum has the adress slot_entity_address"
+    },
+    {
+        "history": [
+            "user : I am interested in the Polizeimuseum museum in Stuttgart.",
+            "system : For the slot_entity_name museum I can give you information on these properties: df_columns",
+            "user : What is the adress of the Stra\u00dfenbahnmuseum museum in Stuttgart?",
+            "system : The slot_entity_name museum has the adress slot_entity_address",
+            "user : In which street is the Mercedes-Benz Museum museum?"
+        ],
+        "kb": "",
+        "belief": "",
+        "reply": "system : You can find the slot_entity_name museum in the slot_entity_street street."
+    },
+    {
+        "history": [
+            "user : I am interested in the Polizeimuseum museum in Stuttgart.",
+            "system : For the slot_entity_name museum I can give you information on these properties: df_columns",
+            "user : What is the adress of the Stra\u00dfenbahnmuseum museum in Stuttgart?",
+            "system : The slot_entity_name museum has the adress slot_entity_address",
+            "user : In which street is the Mercedes-Benz Museum museum?",
+            "system : You can find the slot_entity_name museum in the slot_entity_street street.",
+            "user : Tell me the house number of the Landesmuseum W\u00fcrttemberg museum!"
+        ],
+        "kb": "",
+        "belief": "",
+        "reply": "system : The house number is slot_entity_house_number."
+    },
+    {
+        "history": [
+            "user : I am interested in the Polizeimuseum museum in Stuttgart.",
+            "system : For the slot_entity_name museum I can give you information on these properties: df_columns",
+            "user : What is the adress of the Stra\u00dfenbahnmuseum museum in Stuttgart?",
+            "system : The slot_entity_name museum has the adress slot_entity_address",
+            "user : In which street is the Mercedes-Benz Museum museum?",
+            "system : You can find the slot_entity_name museum in the slot_entity_street street.",
+            "user : Tell me the house number of the Landesmuseum W\u00fcrttemberg museum!",
+            "system : The house number is slot_entity_house_number.",
+            "user : Show me more information about the Stra\u00dfenbahnmuseum museum in Stuttgart!"
+        ],
+        "kb": "",
+        "belief": "",
+        "reply": "system : For more information about the museum I can give you the website link slot_entity_website and the google plus code slot_entity_plus_code"
     },
     {
         "history": [
@@ -109,65 +131,65 @@
         "history": [
             "user : Tell me about the staeffeles in Stuttgart",
             "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
-            "user : In the Stuttgart-Mitte area"
+            "user : In the Stuttgart-Ost area"
         ],
         "kb": "",
-        "belief": "belief : area = Stuttgart-Mitte",
-        "reply": "system : Here are some staeffeles in Stuttgart-Mitte slot_df_name"
+        "belief": "belief : area = Stuttgart-Ost",
+        "reply": "system : Here are some staeffeles in Stuttgart-Ost slot_df_name"
     },
     {
         "history": [
             "user : Tell me about the staeffeles in Stuttgart",
             "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
-            "user : In the Stuttgart-Mitte area",
-            "system : Here are some staeffeles in Stuttgart-Mitte slot_df_name",
-            "user : What is the height of the Wullestaffel ?"
+            "user : In the Stuttgart-Ost area",
+            "system : Here are some staeffeles in Stuttgart-Ost slot_df_name",
+            "user : What is the height of the R\u00f6merstaffel ?"
         ],
         "kb": "",
-        "belief": "belief : entity_name = Wullestaffel",
+        "belief": "belief : entity_name = R\u00f6merstaffel",
         "reply": "system : The slot_entity_name has a height of slot_entity_height"
     },
     {
         "history": [
             "user : Tell me about the staeffeles in Stuttgart",
             "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
-            "user : In the Stuttgart-Mitte area",
-            "system : Here are some staeffeles in Stuttgart-Mitte slot_df_name",
-            "user : What is the height of the Wullestaffel ?",
+            "user : In the Stuttgart-Ost area",
+            "system : Here are some staeffeles in Stuttgart-Ost slot_df_name",
+            "user : What is the height of the R\u00f6merstaffel ?",
             "system : The slot_entity_name has a height of slot_entity_height",
-            "user : Show me the five highest stairs in Stuttgart-S\u00fcd"
+            "user : Show me the five highest stairs in Stuttgart-Ost"
         ],
         "kb": "",
-        "belief": "belief : domain = stairs ; head = 5 ; sortby = height; area = Stuttgart-S\u00fcd",
-        "reply": "system : Here are the five highest stairs in Stuttgart-S\u00fcd. slot_df_name"
+        "belief": "belief : domain = stairs ; head = 5 ; sortby = height; area = Stuttgart-Ost",
+        "reply": "system : Here are the five highest stairs in Stuttgart-Ost. slot_df_name"
     },
     {
         "history": [
             "user : Tell me about the staeffeles in Stuttgart",
             "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
-            "user : In the Stuttgart-Mitte area",
-            "system : Here are some staeffeles in Stuttgart-Mitte slot_df_name",
-            "user : What is the height of the Wullestaffel ?",
+            "user : In the Stuttgart-Ost area",
+            "system : Here are some staeffeles in Stuttgart-Ost slot_df_name",
+            "user : What is the height of the R\u00f6merstaffel ?",
             "system : The slot_entity_name has a height of slot_entity_height",
-            "user : Show me the five highest stairs in Stuttgart-S\u00fcd",
-            "system : Here are the five highest stairs in Stuttgart-S\u00fcd. slot_df_name",
-            "user : Do you know how many steps the first one has?"
+            "user : Show me the five highest stairs in Stuttgart-Ost",
+            "system : Here are the five highest stairs in Stuttgart-Ost. slot_df_name",
+            "user : Do you know how many steps the third one has?"
         ],
         "kb": "",
-        "belief": "belief : entity_index = 0",
+        "belief": "belief : entity_index = 2",
         "reply": "system : The slot_entity_name has slot_entity_number_of_steps steps"
     },
     {
         "history": [
             "user : Tell me about the staeffeles in Stuttgart",
             "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
-            "user : In the Stuttgart-Mitte area",
-            "system : Here are some staeffeles in Stuttgart-Mitte slot_df_name",
-            "user : What is the height of the Wullestaffel ?",
+            "user : In the Stuttgart-Ost area",
+            "system : Here are some staeffeles in Stuttgart-Ost slot_df_name",
+            "user : What is the height of the R\u00f6merstaffel ?",
             "system : The slot_entity_name has a height of slot_entity_height",
-            "user : Show me the five highest stairs in Stuttgart-S\u00fcd",
-            "system : Here are the five highest stairs in Stuttgart-S\u00fcd. slot_df_name",
-            "user : Do you know how many steps the first one has?",
+            "user : Show me the five highest stairs in Stuttgart-Ost",
+            "system : Here are the five highest stairs in Stuttgart-Ost. slot_df_name",
+            "user : Do you know how many steps the third one has?",
             "system : The slot_entity_name has slot_entity_number_of_steps steps",
             "user : Who gave it it's name?"
         ],
@@ -179,13 +201,13 @@
         "history": [
             "user : Tell me about the staeffeles in Stuttgart",
             "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
-            "user : In the Stuttgart-Mitte area",
-            "system : Here are some staeffeles in Stuttgart-Mitte slot_df_name",
-            "user : What is the height of the Wullestaffel ?",
+            "user : In the Stuttgart-Ost area",
+            "system : Here are some staeffeles in Stuttgart-Ost slot_df_name",
+            "user : What is the height of the R\u00f6merstaffel ?",
             "system : The slot_entity_name has a height of slot_entity_height",
-            "user : Show me the five highest stairs in Stuttgart-S\u00fcd",
-            "system : Here are the five highest stairs in Stuttgart-S\u00fcd. slot_df_name",
-            "user : Do you know how many steps the first one has?",
+            "user : Show me the five highest stairs in Stuttgart-Ost",
+            "system : Here are the five highest stairs in Stuttgart-Ost. slot_df_name",
+            "user : Do you know how many steps the third one has?",
             "system : The slot_entity_name has slot_entity_number_of_steps steps",
             "user : Who gave it it's name?",
             "system : The slot_entity_name was named after slot_entity_named_after",
@@ -199,13 +221,13 @@
         "history": [
             "user : Tell me about the staeffeles in Stuttgart",
             "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
-            "user : In the Stuttgart-Mitte area",
-            "system : Here are some staeffeles in Stuttgart-Mitte slot_df_name",
-            "user : What is the height of the Wullestaffel ?",
+            "user : In the Stuttgart-Ost area",
+            "system : Here are some staeffeles in Stuttgart-Ost slot_df_name",
+            "user : What is the height of the R\u00f6merstaffel ?",
             "system : The slot_entity_name has a height of slot_entity_height",
-            "user : Show me the five highest stairs in Stuttgart-S\u00fcd",
-            "system : Here are the five highest stairs in Stuttgart-S\u00fcd. slot_df_name",
-            "user : Do you know how many steps the first one has?",
+            "user : Show me the five highest stairs in Stuttgart-Ost",
+            "system : Here are the five highest stairs in Stuttgart-Ost. slot_df_name",
+            "user : Do you know how many steps the third one has?",
             "system : The slot_entity_name has slot_entity_number_of_steps steps",
             "user : Who gave it it's name?",
             "system : The slot_entity_name was named after slot_entity_named_after",
@@ -221,13 +243,13 @@
         "history": [
             "user : Tell me about the staeffeles in Stuttgart",
             "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
-            "user : In the Stuttgart-Mitte area",
-            "system : Here are some staeffeles in Stuttgart-Mitte slot_df_name",
-            "user : What is the height of the Wullestaffel ?",
+            "user : In the Stuttgart-Ost area",
+            "system : Here are some staeffeles in Stuttgart-Ost slot_df_name",
+            "user : What is the height of the R\u00f6merstaffel ?",
             "system : The slot_entity_name has a height of slot_entity_height",
-            "user : Show me the five highest stairs in Stuttgart-S\u00fcd",
-            "system : Here are the five highest stairs in Stuttgart-S\u00fcd. slot_df_name",
-            "user : Do you know how many steps the first one has?",
+            "user : Show me the five highest stairs in Stuttgart-Ost",
+            "system : Here are the five highest stairs in Stuttgart-Ost. slot_df_name",
+            "user : Do you know how many steps the third one has?",
             "system : The slot_entity_name has slot_entity_number_of_steps steps",
             "user : Who gave it it's name?",
             "system : The slot_entity_name was named after slot_entity_named_after",
@@ -240,5 +262,125 @@
         "kb": "",
         "belief": "",
         "reply": "system : The slot_entity_name is in the slot_entity_area area"
+    },
+    {
+        "history": [
+            "user : Do you know where i can find any staeffeles?"
+        ],
+        "kb": "",
+        "belief": "belief : domain = stairs",
+        "reply": "system : In which area would you like to look for staeffeles? i know some in slot_df_area"
+    },
+    {
+        "history": [
+            "user : Do you know where i can find any staeffeles?",
+            "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
+            "user : I want to go to a staeffele in Degerloch"
+        ],
+        "kb": "",
+        "belief": "belief : domain = stairs ; area = Degerloch",
+        "reply": "system : Here are staeffeles in Degerloch slot_df_name"
+    },
+    {
+        "history": [
+            "user : Do you know where i can find any staeffeles?",
+            "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
+            "user : I want to go to a staeffele in Degerloch",
+            "system : Here are staeffeles in Degerloch slot_df_name",
+            "user : Show me the stair with the most steps"
+        ],
+        "kb": "",
+        "belief": "belief : domain = stairs ; sortby = number_of_steps; entity_index = 0",
+        "reply": "system : With slot_entity_number_of_steps steps, the slot_entity_name has the most steps"
+    },
+    {
+        "history": [
+            "user : Do you know where i can find any staeffeles?",
+            "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
+            "user : I want to go to a staeffele in Degerloch",
+            "system : Here are staeffeles in Degerloch slot_df_name",
+            "user : Show me the stair with the most steps",
+            "system : With slot_entity_number_of_steps steps, the slot_entity_name has the most steps",
+            "user : Which stairs in Degerloch belong to the 5 highest?"
+        ],
+        "kb": "",
+        "belief": "belief : domain = stairs ; head = 5 ; sortby = height; area = Degerloch",
+        "reply": "system : Here are the five highest stairs in Degerloch. slot_df_name"
+    },
+    {
+        "history": [
+            "user : Do you know where i can find any staeffeles?",
+            "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
+            "user : I want to go to a staeffele in Degerloch",
+            "system : Here are staeffeles in Degerloch slot_df_name",
+            "user : Show me the stair with the most steps",
+            "system : With slot_entity_number_of_steps steps, the slot_entity_name has the most steps",
+            "user : Which stairs in Degerloch belong to the 5 highest?",
+            "system : Here are the five highest stairs in Degerloch. slot_df_name",
+            "user : Now i want to see some in Degerloch please"
+        ],
+        "kb": "",
+        "belief": "belief : area = Degerloch",
+        "reply": "system : Here are some staeffeles that fit your description slot_df_name"
+    },
+    {
+        "history": [
+            "user : Do you know where i can find any staeffeles?",
+            "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
+            "user : I want to go to a staeffele in Degerloch",
+            "system : Here are staeffeles in Degerloch slot_df_name",
+            "user : Show me the stair with the most steps",
+            "system : With slot_entity_number_of_steps steps, the slot_entity_name has the most steps",
+            "user : Which stairs in Degerloch belong to the 5 highest?",
+            "system : Here are the five highest stairs in Degerloch. slot_df_name",
+            "user : Now i want to see some in Degerloch please",
+            "system : Here are some staeffeles that fit your description slot_df_name",
+            "user : How long is the Liststaffel?"
+        ],
+        "kb": "",
+        "belief": "belief : entity_name = Liststaffel",
+        "reply": "system : The slot_entity_name has a length of slot_entity_height"
+    },
+    {
+        "history": [
+            "user : Do you know where i can find any staeffeles?",
+            "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
+            "user : I want to go to a staeffele in Degerloch",
+            "system : Here are staeffeles in Degerloch slot_df_name",
+            "user : Show me the stair with the most steps",
+            "system : With slot_entity_number_of_steps steps, the slot_entity_name has the most steps",
+            "user : Which stairs in Degerloch belong to the 5 highest?",
+            "system : Here are the five highest stairs in Degerloch. slot_df_name",
+            "user : Now i want to see some in Degerloch please",
+            "system : Here are some staeffeles that fit your description slot_df_name",
+            "user : How long is the Liststaffel?",
+            "system : The slot_entity_name has a length of slot_entity_height",
+            "user : Tell me it's height"
+        ],
+        "kb": "",
+        "belief": "",
+        "reply": "system : The slot_entity_name has a height of slot_entity_height"
+    },
+    {
+        "history": [
+            "user : Do you know where i can find any staeffeles?",
+            "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
+            "user : I want to go to a staeffele in Degerloch",
+            "system : Here are staeffeles in Degerloch slot_df_name",
+            "user : Show me the stair with the most steps",
+            "system : With slot_entity_number_of_steps steps, the slot_entity_name has the most steps",
+            "user : Which stairs in Degerloch belong to the 5 highest?",
+            "system : Here are the five highest stairs in Degerloch. slot_df_name",
+            "user : Now i want to see some in Degerloch please",
+            "system : Here are some staeffeles that fit your description slot_df_name",
+            "user : How long is the Liststaffel?",
+            "system : The slot_entity_name has a length of slot_entity_height",
+            "user : Tell me it's height",
+            "system : The slot_entity_name has a height of slot_entity_height",
+            "user : Who was that stair set named after?"
+        ],
+        "kb": "",
+        "belief": "",
+        "reply": "system : The slot_entity_name was named after slot_entity_named_after"
     }
 ]
