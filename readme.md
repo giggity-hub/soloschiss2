@@ -52,3 +52,11 @@ py.test tests
 # run specific test file
 py.test tests/<filename>.py
 ```
+
+# Docker Shit
+```bash
+# I dunno if this is necessary
+sudo ldconfig
+
+# Now probably restart your pc if doesn't work
+```

@@ -1,0 +1,11 @@
+version: '3'
+services:
+  myapp:
+    # GPU access
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
