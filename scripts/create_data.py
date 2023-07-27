@@ -34,15 +34,6 @@ def save_data(data, out_file):
         json.dump(data, f, indent=4)
 
 
-def to_soloist_format(dt: DialogueTurn):
-    soloist_dict = {
-        "history": [dt.user],
-        "belief": dt.belief,
-        "kb": "",
-        "reply": dt.system
-    }
-    return soloist_dict
-
 
 def load_module_from_file(file_path):
     with open(file_path) as f:
@@ -76,29 +67,36 @@ def convert_python_files():
     return train_data, test_data
 
 
-def to_soloist_format(history, belief, reply):
+def to_soloist_format(turn):
     return {
-        "history:": history,
+        "history": [f"user : {turn.user}"],
         "kb": "",
-        "belief": f"belief : {belief}",
-        "reply": f"system : {reply}"
+        "belief": f"belief : {turn.belief}",
+        "reply": f"system : {turn.system}"
     }
 
 def convert_dialogues_to_soloist(dialogues: List[Dialogue]) -> Tuple[List, List]:
     single_turn = []
     multi_turn = []
 
-    history = []
     for dialogue in dialogues:
+        history = []
         for turn in dialogue:
-            history.append(turn.user)
 
-            single_turn_sample = to_soloist_format([turn.user], turn.system, turn.belief)
-            multi_turn_sample = to_soloist_format([*history], turn.system, turn.belief)
+
+            single_turn_sample = to_soloist_format(turn)
+            history += single_turn_sample['history']
+            
+            multi_turn_sample = single_turn_sample.copy()
+            multi_turn_sample['history'] = [*history]
+
+
+            # multi_turn_sample = to_soloist_format([*history], turn.system, turn.belief)
             single_turn.append(single_turn_sample)
             multi_turn.append(multi_turn_sample)
 
-            history.append(turn.system)
+            # history.append(turn.system)
+            history.append(single_turn_sample['reply'])
     
     return single_turn, multi_turn
     
