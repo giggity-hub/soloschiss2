@@ -86,11 +86,11 @@ def to_soloist_format(dt: DialogueTurn):
     return soloist_dict
 
 def find_samples(text: str):
-    pattern = '%\([a-z_]+\)s'
+    pattern = '{[a-z_]+}'
     # Matches all occurrences of the form %(...)s
     template_slots = [m.group() for m in re.finditer(pattern, text)]
     # Retreive only slot key e.g %(restaurant_name)s => restaurant_name
-    template_slot_keys = [ts[2:-2] for ts in template_slots]
+    template_slot_keys = [ts[1:-1] for ts in template_slots]
     unique_template_slot_keys = list(set(template_slot_keys))
     return unique_template_slot_keys
 
@@ -109,9 +109,9 @@ def get_sampler_keys(subkeys, sampler):
 
 
 def parametrize(turn: DialogueTurn, fd: format_dict):
-    turn.user = turn.user % fd
-    turn.belief = turn.belief % fd
-    turn.system = turn.system % fd
+    turn.user = turn.user.format(**fd)
+    turn.belief = turn.belief.format(**fd)
+    turn.system = turn.system.format(**fd)
     return turn
 
 def fill_samples(turn: DialogueTurn, sampler: dict):
