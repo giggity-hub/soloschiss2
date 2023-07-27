@@ -1,0 +1,130 @@
+[
+    {
+        "history": [
+            "user : Do you know any good stairs to climb?"
+        ],
+        "belief": "belief : domain = stairs",
+        "kb": "",
+        "reply": "system : In which area would you like to look for staeffeles? i know some in slot_df_area"
+    },
+    {
+        "history": [
+            "user : Show me the ones in Stuttgart-S\u00fcd"
+        ],
+        "belief": "belief : area = Stuttgart-S\u00fcd",
+        "kb": "",
+        "reply": "system : Here are staeffeles in Stuttgart-S\u00fcd slot_df_name"
+    },
+    {
+        "history": [
+            "user : Can you tell me what the five highest stairs are in that area?"
+        ],
+        "belief": "belief : domain = stairs ; head = 5 ; sortby = height",
+        "kb": "",
+        "reply": "system : Here are the five highest stairs in slot_area. slot_df_name"
+    },
+    {
+        "history": [
+            "user : What's the length of the third one?"
+        ],
+        "belief": "belief : entity_index = 2",
+        "kb": "",
+        "reply": "system : The slot_entity_name has a length of slot_entity_length"
+    },
+    {
+        "history": [
+            "user : Do you know who the last was named after?"
+        ],
+        "belief": "belief : entity_index = -1",
+        "kb": "",
+        "reply": "system : The slot_entity_name was named after slot_entity_named_after"
+    },
+    {
+        "history": [
+            "user : Look up how many steps the fourth set of stairs has please"
+        ],
+        "belief": "belief : entity_index = 3",
+        "kb": "",
+        "reply": "system : The slot_entity_name has slot_entity_number_of_steps steps"
+    },
+    {
+        "history": [
+            "user : Which stair has the most number of steps?"
+        ],
+        "belief": "belief : domain = stairs ; sortby = number_of_steps; entity_index = 0",
+        "kb": "",
+        "reply": "system : With slot_entity_number_of_steps steps, the slot_entity_name has the most steps"
+    },
+    {
+        "history": [
+            "user : Tell me about the staeffeles in Stuttgart"
+        ],
+        "belief": "belief : domain = stairs",
+        "kb": "",
+        "reply": "system : In which area would you like to look for staeffeles? i know some in slot_df_area"
+    },
+    {
+        "history": [
+            "user : In the Stuttgart-Mitte area"
+        ],
+        "belief": "belief : area = Stuttgart-Mitte",
+        "kb": "",
+        "reply": "system : Here are some staeffeles in Stuttgart-Mitte slot_df_name"
+    },
+    {
+        "history": [
+            "user : What is the height of the Wullestaffel ?"
+        ],
+        "belief": "belief : entity_name = Wullestaffel",
+        "kb": "",
+        "reply": "system : The slot_entity_name has a height of slot_entity_height"
+    },
+    {
+        "history": [
+            "user : Show me the five highest stairs in Stuttgart-S\u00fcd"
+        ],
+        "belief": "belief : domain = stairs ; head = 5 ; sortby = height; area = Stuttgart-S\u00fcd",
+        "kb": "",
+        "reply": "system : Here are the five highest stairs in Stuttgart-S\u00fcd. slot_df_name"
+    },
+    {
+        "history": [
+            "user : Do you know how many steps the first one has?"
+        ],
+        "belief": "belief : entity_index = 0",
+        "kb": "",
+        "reply": "system : The slot_entity_name has slot_entity_number_of_steps steps"
+    },
+    {
+        "history": [
+            "user : Who gave it it's name?"
+        ],
+        "belief": "",
+        "kb": "",
+        "reply": "system : The slot_entity_name was named after slot_entity_named_after"
+    },
+    {
+        "history": [
+            "user : Tell me which staeffeles has the most steps"
+        ],
+        "belief": "belief : domain = stairs ; sortby = number_of_steps; entity_index = 0",
+        "kb": "",
+        "reply": "system : With slot_entity_number_of_steps steps, the slot_entity_name has the most steps"
+    },
+    {
+        "history": [
+            "user : What's it's length?"
+        ],
+        "belief": "",
+        "kb": "",
+        "reply": "system : The slot_entity_name has a length of slot_entity_length"
+    },
+    {
+        "history": [
+            "user : In what part of town is it?"
+        ],
+        "belief": "",
+        "kb": "",
+        "reply": "system : The slot_entity_name is in the slot_entity_area area"
+    }
+]
