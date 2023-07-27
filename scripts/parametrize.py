@@ -62,7 +62,7 @@ def parametrize(turn: DialogueTurn, fd: dict) -> DialogueTurn:
     user = turn.user.format(**fd)
     belief = turn.belief.format(**fd)
     system = turn.system.format(**fd)
-    return DialogueTurn(user, belief, system)
+    return DialogueTurn(user, system, belief)
 
 def fill_samples(turn: DialogueTurn, sampler: dict):
     keys = find_sample_slot_keys("".join([turn.user, turn.system, turn.belief]))
