@@ -1,6 +1,5 @@
 def main(parametrize):
-    res = []
-
+    
     # asking about restaurants in general
     a = [('I want to go to a restaurant', 'What kind of restaurants do you like? slot_df_cuisine', 'domain = restaurant'), ('I want to eat some food', 'What type of food do you want to eat? slot_df_cuisine', 'domain = restaurant'), ('Do you know any restaurants?', 'Sure. Which cuisines should the restaurant serve? slot_df_cuisine', 'domain = restaurant'), ('Where can i grab something to eat?', 'What cuisines are you interested in? slot_df_cuisine', 'domain = restaurant'), ('Are there any restaurants you know of?', 'Yes! I know restaurants that serve the following cuisines slot_df_cuisine', 'domain = restaurant'), ("I'd like to eat something", 'What kind of food would you like to eat? slot_df_cuisine', 'domain = restaurant'), ("I'm hungry!", 'You could go to a restaurant. What kind of food do you prefer? slot_df_cuisine', 'domain = restaurant'), ('Suggest some restaurants', 'Sure, please let me know what kind of food you like? slot_df_cuisine', 'domain = restaurant'), ('Recommend me a restaurant in Stuttgart', "There are a lot of restaurants, so let's try to narrow it down. What cuisine do you prefer? slot_df_cuisine", 'domain = restaurant'), ('What can you tell me about restaurants here in Stuttgart?', 'You can find a range of different cuisines around here. What do you prefer? slot_df_cuisine', 'domain = restaurant')]
 
@@ -28,9 +27,28 @@ def main(parametrize):
     h = [('What are the best {restaurant_cuisine} restaurants in town?', 'The three highest-rated {restaurant_cuisine} restaurants are: slot_df_name', 'domain = restaurants ; head = 3 ; sortby = rating; cuisine = {restaurant_cuisine}'), ('What are the top 3 restaurants that serve {restaurant_cuisine} food', 'Here are the three highest-rated {restaurant_cuisine} restaurants: slot_df_name', 'domain = restaurants ; head = 3 ; sortby = rating; cuisine = {restaurant_cuisine}'), ('Give me the top-3 {restaurant_cuisine} restaurants!', 'The three highest-rated {restaurant_cuisine} restaurants are: slot_df_name', 'domain = restaurants ; head = 3 ; sortby = rating; cuisine = {restaurant_cuisine}'), ('Which {restaurant_cuisine} restaurants have the highest rating?', 'Here are the three highest rated restaurants: slot_df_name', 'domain = restaurants ; head = 3 ; sortby = rating; cuisine = {restaurant_cuisine}'), ('Do you know which {restaurant_cuisine} restaurants are highest rated?', 'Here are the three highest-rated {restaurant_cuisine} restaurants: slot_df_name', 'domain = restaurants ; head = 3 ; sortby = rating; cuisine = {restaurant_cuisine}'), ('What is the best restaurant that serves {restaurant_cuisine} cuisine?', 'Here are the three highest-rated {restaurant_cuisine} restaurants: slot_df_name', 'domain = restaurants ; head = 3 ; sortby = rating; cuisine = {restaurant_cuisine}')]
 
     # TODO most expensive ones
+    i = [('What are the most expensive restaurants in Stuttgart?', 'Here is a list of the most expensive restaurants in Stuttgart: slot_df_name', 'domain = restaurants ; price_level = 3'), ('I want to eat in a really expensive restaurant. Can you show me some?', 'Sure. These restaurants fall in the category expensive: slot_df_name', 'domain = restaurants ; price_level = 3'), ('Give me a list of the most expensive restaurants in Stuttgart!', 'The list of expensive restaurants in Stuttgart includes: slot_df_name', 'domain = restaurants ; price_level = 3'), ('Suggest me some of the most expensive restaurants in Stuttgart?', 'These belong to the most expensive restaurants in Stuttgart: slot_df_name', 'domain = restaurants ; price_level = 3'), ('Can you show me the most expensive restaurants in Stuttgart?', 'Yes, these are the most expensive ones: slot_df_name', 'domain = restaurants ; price_level = 3')]
 
     # TODO cheapest ones
+    j = [('What are the cheapest restaurants in Stuttgart?', 'Here is a list of the most expensive restaurants in Stuttgart: slot_df_name', 'domain = restaurants ; price_level = 1'),
+            ('I need to save money. Can you suggest me some restaurants?', 'If you want to save money you could be interested in these cheap restaurants: slot_df_name', 'domain = restaurants ; price_level = 1'),
+            ('List me the cheapest restaurants you know in Stuttgart?', 'Among the cheapest restaurants in Stuttgart we have: slot_df_name', 'domain = restaurants ; price_level = 1'),
+            ('Do you have any suggestions for a cheap restaurant in Stuttgart?', 'I could suggest you these cheap restaurants: slot_df_name', 'domain = restaurants ; price_level = 1'),
+            ('Show me a list of the cheapest restaurants in Stuttgart!', 'Here is a list of some of the cheapest restaurants: slot_df_name', 'domain = restaurants ; price_level = 1')]
 
     # TODO only with wheelchair access
-
+    k = [('Show me restaurants with an entrance accessible by wheelchair?', 
+                'This is a list of restaurants in Stuttgart with an entrance accessible by wheelchair: slot_df_name', 'domain = restaurants ; wheelchair_access = TRUE'),
+            ('Can you show me restaurants I can enter with a wheelchair?',
+                'These are restaurants you could enter with a wheelchair: slot_df_name', 'domain = restaurants ; wheelchair_access = TRUE'),
+            ('Do you know restaurants whose entrance is accesible by wheelchair?',
+                'Here are some restaurants in Stuttgart with an entrance suitable for wheelchairs: slot_df_name', 'domain = restaurants ; wheelchair_access = TRUE'),
+            ('Are there restaurants with an entrance a wheelchair can pass?', 
+                'Sure. The entrance of these restaurants are accessible for wheelchairs: slot_df_name', 'domain = restaurants ; wheelchair_access = TRUE'),
+            ('I am sitting in a wheelchair. Can you suggest me some restaurants I can enter?', 
+                'These are restaurants you can enter with your wheelchair: slot_df_name', 'domain = restaurants ; wheelchair_access = TRUE'),
+            ('List me some restaurants I can enter with my wheelchair!',
+                'If you are sitting in a wheelchair, you could pass the entrance of the these restaurants: slot_df_nam', 'domain = restaurants ; wheelchair_access = TRUE')]
+    
+    res = [a,b,c,d,e,f,g,h,i,j,k]
     return res
