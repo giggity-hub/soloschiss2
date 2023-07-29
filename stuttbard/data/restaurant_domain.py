@@ -373,16 +373,11 @@ def main(parametrize):
         "belief": "domain = restaurants ; price_level = 3",
         "samplers": {},
         "user_system": [
-            ('What are the most expensive restaurants in Stuttgart?', 
-                'Here is a list of the most expensive restaurants in Stuttgart: slot_df_name'),
-            ('I want to eat in a really expensive restaurant. Can you show me some?', 
-                'Sure. These restaurants fall in the category expensive: slot_df_name'),
-            ('Give me a list of the most expensive restaurants in Stuttgart!', 
-                'The list of expensive restaurants in Stuttgart includes: slot_df_name'),
-            ('Suggest me some of the most expensive restaurants in Stuttgart?', 
-                'These belong to the most expensive restaurants in Stuttgart: slot_df_name'),
-            ('Can you show me the most expensive restaurants in Stuttgart?', 
-                'Yes, these are the most expensive ones: slot_df_name')
+            ('What are the most expensive restaurants?', 'Here is a list of the most expensive restaurants: slot_df_name'),
+            ('I want to eat in a really expensive restaurant. Can you show me some?', 'Sure. These restaurants fall in the category expensive: slot_df_name'),
+            ('Give me a list of the most expensive restaurants!', 'The list of expensive restaurants includes: slot_df_name'),
+            ('Suggest me some of the most expensive restaurants?', 'These belong to the most expensive restaurants: slot_df_name'), 
+            ('Can you show me the most expensive restaurants?', 'Yes, these are the most expensive ones: slot_df_name')
         ]
     }))
 
@@ -391,16 +386,16 @@ def main(parametrize):
         "belief": "domain = restaurants ; price_level = 1",
         "samplers": {},
         "user_system": [
-            ('What are the cheapest restaurants in Stuttgart?', 
-                'Here is a list of the most expensive restaurants in Stuttgart: slot_df_name'),
+            ('What are the cheapest restaurants?', 
+                'Here is a list of the cheapest restaurants: slot_df_name'),
             ('I need to save money. Can you suggest me some restaurants?', 
                 'If you want to save money you could be interested in these cheap restaurants: slot_df_name'),
-            ('List me the cheapest restaurants you know in Stuttgart?', 
-                'Among the cheapest restaurants in Stuttgart we have: slot_df_name'),
-            ('Do you have any suggestions for a cheap restaurant in Stuttgart?', 
+            ('List me the cheapest restaurants you know?', 
+                'Among the cheapest restaurants we have: slot_df_name'),
+            ('Do you have any suggestions for a cheap restaurants?', 
                 'I could suggest you these cheap restaurants: slot_df_name'),
-            ('Show me a list of the cheapest restaurants in Stuttgart!', 
-                'Here is a list of some of the cheapest restaurants: slot_df_name')
+            ('Show me a list of the cheapest restaurants!', 
+                'Here is a list of some of the cheapest restaurants: slot_df_name')]
         ]
     }))
     
@@ -411,17 +406,17 @@ def main(parametrize):
         "samplers": {},
         "user_system": [
             ('Show me restaurants with an entrance accessible by wheelchair?', 
-                'This is a list of restaurants in Stuttgart with an entrance accessible by wheelchair: slot_df_name'),
-            ('Can you show me restaurants I can enter with a wheelchair?',
+                'This is a list contains restaurants with an entrance accessible by wheelchair: slot_df_name'),
+            ('Can you show me restaurants I can enter with a wheelchair?', 
                 'These are restaurants you could enter with a wheelchair: slot_df_name'),
-            ('Do you know restaurants whose entrance is accesible by wheelchair?',
-                'Here are some restaurants in Stuttgart with an entrance suitable for wheelchairs: slot_df_name'),
+            ('Do you know restaurants whose entrance is accesible by wheelchair?', 
+                'Here are some restaurants with an entrance suitable for wheelchairs: slot_df_name'),
             ('Are there restaurants with an entrance a wheelchair can pass?', 
                 'Sure. The entrance of these restaurants are accessible for wheelchairs: slot_df_name'),
             ('I am sitting in a wheelchair. Can you suggest me some restaurants I can enter?', 
                 'These are restaurants you can enter with your wheelchair: slot_df_name'),
-            ('List me some restaurants I can enter with my wheelchair!',
-                'If you are sitting in a wheelchair, you could pass the entrance of the these restaurants: slot_df_nam')
+            ('List me some restaurants I can enter with my wheelchair!', 
+                'If you are sitting in a wheelchair, you could pass the entrance of the these restaurants: slot_df_name')
         ]
     }))
 
