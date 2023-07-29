@@ -7,7 +7,14 @@ from nltk.tokenize import wordpunct_tokenize as tokenizer
 
 root_dir = os.path.abspath(os.path.join(__file__, '..', '..'))
 sys.path.append(root_dir)
-from stuttbard.chatbot.evaluate import parse_beliefstate
+from stuttbard.chatbot.evaluate import parse_beliefstate, find_all_slots_in_template
+
+
+def calculate_prf(tp: int, fp: int, fn: int) -> (float, float, float):
+    p = tp / (tp + fp) if (tp + fp) > 0 else 0
+    r = tp / (tp + fn) if (tp + fn) > 0 else 0
+    f = 2 * (p * r) / (p + r) if (p + r) > 0 else 0
+    return p, r, f
 
 
 def main(test_file: str, verbose: bool = False):
@@ -15,18 +22,45 @@ def main(test_file: str, verbose: bool = False):
         data = json.load(f)
 
     total_dialogues = len(data)
-    full_matches = 0
+
+    # confusion matrix for belief state
     total_attr = 0
+    full_belief = 0
     tp_attr = 0  # attributes that are both in gold and predicted
     fp_attr = 0  # attributes in predicted but not in gold
     fn_attr = 0  # in gold but not in predicted
+
+    # confusion matrix for response template
+    total_slot = 0
+    full_template = 0
+    tp_slot = 0
+    fp_slot = 0
+    fn_slot = 0
+
     bleu_scores = []
 
     for dialogue in data:
-        # get reply for calculating BLEU
+        # clean up the system response, only leave the actual response string
         reply_gold = dialogue['reply_gold'].replace('system :', '', 1).strip()
         reply_pred = dialogue['reply_pred'].replace('system :', '', 1).strip()
+
+        # calculate BLEU
+        # TODO some replies are too short for BLEU
         bleu_scores.append(sentence_bleu([tokenizer(reply_gold)], tokenizer(reply_pred)))
+
+        # get template slots
+        slots_gold = set([x.group() for x in find_all_slots_in_template(reply_gold) if x.group() != 'slot_entity_name'])
+        slots_pred = set([x.group() for x in find_all_slots_in_template(reply_pred) if x.group() != 'slot_entity_name'])
+
+        total_slot += len(slots_gold)
+
+        if slots_gold == slots_pred:
+            full_template += 1
+            tp_slot += len(slots_gold)
+        else:
+            tp_slot += len(slots_gold.intersection(slots_pred))
+            fn_slot += len(slots_gold - slots_pred)
+            fp_slot += len(slots_pred - slots_gold)
 
         # get belief for calculating accuracy/precision/recall
         belief_gold = parse_beliefstate(dialogue['belief_gold'].replace('belief :', '', 1).strip())
@@ -42,7 +76,7 @@ def main(test_file: str, verbose: bool = False):
         if belief_gold == belief_pred:
             if verbose:
                 print('Full match!\n')
-            full_matches += 1
+            full_belief += 1
             tp_attr += len(belief_gold)
             continue
 
@@ -61,18 +95,27 @@ def main(test_file: str, verbose: bool = False):
         fp_attr += fp
 
     bleu = sum(bleu_scores) / len(bleu_scores)
-    accuracy = full_matches / total_dialogues
-    precision = tp_attr / (tp_attr + fp_attr) if (tp_attr + fp_attr) > 0 else 0
-    recall = tp_attr / (tp_attr + fn_attr) if (tp_attr + fn_attr) > 0 else 0
-    f1 = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0
+    acc_belief = full_belief / total_dialogues
+    acc_template = full_template / total_dialogues
+    p_belief, r_belief, f1_belief = calculate_prf(tp_attr, fp_attr, fn_attr)
+    p_template, r_template, f1_template = calculate_prf(tp_slot, fp_slot, fn_slot)
 
     print(f'Total dialogues: {total_dialogues}')
-    print(f'Accuracy (exact matches): {accuracy:.2f}')
     print(f'Macro-averaged BLEU score: {bleu:.2f}')
-    print('\nAttribute-level metrics')
-    print(f'Precision: {precision:.2f}')
-    print(f'Recall: {recall:.2f}')
-    print(f'F1 score: {f1:.2f}')
+
+    print('\nAccuracy (exact matches)')
+    print(f'Belief: {acc_belief:.2f}')
+    print(f'Template: {acc_template:.2f}')
+
+    print('\nAttribute-level metrics (belief state)')
+    print(f'Precision: {p_belief:.2f}')
+    print(f'Recall: {r_belief:.2f}')
+    print(f'F1 score: {f1_belief:.2f}')
+
+    print('\nSlot-level metrics (template)')
+    print(f'Precision: {p_template:.2f}')
+    print(f'Recall: {r_template:.2f}')
+    print(f'F1 score: {f1_template:.2f}')
 
 
 if __name__ == "__main__":
