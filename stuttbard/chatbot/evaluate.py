@@ -96,7 +96,7 @@ def resolve_entity(bs: dict, df: pd.DataFrame, entity : pd.Series) -> pd.Series:
         pd.Series: _description_
     """
     if 'entity_index' in bs:
-        return df.iloc[int(bs['entity_index'])]
+        return df.iloc[int(bs['entity_index']) -1]
     elif 'entity_name' in bs:
         return df[df['name'].str.contains(bs['entity_name'])].iloc[0]
     return entity

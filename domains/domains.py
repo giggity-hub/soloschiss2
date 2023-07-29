@@ -19,7 +19,7 @@ def load_domains_dict() -> Dict[str , pd.DataFrame]:
 
 
 def fill_sampler(domains_dict, domain_sampler):
-    domain_sampler['index_str, index_int'] = UniqueRandom([('first', 0), ('second', 1), ('third', 2), ('fourth', 3), ('fifth', 4), ('last', -1)])
+    domain_sampler['index_str, index_int'] = UniqueRandom([('first', 1), ('second', 2), ('third', 3), ('fourth', 4), ('fifth', 5), ('last', -1)])
 
     # domain_sampler['domain'] = UniqueRandom(list(domains_dict.keys()))
     
