@@ -17,13 +17,13 @@ def main(parametrize):
             ("What can i talk to you about?", 
                 "I can talk to you about cool places to visit in and around Stuttgart, like museums, restaurants, or even stairs."),
             ("What can you tell me about Stuttgart?",
-                "I can tell you something about these domains: museums and restaurants."),
-            ("What domains can you inform me about?",
-                "I can inform you about museums and restaurants."),
+                "I can tell you something about these topics: museums, restaurants, and stairs."),
+            ("What topics can you inform me about?",
+                "I can inform you about museums, restaurants, and stairs."),
             ("What is there to do in Stuttgart?",
-                "In Stuttgart there are lots of things to do. These are the topics i can tell you about: museums and restaurants."),
+                "In Stuttgart there are lots of things to do. These are the topics I can tell you about: museums, restaurants, and stairs."),
             ("What is your purpose?",
-                "My purpose is to give you information about things in Stuttgart, like museums and restaurants."),
+                "My purpose is to give you information about things in Stuttgart, like museums, restaurants, and stairs."),
             ("What can you do?",
                 "I can recommend places to visit around my favorite city, Stuttgart."),
             ("What do you know?",
@@ -40,7 +40,7 @@ def main(parametrize):
             ("Hallo", "Hello. What are you interested in?"),
             ("What's up", "Hello, what would you like to talk about?"),
             ("hiya", "Hello :)"),
-            ("Hi Stuttbard", ""),
+            ("Hi Stuttbard", "Hi!"),
 
         ]
     })

@@ -330,7 +330,7 @@ def main(parametrize):
 
     # best rating TODO number of top entries is inconsistent
     res.append(parametrize({
-        "belief": "domain = restaurants ; head = 5 ; sortby = rating",
+        "belief": "domain = restaurant ; head = 5 ; sortby = rating",
         "samplers": {},
         "user_system": [
             ("What are the best five restaurants?",
@@ -350,7 +350,7 @@ def main(parametrize):
 
     # best rating filtered by cuisine
     res.append(parametrize({
-        "belief": "domain = restaurants ; head = 3 ; sortby = rating; cuisine = %(cuisine)s",
+        "belief": "domain = restaurant ; head = 3 ; sortby = rating; cuisine = %(cuisine)s",
         "samplers": {"cuisine": lambda s: s['restaurant']['cuisine']},
         "user_system": [
             ("What are the best %(cuisine)s restaurants in town?",
@@ -368,9 +368,8 @@ def main(parametrize):
         ]
     }))
 
-    # TODO most expensive ones
     res.append(parametrize({
-        "belief": "domain = restaurants ; price_level = 3",
+        "belief": "domain = restaurant ; price_level = 3",
         "samplers": {},
         "user_system": [
             ('What are the most expensive restaurants?', 'Here is a list of the most expensive restaurants: slot_df_name'),
@@ -381,9 +380,8 @@ def main(parametrize):
         ]
     }))
 
-    # TODO cheapest ones
     res.append(parametrize({
-        "belief": "domain = restaurants ; price_level = 1",
+        "belief": "domain = restaurant ; price_level = 1",
         "samplers": {},
         "user_system": [
             ('What are the cheapest restaurants?', 
@@ -395,21 +393,19 @@ def main(parametrize):
             ('Do you have any suggestions for a cheap restaurants?', 
                 'I could suggest you these cheap restaurants: slot_df_name'),
             ('Show me a list of the cheapest restaurants!', 
-                'Here is a list of some of the cheapest restaurants: slot_df_name')]
+                'Here is a list of some of the cheapest restaurants: slot_df_name')
         ]
     }))
-    
-    
-    # TODO only with wheelchair access
+
     res.append(parametrize({
-        "belief": "domain = restaurants ; wheelchair_access = TRUE",
+        "belief": "domain = restaurant ; wheelchair_access = True",
         "samplers": {},
         "user_system": [
             ('Show me restaurants with an entrance accessible by wheelchair?', 
                 'This is a list contains restaurants with an entrance accessible by wheelchair: slot_df_name'),
             ('Can you show me restaurants I can enter with a wheelchair?', 
                 'These are restaurants you could enter with a wheelchair: slot_df_name'),
-            ('Do you know restaurants whose entrance is accesible by wheelchair?', 
+            ('Do you know restaurants whose entrance is accessible by wheelchair?',
                 'Here are some restaurants with an entrance suitable for wheelchairs: slot_df_name'),
             ('Are there restaurants with an entrance a wheelchair can pass?', 
                 'Sure. The entrance of these restaurants are accessible for wheelchairs: slot_df_name'),
