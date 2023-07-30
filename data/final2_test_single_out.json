@@ -1,0 +1,472 @@
+[
+    {
+        "history": [
+            "user : Are there any museums suitable for children?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : domain = museum ; for_children = 1",
+        "belief_pred": "belief : domain = museum ; good_for_kids = True",
+        "reply_gold": "system : Here are suitable museums for children: slot_df_name",
+        "reply_pred": "system : Yes, these are museums suitable for children: slot_df_name"
+    },
+    {
+        "history": [
+            "user : Show me the topic of the first four museums!"
+        ],
+        "kb": "",
+        "belief_gold": "belief : head = 4",
+        "belief_pred": "belief : domain = museum",
+        "reply_gold": "system : These are the topics of the first four museums: slot_df_about",
+        "reply_pred": "system : The slot_entity_name museum has the topic slot_entity_about"
+    },
+    {
+        "history": [
+            "user : How popular is the third museum?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : entity_index = 3",
+        "belief_pred": "belief : entity_index = 3",
+        "reply_gold": "system : On google maps the slot_entity_name museum achieved an average rating of slot_entity_rating.",
+        "reply_pred": "system : The slot_entity_name museum has a rating of slot_entity_rating out of 5."
+    },
+    {
+        "history": [
+            "user : Do you know the location of the museum?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : ",
+        "belief_pred": "belief : ",
+        "reply_gold": "system : The museum has the house number slot_entity_house_number of the slot_entity_street in the area slot_entity_area.",
+        "reply_pred": "system : The slot_entity_name museum is located at the adress slot_entity_address."
+    },
+    {
+        "history": [
+            "user : How can I contact the museum?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : ",
+        "belief_pred": "belief : ",
+        "reply_gold": "system : You can reach the slot_entity_name museum under slot_entity_phone_number.",
+        "reply_pred": "system : You can contact slot_entity_name by phone at slot_entity_phone_number"
+    },
+    {
+        "history": [
+            "user : List me some pigs museums in Stuttgart."
+        ],
+        "kb": "",
+        "belief_gold": "belief : domain = museum ; about = pigs",
+        "belief_pred": "belief : domain = museum ; sortby = rating",
+        "reply_gold": "system : Sure, here is a list of museums about pigs: slot_df_name.",
+        "reply_pred": "system : Here are some pigs museums in Stuttgart slot_df_name"
+    },
+    {
+        "history": [
+            "user : More specific I am interested in museums with the topic cosmology."
+        ],
+        "kb": "",
+        "belief_gold": "belief : about_specific = museum_about_specific)",
+        "belief_pred": "belief : domain = museum ; sortby = category ; head = 1 ; sortby = rating",
+        "reply_gold": "system : The list of museums about cosmology includes: slot_df_name.",
+        "reply_pred": "system : Here are some more details about the topic you want to know about: slot_df_about"
+    },
+    {
+        "history": [
+            "user : Can you give me the phone number of the fourth one"
+        ],
+        "kb": "",
+        "belief_gold": "belief : entity_index = 4",
+        "belief_pred": "belief : entity_index = 4",
+        "reply_gold": "system : The slot_entity_name museum has the phone number slot_entity_phone_number",
+        "reply_pred": "system : The phone number of slot_entity_name is slot_entity_phone_number."
+    },
+    {
+        "history": [
+            "user : What is the adress of this museum again?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : ",
+        "belief_pred": "belief : ",
+        "reply_gold": "system : The museum has the adress: slot_entity_address",
+        "reply_pred": "system : The slot_entity_name museum has the adress slot_entity_address"
+    },
+    {
+        "history": [
+            "user : Then give me the google plus code of this museum."
+        ],
+        "kb": "",
+        "belief_gold": "belief : ",
+        "belief_pred": "belief : domain = museum ; sortby = rating",
+        "reply_gold": "system : The slot_entity_name museum has the international google plus code slot_entity_plus_code.",
+        "reply_pred": "system : Here is the slot_entity_name museum with the google plus code slot_entity_code"
+    },
+    {
+        "history": [
+            "user : I want to go to a restaurant"
+        ],
+        "kb": "",
+        "belief_gold": "belief : domain = restaurant",
+        "belief_pred": "belief : domain = restaurant",
+        "reply_gold": "system : What kind of restaurants do you like? slot_df_cuisine",
+        "reply_pred": "system : In which city would you like to look for restaurants? i know some in slot_df_city"
+    },
+    {
+        "history": [
+            "user : I want to eat asian food"
+        ],
+        "kb": "",
+        "belief_gold": "belief : domain = restaurant ; cuisine = asian",
+        "belief_pred": "belief : domain = restaurant ; cuisine = asian",
+        "reply_gold": "system : Here are some asian restaurants slot_df_name",
+        "reply_pred": "system : Here are some asian restaurants slot_df_name"
+    },
+    {
+        "history": [
+            "user : What is the address of the second one?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : entity_index = 2",
+        "belief_pred": "belief : entity_index = 2",
+        "reply_gold": "system : The address of slot_entity_name is slot_entity_address.",
+        "reply_pred": "system : The address of slot_entity_name is slot_entity_address."
+    },
+    {
+        "history": [
+            "user : Does it have good ratings?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : ",
+        "belief_pred": "belief : ",
+        "reply_gold": "system : The average rating of slot_entity_name based on user reviews is slot_entity_rating out of 5.",
+        "reply_pred": "system : The average rating of slot_entity_name based on user reviews is slot_entity_rating out of 5."
+    },
+    {
+        "history": [
+            "user : How expensive is it?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : ",
+        "belief_pred": "belief : entity_index = 1",
+        "reply_gold": "system : The price level of slot_entity_name is slot_entity_price_level out of 3.",
+        "reply_pred": "system : The price level of slot_entity_name is slot_entity_price_level out of 3."
+    },
+    {
+        "history": [
+            "user : Can you make a reservation?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : ",
+        "belief_pred": "belief : ",
+        "reply_gold": "system : No, make it yourself. You can call them at slot_entity_phone_number",
+        "reply_pred": "system : No, make it yourself. You can call them at slot_entity_phone_number"
+    },
+    {
+        "history": [
+            "user : Do you know any restaurants?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : domain = restaurant",
+        "belief_pred": "belief : domain = restaurants",
+        "reply_gold": "system : Sure. Which cuisines should the restaurant serve? slot_df_cuisine",
+        "reply_pred": "system : Yes, these are restaurants you can visit slot_df_name"
+    },
+    {
+        "history": [
+            "user : Give me the top-3 sushi restaurants!"
+        ],
+        "kb": "",
+        "belief_gold": "belief : domain = restaurants ; head = 3 ; sortby = rating; cuisine = sushi",
+        "belief_pred": "belief : domain = restaurants ; cuisine = sushi",
+        "reply_gold": "system : The three highest-rated sushi restaurants are: slot_df_name",
+        "reply_pred": "system : The slot_entity_name has a Wikipedia following: slot_entity_website"
+    },
+    {
+        "history": [
+            "user : What is the rating of Takeshii's Vietnamese Cuisine?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : entity_name = Takeshii's Vietnamese Cuisine",
+        "belief_pred": "belief : entity_name = Takeshii's Vietnamese Cuisine",
+        "reply_gold": "system : slot_entity_name has a rating of slot_entity_rating out of 5",
+        "reply_pred": "system : The slot_entity_name has a google rating of slot_entity_rating."
+    },
+    {
+        "history": [
+            "user : How much does it cost to eat at Namaste India am Berlinerplatz Liederhalle?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : entity_name = Namaste India am Berlinerplatz Liederhalle",
+        "belief_pred": "belief : entity_name = Namaste India am Berlinerplatz Liederhalle",
+        "reply_gold": "system : The price level of slot_entity_name is slot_entity_price_level out of 3.",
+        "reply_pred": "system : The price level of slot_entity_name is slot_entity_price_level out of 3."
+    },
+    {
+        "history": [
+            "user : Can I go there if I'm in a wheelchair?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : ",
+        "belief_pred": "belief : domain = wheelchair",
+        "reply_gold": "system : The wheelchair access of slot_entity_name is slot_entity_wheelchair_access.",
+        "reply_pred": "system : You can go to slot_entity_address if you want to : if you want to go to slot_entity_address then : I can get you there by phone at slot_entity_phone_number"
+    },
+    {
+        "history": [
+            "user : Give me the directions to get there"
+        ],
+        "kb": "",
+        "belief_gold": "belief : ",
+        "belief_pred": "belief : ",
+        "reply_gold": "system : The address of slot_entity_name is slot_entity_address.",
+        "reply_pred": "system : The address of slot_entity_name is slot_entity_address."
+    },
+    {
+        "history": [
+            "user : Give me thai restaurants"
+        ],
+        "kb": "",
+        "belief_gold": "belief : domain = restaurant ; cuisine = thai",
+        "belief_pred": "belief : domain = restaurants ; cuisine = thai",
+        "reply_gold": "system : Here are thai restaurants slot_df_name",
+        "reply_pred": "system : Here are some thai restaurants slot_df_name"
+    },
+    {
+        "history": [
+            "user : Show me a list of the cheapest restaurants!"
+        ],
+        "kb": "",
+        "belief_gold": "belief : domain = restaurants ; price_level = 1",
+        "belief_pred": "belief : domain = restaurants ; price_level = 1",
+        "reply_gold": "system : Here is a list of some of the cheapest restaurants: slot_df_name",
+        "reply_pred": "system : The list of cheapest restaurants includes: slot_df_name"
+    },
+    {
+        "history": [
+            "user : Look up the reviews for BURREATOS"
+        ],
+        "kb": "",
+        "belief_gold": "belief : entity_name = BURREATOS",
+        "belief_pred": "belief : entity_name = BURREATOS",
+        "reply_gold": "system : According to the reviews, the average rating of slot_entity_name is slot_entity_rating out of 5.",
+        "reply_pred": "system : According to the reviews, the average rating of slot_entity_name is slot_entity_rating out of 5."
+    },
+    {
+        "history": [
+            "user : What's the website of Houstons Fine Burrito Company?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : entity_name = Houstons Fine Burrito Company",
+        "belief_pred": "belief : entity_name = Houstons Fine Burrito Company",
+        "reply_gold": "system : Their website is slot_entity_website",
+        "reply_pred": "system : The website of slot_entity_name is slot_entity_website"
+    },
+    {
+        "history": [
+            "user : I would like to call them"
+        ],
+        "kb": "",
+        "belief_gold": "belief : ",
+        "belief_pred": "belief : ",
+        "reply_gold": "system : You can call slot_entity_name at slot_entity_phone_number",
+        "reply_pred": "system : You can call slot_entity_name at slot_entity_phone_number"
+    },
+    {
+        "history": [
+            "user : I am sitting in a wheelchair. Can you suggest me some restaurants I can enter?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : domain = restaurants ; wheelchair_access = TRUE",
+        "belief_pred": "belief : domain = restaurants ; wheelchair_access = TRUE",
+        "reply_gold": "system : These are restaurants you can enter with your wheelchair: slot_df_name",
+        "reply_pred": "system : These are restaurants you can enter with your wheelchair: slot_df_name"
+    },
+    {
+        "history": [
+            "user : Does the last one have a good reputation?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : entity_index = -1",
+        "belief_pred": "belief : entity_index = -1",
+        "reply_gold": "system : Based on user reviews of slot_entity_name, its average rating is slot_entity_rating out of 5.",
+        "reply_pred": "system : The average rating of slot_entity_name based on user reviews is slot_entity_rating out of 5."
+    },
+    {
+        "history": [
+            "user : Which cuisine can I eat at Da Nello"
+        ],
+        "kb": "",
+        "belief_gold": "belief : entity_name = Da Nello",
+        "belief_pred": "belief : domain = restaurant ; cuisine = Da Nello",
+        "reply_gold": "system : You can try some slot_entity_cuisine cuisine at slot_entity_name.",
+        "reply_pred": "system : You can eat at slot_df_name cuisine at any restaurant."
+    },
+    {
+        "history": [
+            "user : What are the prices like at Fast Food 4U!?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : entity_name = Fast Food 4U!",
+        "belief_pred": "belief : entity_name = Fast Food 4U",
+        "reply_gold": "system : The price level of slot_entity_name is slot_entity_price_level out of 3.",
+        "reply_pred": "system : The price level of slot_entity_name is slot_entity_price_level out of 3."
+    },
+    {
+        "history": [
+            "user : Do you have more info on Bulgogi Queen Korean BBQ Restaurant?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : entity_name = Bulgogi Queen Korean BBQ Restaurant",
+        "belief_pred": "belief : entity_name = Bulgogi Queen Korean BBQ Restaurant",
+        "reply_gold": "system : You can find out more about slot_entity_name on their website: slot_entity_website",
+        "reply_pred": "system : You can find out more about slot_entity_name on their website: slot_entity_website"
+    },
+    {
+        "history": [
+            "user : Do you know any good stairs to climb?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : domain = stairs",
+        "belief_pred": "belief : domain = stairs",
+        "reply_gold": "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
+        "reply_pred": "system : You can visit slot_entity_name's stairs slot_entity_steps_height"
+    },
+    {
+        "history": [
+            "user : Show me the ones in Degerloch"
+        ],
+        "kb": "",
+        "belief_gold": "belief : area = Degerloch",
+        "belief_pred": "belief : domain = stairs",
+        "reply_gold": "system : Here are staeffeles in Degerloch slot_df_name",
+        "reply_pred": "system : Here are staeffeles in Degerloch slot_df_name"
+    },
+    {
+        "history": [
+            "user : Can you tell me what the five highest stairs are in that area?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : domain = stairs ; head = 5 ; sortby = height",
+        "belief_pred": "belief : domain = stairs ; head = 5 ; sortby = height; area = London",
+        "reply_gold": "system : Here are the five highest stairs in slot_area. slot_df_name",
+        "reply_pred": "system : The five highest stairs in Stuttgart are slot_df_name"
+    },
+    {
+        "history": [
+            "user : What's the length of the fifth one?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : entity_index = 5",
+        "belief_pred": "belief : entity_index = 5",
+        "reply_gold": "system : The slot_entity_name has a length of slot_entity_length",
+        "reply_pred": "system : The slot_entity_name has a length of slot_entity_length"
+    },
+    {
+        "history": [
+            "user : Do you know who the third was named after?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : entity_index = 3",
+        "belief_pred": "belief : entity_index = 3",
+        "reply_gold": "system : The slot_entity_name was named after slot_entity_named_after",
+        "reply_pred": "system : The slot_entity_name was named after slot_entity_named_after"
+    },
+    {
+        "history": [
+            "user : Look up how many steps the fifth set of stairs has please"
+        ],
+        "kb": "",
+        "belief_gold": "belief : entity_index = 5",
+        "belief_pred": "belief : entity_index = 5",
+        "reply_gold": "system : The slot_entity_name has slot_entity_number_of_steps steps",
+        "reply_pred": "system : The slot_entity_name has slot_entity_number_of_steps steps"
+    },
+    {
+        "history": [
+            "user : Which stair has the most number of steps?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : domain = stairs ; sortby = number_of_steps; entity_index = 0",
+        "belief_pred": "belief : domain = stairs ; sortby = number_of_steps; entity_index = 0",
+        "reply_gold": "system : With slot_entity_number_of_steps steps, the slot_entity_name has the most steps",
+        "reply_pred": "system : With slot_entity_number_of_steps steps, the slot_entity_name has the most steps"
+    },
+    {
+        "history": [
+            "user : Do you know where i can find any staeffeles?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : domain = stairs",
+        "belief_pred": "belief : domain = stairs",
+        "reply_gold": "system : In which area would you like to look for staeffeles? i know some in slot_df_area",
+        "reply_pred": "system : You can find staeffeles in the following locations slot_df_name"
+    },
+    {
+        "history": [
+            "user : I want to go to a staeffele in Stuttgart-S\u00fcd"
+        ],
+        "kb": "",
+        "belief_gold": "belief : domain = stairs ; area = Stuttgart-S\u00fcd",
+        "belief_pred": "belief : domain = stairs ; area = Stuttgart-S\u00fcd",
+        "reply_gold": "system : Here are staeffeles in Stuttgart-S\u00fcd slot_df_name",
+        "reply_pred": "system : Here are staeffele in Stuttgart-S\u00fcd slot_df_name"
+    },
+    {
+        "history": [
+            "user : Show me the stair with the most steps"
+        ],
+        "kb": "",
+        "belief_gold": "belief : domain = stairs ; sortby = number_of_steps; entity_index = 0",
+        "belief_pred": "belief : domain = stairs ; sortby = number_of_steps; entity_index = 0",
+        "reply_gold": "system : With slot_entity_number_of_steps steps, the slot_entity_name has the most steps",
+        "reply_pred": "system : With slot_entity_number_of_steps steps, the slot_entity_name has the most steps"
+    },
+    {
+        "history": [
+            "user : Which stairs in Stuttgart-S\u00fcd belong to the 5 highest?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : domain = stairs ; head = 5 ; sortby = height; area = Stuttgart-S\u00fcd",
+        "belief_pred": "belief : domain = stairs ; head = 5 ; sortby = height; area = Stuttgart-S\u00fcd",
+        "reply_gold": "system : Here are the five highest stairs in Stuttgart-S\u00fcd. slot_df_name",
+        "reply_pred": "system : Here are the five highest stairs in Stuttgart-S\u00fcd. slot_df_name"
+    },
+    {
+        "history": [
+            "user : Now i want to see some in Degerloch please"
+        ],
+        "kb": "",
+        "belief_gold": "belief : area = Degerloch",
+        "belief_pred": "belief : domain = restaurant ; cuisine = pizza",
+        "reply_gold": "system : Here are some staeffeles that fit your description slot_df_name",
+        "reply_pred": "system : Here are some in slot_df_name"
+    },
+    {
+        "history": [
+            "user : How long is the Georg-Elser-Staffel?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : entity_name = Georg-Elser-Staffel",
+        "belief_pred": "belief : entity_name = Georg-elser-Staffel",
+        "reply_gold": "system : The slot_entity_name has a length of slot_entity_height",
+        "reply_pred": "system : The slot_entity_name has a length of slot_entity_height"
+    },
+    {
+        "history": [
+            "user : Tell me it's height"
+        ],
+        "kb": "",
+        "belief_gold": "belief : ",
+        "belief_pred": "belief : ",
+        "reply_gold": "system : The slot_entity_name has a height of slot_entity_height",
+        "reply_pred": "system : The slot_entity_name has a height of slot_entity_height"
+    },
+    {
+        "history": [
+            "user : Who was that stair set named after?"
+        ],
+        "kb": "",
+        "belief_gold": "belief : ",
+        "belief_pred": "belief : entity_index = -1",
+        "reply_gold": "system : The slot_entity_name was named after slot_entity_named_after",
+        "reply_pred": "system : The slot_entity_name was named after slot_entity_named_after"
+    }
+]
