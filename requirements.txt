@@ -3,3 +3,6 @@ python-google-places
 pytest
 simplejson
 python-dotenv
+scikit-learn
+nltk
+requests
