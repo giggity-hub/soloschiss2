@@ -4,7 +4,7 @@ import random
 import sys
 import glob
 from importlib.machinery import SourceFileLoader
-import json
+
 from pathlib import Path
 from sklearn.model_selection import train_test_split
 from typing import NamedTuple
@@ -15,10 +15,10 @@ from domains.domains import domains_dict
 import re
 from typing import List, TypeAlias, Tuple
 
-from scripts.parametrize import parametrize_dialogues
+from scripts.parametrize import parametrize_dialogues, fill_samples
 from scripts.types import Dialogue, DialogueTurn
 
-DATA_DIR = './stuttbard/data_multiturn'
+DATA_DIR = './stuttbard/data_singleturn'
 OUT_DIR = './data'
 
 
@@ -49,22 +49,17 @@ def tuple_list_to_dialogue(dialogue: List[Tuple]) -> Dialogue:
     return dialogue
 
 def convert_python_files():
-    train_data = []
-    test_data = []
+    res = []
     
     for (dir_path, dir_names, file_names) in os.walk(DATA_DIR):
         python_files_in_dir = glob.glob(dir_path + '/*.py')
 
         for python_file_path in python_files_in_dir:
             file_module = load_module_from_file(python_file_path)
-            raw_dialogues = file_module.main()
-            dialogues = [tuple_list_to_dialogue(d) for d in raw_dialogues]
+            raw_dialogue = file_module.main()
+            res += tuple_list_to_dialogue(raw_dialogue)
 
-            train_split, test_split = train_test_split(dialogues, test_size=0.25)
-            train_data += train_split
-            test_data += test_split
-
-    return train_data, test_data
+    return res
 
 
 def to_soloist_format(turn):
@@ -103,21 +98,32 @@ def convert_dialogues_to_soloist(dialogues: List[Dialogue]) -> Tuple[List, List]
 
 if __name__ == "__main__":
     # Read Data
-    train_data, test_data = convert_python_files()
+    data = convert_python_files()
 
     # Parametrize
-    train_data = parametrize_dialogues(train_data, train_sampler)
-    test_data = parametrize_dialogues(test_data, test_sampler)
 
-    # Convert to Soloist
-    train_single, train_multi = convert_dialogues_to_soloist(train_data)
-    test_single, test_multi = convert_dialogues_to_soloist(test_data)
 
-    # Save To file
+    res = []
+    for turn in data:
+        try:
+            x = fill_samples(turn, train_sampler)
+            res.append(to_soloist_format(x))
+        except:
+            print("FUUUUUUUUUUCK")
+    # test_data = parametrize_dialogues(test_data, test_sampler)
+    # print(data)
+
+    # # Convert to Soloist
+    # train_single, train_multi = convert_dialogues_to_soloist(train_data)
+    # test_single, test_multi = convert_dialogues_to_soloist(test_data)
+
+    # # Save To file
     file_name = sys.argv[1]
     
-    save_data(train_single, f"{file_name}_train_single.json")
-    save_data(train_multi, f"{file_name}_train_multi.json")
+    # print(res)
 
-    save_data(test_single, f"{file_name}_test_single.json")
-    save_data(test_multi, f"{file_name}_test_multi.json")
+    save_data(res, f"{file_name}_FINAL.json")
+    # # save_data(train_multi, f"{file_name}_train_multi.json")
+
+    # save_data(test_single, f"{file_name}_test_single.json")
+    # # save_data(test_multi, f"{file_name}_test_multi.json")
