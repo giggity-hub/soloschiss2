@@ -73,10 +73,16 @@ def fill_samples(turn: DialogueTurn, sampler: dict):
     return parametrize(turn, fd)
 
 def parametrize_dialogues(dialogues: List[Dialogue], sampler):
+    res = []
     for i in range(len(dialogues)):
         dialogue = dialogues[i]
+        res.append([])
         for j in range(len(dialogue)):
             turn = dialogue[j]
-            dialogues[i][j] = fill_samples(turn, sampler)
+            try:
+                res[i].append(fill_samples(turn, sampler))
+            except:
+                print("omitted 1 input because of faulty format")
+            
 
-    return dialogues
+    return res
