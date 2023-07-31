@@ -77,9 +77,9 @@ def create_df(bs: dict, domains: Dict[str, pd.DataFrame], df: pd.DataFrame) -> p
     if 'query' in bs and bs['query'] is not None:
         df = df.query(bs['query'])
     if 'head' in bs and bs['head'] is not None:
-        df = df.head(bs['head'])
+        df = df.head(int(bs['head']))
     if 'sortby' in bs and bs['sortby'] is not None:
-        df = df.sortby(bs['sortby'])
+        df = df.sort_values(by=bs['sortby'])
 
     return df
 
