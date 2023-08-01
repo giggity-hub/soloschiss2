@@ -95,8 +95,14 @@ def resolve_entity(bs: dict, df: pd.DataFrame, entity : pd.Series) -> pd.Series:
     Returns:
         pd.Series: _description_
     """
+    # if domain in bs then entity = first
+
     if 'entity_index' in bs:
-        return df.iloc[int(bs['entity_index']) -1]
+        index = int(bs['entity_index'])
+        if index > 0:
+            index  -= 1
+        return df.iloc[index]
+
     elif 'entity_name' in bs:
         return df[df['name'].str.contains(bs['entity_name'])].iloc[0]
     return entity
@@ -162,6 +168,7 @@ def evaluate(sample, domains, df, entity):
     print(f"belief_state: {bs}")
     
     df = create_df(bs, domains, df)
+    
     print(f"df: {df.head() if df is not None else df}")
     entity = resolve_entity(bs, df, entity)
     print(f"entity: {entity}")
