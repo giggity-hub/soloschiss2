@@ -14,7 +14,7 @@ TRAIN_SIZE = 0.75
 
 def load_domains_dict() -> Dict[str , pd.DataFrame]:
     table_paths = [os.path.join(this_dir, domain_name, 'table.csv') for domain_name in domain_names]
-    tables = [pd.read_csv(tp, sep=';') for tp in table_paths]
+    tables = [pd.read_csv(tp, sep=';').astype(str) for tp in table_paths]
     return dict(zip(domain_names, tables))
 
 
