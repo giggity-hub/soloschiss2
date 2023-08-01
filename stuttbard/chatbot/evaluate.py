@@ -76,10 +76,10 @@ def create_df(bs: dict, domains: Dict[str, pd.DataFrame], df: pd.DataFrame) -> p
         df = domains[bs['domain']]
     if 'query' in bs and bs['query'] is not None:
         df = df.query(bs['query'])
-    if 'head' in bs and bs['head'] is not None:
-        df = df.head(int(bs['head']))
     if 'sortby' in bs and bs['sortby'] is not None:
         df = df.sort_values(by=bs['sortby'])
+    if 'head' in bs and bs['head'] is not None:
+        df = df.head(int(bs['head']))
 
     return df
 
@@ -143,15 +143,16 @@ def find_all_slots_in_template(template_string: str):
     Returns:
         List[re.Match]: _description_
     """
-    pattern = 'slot_(entity|df)[a-z_]*'
-    matches = [m for m in re.finditer(pattern, template_string)]
+    pattern = 'slot_(entity|df)_[a-z_]+(?![a-z_])'
+    matches = [m.group() for m in re.finditer(pattern, template_string)]
+    matches = sorted(matches, key=lambda x : len(x), reverse=True)
     return matches
 
 def fill_template_slots(template_string, df, entity):
     matches = find_all_slots_in_template(template_string)
     print(f"matches: {matches}")
     for match in matches:
-        matched_slot = match.group()
+        matched_slot = match
         slot_value = render_slot_value(matched_slot, df, entity)
         # if there's no information about the requested attribute, give up
         if slot_value == "None":
@@ -168,7 +169,8 @@ def evaluate(sample, domains, df, entity):
     print(f"belief_state: {bs}")
     
     df = create_df(bs, domains, df)
-    
+    if 'domain' in bs and len(df) > 0:
+        entity = df.iloc[0]
     print(f"df: {df.head() if df is not None else df}")
     entity = resolve_entity(bs, df, entity)
     print(f"entity: {entity}")
