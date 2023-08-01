@@ -31,7 +31,7 @@ def start():
             'system': system_response
         }
 
-        res = "I sorry i did not understand that"
+        res = "I'm sorry i did not understand that"
         print(f"raw model output: {raw_output}")
         print(f"sample: {sample}")
         try:

@@ -35,7 +35,7 @@ def construct_query(bs: dict) -> str:
     It is assumed, that all values that are not reserved keywords are mean to be queries
 
     construct_query({'cuisine': 'chinese | japanese', 'area': 'Stuttgart-Mitte'}) 
-    => "cuisine == 'chinese' | 'japanese' & area == 'Stuttgart-Mitte'"
+    => "cuisine.str.lower() == 'chinese' | 'japanese' & area.str.lower() == 'stuttgart-mitte'"
 
     Args:
         bs (dict): A belief state dictionary
@@ -48,8 +48,8 @@ def construct_query(bs: dict) -> str:
         if key in SPECIAL_WORDS:
             continue
         options = val.split(OR_CHARACTER)
-        options = [f'"{opt.strip()}"' for opt in options]
-        expression = f'{key} == {" | ".join(options)}'
+        options = [f'"{opt.strip().lower()}"' for opt in options]
+        expression = f'{key}.str.lower() == {" | ".join(options)}'
         constraints.append(expression)
 
     if len(constraints) == 0:
