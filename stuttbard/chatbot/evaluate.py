@@ -2,6 +2,7 @@ import re
 from typing import Dict, List
 import pandas as pd
 
+debug = False
 
 def parse_beliefstate(beliefstate_string: str) -> dict:
     """Parse a belief state string into a dictionary. 
@@ -149,7 +150,8 @@ def find_all_slots_in_template(template_string: str):
 
 def fill_template_slots(template_string, df, entity):
     matches = find_all_slots_in_template(template_string)
-    print(f"matches: {matches}")
+    if debug:
+        print(f"matches: {matches}")
     for match in matches:
         matched_slot = match.group()
         slot_value = render_slot_value(matched_slot, df, entity)
@@ -162,16 +164,22 @@ def fill_template_slots(template_string, df, entity):
     return template_string
 
 
-def evaluate(sample, domains, df, entity):
+def evaluate(sample, domains, df, entity, d):
+    global debug
+    debug = d
+
     beliefstate_string = sample['belief']
     bs = parse_beliefstate(beliefstate_string)
-    print(f"belief_state: {bs}")
+    if debug:
+        print(f"belief_state: {bs}")
     
     df = create_df(bs, domains, df)
-    
-    print(f"df: {df.head() if df is not None else df}")
+
+    if debug:
+        print(f"df: {df.head() if df is not None else df}")
     entity = resolve_entity(bs, df, entity)
-    print(f"entity: {entity}")
+    if debug:
+        print(f"entity: {entity}")
 
     response_template = sample['system']
     res = fill_template_slots(response_template, df, entity)

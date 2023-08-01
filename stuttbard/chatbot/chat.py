@@ -1,4 +1,4 @@
-import re
+import argparse
 from domains.domains import domains_dict
 from argparse import Namespace
 import requests
@@ -9,7 +9,7 @@ def query_soloist(history):
     return r.text
 
 
-def start():
+def start(debug: bool = False):
     domains = domains_dict
     df = None
     entity = None
@@ -31,25 +31,23 @@ def start():
             'system': system_response
         }
 
-        res = "I'm sorry i did not understand that"
-        print(f"raw model output: {raw_output}")
-        print(f"sample: {sample}")
+        res = "system : I'm sorry i did not understand that"
+        if debug:
+            print(f"raw model output: {raw_output}")
+            print(f"sample: {sample}")
         try:
-            res, df, entity = evaluate(sample, domains, df, entity)
+            res, df, entity = evaluate(sample, domains, df, entity, debug)
         except Exception as e:
             print(e)
             
         # print(domains['restaurant'])
         # self.history.append(system_response)
 
-        print(f"res: {res}")
+        print(f"\n{res}\n")
 
 
 if __name__ == "__main__":
-    start()
-    # print(domains)
-    # print("sheeeeeeesh")
-
-    # print(df)
-    # chat = Chat()
-    # chat.start()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--debug', action='store_true', help='Debug mode')
+    args = parser.parse_args()
+    start(args.debug)
