@@ -3,6 +3,30 @@
 - Python 3
 - Unzip the pretrained soloist model inside the soloist folder as `soloist/gtg_pretrained`
 - Unzip all models you wish to use in the /models folder
+
+# Training
+
+Note: Sample train and test data is provided in the `data` folder. 
+
+```bash
+# Build the Docker Image
+sudo docker compose up -d --build
+
+# Enter the Shell of the docker container
+sudo docker compose exec myapp bash
+
+# Train the model (from inside docker bash)
+source scripts/train_kbbot.sh <training-data> <model_name>
+# Example:
+source scripts/train_kbbot.sh data/final_train.json model_schmodel
+
+# exit docker bash
+exit
+
+# Deactivate the Container
+docker compose down
+```
+
 # Interacting
 ```bash
 # start the docker container (if it isn't already running)
@@ -20,30 +44,19 @@ python3 app.py model_schmodel
 python3 -m stuttbard.chatbot.chat
 ```
 
-# Training
+# Evaluating
 ```bash
-# Generate json training data
-python3 -m scripts.create_data <dataset_name>
-# Example
-python3 -m scripts.create_data data_schmata
-
-# Build the Docker Image
-sudo docker compose up -d --build
-
-# Enter the Shell of the docker container
-sudo docker compose exec myapp bash
-
-# Train the model (from inside docker bash)
-source scripts/train_kbbot.sh <training-data> <model_name>
+# generate the predictions (the server should be started)
+python3 -m evaluation.save_test_results <test-data>
 # Example:
-source scripts/train_kbbot.sh kb.soloist.json model_schmodel
+python3 -m evaluation.save_test_results data/final_test.json
 
-# exit docker bash
-exit
-
-# Deactivate the Container
-docker compose down
+# evaluate the predictions
+python3 -m evaluation.eval <predictions-file>
+# Example:
+python3 -m evaluation.eval data/finaL_test_out.json
 ```
+
 # Testing
 ```bash
 # run all tests
@@ -51,12 +64,4 @@ py.test tests
 
 # run specific test file
 py.test tests/<filename>.py
-```
-
-# Docker Shit
-```bash
-# I dunno if this is necessary
-sudo ldconfig
-
-# Now probably restart your pc if doesn't work
 ```
