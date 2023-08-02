@@ -10,7 +10,6 @@ def main(parametrize):
         ]
     })
 
-    # TODO domain lists are currently hardcoded, maybe change that if there's time
     inform_domains = parametrize({
         "belief": "",
         "user_system": [

@@ -109,7 +109,7 @@ if __name__ == "__main__":
             x = fill_samples(turn, train_sampler)
             res.append(to_soloist_format(x))
         except:
-            print("FUUUUUUUUUUCK")
+            print("exception...")
     # test_data = parametrize_dialogues(test_data, test_sampler)
     # print(data)
 

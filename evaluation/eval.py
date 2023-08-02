@@ -45,7 +45,6 @@ def main(test_file: str, verbose: bool = False):
         reply_pred = dialogue['reply_pred'].replace('system :', '', 1).strip()
 
         # calculate BLEU
-        # TODO some replies are too short for BLEU
         bleu_scores.append(sentence_bleu([tokenizer(reply_gold)], tokenizer(reply_pred)))
 
         # get template slots

@@ -328,7 +328,7 @@ def main(parametrize):
         ]
     }))
 
-    # best rating TODO number of top entries is inconsistent
+    # best rating
     res.append(parametrize({
         "belief": "domain = restaurant ; head = 5 ; sortby = rating",
         "samplers": {},
