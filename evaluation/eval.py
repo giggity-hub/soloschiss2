@@ -2,6 +2,7 @@ import argparse
 import json
 import os
 import sys
+import warnings
 from nltk.translate.bleu_score import sentence_bleu
 from nltk.tokenize import wordpunct_tokenize as tokenizer
 
@@ -45,11 +46,13 @@ def main(test_file: str, verbose: bool = False):
         reply_pred = dialogue['reply_pred'].replace('system :', '', 1).strip()
 
         # calculate BLEU
-        bleu_scores.append(sentence_bleu([tokenizer(reply_gold)], tokenizer(reply_pred)))
+        with warnings.catch_warnings():
+            warnings.simplefilter('ignore')
+            bleu_scores.append(sentence_bleu([tokenizer(reply_gold)], tokenizer(reply_pred)))
 
         # get template slots
-        slots_gold = set([x.group() for x in find_all_slots_in_template(reply_gold) if x.group() != 'slot_entity_name'])
-        slots_pred = set([x.group() for x in find_all_slots_in_template(reply_pred) if x.group() != 'slot_entity_name'])
+        slots_gold = set([x for x in find_all_slots_in_template(reply_gold) if x != 'slot_entity_name'])
+        slots_pred = set([x for x in find_all_slots_in_template(reply_pred) if x != 'slot_entity_name'])
 
         total_slot += len(slots_gold)
 
